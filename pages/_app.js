@@ -2,8 +2,8 @@ import App from "next/app";
 import Head from "next/head";
 import { useEffect } from "react";
 import { CssBaseline, ThemeProvider } from "@material-ui/core";
-import { TITLE } from "../config";
-import getTheme from "../helpers/getTheme";
+import { TITLE } from "/config";
+import getTheme from "helpers/getTheme";
 
 function MyApp({ Component, pageProps }) {
   // Remove the server-side injected CSS.
