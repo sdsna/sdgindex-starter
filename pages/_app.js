@@ -1,11 +1,13 @@
 import App from "next/app";
 import Head from "next/head";
+import Router from "next/router";
 import { useEffect } from "react";
 import { enableStaticRendering } from "mobx-react-lite";
 import { CssBaseline, ThemeProvider } from "@material-ui/core";
 import NextNProgress from "nextjs-progressbar";
 import { TITLE } from "/config";
 import getTheme from "helpers/getTheme";
+import * as gtag from "helpers/gtag";
 
 function MyApp({ Component, pageProps }) {
   // use static rendering in SSR mode
@@ -19,6 +21,17 @@ function MyApp({ Component, pageProps }) {
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
+  }, []);
+
+  // Track pages
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    Router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      Router.events.off("routeChangeComplete", handleRouteChange);
+    };
   }, []);
 
   return (
