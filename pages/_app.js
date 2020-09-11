@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import { enableStaticRendering } from "mobx-react-lite";
 import { CssBaseline, ThemeProvider } from "@material-ui/core";
+import NextNProgress from "nextjs-progressbar";
 import { TITLE } from "/config";
 import getTheme from "helpers/getTheme";
 
@@ -29,6 +30,7 @@ function MyApp({ Component, pageProps }) {
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
       </Head>
+      <NextNProgress />
       <ThemeProvider theme={getTheme()}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
