@@ -1,11 +1,17 @@
 import App from "next/app";
 import Head from "next/head";
 import { useEffect } from "react";
+import { enableStaticRendering } from "mobx-react-lite";
 import { CssBaseline, ThemeProvider } from "@material-ui/core";
 import { TITLE } from "/config";
 import getTheme from "helpers/getTheme";
 
 function MyApp({ Component, pageProps }) {
+  // use static rendering in SSR mode
+  if (typeof window === "undefined") {
+    enableStaticRendering(true);
+  }
+
   // Remove the server-side injected CSS.
   useEffect(() => {
     const jssStyles = document.querySelector("#jss-server-side");
