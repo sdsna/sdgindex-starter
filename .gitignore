@@ -5,6 +5,9 @@
 /cypress/screenshots/
 /cypress/videos/
 
+# Ignore output directory
+/out
+
 # Logs
 logs
 *.log
