@@ -1,6 +1,6 @@
-# Next.js Starter Template
+# @sdgindex Starter Template
 
-Starter template for Next.js projects with Material UI and Styled Components.
+Starter template for SDG Index & Dashboards, built on Next.js with Material UI and Styled Components.
 
 ## Getting Started
 
