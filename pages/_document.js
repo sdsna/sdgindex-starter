@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 import { ServerStyleSheets } from "@material-ui/core/styles";
-import { GA_TRACKING_ID } from "helpers/gtag";
+import { GA_TRACKING_ID } from "root/config";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
