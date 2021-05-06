@@ -15,7 +15,7 @@ import * as gtag from "helpers/gtag";
 
 const theme = getTheme();
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component: NextPage, pageProps }) {
   // use static rendering in SSR mode
   if (typeof window === "undefined") {
     enableStaticRendering(true);
@@ -39,6 +39,11 @@ function MyApp({ Component, pageProps }) {
       Router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, []);
+
+  const {
+    Layout = ({ children }) => <>{children}</>,
+    layoutProps = () => {},
+  } = NextPage;
 
   return (
     <>
@@ -75,7 +80,9 @@ function MyApp({ Component, pageProps }) {
         <ThemeProvider theme={theme}>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
-          <Component {...pageProps} />
+          <Layout {...layoutProps(pageProps)}>
+            <NextPage {...pageProps}></NextPage>
+          </Layout>
         </ThemeProvider>
       </MuiThemeProvider>
     </>
