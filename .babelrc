@@ -6,10 +6,13 @@
       "module-resolver",
       {
         "alias": {
-          "components": "./components/",
+          "components": "./components",
           "helpers": "./helpers",
+          "hooks": "./hooks",
           "layouts": "./layouts",
-          "pages": "./pages"
+          "pages": "./pages",
+          "static": "./public/static",
+          "stores": "./stores"
         }
       }
     ]
