@@ -9,7 +9,7 @@ import {
 } from "@material-ui/core";
 import { ThemeProvider } from "styled-components";
 import NextNProgress from "nextjs-progressbar";
-import { TITLE, META_DESCRIPTION, META_IMAGE, URL } from "/config";
+import { TITLE, META_DESCRIPTION, META_IMAGE, URL } from "root/config";
 import getTheme from "helpers/getTheme";
 import * as gtag from "helpers/gtag";
 

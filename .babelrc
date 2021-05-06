@@ -11,6 +11,7 @@
           "hooks": "./hooks",
           "layouts": "./layouts",
           "pages": "./pages",
+          "root": "./",
           "static": "./public/static",
           "stores": "./stores"
         }

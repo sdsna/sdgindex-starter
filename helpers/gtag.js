@@ -1,5 +1,5 @@
 // Source: https://github.com/zeit/next.js/tree/canary/examples/with-google-analytics
-import { GA_TRACKING_ID } from "/config";
+import { GA_TRACKING_ID } from "root/config";
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url) => {
