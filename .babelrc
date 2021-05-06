@@ -7,6 +7,7 @@
       {
         "alias": {
           "components": "./components",
+          "data": "./public/data",
           "drawers": "./drawers",
           "helpers": "./helpers",
           "hooks": "./hooks",
