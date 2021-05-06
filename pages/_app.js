@@ -3,11 +3,17 @@ import Head from "next/head";
 import Router from "next/router";
 import { useEffect } from "react";
 import { enableStaticRendering } from "mobx-react-lite";
-import { CssBaseline, ThemeProvider } from "@material-ui/core";
+import {
+  CssBaseline,
+  ThemeProvider as MuiThemeProvider,
+} from "@material-ui/core";
+import { ThemeProvider } from "styled-components";
 import NextNProgress from "nextjs-progressbar";
 import { TITLE, META_DESCRIPTION, META_IMAGE, URL } from "/config";
 import getTheme from "helpers/getTheme";
 import * as gtag from "helpers/gtag";
+
+const theme = getTheme();
 
 function MyApp({ Component, pageProps }) {
   // use static rendering in SSR mode
@@ -65,11 +71,13 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <NextNProgress />
-      <ThemeProvider theme={getTheme()}>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-        <CssBaseline />
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <MuiThemeProvider theme={theme}>
+        <ThemeProvider theme={theme}>
+          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+          <CssBaseline />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </MuiThemeProvider>
     </>
   );
 }
