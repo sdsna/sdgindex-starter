@@ -1,10 +1,9 @@
 import { useEffect } from "react";
-import Router from "next/router";
 import { reaction } from "mobx";
 import { observer } from "mobx-react-lite";
 import { Box, Drawer, Hidden } from "@material-ui/core";
 import styled from "styled-components";
-import { useStore } from "stores/uiStore";
+import { useUiStore } from "stores/uiStore";
 import * as gtag from "helpers/gtag";
 
 const StyledDrawer = styled(Drawer).attrs(({ width, PaperProps }) => ({
@@ -65,19 +64,16 @@ const scrollElementToTop = (elementId) => {
 };
 
 const AppDrawer = observer(({ children, permanent = false }) => {
-  const uiStore = useStore();
+  const uiStore = useUiStore();
 
-  // Close and clear drawer when changing route
+  // Close and clear drawer when unmounting
   useEffect(() => {
-    const handleRouteChange = (url) => {
+    const closeDrawer = () => {
       uiStore.closeDrawer();
       uiStore.clearTarget();
     };
 
-    Router.events.on("routeChangeStart", handleRouteChange);
-    return () => {
-      Router.events.off("routeChangeStart", handleRouteChange);
-    };
+    return closeDrawer;
   }, []);
 
   useEffect(() => {

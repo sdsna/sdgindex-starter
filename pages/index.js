@@ -1,12 +1,17 @@
 import { Container, Typography } from "@material-ui/core";
-import AppLayout from "layouts/AppLayout";
+import SampleLayout from "layouts/SampleLayout";
+import SampleDrawer from "drawers/SampleDrawer";
+import SampleToggleDrawerButton from "components/SampleToggleDrawerButton";
 
 const Index = () => (
-  <AppLayout>
+  <SampleLayout Drawer={SampleDrawer}>
     <Container>
-      <Typography variant="h1">Hello World!</Typography>
+      <Typography variant="h1" gutterBottom>
+        Hello World!
+      </Typography>
+      <SampleToggleDrawerButton />
     </Container>
-  </AppLayout>
+  </SampleLayout>
 );
 
 export default Index;

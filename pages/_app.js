@@ -10,7 +10,6 @@ import {
 import { ThemeProvider } from "styled-components";
 import NextNProgress from "nextjs-progressbar";
 import { TITLE, META_DESCRIPTION, META_IMAGE, URL } from "root/config";
-import { StoreProvider } from "stores/uiStore";
 import getTheme from "helpers/getTheme";
 import * as gtag from "helpers/gtag";
 
@@ -72,15 +71,13 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <NextNProgress />
-      <StoreProvider>
-        <MuiThemeProvider theme={theme}>
-          <ThemeProvider theme={theme}>
-            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            <CssBaseline />
-            <Component {...pageProps} />
-          </ThemeProvider>
-        </MuiThemeProvider>
-      </StoreProvider>
+      <MuiThemeProvider theme={theme}>
+        <ThemeProvider theme={theme}>
+          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+          <CssBaseline />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </MuiThemeProvider>
     </>
   );
 }

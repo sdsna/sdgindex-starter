@@ -1,33 +1,35 @@
 import { createContext, useContext } from "react";
 import { useLocalObservable } from "mobx-react-lite";
 
-const storeContext = createContext(null);
+const uiStoreContext = createContext(null);
 
-export const StoreProvider = ({ children }) => {
-  const store = useLocalObservable(() => ({
+export const UiStoreProvider = ({ children }) => {
+  const uiStore = useLocalObservable(() => ({
     target: null,
     showDrawer: false,
     openDrawer(target) {
-      store.showDrawer = true;
-      store.target = target;
+      this.showDrawer = true;
+      this.target = target;
     },
     closeDrawer() {
-      store.showDrawer = false;
+      this.showDrawer = false;
     },
     clearTarget() {
-      store.target = null;
+      this.target = null;
     },
   }));
   return (
-    <storeContext.Provider value={store}>{children}</storeContext.Provider>
+    <uiStoreContext.Provider value={uiStore}>
+      {children}
+    </uiStoreContext.Provider>
   );
 };
 
-export const useStore = () => {
-  const store = useContext(storeContext);
-  if (!store) {
+export const useUiStore = () => {
+  const uiStore = useContext(uiStoreContext);
+  if (!uiStore) {
     // this is especially useful in TypeScript so you don't need to be checking for null all the time
-    throw new Error("useStore must be used within a StoreProvider.");
+    throw new Error("useUiStore must be used within a UiStoreProvider.");
   }
-  return store;
+  return uiStore;
 };
