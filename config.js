@@ -12,6 +12,7 @@ export const META_DESCRIPTION = null;
 // The preview image shown in social networks and when sharing on messengers,
 // like WhatsApp and others
 // The URL should be absolute, e.g.: https//www.domain.com/static/preview.jpg
+// Recommended size: 1200 x 627
 export const META_IMAGE = null;
 
 // The Google Analytics tracking ID
