@@ -37,3 +37,15 @@ We use [Next SEO](https://github.com/garmeeh/next-seo) for search engine optimiz
 ### Fast Refresh
 
 On Windows, [Fast Refresh](https://nextjs.org/docs/basic-features/fast-refresh) (hot reloading) only works with Google Chrome.
+
+## Development
+
+This template builds on the sdsna/nextjs-starter template: https://github.com/sdsna/nextjs-starter
+
+Improvements from sdsna/nextjs-starter can be merged as follows:
+
+```
+git remote add nextjs-starter https://github.com/sdsna/nextjs-starter.git
+git fetch nextjs-starter
+git merge nextjs-starter/main
+```
