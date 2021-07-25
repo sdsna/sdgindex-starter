@@ -16,3 +16,11 @@ export const event = ({ action, category, label, value }) => {
     value: value,
   });
 };
+
+export const trackDownload = (url) => {
+  event({
+    action: "download",
+    category: "downloads",
+    label: url,
+  });
+};
