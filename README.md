@@ -11,11 +11,11 @@ mkdir my-new-repo
 cd ./my-new-repo
 
 git init
-git remote add template https://github.com/sdsna/nextjs-starter.git
+git remote add template https://github.com/sdsna/sdgindex-starter
 git fetch template
 
 git checkout template/main -- .
-git commit -m "Use sdsna/nextjs-starter template"
+git commit -m "Use sdsna/sdgindex-starter template"
 ```
 
 ### Theme
