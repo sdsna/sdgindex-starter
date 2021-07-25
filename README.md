@@ -4,7 +4,19 @@ Starter template for Next.js projects with Material UI and Styled Components.
 
 ## Getting Started
 
-Clone repository. Run `npm install`. Set values in `config.js`.
+Via command line:
+
+```js
+mkdir my-new-repo
+cd ./my-new-repo
+
+git init
+git remote add template https://github.com/sdsna/nextjs-starter.git
+git fetch template
+
+git checkout template/main -- .
+git commit -m "Use sdsna/nextjs-starter template"
+```
 
 ### Theme
 
