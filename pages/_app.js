@@ -8,6 +8,7 @@ import {
   ThemeProvider as MuiThemeProvider,
 } from "@material-ui/core";
 import { ThemeProvider } from "styled-components";
+import { DefaultSeo } from "next-seo";
 import NextNProgress from "nextjs-progressbar";
 import { TITLE, META_DESCRIPTION, META_IMAGE, URL } from "root/config";
 import getTheme from "helpers/getTheme";
@@ -43,33 +44,17 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>{TITLE}</title>
-        <meta property="og:title" content={TITLE} />
-        <meta name="twitter:title" content={TITLE} />
-
-        {META_IMAGE && (
-          <>
-            <meta name="twitter:image" content={META_IMAGE} />
-            <meta property="og:image" content={META_IMAGE} />
-          </>
-        )}
-
-        {META_DESCRIPTION && (
-          <>
-            <meta name="description" content={META_DESCRIPTION} />
-            <meta property="og:description" content={META_DESCRIPTION} />
-            <meta name="twitter:description" content={META_DESCRIPTION} />
-          </>
-        )}
-
-        {URL && <meta property="og:url" content={URL} />}
-
-        <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
       </Head>
+      <DefaultSeo
+        title={TITLE}
+        description={META_DESCRIPTION}
+        openGraph={{ url: URL, images: [{ url: META_IMAGE }] }}
+        twitter={{ cardType: "summary_large_image" }}
+      />
       <NextNProgress />
       <MuiThemeProvider theme={theme}>
         <ThemeProvider theme={theme}>
