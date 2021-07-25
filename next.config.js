@@ -1,17 +1,14 @@
 module.exports = {
-  future: {
-    webpack5: true,
-  },
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    // Do not bundle JSON data on client
-    if (!isServer) {
-      config.plugins.push(
-        new webpack.IgnorePlugin({
-          resourceRegExp: /public\/data\/[^/]*\.json$/,
-        })
-      );
-    }
+  exportPathMap: async (defaultPathMap) => {
+    const paths = defaultPathMap;
 
-    return config;
+    // Make sure that static paths have been set for all dynamic pages
+    // All dynamic pages MUST be removed, e.g., delete paths["/[slug].js"]
+    if (Object.keys(paths).some((path) => path.match(/\[(.+)\]/)))
+      throw new Error(
+        `Dynamic page in exportPathMap in next.config.js detected: ${path}`
+      );
+
+    return paths;
   },
 };

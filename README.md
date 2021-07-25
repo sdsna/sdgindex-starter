@@ -18,6 +18,11 @@ git checkout template/main -- .
 git commit -m "Use sdsna/sdgindex-starter template"
 ```
 
+### Data
+
+Data should be prepared, loaded, and used with the `@sdgindex/data` package and
+its helpers. API documentation available on https://code.sdgindex.org/
+
 ### Theme
 
 The [Material UI theme](https://material-ui.com/customization/theming/) (e.g., color scheme) can be configured in `components/ThemeProvider.js`. The component is mounted in `pages/_app.js`. The theme is available in styled components, e.g.,
