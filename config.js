@@ -1,6 +1,23 @@
 // The page title
 export const TITLE = "Page Title";
 
+// A short title for the data visualization, used in drawers.
+// For example: SDR 2021, ESDR 2020, ...
+export const SHORT_TITLE = "SDG Index";
+
+// The maximum rank on the SDG Index, spillover index, etc...
+// Example: 50, 165, ...
+export const MAX_RANK = null;
+
+// The URL of the full report (PDF)
+// The report should be hosted on AWS. Directly downloading it from Netlify will
+// consume too much bandwidth.
+export const REPORT_DOWNLOAD_URL = null;
+
+// The URL of the database (Excel)
+// Example: /static/downloads/files/SDR2021-database.xlsx
+export const DATABASE_DOWNLOAD_URL = null;
+
 // The URL of the deployed page (used in meta tags for SMO)
 // Example: https://www.domain.com/
 export const URL = null;
