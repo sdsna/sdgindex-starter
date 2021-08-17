@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "run-script-os",
-    "dev:default": "next dev",
-    "dev:win32": "next dev -H ::",
+    "dev": "next dev",
     "build": "next build",
     "export": "next export",
     "test": "jest",
@@ -37,7 +35,6 @@
     "babel-plugin-styled-components": "^1.13.2",
     "cypress": "^8.3.0",
     "jest": "^27.0.6",
-    "prettier": "^2.3.2",
-    "run-script-os": "^1.1.6"
+    "prettier": "^2.3.2"
   }
 }
