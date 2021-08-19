@@ -1,4 +1,3 @@
-import App from "next/app";
 import Head from "next/head";
 import Router from "next/router";
 import { useEffect } from "react";
@@ -9,7 +8,7 @@ import { TITLE, META_DESCRIPTION, META_IMAGE, URL } from "root/config";
 import ThemeProvider from "components/ThemeProvider";
 import * as gtag from "helpers/gtag";
 
-function MyApp({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   // use static rendering in SSR mode
   if (typeof window === "undefined") {
     enableStaticRendering(true);
@@ -54,6 +53,6 @@ function MyApp({ Component, pageProps }) {
       </ThemeProvider>
     </>
   );
-}
+};
 
-export default MyApp;
+export default App;
