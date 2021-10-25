@@ -7,8 +7,10 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
+    "lint": "next lint",
     "test": "jest",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -40,7 +42,13 @@
     "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-react": "^7.24.0",
+    "husky": "^7.0.4",
     "jest": "^27.0.6",
+    "lint-staged": "^11.2.4",
     "prettier": "^2.3.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
   }
 }
