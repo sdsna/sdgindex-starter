@@ -8,11 +8,11 @@ class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const cache = createEmotionCache();
     const originalRenderPage = ctx.renderPage;
-
     const { extractCriticalToChunks } = createEmotionServer(cache);
 
     ctx.renderPage = () =>
       originalRenderPage({
+        // eslint-disable-next-line react/display-name
         enhanceApp: (App) => (props) => <App emotionCache={cache} {...props} />,
       });
 
