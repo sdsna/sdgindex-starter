@@ -3,7 +3,9 @@ import Button from "components/Button";
 
 const Index = () => (
   <>
-    <Typography variant="h1">Hello World!</Typography>
+    <Typography variant="h2" component="h1">
+      Hello World!
+    </Typography>
     <Button />
   </>
 );

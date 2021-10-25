@@ -1,12 +1,29 @@
-import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
+import { Stack, Button } from "@mui/material";
+import styled from "@emotion/styled";
 
-export default function BasicButtons() {
-  return (
-    <Stack spacing={2} direction="row">
-      <Button variant="text">Testing</Button>
-      <Button variant="contained">if emotion</Button>
-      <Button variant="outlined">works</Button>
-    </Stack>
-  );
-}
+const StyledButton = styled(Button)(
+  ({ theme }) => `
+  background-color: ${theme.palette.primary.red};
+`
+);
+
+const BasicButtons = () => (
+  <Stack spacing={2} direction="row">
+    <Button variant="text">Testing</Button>
+    <StyledButton variant="contained">if emotion</StyledButton>
+    <Button
+      variant="outlined"
+      sx={{
+        bgcolor: "background.paper",
+        boxShadow: 1,
+        borderRadius: 1,
+        p: 2,
+        minWidth: 300,
+      }}
+    >
+      works
+    </Button>
+  </Stack>
+);
+
+export default BasicButtons;

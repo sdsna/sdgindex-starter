@@ -4,11 +4,11 @@ import { useEffect } from "react";
 import { enableStaticRendering } from "mobx-react-lite";
 import { DefaultSeo } from "next-seo";
 import { CacheProvider } from "@emotion/react";
-import createEmotionCache from "helpers/createEmotionCache";
 import NextNProgress from "nextjs-progressbar";
 import { TITLE, META_DESCRIPTION, META_IMAGE, URL } from "root/config";
 import ThemeProvider from "components/ThemeProvider";
 import * as gtag from "helpers/gtag";
+import createEmotionCache from "helpers/createEmotionCache";
 
 const clientSideEmotionCache = createEmotionCache();
 

@@ -1,7 +1,7 @@
 {
   "presets": ["next/babel"],
   "plugins": [
-    ["@emotion", { "ssr": true }],
+    ["@emotion"],
     [
       "module-resolver",
       {

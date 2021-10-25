@@ -4,7 +4,6 @@ import {
   responsiveFontSizes,
 } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
-import { ThemeProvider as EmotionThemeProvider } from "@emotion/react";
 
 const theme = responsiveFontSizes(
   createTheme({
@@ -14,6 +13,7 @@ const theme = responsiveFontSizes(
         main: "#1a305b",
         // dark: will be calculated from palette.primary.main,
         // contrastText: will be calculated to contrast with palette.primary.main
+        red: "#FF0000",
       },
     },
     typography: {
@@ -57,17 +57,23 @@ const theme = responsiveFontSizes(
         marginBottom: 8,
       },
     },
-    props: {
+    components: {
       MuiTypography: {
-        variantMapping: {
-          h1: "h1",
-          h2: "h2",
-          h3: "h3",
-          h4: "h4",
-          subtitle1: "p",
-          subtitle2: "p",
-          caption: "p",
-          overline: "p",
+        defaultProps: {
+          variantMapping: {
+            h1: "h2",
+            h2: "h2",
+            h3: "h2",
+            h4: "h2",
+            h5: "h2",
+            h6: "h2",
+            subtitle1: "p",
+            subtitle2: "p",
+            caption: "p",
+            overline: "p",
+            body1: "span",
+            body2: "span",
+          },
         },
       },
     },
@@ -86,11 +92,9 @@ const theme = responsiveFontSizes(
 
 const ThemeProvider = ({ children }) => (
   <MuiThemeProvider theme={theme}>
-    <EmotionThemeProvider theme={theme}>
-      {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-      <CssBaseline />
-      {children}
-    </EmotionThemeProvider>
+    {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+    <CssBaseline />
+    {children}
   </MuiThemeProvider>
 );
 
