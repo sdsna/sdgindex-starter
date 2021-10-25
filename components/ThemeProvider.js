@@ -13,7 +13,6 @@ const theme = responsiveFontSizes(
         main: "#1a305b",
         // dark: will be calculated from palette.primary.main,
         // contrastText: will be calculated to contrast with palette.primary.main
-        red: "#FF0000",
       },
     },
     typography: {
