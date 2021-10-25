@@ -10,30 +10,26 @@ class MyDocument extends Document {
 
     const { extractCriticalToChunks } = createEmotionServer(cache);
 
-    try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            <App emotionCache={cache} {...props} />,
-        });
+    ctx.renderPage = () =>
+      originalRenderPage({
+        enhanceApp: (App) => (props) => <App emotionCache={cache} {...props} />,
+      });
 
-      const initialProps = await Document.getInitialProps(ctx);
-      const emotionStyles = extractCriticalToChunks(initialProps.html);
+    const initialProps = await Document.getInitialProps(ctx);
+    const emotionStyles = extractCriticalToChunks(initialProps.html);
 
-      const emotionStyleTags = emotionStyles.styles.map((style) => (
-        <style
-          data-emotion={`${style.key} ${style.ids.join(" ")}`}
-          key={style.key}
-          dangerouslySetInnerHTML={{ __html: style.css }}
-        />
-      ));
+    const emotionStyleTags = emotionStyles.styles.map((style) => (
+      <style
+        data-emotion={`${style.key} ${style.ids.join(" ")}`}
+        key={style.key}
+        dangerouslySetInnerHTML={{ __html: style.css }}
+      />
+    ));
 
-      return {
-        ...initialProps,
-        styles: [...emotionStyleTags],
-      };
-    } finally {
-    }
+    return {
+      ...initialProps,
+      styles: [...emotionStyleTags],
+    };
   }
 
   render() {
