@@ -1,10 +1,10 @@
 import {
-  CssBaseline,
   ThemeProvider as MuiThemeProvider,
   createTheme,
   responsiveFontSizes,
-} from "@material-ui/core";
-import { ThemeProvider as StyledComponentsThemeProvider } from "styled-components";
+} from "@mui/material/styles";
+import { CssBaseline } from "@mui/material";
+import { ThemeProvider as EmotionThemeProvider } from "@emotion/react";
 
 const theme = responsiveFontSizes(
   createTheme({
@@ -86,11 +86,11 @@ const theme = responsiveFontSizes(
 
 const ThemeProvider = ({ children }) => (
   <MuiThemeProvider theme={theme}>
-    <StyledComponentsThemeProvider theme={theme}>
+    <EmotionThemeProvider theme={theme}>
       {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
       <CssBaseline />
       {children}
-    </StyledComponentsThemeProvider>
+    </EmotionThemeProvider>
   </MuiThemeProvider>
 );
 

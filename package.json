@@ -21,20 +21,22 @@
     ]
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.3",
-    "mdi-material-ui": "^6.22.1",
+    "@emotion/react": "^11.5.0",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/material": "^5.0.4",
+    "mdi-material-ui": "npm:@mitch528/mdi-material-ui@^7.0.0",
     "mobx": "^6.3.2",
     "mobx-react-lite": "^3.2.0",
     "next": "^11.1.0",
     "next-seo": "^4.26.0",
     "nextjs-progressbar": "^0.0.11",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "styled-components": "^5.3.0"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.3.0",
     "babel-plugin-module-resolver": "^4.1.0",
-    "babel-plugin-styled-components": "^1.13.2",
     "cypress": "^8.3.0",
     "eslint": "^7.32.0",
     "eslint-config-next": "11.1.0",

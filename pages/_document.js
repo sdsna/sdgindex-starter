@@ -1,37 +1,38 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { ServerStyleSheet } from "styled-components";
-import { ServerStyleSheets } from "@material-ui/core/styles";
+import createEmotionServer from "@emotion/server/create-instance";
+import createEmotionCache from "helpers/createEmotionCache";
 import { GA_TRACKING_ID } from "root/config";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const styledComponentsSheet = new ServerStyleSheet();
-    const materialSheets = new ServerStyleSheets();
+    const cache = createEmotionCache();
     const originalRenderPage = ctx.renderPage;
+
+    const { extractCriticalToChunks } = createEmotionServer(cache);
 
     try {
       ctx.renderPage = () =>
         originalRenderPage({
           enhanceApp: (App) => (props) =>
-            styledComponentsSheet.collectStyles(
-              materialSheets.collect(<App {...props} />)
-            ),
+            <App emotionCache={cache} {...props} />,
         });
 
       const initialProps = await Document.getInitialProps(ctx);
+      const emotionStyles = extractCriticalToChunks(initialProps.html);
+
+      const emotionStyleTags = emotionStyles.styles.map((style) => (
+        <style
+          data-emotion={`${style.key} ${style.ids.join(" ")}`}
+          key={style.key}
+          dangerouslySetInnerHTML={{ __html: style.css }}
+        />
+      ));
 
       return {
         ...initialProps,
-        styles: (
-          <>
-            {initialProps.styles}
-            {materialSheets.getStyleElement()}
-            {styledComponentsSheet.getStyleElement()}
-          </>
-        ),
+        styles: [...emotionStyleTags],
       };
     } finally {
-      styledComponentsSheet.seal();
     }
   }
 
