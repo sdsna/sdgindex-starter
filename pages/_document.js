@@ -1,3 +1,4 @@
+import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import createEmotionServer from "@emotion/server/create-instance";
 import createEmotionCache from "helpers/createEmotionCache";
@@ -28,7 +29,10 @@ class MyDocument extends Document {
 
     return {
       ...initialProps,
-      styles: [...emotionStyleTags],
+      styles: [
+        React.Children.toArray(initialProps.styles),
+        ...emotionStyleTags,
+      ],
     };
   }
 
