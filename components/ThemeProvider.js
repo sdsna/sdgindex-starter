@@ -60,18 +60,14 @@ const theme = responsiveFontSizes(
       MuiTypography: {
         defaultProps: {
           variantMapping: {
-            h1: "h2",
+            h1: "h1",
             h2: "h2",
-            h3: "h2",
-            h4: "h2",
-            h5: "h2",
-            h6: "h2",
+            h3: "h3",
+            h4: "h4",
             subtitle1: "p",
             subtitle2: "p",
             caption: "p",
             overline: "p",
-            body1: "span",
-            body2: "span",
           },
         },
       },
