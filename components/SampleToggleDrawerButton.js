@@ -7,7 +7,6 @@ const SampleToggleDrawerButton = observer(() => {
 
   return (
     <Button
-      color="primary"
       variant="contained"
       onClick={() =>
         uiStore.showDrawer ? uiStore.closeDrawer() : uiStore.openDrawer(true)
