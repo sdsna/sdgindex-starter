@@ -34,6 +34,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@cypress/webpack-preprocessor": "^5.9.1",
     "@emotion/babel-plugin": "^11.3.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "cypress": "^8.7.0",

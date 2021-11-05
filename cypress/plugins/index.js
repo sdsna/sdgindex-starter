@@ -12,11 +12,19 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
+// From: https://github.com/cypress-io/cypress/issues/17411#issuecomment-883887457
+// Support module resolution in cypress
+const webpackPreprocessor = require("@cypress/webpack-preprocessor");
+const defaults = webpackPreprocessor.defaultOptions;
+
 /**
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
-module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
+// `on` is used to hook into various events Cypress emits
+// `config` is the resolved Cypress config
+
+module.exports = (on) => {
+  delete defaults.webpackOptions.module.rules[0].use[0].options.presets;
+  on("file:preprocessor", webpackPreprocessor(defaults));
 };
