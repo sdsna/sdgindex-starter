@@ -72,8 +72,8 @@ const theme = responsiveFontSizes(
         },
       },
     },
-    overrides: {
-      MuiTableCell: {
+    MuiTableCell: {
+      styleOverrides: {
         body: {
           fontSize: "1rem",
         },
