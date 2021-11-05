@@ -13,5 +13,5 @@ const Index = () => (
 );
 
 Index.Layout = SampleLayout;
-Index.layoutProps = () => ({ Drawer: SampleDrawer });
+Index.layoutProps = () => ({ Drawer: <SampleDrawer /> });
 export default Index;
