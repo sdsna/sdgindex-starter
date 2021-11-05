@@ -9,7 +9,7 @@ import { TITLE, META_DESCRIPTION, META_IMAGE, URL } from "root/config";
 import ThemeProvider from "components/ThemeProvider";
 import * as gtag from "helpers/gtag";
 
-const App = ({ Component: NextPage, pageProps }) => {
+function MyApp({ Component: NextPage, pageProps }) {
   // use static rendering in SSR mode
   if (typeof window === "undefined") {
     enableStaticRendering(true);
@@ -56,6 +56,6 @@ const App = ({ Component: NextPage, pageProps }) => {
       </ThemeProvider>
     </>
   );
-};
+}
 
-export default App;
+export default MyApp;

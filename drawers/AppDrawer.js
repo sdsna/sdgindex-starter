@@ -15,7 +15,6 @@ const scrollElementToTop = (elementId) => {
 };
 
 const AppDrawer = observer(({ children, permanent = false }) => {
-  console.log(children);
   const uiStore = useUiStore();
   const isXsScreen = useMediaQuery((theme) =>
     theme.breakpoints.only("xs", { noSsr: false })
@@ -29,7 +28,7 @@ const AppDrawer = observer(({ children, permanent = false }) => {
     };
 
     return closeDrawer;
-  }, [uiStore]);
+  }, []);
 
   useEffect(() => {
     scrollElementToTop("desktop-drawer");
@@ -53,7 +52,7 @@ const AppDrawer = observer(({ children, permanent = false }) => {
     return () => {
       disposeReaction();
     };
-  }, [uiStore.target]);
+  }, []);
 
   const showDrawer = uiStore.showDrawer || permanent;
 
