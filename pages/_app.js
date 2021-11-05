@@ -1,33 +1,18 @@
-import App from "next/app";
 import Head from "next/head";
 import Router from "next/router";
 import { useEffect } from "react";
 import { enableStaticRendering } from "mobx-react-lite";
 import { DefaultSeo } from "next-seo";
 import NextNProgress from "nextjs-progressbar";
-import { loadData } from "@sdgindex/data";
 import { TITLE, META_DESCRIPTION, META_IMAGE, URL } from "root/config";
 import ThemeProvider from "components/ThemeProvider";
 import * as gtag from "helpers/gtag";
 
-function MyApp({ Component: NextPage, pageProps }) {
+const App = ({ Component: NextPage, pageProps }) => {
   // use static rendering in SSR mode
   if (typeof window === "undefined") {
     enableStaticRendering(true);
   }
-
-  // Remove the server-side injected CSS.
-  useEffect(() => {
-    const jssStyles = document.querySelector("#jss-server-side");
-    if (jssStyles) {
-      jssStyles.parentElement.removeChild(jssStyles);
-    }
-  }, []);
-
-  // Load data
-  useEffect(() => {
-    loadData({ timeseries: true });
-  }, []);
 
   // Track pages
   useEffect(() => {
@@ -40,10 +25,8 @@ function MyApp({ Component: NextPage, pageProps }) {
     };
   }, []);
 
-  const {
-    Layout = ({ children }) => <>{children}</>,
-    layoutProps = () => {},
-  } = NextPage;
+  const { Layout = ({ children }) => <>{children}</>, layoutProps = () => {} } =
+    NextPage;
 
   return (
     <>
@@ -67,6 +50,6 @@ function MyApp({ Component: NextPage, pageProps }) {
       </ThemeProvider>
     </>
   );
-}
+};
 
-export default MyApp;
+export default App;

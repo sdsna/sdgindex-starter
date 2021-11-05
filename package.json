@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "data": "node ./data/prepare",
-    "dev": "run-script-os",
-    "dev:default": "next dev",
-    "dev:win32": "next dev -H ::",
+    "dev": "next dev",
     "build": "next build",
     "export": "next export",
+    "lint": "next lint",
     "test": "jest",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -22,14 +22,17 @@
     ]
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.2",
+
     "@sdgindex/data": "^3.0.1",
-    "mdi-material-ui": "^6.22.1",
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/material": "^5.0.4",
+    "mdi-material-ui": "^7.1.0",
     "mobx": "^6.3.2",
-    "mobx-react-lite": "^3.2.0",
-    "next": "^11.0.1",
+    "mobx-react-lite": "^3.2.1",
+    "next": "^12.0.1",
     "next-seo": "^4.26.0",
-    "nextjs-progressbar": "^0.0.11",
+    "nextjs-progressbar": "^0.0.13",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-resize-observer": "^1.1.1",
@@ -37,11 +40,23 @@
   },
   "devDependencies": {
     "babel-plugin-inline-react-svg": "^2.0.1",
+    "@cypress/webpack-preprocessor": "^5.9.1",
+    "@emotion/babel-plugin": "^11.3.0",
     "babel-plugin-module-resolver": "^4.1.0",
-    "babel-plugin-styled-components": "^1.13.2",
-    "cypress": "^8.0.0",
+    "cypress": "^8.7.0",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "11.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-cypress": "^2.11.3",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "husky": "^7.0.4",
     "jest": "^27.0.6",
-    "prettier": "^2.3.2",
-    "run-script-os": "^1.1.6"
+    "lint-staged": "^11.2.4",
+    "prettier": "^2.3.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
   }
 }

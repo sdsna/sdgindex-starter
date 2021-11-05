@@ -1,15 +1,15 @@
-import { Container, Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import SampleLayout from "layouts/SampleLayout";
 import SampleDrawer from "drawers/SampleDrawer";
-import SampleToggleDrawerButton from "components/SampleToggleDrawerButton";
+import Button from "components/Button";
 
 const Index = () => (
-  <Container>
-    <Typography variant="h1" gutterBottom>
+  <>
+    <Typography variant="h2" component="h1">
       Hello World!
     </Typography>
-    <SampleToggleDrawerButton />
-  </Container>
+    <Button />
+  </>
 );
 
 Index.Layout = SampleLayout;
