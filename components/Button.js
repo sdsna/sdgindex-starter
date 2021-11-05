@@ -1,9 +1,9 @@
 import { Stack, Button } from "@mui/material";
-import styled from "@emotion/styled";
+import { styled } from "@mui/material/styles";
 
-const StyledButton = styled(Button)`
-  background-color: ${(props) => props.theme.palette.secondary.main};
-`;
+const StyledButton = styled(Button)(({ theme }) => ({
+  backgroundColor: theme.palette.secondary.main,
+}));
 
 const BasicButtons = () => (
   <Stack spacing={2} direction="row">
