@@ -1,45 +1,28 @@
-import { Box, Container, Paper, Grid, Typography } from "@material-ui/core";
-import styled from "styled-components";
+import { Box, Container, Grid, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import contentSizeQuery from "helpers/contentSizeQuery";
 
-const FooterTypography = styled(Typography).attrs({
-  variant: "body2",
-})`
-  && {
-    color: #fff;
-  }
-`;
+const FooterTypography = (props) => (
+  <Typography color="#fff" variant="body2" {...props} />
+);
 
-const FooterLink = styled.a`
-  color: #fff;
-  text-decoration: none;
+const ResponsiveGridItem = styled(Grid)(
+  (props) => ({
+    flexBasis: `${props.styled.width * 100}%`,
+    maxWidth: `${props.styled.width * 100}%`,
+  }),
+  contentSizeQuery("medium-down", {
+    maxWidth: "100%",
+    flexBasis: "100%",
+    textAlign: "center",
+    [":not(:first-of-type)"]: {
+      marginTop: 16,
+    },
+  })
+);
+ResponsiveGridItem.defaultProps = { item: true };
 
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
-const ResponsiveGridItem = styled(Grid).attrs({
-  item: true,
-})`
-  flex-basis: ${(props) => props.styled.width * 100}%;
-  max-width: ${(props) => props.styled.width * 100}%;
-
-  ${contentSizeQuery("medium-down")`
-    {
-      max-width: 100%;
-      flex-basis: 100%;
-
-      text-align: center;
-      &:not(:first-of-type) {
-        margin-top: 16px;
-      }
-    }`}
-`;
-
-const Logo = styled.img`
-  height: 80px;
-`;
+const Logo = styled("img")({ height: 80 });
 
 const BoxWithShadow = styled(Box)`
   box-shadow: 0px -2px 4px -1px rgba(0, 0, 0, 0.2),

@@ -1,7 +1,7 @@
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 
 const SampleDrawer = () => (
-  <Typography variant="body1">I'm a drawer</Typography>
+  <Typography variant="body1">I&apos;m a drawer</Typography>
 );
 
 export default SampleDrawer;

@@ -1,5 +1,5 @@
 import { observer } from "mobx-react-lite";
-import { Button } from "@material-ui/core";
+import { Button } from "@mui/material";
 import { useUiStore } from "stores/uiStore";
 
 const SampleToggleDrawerButton = observer(() => {
@@ -7,7 +7,6 @@ const SampleToggleDrawerButton = observer(() => {
 
   return (
     <Button
-      color="primary"
       variant="contained"
       onClick={() =>
         uiStore.showDrawer ? uiStore.closeDrawer() : uiStore.openDrawer(true)

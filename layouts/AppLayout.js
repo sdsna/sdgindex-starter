@@ -1,6 +1,7 @@
 import { observer, useLocalObservable } from "mobx-react-lite";
 import ResizeObserver from "react-resize-observer";
-import { Box } from "@material-ui/core";
+import { Box } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import NavBar from "components/NavBar";
 import Footer from "components/Footer";
 import AppDrawer from "drawers/AppDrawer";
@@ -15,6 +16,7 @@ const AppLayout = observer(
     onContentResize = null,
     footer = true,
   }) => {
+    const theme = useTheme();
     const store = useLocalObservable(() => ({
       width: null,
       onResize(rect) {
@@ -23,11 +25,11 @@ const AppLayout = observer(
 
         const { width } = rect;
 
-        if (width <= 600) {
+        if (width < theme.breakpoints.sm) {
           this.width = "small";
-        } else if (width <= 960) {
+        } else if (width < theme.breakpoints.md) {
           this.width = "medium";
-        } else if (width > 960) {
+        } else if (width >= theme.breakpoints.md) {
           this.width = "large";
         }
       },

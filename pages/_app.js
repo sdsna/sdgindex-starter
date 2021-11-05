@@ -1,4 +1,3 @@
-import App from "next/app";
 import Head from "next/head";
 import Router from "next/router";
 import { useEffect } from "react";
@@ -16,14 +15,6 @@ function MyApp({ Component: NextPage, pageProps }) {
     enableStaticRendering(true);
   }
 
-  // Remove the server-side injected CSS.
-  useEffect(() => {
-    const jssStyles = document.querySelector("#jss-server-side");
-    if (jssStyles) {
-      jssStyles.parentElement.removeChild(jssStyles);
-    }
-  }, []);
-
   // Load data
   useEffect(() => {
     loadData({ timeseries: true });
@@ -40,10 +31,8 @@ function MyApp({ Component: NextPage, pageProps }) {
     };
   }, []);
 
-  const {
-    Layout = ({ children }) => <>{children}</>,
-    layoutProps = () => {},
-  } = NextPage;
+  const { Layout = ({ children }) => <>{children}</>, layoutProps = () => {} } =
+    NextPage;
 
   return (
     <>
