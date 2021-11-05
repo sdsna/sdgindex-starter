@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { enableStaticRendering } from "mobx-react-lite";
 import { DefaultSeo } from "next-seo";
 import NextNProgress from "nextjs-progressbar";
+import { loadData } from "@sdgindex/data";
 import { TITLE, META_DESCRIPTION, META_IMAGE, URL } from "root/config";
 import ThemeProvider from "components/ThemeProvider";
 import * as gtag from "helpers/gtag";
@@ -13,6 +14,11 @@ const App = ({ Component: NextPage, pageProps }) => {
   if (typeof window === "undefined") {
     enableStaticRendering(true);
   }
+
+  // Load data
+  useEffect(() => {
+    loadData({ timeseries: true });
+  }, []);
 
   // Track pages
   useEffect(() => {

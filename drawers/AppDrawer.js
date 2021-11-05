@@ -15,6 +15,7 @@ const scrollElementToTop = (elementId) => {
 };
 
 const AppDrawer = observer(({ children, permanent = false }) => {
+  console.log(children);
   const uiStore = useUiStore();
   const isXsScreen = useMediaQuery((theme) =>
     theme.breakpoints.only("xs", { noSsr: false })

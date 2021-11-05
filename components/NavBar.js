@@ -23,13 +23,7 @@ const Button = styled(ButtonBase)({
   paddingRight: 16,
 });
 
-const Logo = styled.img``;
-
-const LogoButton = styled(Button)`
-  ${(props) => props.theme.breakpoints.down("sm")} {
-    flex-grow: 1;
-  }
-`;
+const Logo = styled("img")``;
 
 const StyledToolbar = (props) => (
   <Toolbar
@@ -43,15 +37,6 @@ const StyledToolbar = (props) => (
     {...props}
   />
 );
-
-const DesktopOnlyBox = styled(Box)`
-  height: 100%;
-  display: flex;
-
-  ${(props) => props.theme.breakpoints.down("sm")} {
-    display: none;
-  }
-`;
 
 const pages = [
   {
@@ -91,9 +76,12 @@ const NavBar = ({ fluid }) => {
               </IconButton>
             </Hidden>
             <Link href="/" passHref>
-              <LogoButton aria-label="Go to home page">
+              <Button
+                sx={{ flexGrow: { xs: 1, md: 0 } }}
+                aria-label="Go to home page"
+              >
                 <Logo alt="Logo" src="/static/logo.svg" />
-              </LogoButton>
+              </Button>
             </Link>
             <Hidden implementation="css" mdUp>
               <IconButton
@@ -111,7 +99,7 @@ const NavBar = ({ fluid }) => {
                 pages={pages}
               />
             </Hidden>
-            <DesktopOnlyBox>
+            <Box display={{ xs: "none", md: "flex" }} height={1}>
               {pages.map(({ label, href }) => (
                 <Link key={href} href={href} passHref>
                   <Button>
@@ -119,7 +107,7 @@ const NavBar = ({ fluid }) => {
                   </Button>
                 </Link>
               ))}
-            </DesktopOnlyBox>
+            </Box>
           </StyledToolbar>
         </Container>
       </AppBar>
