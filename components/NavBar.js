@@ -9,22 +9,19 @@ import {
   IconButton,
   Toolbar,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
 import { Menu } from "mdi-material-ui";
-import styled from "styled-components";
+import { styled } from "@mui/material/styles";
 import NavBarDrawer from "components/NavBarDrawer";
 
-const Button = styled(ButtonBase).attrs({
-  component: "a",
-})`
-  && {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-self: stretch;
-    padding: 0 16px;
-  }
-`;
+const Button = styled(ButtonBase)({
+  display: "flex",
+  justifyContent: "center",
+  flexDirection: "column",
+  alignSelf: "stretch",
+  paddingLeft: 16,
+  paddingRight: 16,
+});
 
 const Logo = styled.img``;
 
@@ -34,29 +31,18 @@ const LogoButton = styled(Button)`
   }
 `;
 
-const StyledToolbar = styled(Toolbar)`
-  && {
-    min-height: 64px;
-    height: 64px
-    max-height: 64px;
-
-    ${Logo} {
-      height: 64px;
-      padding: 8px 0;
-    }
-
-    ${(props) => props.theme.breakpoints.up("sm")} {
-      min-height: 88px;
-      height: 88px;
-      max-height: 88px;
-
-      ${Logo} {
-        height: 88px;
-        padding: 12px 0;
-      }
-    }
-  }
-`;
+const StyledToolbar = (props) => (
+  <Toolbar
+    sx={{
+      minHeight: { xs: 64, sm: 88 },
+      maxHeight: { xs: 64, sm: 88 },
+      ["&, & img"]: {
+        height: { xs: 64, sm: 88 },
+      },
+    }}
+    {...props}
+  />
+);
 
 const DesktopOnlyBox = styled(Box)`
   height: 100%;

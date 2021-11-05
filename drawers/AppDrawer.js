@@ -1,58 +1,9 @@
 import { useEffect } from "react";
 import { reaction } from "mobx";
 import { observer } from "mobx-react-lite";
-import { Box, Drawer, Hidden } from "@material-ui/core";
-import styled from "styled-components";
+import { Box, Drawer, useMediaQuery } from "@mui/material";
 import { useUiStore } from "stores/uiStore";
 import * as gtag from "helpers/gtag";
-
-const StyledDrawer = styled(Drawer).attrs(({ width, PaperProps }) => ({
-  style: {
-    width: width,
-  },
-  PaperProps: {
-    ...PaperProps,
-    ...{
-      style: {
-        width: width,
-      },
-    },
-  },
-}))`
-  && {
-    ${(props) => (props.open ? null : "width: 0px !important;")}
-    transition: width 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-  }
-
-  &,
-  & > div {
-    top: 88px;
-    bottom: 0px;
-    height: auto;
-    overflow-y: hidden;
-    /* Display below the navbar */
-    z-index: 1000;
-    overflow-wrap: break-word;
-  }
-`;
-
-const LeftDrawerBox = styled(Box).attrs({
-  id: "desktop-drawer",
-})`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  scrollbar-width: thin;
-`;
-
-const BottomDrawerBox = styled(Box).attrs({
-  id: "mobile-drawer",
-})`
-  max-height: calc(80vh);
-  overflow-y: auto;
-  scrollbar-width: thin;
-`;
 
 // scrolls the context menu back to the top
 const scrollElementToTop = (elementId) => {
@@ -65,6 +16,9 @@ const scrollElementToTop = (elementId) => {
 
 const AppDrawer = observer(({ children, permanent = false }) => {
   const uiStore = useUiStore();
+  const isXsScreen = useMediaQuery((theme) =>
+    theme.breakpoints.only("xs", { noSsr: false })
+  );
 
   // Close and clear drawer when unmounting
   useEffect(() => {
@@ -74,7 +28,7 @@ const AppDrawer = observer(({ children, permanent = false }) => {
     };
 
     return closeDrawer;
-  }, []);
+  }, [uiStore]);
 
   useEffect(() => {
     scrollElementToTop("desktop-drawer");
@@ -98,7 +52,7 @@ const AppDrawer = observer(({ children, permanent = false }) => {
     return () => {
       disposeReaction();
     };
-  }, []);
+  }, [uiStore.target]);
 
   const showDrawer = uiStore.showDrawer || permanent;
 
@@ -107,31 +61,60 @@ const AppDrawer = observer(({ children, permanent = false }) => {
 
   return (
     <>
-      <Hidden implementation="css" only="xs">
-        <Hidden only="xs" initialWidth="lg">
-          <StyledDrawer
-            open={showDrawer}
-            variant="persistent"
-            anchor="left"
-            width={300}
-            PaperProps={{
-              elevation: 2,
+      {!isXsScreen && (
+        <Drawer
+          open={showDrawer}
+          variant="persistent"
+          anchor="left"
+          sx={{
+            display: { xs: "none", sm: "block" },
+            width: showDrawer ? 300 : 0,
+            transition: "width 225ms cubic-bezier(0, 0, 0.2, 1) 0ms",
+            ["&, & > div"]: {
+              top: 88,
+              bottom: 0,
+              height: "auto",
+              overflowY: "hidden",
+              /* Display below the mobile navbar */
+              zIndex: 1000,
+              overflowWrap: "break-word",
+            },
+          }}
+          PaperProps={{
+            elevation: 2,
+            sx: { width: 300 },
+          }}
+        >
+          <Box
+            id="desktop-drawer"
+            position="absolute"
+            width={1}
+            height={1}
+            sx={{
+              overflowY: "auto",
+              scrollbarWidth: "thin",
             }}
           >
-            <LeftDrawerBox>{children}</LeftDrawerBox>
-          </StyledDrawer>
-        </Hidden>
-      </Hidden>
-      <Hidden smUp>
+            {children}
+          </Box>
+        </Drawer>
+      )}
+      {isXsScreen && (
         <Drawer
           open={uiStore.showDrawer}
           onClose={uiStore.closeDrawer}
           variant="temporary"
           anchor="bottom"
         >
-          <BottomDrawerBox>{children}</BottomDrawerBox>
+          <Box
+            id="mobile-drawer"
+            maxHeight="80vh"
+            sx={{ overflowY: "auto", scrollbarWidth: "thin" }}
+          >
+            {children}
+          </Box>
         </Drawer>
-      </Hidden>
+      )}
     </>
   );
 });

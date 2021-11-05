@@ -1,6 +1,6 @@
 import { observer, useLocalObservable } from "mobx-react-lite";
 import ResizeObserver from "react-resize-observer";
-import { Box } from "@material-ui/core";
+import { Box } from "@mui/material";
 import NavBar from "components/NavBar";
 import Footer from "components/Footer";
 import AppDrawer from "drawers/AppDrawer";

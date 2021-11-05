@@ -1,6 +1,7 @@
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 
 const SampleDrawer = () => (
+  // eslint-disable-next-line
   <Typography variant="body1">I'm a drawer</Typography>
 );
 
