@@ -22,8 +22,8 @@ module.exports = {
       version: "detect",
     },
   },
-  plugins: ["react", "cypress", "jest"],
-  rules: {},
+  plugins: ["react", "cypress", "jest", "no-only-tests"],
+  rules: { "no-only-tests/no-only-tests": "error" },
   overrides: [
     {
       files: ["tests/**/*.test.js"],
