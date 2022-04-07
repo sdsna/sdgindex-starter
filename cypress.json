@@ -1,0 +1,5 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "blockHosts": ["www.google-analytics.com", "www.googletagmanager.com"],
+  "video": false
+}
