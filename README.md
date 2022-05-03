@@ -15,6 +15,7 @@ git remote add template https://github.com/sdsna/sdgindex-starter
 git fetch template
 
 git checkout template/main -- .
+npm install
 git commit -m "Use sdsna/sdgindex-starter template"
 ```
 
