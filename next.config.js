@@ -4,9 +4,12 @@ module.exports = {
 
     // Make sure that static paths have been set for all dynamic pages
     // All dynamic pages MUST be removed, e.g., delete paths["/[slug].js"]
-    if (Object.keys(paths).some((path) => path.match(/\[(.+)\]/)))
+    const dynamicPage = Object.keys(paths).find((path) =>
+      path.match(/\[(.+)\]/)
+    );
+    if (dynamicPage)
       throw new Error(
-        `Dynamic page in exportPathMap in next.config.js detected: ${path}`
+        `Dynamic page in exportPathMap in next.config.js detected:  ${dynamicPage}`
       );
 
     return paths;
