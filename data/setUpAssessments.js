@@ -31,13 +31,13 @@ const setUpAssessments = () => {
     addIndicator({
       id: row.IndCode,
       goalNumber: row.cat_lnob,
-      labelWithUnit: row["Indicateur"],
+      labelWithUnit: row["Indicateur"].trim(),
       longTermObjective: roundNumber(row["Valeur Cible"], 2),
-      longTermObjectiveReason: row["bestjust"],
+      longTermObjectiveReason: row["bestjust"].trim(),
       lowerBound: roundNumber(row["Limite inferieure"], 2),
-      lowerBoundReason: row["worstjust"],
+      lowerBoundReason: row["worstjust"].trim(),
       year: row["Reference_Year"],
-      reference: row.Source,
+      reference: row.Source.trim(),
     });
   });
 };
