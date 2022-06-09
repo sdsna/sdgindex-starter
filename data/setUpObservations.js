@@ -33,7 +33,7 @@ const setUpObservations = () => {
       );
       const observation = {
         value: dataForRegion[key],
-        rating: dataForRegion[`Couleur: ${indicator.id}`],
+        rating: dataForRegion[`Couleur: ${indicator.id} `],
         year: indicator.year,
       };
 
