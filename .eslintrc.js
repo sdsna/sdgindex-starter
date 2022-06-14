@@ -9,6 +9,7 @@ module.exports = {
     "plugin:react/recommended",
     "next/core-web-vitals",
     "prettier",
+    "plugin:cypress/recommended",
   ],
   parserOptions: {
     ecmaFeatures: {
