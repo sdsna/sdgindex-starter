@@ -11,7 +11,7 @@
     "export": "next export",
     "lint": "next lint",
     "test": "jest",
-    "cypress": "cypress open",
+    "cypress": "cypress open --config-file=cypress.config.js",
     "prepare": "husky install"
   },
   "keywords": [],
