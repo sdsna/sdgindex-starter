@@ -48,6 +48,7 @@ jobs:
       - name: Run Cypress tests
         uses: cypress-io/github-action@v2
         with:
+          config-file: cypress.config.js
           # we have already installed all dependencies above
           install: false
           start: serve out -p 3000
