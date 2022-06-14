@@ -29,64 +29,57 @@
       "type": "department"
     },
     {
-      "id": "Bénin",
-      "dataId": 5,
-      "slug": "benin",
-      "name": "Bénin",
-      "type": "department"
-    },
-    {
       "id": "Collines",
-      "dataId": 6,
+      "dataId": 5,
       "slug": "collines",
       "name": "Collines",
       "type": "department"
     },
     {
       "id": "Couffo",
-      "dataId": 7,
+      "dataId": 6,
       "slug": "couffo",
       "name": "Couffo",
       "type": "department"
     },
     {
       "id": "Donga",
-      "dataId": 8,
+      "dataId": 7,
       "slug": "donga",
       "name": "Donga",
       "type": "department"
     },
     {
       "id": "Littoral",
-      "dataId": 9,
+      "dataId": 8,
       "slug": "littoral",
       "name": "Littoral",
       "type": "department"
     },
     {
       "id": "Mono",
-      "dataId": 10,
+      "dataId": 9,
       "slug": "mono",
       "name": "Mono",
       "type": "department"
     },
     {
       "id": "Ouémé",
-      "dataId": 11,
+      "dataId": 10,
       "slug": "oueme",
       "name": "Ouémé",
       "type": "department"
     },
     {
       "id": "Plateau",
-      "dataId": 12,
+      "dataId": 11,
       "slug": "plateau",
       "name": "Plateau",
       "type": "department"
     },
     {
       "id": "Zou",
-      "dataId": 13,
+      "dataId": 12,
       "slug": "zou",
       "name": "Zou",
       "type": "department"
