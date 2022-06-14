@@ -9,13 +9,15 @@ const setUpRegions = () => {
   });
 
   // Extract states
-  dataRows.map((row) =>
-    addRegion({
-      id: row.id,
-      name: row.id,
-      type: "department",
-    })
-  );
+  dataRows
+    .filter((row) => row.id !== "Bénin")
+    .map((row) =>
+      addRegion({
+        id: row.id,
+        name: row.id,
+        type: "department",
+      })
+    );
 };
 
 module.exports = setUpRegions;
