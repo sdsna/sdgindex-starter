@@ -133,14 +133,14 @@ const Index = () => (
                   justifyContent={{ xs: "center", md: "flex-start" }}
                 >
                   <Box marginY={1} marginRight={2}>
-                    <Link href="/chapters" passHref>
+                    <Link href="/TODO" passHref>
                       <Button size="large" variant="contained">
                         Read Report
                       </Button>
                     </Link>
                   </Box>
                   <Box marginY={1}>
-                    <Link href="/map" passHref>
+                    <Link href="/TODO" passHref>
                       <Button
                         size="large"
                         variant="outlined"
@@ -165,11 +165,11 @@ const Index = () => (
               links={[
                 {
                   label: "Executive Summary",
-                  href: "/chapters/executive-summary",
+                  href: "/TODO",
                 },
                 {
                   label: "All Chapters",
-                  href: "/chapters",
+                  href: "/TODO",
                   variant: "outlined",
                 },
               ]}
@@ -189,7 +189,7 @@ const Index = () => (
               links={[
                 {
                   label: "View Rankings",
-                  href: "/rankings",
+                  href: "/TODO",
                 },
               ]}
             >
@@ -206,7 +206,7 @@ const Index = () => (
               links={[
                 {
                   label: "Explore Maps",
-                  href: "/map",
+                  href: "/TODO",
                 },
               ]}
             >
@@ -223,7 +223,7 @@ const Index = () => (
               links={[
                 {
                   label: "Analyze Profiles",
-                  href: "/profiles",
+                  href: "/TODO",
                 },
               ]}
             >
@@ -247,7 +247,7 @@ const Index = () => (
                 },
                 {
                   label: "Go to Downloads",
-                  href: "/downloads",
+                  href: "/TODO",
                   variant: "outlined",
                 },
               ]}
