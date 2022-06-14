@@ -107,7 +107,7 @@ const Index = () => (
                 >
                   <img
                     src="/static/report-cover.webp"
-                    alt="Cover of the Sustainable Development Report 2022"
+                    alt="Cover of the Benin Sustainable Development Report"
                   />
                 </ReportButton>
               </Box>
@@ -123,12 +123,9 @@ const Index = () => (
               >
                 <Box>
                   <Title>
-                    Sustainable Development Report <Highlight>2022</Highlight>
+                    <Highlight>Benin</Highlight> Sustainable Development Report
                   </Title>
-                  <Subtitle>
-                    From Crisis to Sustainable Development: the SDGs as Roadmap
-                    to 2030 and Beyond
-                  </Subtitle>
+                  <Subtitle>/TODO</Subtitle>
                 </Box>
                 <Box
                   marginTop={3}
@@ -161,7 +158,7 @@ const Index = () => (
         <Box marginY={8}>
           <Fade left>
             <FeatureBanner
-              title="Sustainable Development Report 2022"
+              title="Benin Sustainable Development Report"
               image="/static/report-cover.webp"
               imagePosition="right"
               imageOrientation="vertical"
@@ -177,11 +174,7 @@ const Index = () => (
                 },
               ]}
             >
-              The Sustainable Development Report 2022 marks the seventh edition
-              of the annual assessment of progress of all UN Member States
-              towards the Sustainable Development Goals. This year&apos;s report
-              discusses the critical need and channels of development finance
-              for low-income and lower-middle income countries.
+              /TODO
             </FeatureBanner>
           </Fade>
         </Box>
@@ -200,10 +193,7 @@ const Index = () => (
                 },
               ]}
             >
-              The report assesses the progress of all 193 UN Member States on
-              the SDGs: This year, Finland, Denmark and Sweden top the rankings.
-              In addition to overall scores, we also feature a spillover index
-              that tracks countries&apos; positive and negative impacts abroad.
+              /TODO
             </FeatureBanner>
           </Fade>
         </Box>
@@ -220,18 +210,14 @@ const Index = () => (
                 },
               ]}
             >
-              Our interactive maps showcase the performance of countries on each
-              of the 17 Sustainable Development Goals. Visualize countries&apos;
-              current performance or visualize trends to see which countries are
-              on track. Dig into each of the 120 indicators covered in the
-              Sustainable Development Report 2022.
+              /TODO
             </FeatureBanner>
           </Fade>
         </Box>
         <Box marginY={8}>
           <Fade right>
             <FeatureBanner
-              title="Analyze Country Profiles"
+              title="Analyze State Profiles"
               image="/static/icons/indicator.svg"
               imagePosition="left"
               links={[
@@ -241,11 +227,7 @@ const Index = () => (
                 },
               ]}
             >
-              Our report features a dedicated profile page for each UN Member
-              State, showing performance and trends by SDG and by indicator. By
-              clicking on a goal or indicator, you can view historical
-              timeseries (when available) and detailed indicator metadata in the
-              side panel.
+              /TODO
             </FeatureBanner>
           </Fade>
         </Box>
