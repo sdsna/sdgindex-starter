@@ -44,7 +44,10 @@
     "react-resize-observer": "^1.1.1",
     "react-svgmt": "^1.2.0",
     "svg-pan-zoom": "^3.6.1",
-    "use-debounce": "^8.0.1"
+    "use-debounce": "^8.0.1",
+    "react-reveal": "^1.2.2",
+    "react-tsparticles": "^2.0.6",
+    "tsparticles": "^2.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
