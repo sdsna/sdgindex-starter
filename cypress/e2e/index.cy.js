@@ -1,6 +1,13 @@
 describe("Index", () => {
-  it("says Hello World!", () => {
+  it("renders the page!", () => {
     cy.visit("/");
-    cy.get("h1").should("contain", "Hello World");
+    cy.contains("Benin Sustainable Development Report");
   });
+  // TODO
+  // it("all links are defined", () => {
+  //     cy.get("#content a").each(($el) => {
+  //       cy.wrap($el).should("have.attr", "href");
+  //       cy.wrap($el).should("not.have.attr", "href", "/TODO");
+  //     });
+  //   });
 });
