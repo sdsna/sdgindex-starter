@@ -17,10 +17,10 @@ const MapAlertDialog = () => {
         onClick={() => setOpen(true)}
         sx={{ cursor: "pointer" }}
       >
-        Note on country boundaries
+        Note on department boundaries
       </Link>
       <Dialog open={open} onClose={() => setOpen(false)}>
-        <DialogTitle>Note on country boundaries</DialogTitle>
+        <DialogTitle>Note on department boundaries</DialogTitle>
         <DialogContent dividers>
           <DialogContentText>
             The boundaries, colors, denominations, and other information shown

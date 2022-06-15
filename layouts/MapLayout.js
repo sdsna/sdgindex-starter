@@ -14,8 +14,8 @@ const MapLayout = ({
   children,
   assessment,
   Drawer,
-  countries,
-  getCountryFill,
+  departments,
+  getDepartmentFill,
   getTooltipText,
   stroke,
 }) => (
@@ -34,9 +34,9 @@ const MapLayout = ({
             position="relative"
           >
             <Map
-              countries={countries}
+              departments={departments}
               stroke={stroke}
-              getCountryFill={getCountryFill}
+              getDepartmentFill={getDepartmentFill}
             >
               {children}
             </Map>

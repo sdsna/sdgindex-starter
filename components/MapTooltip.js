@@ -8,7 +8,7 @@ const MapTooltip = observer(() => {
 
   if (!mapStore.tooltip) return null;
 
-  const country = mapStore.tooltip.country;
+  const department = mapStore.tooltip.department;
   const anchor = mapStore.tooltip.anchor;
   const text = mapStore.tooltip.text;
 
@@ -41,7 +41,7 @@ const MapTooltip = observer(() => {
         borderRadius={1}
       >
         <Box display="flex" flexDirection="column" justifyContent="center">
-          <RegionAvatar region={country} size={50} />
+          <RegionAvatar region={department} size={50} />
         </Box>
         <Box
           paddingLeft={1}
@@ -51,7 +51,7 @@ const MapTooltip = observer(() => {
         >
           <Typography variant="body1">
             <Box component="span" fontWeight={500}>
-              {country.name}
+              {department.name}
             </Box>
           </Typography>
           <Typography variant="body2">

@@ -15,10 +15,10 @@ const SvgMap = styled(SvgLoader)({
   width: "100%",
   height: "100%",
   display: "block",
-  ".countries, circle:not([fill])": {
+  ".departments, circle:not([fill])": {
     fill: "#979797",
   },
-  ".countries, circle": {
+  ".departments, circle": {
     transition: "fill 0.3s ease-in-out",
   },
   '[clickable="clickable"]:hover': {
@@ -35,7 +35,7 @@ const SvgMap = styled(SvgLoader)({
   },
 });
 
-const Map = observer(({ children, countries, getCountryFill, stroke }) => {
+const Map = observer(({ children, departments, getDepartmentFill, stroke }) => {
   const uiStore = useUiStore();
   const mapStore = useMapStore();
 
@@ -64,18 +64,18 @@ const Map = observer(({ children, countries, getCountryFill, stroke }) => {
   const resetMapAfterDelay = useDebouncedCallback(resetMap, 100);
 
   useEffect(() => {
-    // On change of tooltip countryId, move the relevant SVG node to the very
+    // On change of tooltip departmentId, move the relevant SVG node to the very
     // end of the SVG elements, so that the node is drawn last and displayed
     // on top of other SVG nodes. This ensures that the stroke on hover does
     // not get cut off.
     const disposeReaction = reaction(
-      () => mapStore.tooltip?.country?.id,
-      (countryId) => {
-        if (!countryId) return;
+      () => mapStore.tooltip?.department?.id,
+      (departmentId) => {
+        if (!departmentId) return;
 
         // Move node to the end of the list of children, so that it is drawn
         // last and on top of all other elements
-        const node = document.querySelector(`svg #${countryId}`);
+        const node = document.querySelector(`svg #${departmentId}`);
         if (node) node.parentElement.appendChild(node);
       }
     );
@@ -96,16 +96,19 @@ const Map = observer(({ children, countries, getCountryFill, stroke }) => {
             onMouseMove={() => null}
             onMouseLeave={() => null}
           />
-          {countries.map((country) => (
+          {departments.map((department) => (
             <SvgProxy
-              key={country.id}
-              selector={`[name="${country.name}"]`}
+              key={department.id}
+              selector={`[name="${department.name}"]`}
               clickable="clickable"
               fill={
-                country.fill || getCountryFill(country, mapStore.currentYear)
+                department.fill ||
+                getDepartmentFill(department, mapStore.currentYear)
               }
-              onClick={() => uiStore.openDrawer(country)}
-              onMouseMove={(event) => mapStore.showTooltip({ event, country })}
+              onClick={() => uiStore.openDrawer(department)}
+              onMouseMove={(event) =>
+                mapStore.showTooltip({ event, department })
+              }
               onMouseLeave={mapStore.hideTooltip}
             />
           ))}

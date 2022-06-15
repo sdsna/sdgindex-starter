@@ -1,7 +1,7 @@
 import MapLayout from "layouts/MapLayout";
 //import MapDrawer from "drawers/MapDrawer";
 import MapControls from "components/MapControls";
-import { getCountryFill } from "helpers/legendForScore";
+import { getDepartmentFill } from "helpers/legendForScore";
 import { getTooltipTextForScore } from "helpers/getTooltipTextForScore";
 
 const Map = ({ zoomIn, zoomOut, resetZoom }) => (
@@ -16,8 +16,8 @@ const Map = ({ zoomIn, zoomOut, resetZoom }) => (
 Map.Layout = MapLayout;
 Map.layoutProps = ({ dimension, departments }) => ({
   assessment: dimension,
-  countries: departments.map((department) => ({
-    fill: getCountryFill(department),
+  departments: departments.map((department) => ({
+    fill: getDepartmentFill(department),
     ...department,
   })),
   getTooltipText: getTooltipTextForScore,

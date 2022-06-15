@@ -31,8 +31,8 @@ export const LEGEND = [
   },
 ];
 
-export const getCountryFill = (country) => {
-  const { score } = country;
+export const getDepartmentFill = (department) => {
+  const { score } = department;
 
   if (score == null) return LEGEND.find((item) => item.fallback).color;
 

@@ -17,12 +17,12 @@ export const MapStoreProvider = ({ children, getTooltipText }) => {
       // Update tooltip text, if currently shown
       if (store.tooltip != null) {
         store.tooltip.text = store.getTooltipText(
-          store.tooltip.country,
+          store.tooltip.department,
           store.currentYear
         );
       }
     },
-    showTooltip: ({ country, event: { pageX: X, pageY: Y } }) => {
+    showTooltip: ({ department, event: { pageX: X, pageY: Y } }) => {
       const anchor = {
         getBoundingClientRect: () => ({
           top: Y,
@@ -37,9 +37,9 @@ export const MapStoreProvider = ({ children, getTooltipText }) => {
       };
 
       store.tooltip = {
-        country,
+        department,
         anchor,
-        text: store.getTooltipText(country, store.currentYear),
+        text: store.getTooltipText(department, store.currentYear),
       };
     },
   }));

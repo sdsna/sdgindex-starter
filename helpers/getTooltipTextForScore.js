@@ -1,5 +1,5 @@
-export const getTooltipTextForScore = (country) => {
-  const { score, scoreAsText } = country;
+export const getTooltipTextForScore = (department) => {
+  const { score, scoreAsText } = department;
 
   if (score) return `Score: ${scoreAsText}`;
 
