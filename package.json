@@ -27,6 +27,7 @@
     "@mui/material": "^5.8.2",
     "@sdgindex/data": "^4.0.1",
     "eslint-config-cypress": "^0.28.0",
+    "hammerjs": "^2.0.8",
     "mdi-material-ui": "^7.4.0",
     "mobx": "^6.6.0",
     "mobx-react-lite": "^3.4.0",
@@ -35,7 +36,10 @@
     "nextjs-progressbar": "^0.0.14",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-resize-observer": "^1.1.1"
+    "react-resize-observer": "^1.1.1",
+    "react-svgmt": "^1.2.0",
+    "svg-pan-zoom": "^3.6.1",
+    "use-debounce": "^8.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
