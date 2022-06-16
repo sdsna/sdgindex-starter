@@ -75,7 +75,7 @@ const Map = observer(({ children, departments, getDepartmentFill, stroke }) => {
 
         // Move node to the end of the list of children, so that it is drawn
         // last and on top of all other elements
-        const node = document.querySelector(`svg #${departmentId}`);
+        const node = document.querySelector(`svg [name="${departmentId}"]`);
         if (node) node.parentElement.appendChild(node);
       }
     );
