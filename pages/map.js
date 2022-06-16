@@ -1,7 +1,7 @@
 import MapLayout from "layouts/MapLayout";
-//import MapDrawer from "drawers/MapDrawer";
+import MapDrawer from "drawers/MapDrawer";
 import MapControls from "components/MapControls";
-import { getDepartmentFill } from "helpers/legendForScore";
+import { getDepartmentFill, LEGEND } from "helpers/legendForScore";
 import { getTooltipTextForScore } from "helpers/getTooltipTextForScore";
 
 const Map = ({ zoomIn, zoomOut, resetZoom }) => (
@@ -21,7 +21,9 @@ Map.layoutProps = ({ dimension, departments }) => ({
     ...department,
   })),
   getTooltipText: getTooltipTextForScore,
-  Drawer: null,
+  Drawer: (
+    <MapDrawer assessment={dimension} dimension="score" legend={LEGEND} />
+  ),
 });
 
 import {
