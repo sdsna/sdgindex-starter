@@ -5,7 +5,7 @@
       "dataId": "LNOB1",
       "number": 1,
       "label": "Accessibilité et qualité des services",
-      "description": "End poverty in all its forms everywhere.",
+      "description": "Les ODD sont guidés par le principe de \"ne laisser personne de côté\" (LNOB). L'indice \"Leave-No-One-Behind\" suit les inégalités selon quatre dimensions : la pauvreté, les services, le sexe et le revenu. Un score plus élevé signifie que moins de groupes de population sont laissés pour compte.",
       "type": "goal",
       "category": "services",
       "slug": "category-services"
@@ -15,7 +15,7 @@
       "dataId": "LNOB2",
       "number": 2,
       "label": "Extrême pauvreté et privation matérielle",
-      "description": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture.",
+      "description": "Les ODD sont guidés par le principe de \"ne laisser personne de côté\" (LNOB). L'indice \"Leave-No-One-Behind\" suit les inégalités selon quatre dimensions : la pauvreté, les services, le sexe et le revenu. Un score plus élevé signifie que moins de groupes de population sont laissés pour compte.",
       "type": "goal",
       "category": "pauvreté",
       "slug": "category-pauvreté"
@@ -25,7 +25,7 @@
       "dataId": "LNOB3",
       "number": 3,
       "label": "Inégalité des sexes",
-      "description": "Ensure healthy lives and promote well-being for all at all ages.",
+      "description": "Les ODD sont guidés par le principe de \"ne laisser personne de côté\" (LNOB). L'indice \"Leave-No-One-Behind\" suit les inégalités selon quatre dimensions : la pauvreté, les services, le sexe et le revenu. Un score plus élevé signifie que moins de groupes de population sont laissés pour compte.",
       "type": "goal",
       "category": "genre",
       "slug": "category-genre"
@@ -35,7 +35,7 @@
       "dataId": "LNOB4",
       "number": 4,
       "label": "Inégalité des revenus",
-      "description": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.",
+      "description": "Les ODD sont guidés par le principe de \"ne laisser personne de côté\" (LNOB). L'indice \"Leave-No-One-Behind\" suit les inégalités selon quatre dimensions : la pauvreté, les services, le sexe et le revenu. Un score plus élevé signifie que moins de groupes de population sont laissés pour compte.",
       "type": "goal",
       "category": "revenu",
       "slug": "category-revenu"

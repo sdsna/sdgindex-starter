@@ -18,6 +18,7 @@ const setUpAssessments = () => {
     goal.dataId = `LNOB${goal.number}`;
     goal.slug = `category-${dimension.category}`;
     goal.label = dimension.label;
+    goal.description = `Les ODD sont guidés par le principe de "ne laisser personne de côté" (LNOB). L'indice "Leave-No-One-Behind" suit les inégalités selon quatre dimensions : la pauvreté, les services, le sexe et le revenu. Un score plus élevé signifie que moins de groupes de population sont laissés pour compte.`;
   });
 
   /* Data conversion (XLSX -> JSON) */
