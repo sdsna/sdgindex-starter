@@ -11,7 +11,7 @@ it("contains 4 dimensions", () => {
 it("has label for each goal", () => {
   getGoals().map((goal) => {
     expect(goal).toMatchObject({
-      // description: expect.any(String),
+      description: expect.any(String),
       label: expect.any(String),
     });
   });
@@ -25,7 +25,7 @@ it("has a long term objective reason, description, ... for indicators", () => {
   getIndicators().map((indicator) => {
     expect(indicator).toMatchObject({
       longTermObjectiveReason: expect.any(String),
-      // description: expect.any(String),
+      description: expect.any(String),
       reference: expect.any(String),
       longTermObjective: expect.any(Number),
       lowerBound: expect.any(Number),
