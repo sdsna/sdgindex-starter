@@ -1,6 +1,16 @@
+const { getGoals } = require("@sdgindex/data");
+
 module.exports = {
   exportPathMap: async (defaultPathMap) => {
     const paths = defaultPathMap;
+
+    // Dimensions maps
+    delete paths["/map/dimensions/[...params]"];
+    getGoals().forEach(({ id }) => {
+      paths[`/map/dimensions/${id}`] = {
+        page: "/map/dimensions/[...params]",
+      };
+    });
 
     // Make sure that static paths have been set for all dynamic pages
     // All dynamic pages MUST be removed, e.g., delete paths["/[slug].js"]

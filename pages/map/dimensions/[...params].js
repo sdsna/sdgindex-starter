@@ -34,11 +34,14 @@ import {
 import { getScore, getScoreAsText } from "@sdgindex/data/observations";
 import { getIndicatorsByDimension } from "helpers/getIndicatorsByDimension";
 
-Map.getInitialProps = async () => {
+Map.getInitialProps = async ({ query }) => {
   await loadData();
 
+  const { params } = query;
+  const [assessmentId] = params;
+
   // Get data
-  const dimension = findAssessmentById("LNOB1");
+  const dimension = findAssessmentById(assessmentId.toUpperCase());
   const departments = getRegionsWithAssessment(dimension);
 
   return {
