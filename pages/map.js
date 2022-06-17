@@ -32,6 +32,7 @@ import {
   getRegionsWithAssessment,
 } from "@sdgindex/data";
 import { getScore, getScoreAsText } from "@sdgindex/data/observations";
+import { getIndicatorsByDimension } from "../helpers/getIndicatorsByDimension";
 
 Map.getInitialProps = async () => {
   await loadData();
@@ -42,9 +43,15 @@ Map.getInitialProps = async () => {
 
   return {
     dimension: {
-      //id: overall.id,
       label: dimension.label,
-      //description: overall.description,
+      type: dimension.type,
+      description: dimension.description,
+      indicators: getIndicatorsByDimension(dimension).map((indicator) => ({
+        id: indicator.id,
+        slug: indicator.slug,
+        label: indicator.label,
+        type: indicator.type,
+      })),
     },
     departments: departments.map((department) => ({
       id: department.id,

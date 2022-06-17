@@ -1,5 +1,5 @@
 // import Link from "next/link";
-import { ButtonBase, Divider } from "@mui/material";
+import { Box, ButtonBase, Divider } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import DrawerSection from "components/DrawerSection";
 import DrawerHeading from "components/DrawerHeading";
@@ -31,53 +31,35 @@ IndicatorButton.defaultProps = {
   focusRipple: true,
 };
 
-const GoalInfo = ({ goal }) => {
+const GoalInfo = ({ goal, indicators }) => {
   return (
     <>
       <DrawerSection>
         <DrawerHeading>Description</DrawerHeading>
         <DrawerText>{goal.description}</DrawerText>
       </DrawerSection>
+      <DrawerSection>
+        <DrawerHeading>Indicators</DrawerHeading>
+        <Box marginX={-0.5}>
+          {indicators.map((indicator, key) => (
+            <IndicatorButton key={key}>
+              <DrawerText>{indicator.label}</DrawerText>
+            </IndicatorButton>
+          ))}
+        </Box>
+      </DrawerSection>
     </>
   );
 };
 
-// const OverallInfo = ({ overall, goals }) => (
+// const OverallInfo = ({ overall }) => (
 //   <>
 //     <DrawerSection>
 //       <DrawerHeading>Description</DrawerHeading>
 //       <DrawerText>{overall.description}</DrawerText>
 //     </DrawerSection>
 //     <Divider />
-//     <DrawerSection>
-//       <DrawerHeadingWithCaption caption="Display countries' transboundary impacts.">
-//         Spillover Index
-//       </DrawerHeadingWithCaption>
-//       <Box marginY={1}>
-//         <Link href={mapSpilloversUrl()} passHref>
-//           <Button size="small" variant="outlined">
-//             View Spillovers
-//           </Button>
-//         </Link>
-//       </Box>
-//     </DrawerSection>
 //     <Divider />
-//     <DrawerSection display={{ xs: "block", lg: "none" }}>
-//       <DrawerHeadingWithCaption caption="Click on a goal to visualize it on the map.">
-//         Performance by SDG
-//       </DrawerHeadingWithCaption>
-//       <Grid container style={{ margin: -2, width: "auto" }}>
-//         {goals.map((goal) => (
-//           <Grid item key={goal.id} style={{ maxWidth: "25%", padding: 2 }}>
-//             <Link href={mapAssessmentUrl({ assessment: goal })} passHref>
-//               <ButtonBase style={{ background: getColor(goal.number) }}>
-//                 <GoalIcon identifier={goal.id} flavor="white" />
-//               </ButtonBase>
-//             </Link>
-//           </Grid>
-//         ))}
-//       </Grid>
-//     </DrawerSection>
 //   </>
 // );
 
