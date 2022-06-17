@@ -32,6 +32,7 @@ const setUpAssessments = () => {
     addIndicator({
       id: row.IndCode,
       goalNumber: row.cat_lnob,
+      description: row.Description,
       labelWithUnit: row["Indicateur"].trim(),
       longTermObjective: roundNumber(row["Valeur Cible"], 2),
       longTermObjectiveReason: row["bestjust"].trim(),
