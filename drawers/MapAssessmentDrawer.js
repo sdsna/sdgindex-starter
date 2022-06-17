@@ -31,12 +31,12 @@ IndicatorButton.defaultProps = {
   focusRipple: true,
 };
 
-const GoalInfo = ({ goal, indicators }) => {
+const DimensionInfo = ({ dimension, indicators }) => {
   return (
     <>
       <DrawerSection>
         <DrawerHeading>Description</DrawerHeading>
-        <DrawerText>{goal.description}</DrawerText>
+        <DrawerText>{dimension.description}</DrawerText>
       </DrawerSection>
       <DrawerSection>
         <DrawerHeading>Indicators</DrawerHeading>
@@ -114,7 +114,10 @@ const MapAssessmentDrawer = ({ assessment, dimension, legend }) => (
     <Legend dimension={dimension} legend={legend} assessment={assessment} />
     <Divider />
     {isGoal(assessment) && (
-      <GoalInfo goal={assessment} indicators={assessment.indicators} />
+      <DimensionInfo
+        dimension={assessment}
+        indicators={assessment.indicators}
+      />
     )}
     {/* {isIndicator(assessment) && <IndicatorMetadata indicator={assessment} />} */}
   </>

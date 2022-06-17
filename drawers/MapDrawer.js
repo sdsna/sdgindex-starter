@@ -3,7 +3,7 @@ import { Divider } from "@mui/material";
 //import MapCountryDrawer from "drawers/MapCountryDrawer";
 import MapAssessmentDrawer from "drawers/MapAssessmentDrawer";
 //import AssessmentHeading from "components/AssessmentHeading";
-import GoalHeading from "components/GoalHeading";
+import DimensionHeading from "components/DimensionHeading";
 import IndicatorHeading from "components/IndicatorHeading";
 import MapPageSelectionButton from "components/MapPageSelectionButton";
 import { useUiStore } from "stores/uiStore";
@@ -30,7 +30,7 @@ const MapDrawer = observer((props) => {
   return (
     <>
       <MapPageSelectionButton>
-        {isGoal(assessment) && <GoalHeading goal={assessment} />}
+        {isGoal(assessment) && <DimensionHeading dimension={assessment} />}
         {isIndicator(assessment) && <IndicatorHeading indicator={assessment} />}
       </MapPageSelectionButton>
       <Divider />

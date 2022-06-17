@@ -23,10 +23,10 @@ const MapPageSelectionButton = ({ children }) => {
   const options = [];
 
   if (isLoaded) {
-    getGoals().map((goal) =>
+    getGoals().map((dimension) =>
       options.push(
-        goal,
-        ...getIndicatorsByDimension(goal).filter(
+        dimension,
+        ...getIndicatorsByDimension(dimension).filter(
           (indicator) => !indicator.hideMap
         )
       )
@@ -39,8 +39,8 @@ const MapPageSelectionButton = ({ children }) => {
       options={options}
       getOptionLabel={getOptionLabel}
       getOptionGroup={getOptionGroup}
-      modalTitle="Select a goal or indicator"
-      modalDescription="Select the goal or indicator to display on the map."
+      modalTitle="Select a dimension or indicator"
+      modalDescription="Select the dimension or indicator to display on the map."
       onSelect={(assessment) => {
         router.push(mapAssessmentUrl({ assessment }));
       }}

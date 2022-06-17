@@ -1,14 +1,14 @@
 import { Typography } from "@mui/material";
 
-const GoalHeading = ({ goal }) => (
+const DimensionHeading = ({ dimension }) => (
   <>
     <Typography variant="overline" color="textSecondary">
-      SDG {goal.number}
+      {dimension.number}
     </Typography>
     <Typography fontWeight={500} variant="h4">
-      {goal.label}
+      {dimension.label}
     </Typography>
   </>
 );
 
-export default GoalHeading;
+export default DimensionHeading;
