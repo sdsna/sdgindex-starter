@@ -49,6 +49,7 @@ Map.getInitialProps = async ({ query }) => {
       label: dimension.label,
       type: dimension.type,
       description: dimension.description,
+      category: dimension.category,
       indicators: getIndicatorsByDimension(dimension).map((indicator) => ({
         id: indicator.id,
         slug: indicator.slug,
