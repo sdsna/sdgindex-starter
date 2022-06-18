@@ -22,7 +22,7 @@ const setUpAssessments = () => {
   codebook.forEach((row) => {
     addIndicator({
       id: row.indicator,
-      goalNumber: row.SDG,
+      goalNumber: row.sdg,
       labelWithUnit: row.label,
       longTermObjective: roundNumber(row["optimum"], 2),
       longTermObjectiveReason: row.bestjust,

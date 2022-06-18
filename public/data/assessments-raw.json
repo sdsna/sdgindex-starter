@@ -147,6 +147,7 @@
     {
       "id": "sdg1_wpc",
       "dataId": 1,
+      "goalNumber": 1,
       "slug": "ratio-de-la-population-pauvre-disposant-de-moins-de-1-90-par-jour",
       "label": "Ratio de la population pauvre disposant de moins de $ 1,90 par jour",
       "unit": "% population",
@@ -163,6 +164,7 @@
     {
       "id": "sdg1_320pov",
       "dataId": 2,
+      "goalNumber": 1,
       "slug": "ratio-de-la-population-pauvre-disposant-de-moins-de-3-20-par-jour",
       "label": "Ratio de la population pauvre disposant de moins de $ 3,20 par jour",
       "unit": "% population",
@@ -179,6 +181,7 @@
     {
       "id": "sdg1_natpov",
       "dataId": 3,
+      "goalNumber": 1,
       "slug": "proportion-de-la-population-vivant-sous-le-seuil-de-pauvrete-national",
       "label": "Proportion de la population vivant sous le seuil de pauvreté national ",
       "unit": null,
@@ -195,6 +198,7 @@
     {
       "id": "sdg2_undernsh",
       "dataId": 4,
+      "goalNumber": 2,
       "slug": "prevalence-de-la-sous-alimentation",
       "label": "Prévalence de la sous-alimentation",
       "unit": "%",
@@ -211,6 +215,7 @@
     {
       "id": "sdg2_stunting",
       "dataId": 5,
+      "goalNumber": 2,
       "slug": "prevalence-du-retard-de-croissance-taille-age-chez-les-enfants-de-moins-de-5-ans",
       "label": "Prévalence du retard de croissance (taille/ âge) chez les enfants de moins de 5 ans",
       "unit": "%",
@@ -230,6 +235,7 @@
     {
       "id": "sdg2_wasting",
       "dataId": 6,
+      "goalNumber": 2,
       "slug": "prevalence-de-l-emaciation-chez-les-enfants-de-moins-de-5-ans",
       "label": "Prévalence de l'émaciation chez les enfants de moins de 5 ans",
       "unit": "%",
@@ -249,6 +255,7 @@
     {
       "id": "sdg2_obesity",
       "dataId": 7,
+      "goalNumber": 2,
       "slug": "prevalence-de-l-obesite-imc-30",
       "label": "Prévalence de l'obésité, IMC ≥ 30",
       "unit": "% de la population adulte",
@@ -265,6 +272,7 @@
     {
       "id": "sdg2_crlyld",
       "dataId": 8,
+      "goalNumber": 2,
       "slug": "rendement-cerealier",
       "label": "Rendement céréalier",
       "unit": "tonnes par hectare de terre récoltée",
@@ -281,6 +289,7 @@
     {
       "id": "sdg2_fertilizer",
       "dataId": 9,
+      "goalNumber": 2,
       "slug": "consommation-d-engrais",
       "label": "Consommation d'engrais",
       "unit": "kg par hectare de terre arable",
@@ -297,6 +306,7 @@
     {
       "id": "sdg3_matmort",
       "dataId": 10,
+      "goalNumber": 3,
       "slug": "taux-de-mortalite-maternelle",
       "label": "Taux de mortalité maternelle",
       "unit": "pour 100 000 naissances vivantes",
@@ -313,6 +323,7 @@
     {
       "id": "sdg3_neonat",
       "dataId": 11,
+      "goalNumber": 3,
       "slug": "taux-de-mortalite-neonatale",
       "label": "Taux de mortalité néonatale",
       "unit": "pour 1 000 naissances vivantes",
@@ -329,6 +340,7 @@
     {
       "id": "sdg3_u5mort",
       "dataId": 12,
+      "goalNumber": 3,
       "slug": "taux-de-mortalite-moins-de-5-ans",
       "label": "Taux de mortalité, moins de 5 ans",
       "unit": "pour 1 000 naissances vivantes",
@@ -345,6 +357,7 @@
     {
       "id": "sdg3_tb",
       "dataId": 13,
+      "goalNumber": 3,
       "slug": "incidence-de-la-tuberculose",
       "label": "Incidence de la tuberculose",
       "unit": "pour 100 000 habitants",
@@ -361,6 +374,7 @@
     {
       "id": "sdg3_hiv",
       "dataId": 14,
+      "goalNumber": 3,
       "slug": "nouvelles-infections-au-vih",
       "label": "Nouvelles infections au VIH",
       "unit": "pour 1 000 habitants non infectés",
@@ -377,6 +391,7 @@
     {
       "id": "sdg3_art",
       "dataId": 15,
+      "goalNumber": 3,
       "slug": "personnes-vivant-avec-le-vih-recevant-une-therapie-antiretrovirale",
       "label": "Personnes vivant avec le VIH recevant une thérapie antirétrovirale",
       "unit": "%",
@@ -393,6 +408,7 @@
     {
       "id": "sdg3_malatreat",
       "dataId": 16,
+      "goalNumber": 3,
       "slug": "proportion-d-enfants-de-moins-de-5-ans-ayant-de-la-fievre-qui-sont-traites-avec-des-medicaments-antipaludiques-appropries",
       "label": "Proportion d'enfants de moins de 5 ans ayant de la fièvre, qui sont traités avec des médicaments antipaludiques appropriés",
       "unit": "%",
@@ -409,6 +425,7 @@
     {
       "id": "sdg3_malmort",
       "dataId": 17,
+      "goalNumber": 3,
       "slug": "taux-de-mortalite-du-paludisme",
       "label": "Taux de mortalité du paludisme",
       "unit": "pour 100 000 habitants",
@@ -425,6 +442,7 @@
     {
       "id": "sdg3_ntds",
       "dataId": 18,
+      "goalNumber": 3,
       "slug": "couverture-de-la-chimiotherapie-preventive-pour-les-maladies-tropicales-negligees",
       "label": "Couverture de la chimiothérapie préventive pour les maladies tropicales négligées",
       "unit": "%",
@@ -441,6 +459,7 @@
     {
       "id": "sdg3_ncds",
       "dataId": 19,
+      "goalNumber": 3,
       "slug": "taux-de-mortalite-normalise-par-age-du-a-une-maladie-cardiovasculaire-un-cancer-un-diabete-ou-une-maladie-respiratoire-chronique-chez-les-adultes-ages-de-30-a-70-ans",
       "label": "Taux de mortalité normalisé par âge dû à une maladie cardiovasculaire, un cancer, un diabète ou une maladie respiratoire chronique chez les adultes âgés de 30 à 70 ans",
       "unit": "%",
@@ -457,6 +476,7 @@
     {
       "id": "sdg3_pollmort",
       "dataId": 20,
+      "goalNumber": 3,
       "slug": "taux-de-mortalite-standardise-par-l-age-attribuable-a-la-pollution-atmospherique-domestique-et-a-la-pollution-atmospherique-ambiante",
       "label": "Taux de mortalité (standardisé par l'âge) attribuable à la pollution atmosphérique domestique et à la pollution atmosphérique ambiante",
       "unit": "pour 100 000 habitants",
@@ -473,6 +493,7 @@
     {
       "id": "sdg3_traffic",
       "dataId": 21,
+      "goalNumber": 3,
       "slug": "taux-de-mortalite-routiere",
       "label": "Taux de mortalité routière",
       "unit": "pour 100 000 habitants",
@@ -489,6 +510,7 @@
     {
       "id": "sdg3_lifee",
       "dataId": 22,
+      "goalNumber": 3,
       "slug": "esperance-de-vie-a-la-naissance",
       "label": "Espérance de vie à la naissance",
       "unit": "années",
@@ -505,6 +527,7 @@
     {
       "id": "sdg3_fertility",
       "dataId": 23,
+      "goalNumber": 3,
       "slug": "taux-de-fecondite-des-adolescents",
       "label": "Taux de fécondité des adolescents",
       "unit": "naissances pour 1 000 femmes âgées de 15 à 19 ans",
@@ -521,6 +544,7 @@
     {
       "id": "sdg3_births",
       "dataId": 24,
+      "goalNumber": 3,
       "slug": "naissances-assistees-par-du-personnel-de-sante-qualifie",
       "label": "Naissances assistées par du personnel de santé qualifié",
       "unit": "%",
@@ -537,6 +561,7 @@
     {
       "id": "sdg3_vac",
       "dataId": 25,
+      "goalNumber": 3,
       "slug": "nourrissons-survivants-ayant-recu-2-vaccins-recommandes-par-l-oms",
       "label": "Nourrissons survivants ayant reçu 2 vaccins recommandés par l'OMS",
       "unit": "%",
@@ -553,6 +578,7 @@
     {
       "id": "sdg3_uhc",
       "dataId": 26,
+      "goalNumber": 3,
       "slug": "indice-de-couverture-universelle-de-la-sante-chu-de-la-couverture-des-services",
       "label": "Indice de couverture universelle de la santé (CHU) de la couverture des services",
       "unit": "pire 0-100 meilleur",
@@ -569,6 +595,7 @@
     {
       "id": "sdg4_primary",
       "dataId": 27,
+      "goalNumber": 4,
       "slug": "taux-net-de-scolarisation-dans-le-primaire",
       "label": "Taux net de scolarisation dans le primaire",
       "unit": "%",
@@ -585,6 +612,7 @@
     {
       "id": "sdg4_second",
       "dataId": 28,
+      "goalNumber": 4,
       "slug": "taux-d-achevement-du-premier-cycle-du-secondaire",
       "label": "Taux d’achèvement du premier cycle du secondaire",
       "unit": "%",
@@ -601,6 +629,7 @@
     {
       "id": "sdg4_schlyrs",
       "dataId": 29,
+      "goalNumber": 4,
       "slug": "nombre-moyen-d-annees-de-scolarite",
       "label": "Nombre moyen d'années de scolarité",
       "unit": "années",
@@ -617,6 +646,7 @@
     {
       "id": "sdg4_literacy",
       "dataId": 30,
+      "goalNumber": 4,
       "slug": "taux-d-alphabetisation",
       "label": "Taux d'alphabétisation",
       "unit": "% de la population âgée de 15 à 24 ans",
@@ -633,6 +663,7 @@
     {
       "id": "sdg5_familypl",
       "dataId": 31,
+      "goalNumber": 5,
       "slug": "demande-de-planification-familiale-satisfaite-par-des-methodes-modernes",
       "label": "Demande de planification familiale satisfaite par des méthodes modernes",
       "unit": "% des femmes âgées de 15 à 49 ans",
@@ -652,6 +683,7 @@
     {
       "id": "sdg5_edat",
       "dataId": 32,
+      "goalNumber": 5,
       "slug": "ratio-du-nombre-moyen-d-annees-d-etudes-des-femmes-par-rapport-a-celui-des-hommes",
       "label": "Ratio du nombre moyen d'années d'études des femmes par rapport à celui des hommes",
       "unit": "%",
@@ -668,6 +700,7 @@
     {
       "id": "sdg5_lfpr",
       "dataId": 33,
+      "goalNumber": 5,
       "slug": "ratio-du-taux-d-activite-des-femmes-par-rapport-a-celui-des-hommes",
       "label": "Ratio du taux d'activité des femmes par rapport à celui des hommes",
       "unit": "%",
@@ -684,6 +717,7 @@
     {
       "id": "sdg5_parl",
       "dataId": 34,
+      "goalNumber": 5,
       "slug": "sieges-occupes-par-des-femmes-dans-les-parlements-nationaux",
       "label": "Sièges occupés par des femmes dans les parlements nationaux",
       "unit": "%",
@@ -700,6 +734,7 @@
     {
       "id": "sdg5_minister",
       "dataId": 35,
+      "goalNumber": 5,
       "slug": "femmes-a-des-postes-ministeriels",
       "label": "Femmes à des postes ministériels",
       "unit": "%",
@@ -716,6 +751,7 @@
     {
       "id": "sdg6_water",
       "dataId": 36,
+      "goalNumber": 6,
       "slug": "population-utilisant-au-moins-les-services-de-base-d-eau-potable",
       "label": "Population utilisant au moins les services de base d'eau potable",
       "unit": "%",
@@ -732,6 +768,7 @@
     {
       "id": "sdg6_sanita",
       "dataId": 37,
+      "goalNumber": 6,
       "slug": "population-utilisant-au-moins-les-services-d-assainissement-de-base",
       "label": "Population utilisant au moins les services d'assainissement de base",
       "unit": "%",
@@ -748,6 +785,7 @@
     {
       "id": "sdg6_freshwat",
       "dataId": 38,
+      "goalNumber": 6,
       "slug": "prelevement-d-eau-douce",
       "label": "Prélèvement d'eau douce",
       "unit": "% des ressources en eau douce disponibles",
@@ -764,6 +802,7 @@
     {
       "id": "sdg6_wastewat",
       "dataId": 39,
+      "goalNumber": 6,
       "slug": "eaux-usees-anthropiques-qui-recoivent-un-traitement",
       "label": "Eaux usées anthropiques qui reçoivent un traitement",
       "unit": "%",
@@ -780,6 +819,7 @@
     {
       "id": "sdg6_scarcew",
       "dataId": 40,
+      "goalNumber": 6,
       "slug": "eau-rare-incorporee-dans-les-importations",
       "label": "Eau rare incorporée dans les importations",
       "unit": "m3/capita",
@@ -796,6 +836,7 @@
     {
       "id": "sdg7_elecac",
       "dataId": 41,
+      "goalNumber": 7,
       "slug": "population-ayant-acces-a-l-electricite",
       "label": "Population ayant accès à l'électricité",
       "unit": "%",
@@ -812,6 +853,7 @@
     {
       "id": "sdg7_cleanfuel",
       "dataId": 42,
+      "goalNumber": 7,
       "slug": "population-ayant-acces-a-des-combustibles-et-des-technologies-propres-pour-cuisiner",
       "label": "Population ayant accès à des combustibles et des technologies propres pour cuisiner",
       "unit": "%",
@@ -828,6 +870,7 @@
     {
       "id": "sdg7_co2twh",
       "dataId": 43,
+      "goalNumber": 7,
       "slug": "emissions-de-co2-provenant-de-la-combustion-de-combustibles-pour-l-electricite-et-le-chauffage-par-production-totale-d-electricite",
       "label": "Émissions de CO₂ provenant de la combustion de combustibles pour l’électricité et le chauffage par production totale d’électricité",
       "unit": "MtCO₂/TWh",
@@ -844,6 +887,7 @@
     {
       "id": "sdg7_ren",
       "dataId": 44,
+      "goalNumber": 7,
       "slug": "part-des-energies-renouvelables-dans-l-approvisionnement-total-en-energie-primaire",
       "label": "Part des énergies renouvelables dans l'approvisionnement total en énergie primaire",
       "unit": "%",
@@ -860,6 +904,7 @@
     {
       "id": "sdg7_elecafford",
       "dataId": 45,
+      "goalNumber": 7,
       "slug": "abordabilite-de-l-electricite-pour-les-consommateurs",
       "label": "Abordabilité de l'électricité pour les consommateurs",
       "unit": "échelle de 0 à 100",
@@ -876,6 +921,7 @@
     {
       "id": "sdg8_gdpgrowth",
       "dataId": 46,
+      "goalNumber": 8,
       "slug": "croissance-moyenne-sur-5-ans-du-pib-par-habitant",
       "label": "Croissance moyenne sur 5 ans, du PIB par habitant",
       "unit": "%",
@@ -892,6 +938,7 @@
     {
       "id": "sdg8_empop",
       "dataId": 47,
+      "goalNumber": 8,
       "slug": "ratio-emploi-population",
       "label": "Ratio emploi-population",
       "unit": "%",
@@ -908,6 +955,7 @@
     {
       "id": "sdg8_slavery",
       "dataId": 48,
+      "goalNumber": 8,
       "slug": "victimes-d-esclavage-moderne",
       "label": "Victimes d'esclavage moderne",
       "unit": "pour 1 000 habitants",
@@ -924,6 +972,7 @@
     {
       "id": "sdg8_accounts",
       "dataId": 49,
+      "goalNumber": 8,
       "slug": "adultes-ayant-un-compte-dans-une-banque-ou-une-autre-institution-financiere-ou-aupres-d-un-prestataire-de-services-de-telephonie-mobile",
       "label": "Adultes ayant un compte dans une banque ou une autre institution financière ou auprès d'un prestataire de services de téléphonie mobile",
       "unit": "% de la population âgée de 15 ans ou plus",
@@ -940,6 +989,7 @@
     {
       "id": "sdg8_rights",
       "dataId": 50,
+      "goalNumber": 8,
       "slug": "les-droits-fondamentaux-du-travail-sont-effectivement-garantis",
       "label": "Les droits fondamentaux du travail sont effectivement garantis",
       "unit": "pire 0-1 meilleur",
@@ -956,6 +1006,7 @@
     {
       "id": "sdg9_intuse",
       "dataId": 51,
+      "goalNumber": 9,
       "slug": "population-utilisant-l-internet",
       "label": "Population utilisant l'internet",
       "unit": "%",
@@ -972,6 +1023,7 @@
     {
       "id": "sdg9_mobuse",
       "dataId": 52,
+      "goalNumber": 9,
       "slug": "abonnements-au-haut-debit-mobile",
       "label": "Abonnements au haut débit mobile",
       "unit": "pour 100 habitants",
@@ -988,6 +1040,7 @@
     {
       "id": "sdg9_lpi",
       "dataId": 53,
+      "goalNumber": 9,
       "slug": "indice-de-performance-logistique-qualite-des-infrastructures-liees-au-commerce-et-au-transport",
       "label": "Indice de performance logistique : Qualité des infrastructures liées au commerce et au transport",
       "unit": "pire 1 - 5 meilleur",
@@ -1004,6 +1057,7 @@
     {
       "id": "sdg9_articles",
       "dataId": 54,
+      "goalNumber": 9,
       "slug": "articles-de-revues-scientifiques-et-techniques",
       "label": "Articles de revues scientifiques et techniques",
       "unit": "pour 1 000 habitants",
@@ -1020,6 +1074,7 @@
     {
       "id": "sdg10_gini",
       "dataId": 55,
+      "goalNumber": 10,
       "slug": "coefficient-de-gini",
       "label": "Coefficient de Gini",
       "unit": null,
@@ -1036,6 +1091,7 @@
     {
       "id": "sdg10_palma",
       "dataId": 56,
+      "goalNumber": 10,
       "slug": "ratio-de-palma",
       "label": "Ratio de Palma",
       "unit": null,
@@ -1052,6 +1108,7 @@
     {
       "id": "sdg11_slums",
       "dataId": 57,
+      "goalNumber": 11,
       "slug": "proportion-de-la-population-urbaine-vivant-dans-des-bidonvilles",
       "label": "Proportion de la population urbaine vivant dans des bidonvilles",
       "unit": "%",
@@ -1068,6 +1125,7 @@
     {
       "id": "sdg11_pm25",
       "dataId": 58,
+      "goalNumber": 11,
       "slug": "concentration-moyenne-annuelle-de-particules-d-un-diametre-inferieur-a-2-5-microns-pm2-5",
       "label": "Concentration moyenne annuelle de particules d'un diamètre inférieur à 2,5 microns (PM2,5)",
       "unit": "μg/m3",
@@ -1084,6 +1142,7 @@
     {
       "id": "sdg11_pipedwat",
       "dataId": 59,
+      "goalNumber": 11,
       "slug": "acces-a-une-source-d-eau-amelioree-canalisee",
       "label": "Accès à une source d'eau améliorée, canalisée",
       "unit": "% de la population urbaine",
@@ -1100,6 +1159,7 @@
     {
       "id": "sdg12_ewaste",
       "dataId": 60,
+      "goalNumber": 12,
       "slug": "dechets-electroniques-generes",
       "label": "Déchets électroniques générés",
       "unit": "kg/habitant",
@@ -1116,6 +1176,7 @@
     {
       "id": "sdg12_so2prod",
       "dataId": 61,
+      "goalNumber": 12,
       "slug": "emissions-de-so2-basees-sur-la-production",
       "label": "Émissions de SO2 basées sur la production",
       "unit": "kg/habitant",
@@ -1132,6 +1193,7 @@
     {
       "id": "sdg12_so2import",
       "dataId": 62,
+      "goalNumber": 12,
       "slug": "emissions-de-so2-importees",
       "label": "Émissions de SO2 importées",
       "unit": "kg/habitant",
@@ -1148,6 +1210,7 @@
     {
       "id": "sdg12_nprod",
       "dataId": 63,
+      "goalNumber": 12,
       "slug": "emissions-d-azote-dues-a-la-production",
       "label": "Émissions d’azote dues à la production",
       "unit": "kg/habitant",
@@ -1164,6 +1227,7 @@
     {
       "id": "sdg12_nimport",
       "dataId": 64,
+      "goalNumber": 12,
       "slug": "emissions-d-azote-incorporees-dans-les-importations",
       "label": "Émissions d’azote incorporées dans les importations",
       "unit": "kg/habitant",
@@ -1180,6 +1244,7 @@
     {
       "id": "sdg12_explastic",
       "dataId": 65,
+      "goalNumber": 12,
       "slug": "exportations-de-dechets-plastiques",
       "label": "Exportations de déchets plastiques",
       "unit": "kg/habitant",
@@ -1196,6 +1261,7 @@
     {
       "id": "sdg13_co2gcp",
       "dataId": 66,
+      "goalNumber": 13,
       "slug": "emissions-de-co2-provenant-de-la-combustion-de-combustibles-fossiles-et-de-la-production-de-ciment",
       "label": "Émissions de CO₂ provenant de la combustion de combustibles fossiles et de la production de ciment",
       "unit": "tCO2/habitant",
@@ -1212,6 +1278,7 @@
     {
       "id": "sdg13_co2import",
       "dataId": 67,
+      "goalNumber": 13,
       "slug": "emissions-de-co2-importees-ajustees-en-fonction-de-la-technologie",
       "label": "Émissions de CO2 importées, ajustées en fonction de la technologie",
       "unit": "tCO2/habitant",
@@ -1228,6 +1295,7 @@
     {
       "id": "sdg13_co2export",
       "dataId": 68,
+      "goalNumber": 13,
       "slug": "emissions-de-co2-incorporees-dans-les-exportations-de-combustibles-fossiles",
       "label": "Émissions de CO2 incorporées dans les exportations de combustibles fossiles",
       "unit": "kg/habitant",
@@ -1244,6 +1312,7 @@
     {
       "id": "sdg14_cpma",
       "dataId": 69,
+      "goalNumber": 14,
       "slug": "superficie-moyenne-protegee-dans-les-sites-marins-importants-pour-la-biodiversite",
       "label": "Superficie moyenne protégée dans les sites marins importants pour la biodiversité",
       "unit": "%",
@@ -1260,6 +1329,7 @@
     {
       "id": "sdg14_cleanwat",
       "dataId": 70,
+      "goalNumber": 14,
       "slug": "indice-de-sante-des-oceans-score-des-eaux-propres",
       "label": "Indice de santé des océans : Score des eaux propres",
       "unit": "pire 0-100 meilleur",
@@ -1276,6 +1346,7 @@
     {
       "id": "sdg14_trawl",
       "dataId": 71,
+      "goalNumber": 14,
       "slug": "poissons-captures-par-chalutage",
       "label": "Poissons capturés par chalutage",
       "unit": "%",
@@ -1292,6 +1363,7 @@
     {
       "id": "sdg14_discard",
       "dataId": 72,
+      "goalNumber": 14,
       "slug": "poissons-peches-qui-sont-ensuite-rejetes",
       "label": "Poissons pêchés qui sont ensuite rejetés",
       "unit": "%",
@@ -1308,6 +1380,7 @@
     {
       "id": "sdg14_biomar",
       "dataId": 73,
+      "goalNumber": 14,
       "slug": "menaces-sur-la-biodiversite-marine-representees-par-les-importations",
       "label": "Menaces sur la biodiversité marine représentées par les importations",
       "unit": "par million d'habitants",
@@ -1324,6 +1397,7 @@
     {
       "id": "sdg15_cpta",
       "dataId": 74,
+      "goalNumber": 15,
       "slug": "superficie-moyenne-protegee-dans-les-sites-terrestres-importants-pour-la-biodiversite",
       "label": "Superficie moyenne protégée dans les sites terrestres importants pour la biodiversité",
       "unit": "%",
@@ -1340,6 +1414,7 @@
     {
       "id": "sdg15_cpfa",
       "dataId": 75,
+      "goalNumber": 15,
       "slug": "superficie-moyenne-protegee-dans-les-sites-d-eau-douce-importants-pour-la-biodiversite",
       "label": "Superficie moyenne protégée dans les sites d’eau douce importants pour la biodiversité",
       "unit": "%",
@@ -1356,6 +1431,7 @@
     {
       "id": "sdg15_redlist",
       "dataId": 76,
+      "goalNumber": 15,
       "slug": "indice-de-survie-des-especes-de-la-liste-rouge",
       "label": "Indice de survie des espèces de la liste rouge",
       "unit": "pire 0-1 meilleur",
@@ -1372,6 +1448,7 @@
     {
       "id": "sdg15_forchg",
       "dataId": 77,
+      "goalNumber": 15,
       "slug": "deforestation-permanente",
       "label": "Déforestation permanente",
       "unit": "% annuel moyen sur 5 ans",
@@ -1388,6 +1465,7 @@
     {
       "id": "sdg15_biofrwter",
       "dataId": 78,
+      "goalNumber": 15,
       "slug": "menaces-sur-la-biodiversite-terrestre-et-d-eau-douce-representees-par-les-importations",
       "label": "Menaces sur la biodiversité terrestre et d'eau douce représentées par les importations",
       "unit": "par million d'habitants",
@@ -1404,6 +1482,7 @@
     {
       "id": "sdg16_conflict",
       "dataId": 79,
+      "goalNumber": 16,
       "slug": "absence-de-conflit-arme",
       "label": "Absence de conflit armé",
       "unit": "pire 0-100 meilleur",
@@ -1420,6 +1499,7 @@
     {
       "id": "sdg16_detain",
       "dataId": 80,
+      "goalNumber": 16,
       "slug": "detenus-non-condamnes",
       "label": "Détenus non condamnés",
       "unit": "% de la population carcérale",
@@ -1436,6 +1516,7 @@
     {
       "id": "sdg16_prs",
       "dataId": 81,
+      "goalNumber": 16,
       "slug": "droits-de-propriete",
       "label": "Droits de propriété",
       "unit": "pires 1-7 meilleur",
@@ -1452,6 +1533,7 @@
     {
       "id": "sdg16_u5reg",
       "dataId": 82,
+      "goalNumber": 16,
       "slug": "enregistrement-des-naissances-aupres-de-l-autorite-civile",
       "label": "Enregistrement des naissances auprès de l'autorité civile",
       "unit": "% des enfants de moins de 5 ans",
@@ -1468,6 +1550,7 @@
     {
       "id": "sdg16_cpi",
       "dataId": 83,
+      "goalNumber": 16,
       "slug": "indice-de-perception-de-la-corruption",
       "label": "Indice de perception de la corruption",
       "unit": "pire 0-100 meilleur",
@@ -1484,6 +1567,7 @@
     {
       "id": "sdg16_afrgoveff",
       "dataId": 84,
+      "goalNumber": 16,
       "slug": "responsabilite-transparence",
       "label": "Responsabilité & Transparence",
       "unit": "pire 0-100 meilleur",
@@ -1500,6 +1584,7 @@
     {
       "id": "sdg16_clabor",
       "dataId": 85,
+      "goalNumber": 16,
       "slug": "enfants-impliques-dans-le-travail-des-enfants",
       "label": "Enfants impliqués dans le travail des enfants",
       "unit": "% de la population âgée de 5 à 14 ans",
@@ -1516,6 +1601,7 @@
     {
       "id": "sdg16_rsf",
       "dataId": 86,
+      "goalNumber": 16,
       "slug": "indice-de-liberte-de-la-presse",
       "label": "Indice de liberté de la presse",
       "unit": "meilleur 0-100 pire",
@@ -1532,6 +1618,7 @@
     {
       "id": "sdg16_justice",
       "dataId": 87,
+      "goalNumber": 16,
       "slug": "acces-a-la-justice-et-abordabilite",
       "label": "Accès à la justice et abordabilité",
       "unit": "pire 0-1 meilleur",
@@ -1548,6 +1635,7 @@
     {
       "id": "sdg17_afrtaxrev",
       "dataId": 88,
+      "goalNumber": 17,
       "slug": "recettes-fiscales",
       "label": "Recettes fiscales",
       "unit": "% du PIB",
@@ -1564,6 +1652,7 @@
     {
       "id": "sdg17_govex",
       "dataId": 89,
+      "goalNumber": 17,
       "slug": "depenses-publiques-de-sante-et-d-education",
       "label": "Dépenses publiques de Santé et d'Education",
       "unit": "% du PIB",
@@ -1580,6 +1669,7 @@
     {
       "id": "sdg17_cohaven",
       "dataId": 90,
+      "goalNumber": 17,
       "slug": "score-des-paradis-fiscaux-des-entreprises",
       "label": "Score des paradis fiscaux des entreprises",
       "unit": "meilleur 0-100 pire",
@@ -1596,6 +1686,7 @@
     {
       "id": "sdg17_statperf",
       "dataId": 91,
+      "goalNumber": 17,
       "slug": "indice-de-performance-statistique",
       "label": "Indice de performance statistique",
       "unit": "pire 0-100 meilleur",
