@@ -7,5 +7,4 @@ module.exports = {
   ),
   DATA_SHEET: "all Data",
   CODEBOOK_SHEET: "Benin Codebook",
-  TIMESERIES_SHEET: "Raw Trend Data",
 };
