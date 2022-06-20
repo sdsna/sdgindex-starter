@@ -46,6 +46,7 @@ Map.getInitialProps = async ({ query }) => {
 
   return {
     dimension: {
+      id: dimension.id,
       label: dimension.label,
       type: dimension.type,
       description: dimension.description,
