@@ -18,7 +18,7 @@ const downloads = [
   {
     label: "Benin Sustainable Development Report",
     type: "PDF",
-    // image: "full-report.webp",
+    image: "full-report.webp",
     url: "/TODO",
   },
   {
