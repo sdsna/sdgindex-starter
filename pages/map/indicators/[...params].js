@@ -1,37 +1,51 @@
-import { Box } from "@mui/material";
 import MapLayout from "layouts/MapLayout";
 import MapDrawer from "drawers/MapDrawer";
 import MapControls from "components/MapControls";
-// import { getRatingColor, getRatingLabel } from "helpers/ratings";
-// import { mapAssessmentUrl } from "helpers/routing";
 import { isRelevantIndicatorForRegion } from "@sdgindex/data/assessments";
-// import { getValueColor, valueToScore } from "helpers/scores";
-import { getDepartmentFill, LEGEND } from "helpers/legendForScore";
-import { getTooltipTextForScore } from "helpers/getTooltipTextForScore";
+import { getValueColor, valueToScore } from "helpers/scores";
+import { getTimeseriesValue, hasTimeseries } from "@sdgindex/data/timeseries";
+
+const getValueForYear = (country, year) => {
+  if (year === "latest") return country.value;
+  if (!hasTimeseries(country)) return null;
+  return getTimeseriesValue(country, year);
+};
+
+const formatNumberAsText = (
+  number,
+  decimals = 2,
+  fallback = "Value unavailable"
+) => {
+  if (number != null) return number.toFixed(decimals);
+
+  return fallback;
+};
+
+const Layout = MapLayout;
+const layoutProps = ({ assessment, departments, dimensions }) => ({
+  assessment,
+  dimensions,
+  stroke: "#cacaca",
+  departments,
+  getDepartmentFill: (department, year) => {
+    const value = getValueForYear(department, year);
+    return getValueColor(
+      valueToScore(value, assessment.longTermObjective, assessment.lowerBound)
+    );
+  },
+  getTooltipText: (department, year) =>
+    formatNumberAsText(getValueForYear(department, year)),
+  Drawer: <MapDrawer assessment={assessment} dimension={null} />,
+});
 
 const IndicatorMap = ({ zoomIn, zoomOut, resetZoom }) => (
-  <Box>
-    <MapControls
-      links={{}}
-      zoomIn={zoomIn}
-      zoomOut={zoomOut}
-      resetZoom={resetZoom}
-    />
-  </Box>
+  <MapControls
+    links={{}}
+    zoomIn={zoomIn}
+    zoomOut={zoomOut}
+    resetZoom={resetZoom}
+  />
 );
-
-IndicatorMap.Layout = MapLayout;
-IndicatorMap.layoutProps = ({ dimension, departments }) => ({
-  assessment: dimension,
-  departments: departments.map((department) => ({
-    fill: getDepartmentFill(department),
-    ...department,
-  })),
-  getTooltipText: getTooltipTextForScore,
-  Drawer: (
-    <MapDrawer assessment={dimension} dimension="score" legend={LEGEND} />
-  ),
-});
 
 import {
   findIndicatorBySlug,
@@ -39,56 +53,51 @@ import {
   loadData,
   getGoals,
 } from "@sdgindex/data";
-// import { getRating } from "@sdgindex/data/observations";
-// import { getValue } from "@sdgindex/data/observations";
-import { isCountry } from "@sdgindex/data/regions";
+import { getRating, getValue } from "@sdgindex/data/observations";
 
 IndicatorMap.getInitialProps = async ({ query }) => {
-  await loadData({ timeseries: true });
+  await loadData();
 
   const { params } = query;
   const [assessmentSlug] = params;
 
-  const dimension = findIndicatorBySlug(assessmentSlug.toLowerCase());
-  const goals = getGoals();
+  const assessment = findIndicatorBySlug(assessmentSlug.toLowerCase());
+  const dimensions = getGoals();
 
-  if (dimension.hideMap)
-    throw Error(
-      `The indicator ${dimension.label} cannot be displayed on the map.`
-    );
-
-  const dimensionProps = {
-    id: dimension.id,
-    slug: dimension.slug,
-    label: dimension.label,
-    unit: dimension.unit,
-    description: dimension.description,
-    goalNumber: dimension.goalNumber,
-    longTermObjective: dimension.longTermObjective,
-    longTermObjectiveReason: dimension.longTermObjectiveReason,
-    lowerBound: dimension.lowerBound,
-    link: dimension.link,
-    reference: dimension.reference,
-    type: dimension.type,
+  const assessmentProps = {
+    id: assessment.id,
+    slug: assessment.slug,
+    label: assessment.label,
+    unit: assessment.unit,
+    description: assessment.description,
+    goalNumber: assessment.goalNumber,
+    longTermObjective: assessment.longTermObjective,
+    longTermObjectiveReason: assessment.longTermObjectiveReason,
+    lowerBound: assessment.lowerBound,
+    link: assessment.link,
+    reference: assessment.reference,
+    type: assessment.type,
   };
 
-  const departments = getRegionsWithAssessment(dimension)
-    .filter(isCountry) // Only keep relevant departments for the assessment
-    .filter((department) =>
-      isRelevantIndicatorForRegion(dimension, department)
-    );
+  const departments = getRegionsWithAssessment(assessment).filter(
+    (department) => isRelevantIndicatorForRegion(assessment, department)
+  );
+
+  departments.forEach((department) => {
+    department.value = getValue(department);
+  });
 
   return {
-    goals: goals.map((goal) => ({
-      id: goal.id,
-      number: goal.number,
-      type: goal.type,
+    dimensions: dimensions.map((dimension) => ({
+      id: dimension.id,
+      number: dimension.number,
+      type: dimension.type,
     })),
-    dimension: dimensionProps,
+    assessment: assessmentProps,
     departments: departments.map((department) => ({
       id: department.id,
       name: department.name,
-      // rating: getRating(country),
+      rating: getRating(department),
       value: department.value,
       region: department.region,
       type: department.type,
@@ -96,4 +105,6 @@ IndicatorMap.getInitialProps = async ({ query }) => {
   };
 };
 
+IndicatorMap.Layout = Layout;
+IndicatorMap.layoutProps = layoutProps;
 export default IndicatorMap;
