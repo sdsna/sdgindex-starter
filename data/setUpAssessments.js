@@ -19,27 +19,29 @@ const setUpAssessments = () => {
   });
 
   /* Extract Indicators */
-  codebook.forEach((row) => {
-    addIndicator({
-      id: row.indicator,
-      goalNumber: row.sdg,
-      labelWithUnit: row.label,
-      longTermObjective: roundNumber(row["optimum"], 2),
-      longTermObjectiveReason: row.bestjust,
-      lowerBound: roundNumber(row["lower_bound"], 2),
-      referenceYear: row.Reference_Year,
-      reference: row.Source.trim(),
-      hasTrend: row.trend === "yes",
-      link: row.dwldlink.trim(),
-      description: row.Description.trim(),
+  codebook
+    .filter((row) => row.africa === "yes")
+    .forEach((row) => {
+      addIndicator({
+        id: row.indicator,
+        goalNumber: row.sdg,
+        labelWithUnit: row.label,
+        longTermObjective: roundNumber(row["optimum"], 2),
+        longTermObjectiveReason: row.bestjust,
+        lowerBound: roundNumber(row["lower_bound"], 2),
+        referenceYear: row.Reference_Year,
+        reference: row.Source.trim(),
+        hasTrend: row.trend === "yes",
+        link: row.dwldlink.trim(),
+        description: row.Description.trim(),
+      });
     });
-  });
 
   // For specific indicators, timeseries are based on modeled data
   const modeledTimeseries = {
-    sdg2_stunting: "sdg2_stunting",
-    sdg2_wasting: "sdg2_wasting",
-    sdg5_familypl: "sdg5_familypl",
+    sdg2_stunting: "sdg2_stuntihme",
+    sdg2_wasting: "sdg2_wasteihme",
+    sdg5_familypl: "sdg5_fplmodel",
   };
 
   // Set hasModeledTimeseries=true and add metadata about the modeled data to
