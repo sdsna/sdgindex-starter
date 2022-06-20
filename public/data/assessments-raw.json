@@ -229,8 +229,8 @@
       "description": "The percentage of children up to the age of 5 years that are stunted, measured as the percentage that fall below minus two standard deviations from the median height for their age, according to the WHO Child Growth Standards. UNICEF et al. (2016) report an average prevalence of wasting in high-income countries of 2.58%. We assumed this value for high-income countries with missing data.",
       "type": "indicator",
       "hasModeledTimeseries": true,
-      "modeledTimeseriesId": "sdg2_stunting",
-      "modeledTimeseriesLink": "http://data.worldbank.org/indicator/SH.STA.STNT.ZS"
+      "modeledTimeseriesId": "sdg2_stuntihme",
+      "modeledTimeseriesLink": "http://www.healthdata.org/gbd/2019"
     },
     {
       "id": "sdg2_wasting",
@@ -249,8 +249,8 @@
       "description": "The percentage of children up to the age of 5 years whose weight falls below minus two standard deviations from the median weight for their age, according to the WHO Child Growth Standards. UNICEF et al. (2016) report an average prevalence of wasting in high-income countries of 0.75%. We assumed this value for high-income countries with missing data.",
       "type": "indicator",
       "hasModeledTimeseries": true,
-      "modeledTimeseriesId": "sdg2_wasting",
-      "modeledTimeseriesLink": "http://data.worldbank.org/indicator/SH.STA.WAST.ZS"
+      "modeledTimeseriesId": "sdg2_wasteihme",
+      "modeledTimeseriesLink": "http://www.healthdata.org/gbd/2019"
     },
     {
       "id": "sdg2_obesity",
@@ -677,8 +677,8 @@
       "description": "The percentage of women of reproductive age whose demand for family planning has been met using modern methods of contraception.",
       "type": "indicator",
       "hasModeledTimeseries": true,
-      "modeledTimeseriesId": "sdg5_familypl",
-      "modeledTimeseriesLink": "https://unstats.un.org/sdgs/indicators/database/"
+      "modeledTimeseriesId": "sdg5_fplmodel",
+      "modeledTimeseriesLink": "https://www.un.org/development/desa/pd/data/family-planning-indicators"
     },
     {
       "id": "sdg5_edat",
