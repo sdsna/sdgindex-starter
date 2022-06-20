@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   id="svg4"
+   sodipodi:docname="value.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2303"
+     inkscape:window-height="1321"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="12"
+     inkscape:cy="12"
+     inkscape:window-x="89"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="text832"
+     inkscape:document-rotation="0" />
+  <g
+     style="font-size:12px;line-height:1;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;text-align:end;letter-spacing:0px;word-spacing:0px;direction:rtl;text-anchor:end"
+     id="text832">
+    <path
+       id="path831"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold Condensed'"
+       d="M 0.57421875,7.9465523 H 2.1152344 L 2.9296875,13.829365 3.7441406,7.9465523 H 5.2851562 L 3.7148438,16.466084 H 2.1445313 Z" />
+    <path
+       id="path833"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold Condensed'"
+       d="M 6.9199219,7.9465523 H 7.9394531 L 9.9726563,16.466084 H 8.53125 L 7.4296875,10.882099 6.328125,16.466084 H 4.8867187 Z M 6.2695312,13.78249 h 2.3203126 v 1.359375 H 6.2695312 Z" />
+    <path
+       id="path835"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold Condensed'"
+       d="m 10.617188,7.9465523 h 1.453125 v 8.5195317 h -1.453125 z m 0.597656,7.1249997 h 3.070312 v 1.394532 h -3.070312 z" />
+    <path
+       id="path837"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold Condensed'"
+       d="m 16.751953,16.553974 q -0.632812,0 -1.095703,-0.251953 Q 15.199219,16.044209 14.958984,15.56374 14.71875,15.077412 14.71875,14.403584 V 7.9465523 h 1.458984 v 6.4980467 q 0,0.310547 0.152344,0.486328 0.152344,0.169922 0.421875,0.169922 0.275391,0 0.427734,-0.169922 0.158204,-0.175781 0.158204,-0.486328 V 7.9465523 h 1.458984 v 6.4570317 q 0,0.673828 -0.246094,1.160156 -0.240234,0.480469 -0.703125,0.738281 -0.457031,0.251953 -1.095703,0.251953 z" />
+    <path
+       id="path839"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold Condensed'"
+       d="m 19.640625,7.9465523 h 1.453125 v 8.5195317 h -1.453125 z m 0.644531,7.1015627 h 3.140625 v 1.417969 h -3.140625 z m 0,-3.521485 h 2.847656 v 1.41211 h -2.847656 z m 0,-3.5800777 h 3.140625 V 9.364521 h -3.140625 z" />
+  </g>
+</svg>
