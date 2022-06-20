@@ -1,4 +1,4 @@
-// import Link from "next/link";
+import Link from "next/link";
 import { Box, ButtonBase, Divider } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import DrawerSection from "components/DrawerSection";
@@ -7,7 +7,7 @@ import DrawerHeading from "components/DrawerHeading";
 import DrawerText from "components/DrawerText";
 import MapLegend from "components/MapLegend";
 import MapLegendItem from "components/MapLegendItem";
-//import { mapAssessmentUrl } from "helpers/routing";
+import { mapAssessmentUrl } from "helpers/routing";
 import {
   isGoal,
   //isIndicator,
@@ -40,11 +40,24 @@ const DimensionInfo = ({ dimension, indicators }) => {
       </DrawerSection>
       <DrawerSection>
         <DrawerHeading>Indicators</DrawerHeading>
-        <Box marginX={-0.5}>
+        {/* <Box marginX={-0.5}>
           {indicators.map((indicator, key) => (
             <IndicatorButton key={key}>
               <DrawerText>{indicator.label}</DrawerText>
             </IndicatorButton>
+          ))}
+        </Box> */}
+        <Box marginX={-0.5}>
+          {indicators.map((indicator) => (
+            <Link
+              key={indicator.id}
+              href={mapAssessmentUrl({ assessment: indicator })}
+              passHref
+            >
+              <IndicatorButton disabled={indicator.hideMap}>
+                <DrawerText>{indicator.label}</DrawerText>
+              </IndicatorButton>
+            </Link>
           ))}
         </Box>
       </DrawerSection>
