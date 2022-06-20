@@ -1,6 +1,6 @@
 import { observer } from "mobx-react-lite";
 import { Divider } from "@mui/material";
-//import MapCountryDrawer from "drawers/MapCountryDrawer";
+import MapDepartmentDrawer from "drawers/MapDepartmentDrawer";
 import MapAssessmentDrawer from "drawers/MapAssessmentDrawer";
 //import AssessmentHeading from "components/AssessmentHeading";
 import DimensionHeading from "components/DimensionHeading";
@@ -34,11 +34,11 @@ const MapDrawer = observer((props) => {
         {isIndicator(assessment) && <IndicatorHeading indicator={assessment} />}
       </MapPageSelectionButton>
       <Divider />
-      {/* {country ? (
-        <MapCountryDrawer {...props} />
-      ) : ( */}
-      <MapAssessmentDrawer {...props} />
-      {/* )} */}
+      {country ? (
+        <MapDepartmentDrawer {...props} />
+      ) : (
+        <MapAssessmentDrawer {...props} />
+      )}
     </>
   );
 });
