@@ -188,44 +188,42 @@ it("has valid trends", () => {
 
 /* Test The Total Number Of Extractions */
 it("has the correct number of observations for custom/goals/indicators", () => {
-  expect(Object.keys(store.observations)).toHaveLength(
-    15 * 91 + (17 + 1) * 15
-  );
+  expect(Object.keys(store.observations)).toHaveLength(15 * 91 + (17 + 1) * 15);
   // 15 = number of regions
   // 91 = number of indicators
   // 17 + 1 = goals + TOT
 });
 
-// describe("for indicators with modeled timeseries", () => {
-//   it("has the correct trend data", () => {
-//     expect(findObservation("gambie", "sdg2_stunting")).toMatchObject({
-//       value: 17.5,
-//       year: 2020,
-//       rating: "orange",
-//       trend: "•",
-//     });
-//     expect(findObservation("benin", "sdg2_wasting")).toMatchObject({
-//       value: 5,
-//       year: 2018,
-//       rating: "green",
-//       trend: "•",
-//     });
-//     expect(findObservation("cote-d-ivoire", "sdg5_familypl")).toMatchObject({
-//       value: 43.5,
-//       year: 2018,
-//       rating: "red",
-//       trend: "→",
-//     });
-//   });
+describe("for indicators with modeled timeseries", () => {
+  it("has the correct trend data", () => {
+    expect(findObservation("gambie", "sdg2_stunting")).toMatchObject({
+      value: 17.5,
+      year: 2020,
+      rating: "orange",
+      trend: "→",
+    });
+    expect(findObservation("benin", "sdg2_wasting")).toMatchObject({
+      value: 5,
+      year: 2018,
+      rating: "green",
+      trend: "↑",
+    });
+    expect(findObservation("cote-d-ivoire", "sdg5_familypl")).toMatchObject({
+      value: 43.5,
+      year: 2018,
+      rating: "red",
+      trend: "→",
+    });
+  });
 
-//   describe("when rating is gray", () => {
-//     it("has no trend", () => {
-//       expect(findObservation("cabo-verde", "sdg2_wasting")).toMatchObject({
-//         rating: "gray",
-//         trend: "•",
-//         value: null,
-//         year: null,
-//       });
-//     });
-//   });
-// });
+  describe("when rating is gray", () => {
+    it("has no trend", () => {
+      expect(findObservation("cabo-verde", "sdg2_wasting")).toMatchObject({
+        rating: "gray",
+        trend: "•",
+        value: null,
+        year: null,
+      });
+    });
+  });
+});
