@@ -4,7 +4,7 @@ import DrawerText from "components/DrawerText";
 const IndicatorHeading = ({ indicator }) => (
   <>
     <Typography variant="overline" color="textSecondary">
-      SDG {indicator.goalNumber} &middot; Indicator
+      Dimension {indicator.goalNumber} &middot; Indicator
     </Typography>
     <Typography variant="body1" fontWeight={500}>
       {indicator.label}

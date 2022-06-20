@@ -5,13 +5,12 @@ import DrawerSection from "components/DrawerSection";
 import DrawerHeading from "components/DrawerHeading";
 //import DrawerHeadingWithCaption from "components/DrawerHeadingWithCaption";
 import DrawerText from "components/DrawerText";
+import MapLegendValues from "components/MapLegendValues";
 import MapLegend from "components/MapLegend";
 import MapLegendItem from "components/MapLegendItem";
 import { mapAssessmentUrl } from "helpers/routing";
-import {
-  isGoal,
-  //isIndicator,
-} from "@sdgindex/data/assessments";
+import { isGoal, isIndicator } from "@sdgindex/data/assessments";
+import IndicatorMetadata from "components/IndicatorMetadata";
 
 const IndicatorButton = styled(ButtonBase)(
   {
@@ -40,13 +39,6 @@ const DimensionInfo = ({ dimension, indicators }) => {
       </DrawerSection>
       <DrawerSection>
         <DrawerHeading>Indicators</DrawerHeading>
-        {/* <Box marginX={-0.5}>
-          {indicators.map((indicator, key) => (
-            <IndicatorButton key={key}>
-              <DrawerText>{indicator.label}</DrawerText>
-            </IndicatorButton>
-          ))}
-        </Box> */}
         <Box marginX={-0.5}>
           {indicators.map((indicator) => (
             <Link
@@ -106,7 +98,7 @@ const DimensionInfo = ({ dimension, indicators }) => {
 //   </>
 // );
 
-const Legend = ({ legend }) => {
+const Legend = ({ legend, assessment }) => {
   if (legend != null) {
     return (
       <MapLegend>
@@ -120,6 +112,13 @@ const Legend = ({ legend }) => {
       </MapLegend>
     );
   }
+
+  return (
+    <MapLegendValues
+      longTermObjective={assessment.longTermObjective}
+      lowerBound={assessment.lowerBound}
+    />
+  );
 };
 
 const MapAssessmentDrawer = ({ assessment, dimension, legend }) => (
@@ -132,7 +131,7 @@ const MapAssessmentDrawer = ({ assessment, dimension, legend }) => (
         indicators={assessment.indicators}
       />
     )}
-    {/* {isIndicator(assessment) && <IndicatorMetadata indicator={assessment} />} */}
+    {isIndicator(assessment) && <IndicatorMetadata indicator={assessment} />}
   </>
 );
 
