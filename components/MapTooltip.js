@@ -1,7 +1,6 @@
 import { observer } from "mobx-react-lite";
 import { Box, Popper, Typography } from "@mui/material";
 import { useMapStore } from "stores/mapStore";
-import RegionAvatar from "components/RegionAvatar";
 
 const MapTooltip = observer(() => {
   const mapStore = useMapStore();
@@ -40,9 +39,6 @@ const MapTooltip = observer(() => {
         padding={1}
         borderRadius={1}
       >
-        <Box display="flex" flexDirection="column" justifyContent="center">
-          <RegionAvatar region={department} size={50} />
-        </Box>
         <Box
           paddingLeft={1}
           display="flex"
