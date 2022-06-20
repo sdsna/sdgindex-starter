@@ -1,0 +1,44 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "@emotion",
+      {
+        // Use emotion babel for MUI's styled helper
+        // See: https://github.com/mui-org/material-ui/issues/26366#issuecomment-942435579
+        "importMap": {
+          "@mui/system": {
+            "styled": {
+              "canonicalImport": ["@emotion/styled", "default"],
+              "styledBaseImport": ["@mui/system", "styled"]
+            }
+          },
+          "@mui/material/styles": {
+            "styled": {
+              "canonicalImport": ["@emotion/styled", "default"],
+              "styledBaseImport": ["@mui/material/styles", "styled"]
+            }
+          }
+        }
+      }
+    ],
+    ["inline-react-svg"],
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "components": "./components",
+          "data": "./public/data",
+          "drawers": "./drawers",
+          "helpers": "./helpers",
+          "hooks": "./hooks",
+          "layouts": "./layouts",
+          "pages": "./pages",
+          "root": "./",
+          "static": "./public/static",
+          "stores": "./stores"
+        }
+      }
+    ]
+  ]
+}
