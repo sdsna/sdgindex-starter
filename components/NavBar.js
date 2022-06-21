@@ -40,16 +40,24 @@ const StyledToolbar = (props) => (
 
 const pages = [
   {
-    label: "Link1",
-    href: "/link1",
+    label: "Chapters",
+    href: "/chapters",
   },
   {
-    label: "Link2",
-    href: "/link2",
+    label: "Rankings",
+    href: "/rankings",
   },
   {
-    label: "Link3",
-    href: "/link3",
+    label: "Interactive Map",
+    href: "/map",
+  },
+  {
+    label: "Country Profiles",
+    href: "/profiles",
+  },
+  {
+    label: "Downloads & Materials",
+    href: "/downlaods",
   },
 ];
 
