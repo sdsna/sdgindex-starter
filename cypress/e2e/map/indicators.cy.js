@@ -1,5 +1,5 @@
 describe("Map", () => {
-  context("when visiting the map for dim3_HIV", () => {
+  context("when visiting the map for lnb3_vihtestparit", () => {
     it("renders", () => {
       cy.visit(
         "/map/indicators/indice-de-parite-homme-femme-couverture-du-test-vih"
@@ -108,6 +108,21 @@ describe("Map", () => {
           "Extrême pauvreté et privation matérielle"
         );
       });
+    });
+  });
+
+  context("when visiting the map for lnb3_scolamparit", () => {
+    it("renders", () => {
+      cy.visit(
+        "/map/indicators/indice-de-parite-fille-garcon-nombre-median-d-annees-de-scolarite"
+      );
+    });
+
+    it("colors departments with unavailable information correctly", () => {
+      cy.get(`path[name="Atacora"]`).should("have.attr", "fill", "#bdbdbd");
+      cy.get(`path[name="Alibori"]`).should("have.attr", "fill", "#bdbdbd");
+      cy.get(`path[name="Borgou"]`).should("have.attr", "fill", "#bdbdbd");
+      cy.get(`path[name="Donga"]`).should("have.attr", "fill", "#bdbdbd");
     });
   });
 });
