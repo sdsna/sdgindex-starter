@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { observer } from "mobx-react-lite";
-import { Divider } from "@mui/material";
+import { Divider, Typography, Box } from "@mui/material";
 import DrawerSection from "components/DrawerSection";
 import DrawerHeadingWithCaption from "components/DrawerHeadingWithCaption";
 import DrawerLoadingIndicator from "components/DrawerLoadingIndicator";
@@ -23,6 +23,7 @@ import {
 import { mapAssessmentUrl } from "helpers/routing";
 import { getIndicatorsForDepartmentByDimension } from "helpers/getIndicatorsForDepartmentByDimension";
 import { getValueAsText } from "@sdgindex/data/cjs/observations/getValueAsText";
+import ValueIcon from "components/ValueIcon";
 
 // const CustomAssessmentSection = ({ country, assessment, dimensions }) => (
 //   <>
@@ -49,6 +50,26 @@ import { getValueAsText } from "@sdgindex/data/cjs/observations/getValueAsText";
 //     ))}
 //   </>
 // );
+const IconLabel = (props) => (
+  <Typography marginLeft={1} variant="body2" {...props} />
+);
+
+const Row = (props) => (
+  <Box
+    marginY={0.5}
+    display="flex"
+    alignItems="center"
+    sx={{
+      [":first-of-type"]: {
+        marginTop: 0,
+      },
+      [":last-of-type"]: {
+        marginBottom: 0,
+      },
+    }}
+    {...props}
+  />
+);
 
 const IndicatorSection = ({ department, indicator }) => (
   <>
@@ -63,9 +84,16 @@ const IndicatorSection = ({ department, indicator }) => (
   </>
 );
 
-const GoalSection = ({ department, indicators }) => (
+const GoalSection = ({ department, goal, indicators }) => (
   <>
     <DrawerRegionSection region={department} clearTarget />
+    <Divider />
+    <DrawerSection>
+      <Row>
+        <ValueIcon />
+        <IconLabel>{goal.score}</IconLabel>
+      </Row>
+    </DrawerSection>
     <Divider />
     <DrawerSection gray>
       <DrawerHeadingWithCaption caption="Click on an indicator to visualize it on the map.">
