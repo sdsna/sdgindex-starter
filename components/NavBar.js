@@ -44,16 +44,8 @@ const pages = [
     href: "/chapters",
   },
   {
-    label: "Rankings",
-    href: "/rankings",
-  },
-  {
     label: "Interactive Map",
     href: "/map",
-  },
-  {
-    label: "Country Profiles",
-    href: "/profiles",
   },
   {
     label: "Downloads & Materials",
