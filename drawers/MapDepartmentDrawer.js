@@ -19,9 +19,10 @@ import {
   isIndicator,
   isRelevantIndicatorForRegion,
 } from "@sdgindex/data/assessments";
-import { getRating } from "@sdgindex/data/observations";
+//import { getRating } from "@sdgindex/data/observations";
 import { mapAssessmentUrl } from "helpers/routing";
 import { getIndicatorsForDepartmentByDimension } from "helpers/getIndicatorsForDepartmentByDimension";
+import { getValueAsText } from "@sdgindex/data/cjs/observations/getValueAsText";
 
 // const CustomAssessmentSection = ({ country, assessment, dimensions }) => (
 //   <>
@@ -80,7 +81,8 @@ const GoalSection = ({ department, indicators }) => (
             onClick={null}
             buttonProps={{ component: "a" }}
             indicator={indicator}
-            rating={getRating(indicator)}
+            value={getValueAsText(indicator)}
+            //rating={getRating(indicator)}
             light={false}
             disabled={indicator.hideMap}
           />

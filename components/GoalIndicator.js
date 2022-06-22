@@ -28,6 +28,7 @@ const GoalIndicator = forwardRef(
       buttonProps,
       indicator,
       // rating,
+      value,
       light,
       onClick,
       disabled,
@@ -58,6 +59,7 @@ const GoalIndicator = forwardRef(
           color={disabled ? "textSecondary" : "textPrimary"}
           variant="body2"
         >
+          <strong>{value} </strong>
           {label}
         </Text>
       </Component>
