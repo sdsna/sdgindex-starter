@@ -1,8 +1,10 @@
-const { getIndicators, getGoals } = require("@sdgindex/data");
+const { getIndicators, loadData, getGoals } = require("@sdgindex/data");
 
 module.exports = {
   exportPathMap: async (defaultPathMap) => {
     const paths = defaultPathMap;
+
+    await loadData();
 
     // Dimensions maps
     delete paths["/map/dimensions/[...params]"];
