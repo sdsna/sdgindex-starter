@@ -80,7 +80,7 @@ const NavBar = ({ fluid }) => {
                 sx={{ flexGrow: { xs: 1, md: 0 } }}
                 aria-label="Go to home page"
               >
-                <Logo alt="Logo" src="/static/logo.svg" />
+                <Logo alt="Logo" src="/static/favicon.ico" />
               </Button>
             </Link>
             <Hidden implementation="css" mdUp>
