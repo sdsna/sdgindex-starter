@@ -14,12 +14,7 @@ import {
   findAssessmentForRegionById,
   useDataStore,
 } from "@sdgindex/data";
-import {
-  isGoal,
-  isIndicator,
-  isRelevantIndicatorForRegion,
-} from "@sdgindex/data/assessments";
-//import { getRating } from "@sdgindex/data/observations";
+import { isGoal, isIndicator } from "@sdgindex/data/assessments";
 import { mapAssessmentUrl } from "helpers/routing";
 import { getIndicatorsForDepartmentByDimension } from "helpers/getIndicatorsForDepartmentByDimension";
 import { getValueAsText } from "@sdgindex/data/cjs/observations/getValueAsText";
@@ -107,8 +102,6 @@ const MapDepartmentDrawer = observer(({ assessment: { id: assessmentId } }) => {
     const indicatorsForDimension = getIndicatorsForDepartmentByDimension(
       department,
       assessment
-    ).filter((indicator) =>
-      isRelevantIndicatorForRegion(indicator, department)
     );
 
     return (

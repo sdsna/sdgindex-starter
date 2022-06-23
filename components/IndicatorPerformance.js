@@ -1,15 +1,12 @@
 import { Box, Typography } from "@mui/material";
 import DrawerSection from "components/DrawerSection";
-// import RatingIndicator from "components/RatingIndicator";
 import ValueIcon from "components/ValueIcon";
 import YearIcon from "components/YearIcon";
 import {
-  //getRating,
   getValueAsText,
   getYearAsText,
   isImputed,
 } from "@sdgindex/data/observations";
-//import { getRatingLabel } from "helpers/ratings";
 
 const IconLabel = (props) => (
   <Typography marginLeft={1} variant="body2" {...props} />
@@ -49,10 +46,6 @@ const IndicatorPerformance = ({
   ...otherProps
 }) => (
   <DrawerSection {...otherProps}>
-    {/* <Row>
-      <RatingIndicator rating={getRating(indicator)} />
-      <IconLabel>{getRatingLabel(getRating(indicator))}</IconLabel>
-    </Row> */}
     {value ? (
       <Row>
         <ValueIcon />
