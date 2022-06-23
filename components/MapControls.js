@@ -113,7 +113,10 @@ const MapControls = ({
           display="flex"
           borderRadius={2}
         >
-          <Link href="/null" passHref>
+          <Link
+            href="https://deploy-preview-2--national-comparison-benin-sdg-index.netlify.app/map"
+            passHref
+          >
             <TabButton>Regional</TabButton>
           </Link>
           <Link

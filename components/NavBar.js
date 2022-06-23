@@ -31,7 +31,8 @@ const StyledToolbar = (props) => (
       minHeight: { xs: 64, sm: 88 },
       maxHeight: { xs: 64, sm: 88 },
       ["&, & img"]: {
-        height: { xs: 50, sm: 80 },
+        height: 64,
+        padding: { xs: "8px 0", sm: 0 },
       },
     }}
     {...props}
@@ -50,6 +51,11 @@ const pages = [
   {
     label: "Downloads & Materials",
     href: "/downlaods",
+  },
+  {
+    label: "Switch to regional report",
+    href: "https://deploy-preview-2--national-comparison-benin-sdg-index.netlify.app/map",
+    external: true,
   },
 ];
 
@@ -100,10 +106,15 @@ const NavBar = ({ fluid }) => {
               />
             </Hidden>
             <Box display={{ xs: "none", md: "flex" }} height={1}>
-              {pages.map(({ label, href }) => (
+              {pages.map(({ label, href, external }) => (
                 <Link key={href} href={href} passHref>
                   <Button>
-                    <Typography variant="body1">{label}</Typography>
+                    <Typography
+                      variant="body1"
+                      color={external ? "#FFD700" : null}
+                    >
+                      {label}
+                    </Typography>
                   </Button>
                 </Link>
               ))}
