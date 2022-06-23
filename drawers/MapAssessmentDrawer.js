@@ -3,7 +3,6 @@ import { Box, ButtonBase, Divider } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import DrawerSection from "components/DrawerSection";
 import DrawerHeading from "components/DrawerHeading";
-//import DrawerHeadingWithCaption from "components/DrawerHeadingWithCaption";
 import DrawerText from "components/DrawerText";
 import MapLegendValues from "components/MapLegendValues";
 import MapLegend from "components/MapLegend";
@@ -56,47 +55,6 @@ const DimensionInfo = ({ dimension, indicators }) => {
     </>
   );
 };
-
-// const OverallInfo = ({ overall }) => (
-//   <>
-//     <DrawerSection>
-//       <DrawerHeading>Description</DrawerHeading>
-//       <DrawerText>{overall.description}</DrawerText>
-//     </DrawerSection>
-//     <Divider />
-//     <Divider />
-//   </>
-// );
-
-// const CustomAssessmentInfo = ({ assessment, dimensions }) => (
-//   <>
-//     <DrawerSection>
-//       <DrawerHeading>Description</DrawerHeading>
-//       <DrawerText>{assessment.description}</DrawerText>
-//     </DrawerSection>
-//     <Divider />
-//     {dimensions.map((dimension) => (
-//       <DrawerSection key={dimension.label}>
-//         <DrawerHeadingWithCaption caption="Click on an indicator to visualize it on the map.">
-//           {dimension.label}
-//         </DrawerHeadingWithCaption>
-//         <Box marginX={-0.5}>
-//           {dimension.indicators.map((indicator) => (
-//             <Link
-//               key={indicator.id}
-//               href={mapAssessmentUrl({ assessment: indicator })}
-//               passHref
-//             >
-//               <IndicatorButton>
-//                 <DrawerText>{indicator.label}</DrawerText>
-//               </IndicatorButton>
-//             </Link>
-//           ))}
-//         </Box>
-//       </DrawerSection>
-//     ))}
-//   </>
-// );
 
 const Legend = ({ legend, assessment }) => {
   if (legend != null) {

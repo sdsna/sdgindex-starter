@@ -2,7 +2,6 @@ import { observer } from "mobx-react-lite";
 import { Divider } from "@mui/material";
 import MapDepartmentDrawer from "drawers/MapDepartmentDrawer";
 import MapAssessmentDrawer from "drawers/MapAssessmentDrawer";
-//import AssessmentHeading from "components/AssessmentHeading";
 import DimensionHeading from "components/DimensionHeading";
 import IndicatorHeading from "components/IndicatorHeading";
 import MapPageSelectionButton from "components/MapPageSelectionButton";

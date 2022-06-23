@@ -25,31 +25,6 @@ import { getIndicatorsForDepartmentByDimension } from "helpers/getIndicatorsForD
 import { getValueAsText } from "@sdgindex/data/cjs/observations/getValueAsText";
 import ValueIcon from "components/ValueIcon";
 
-// const CustomAssessmentSection = ({ country, assessment, dimensions }) => (
-//   <>
-//     <DrawerRegionSection region={country} clearTarget />
-//     <Divider />
-//     {dimensions.map((dimension) => (
-//       <DrawerSection key={dimension.label} gray>
-//         <DrawerHeadingWithCaption caption="Click on an indicator to visualize it on the map.">
-//           {dimension.label}
-//         </DrawerHeadingWithCaption>
-//         {dimension.indicators.map((indicator) => (
-//           <Link
-//             key={indicator.id}
-//             href={mapAssessmentUrl({ assessment: indicator })}
-//             passHref
-//           >
-//             <GoalIndicator
-//               onClick={null}
-//               indicator={indicator}
-//             />
-//           </Link>
-//         ))}
-//       </DrawerSection>
-//     ))}
-//   </>
-// );
 const IconLabel = (props) => (
   <Typography marginLeft={1} variant="body2" {...props} />
 );
