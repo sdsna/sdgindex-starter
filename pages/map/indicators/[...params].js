@@ -1,15 +1,7 @@
 import MapLayout from "layouts/MapLayout";
 import MapDrawer from "drawers/MapDrawer";
 import MapControls from "components/MapControls";
-import { isRelevantIndicatorForRegion } from "@sdgindex/data/assessments";
 import { getValueColor, valueToScore } from "helpers/scores";
-import { getTimeseriesValue, hasTimeseries } from "@sdgindex/data/timeseries";
-
-const getValueForYear = (country, year) => {
-  if (year === "latest") return country.value;
-  if (!hasTimeseries(country)) return null;
-  return getTimeseriesValue(country, year);
-};
 
 const formatNumberAsText = (
   number,
@@ -27,14 +19,13 @@ const layoutProps = ({ assessment, departments, dimensions }) => ({
   dimensions,
   stroke: "#cacaca",
   departments,
-  getDepartmentFill: (department, year) => {
-    const value = getValueForYear(department, year);
+  getDepartmentFill: (department) => {
+    const value = department.value;
     return getValueColor(
       valueToScore(value, assessment.longTermObjective, assessment.lowerBound)
     );
   },
-  getTooltipText: (department, year) =>
-    formatNumberAsText(getValueForYear(department, year)),
+  getTooltipText: (department) => formatNumberAsText(department.value),
   Drawer: <MapDrawer assessment={assessment} dimension={null} />,
 });
 
@@ -53,7 +44,7 @@ import {
   loadData,
   getGoals,
 } from "@sdgindex/data";
-import { getRating, getValue } from "@sdgindex/data/observations";
+import { getValue } from "@sdgindex/data/observations";
 
 IndicatorMap.getInitialProps = async ({ query }) => {
   await loadData();
@@ -79,9 +70,7 @@ IndicatorMap.getInitialProps = async ({ query }) => {
     type: assessment.type,
   };
 
-  const departments = getRegionsWithAssessment(assessment).filter(
-    (department) => isRelevantIndicatorForRegion(assessment, department)
-  );
+  const departments = getRegionsWithAssessment(assessment);
 
   departments.forEach((department) => {
     department.value = getValue(department);
@@ -97,9 +86,7 @@ IndicatorMap.getInitialProps = async ({ query }) => {
     departments: departments.map((department) => ({
       id: department.id,
       name: department.name,
-      rating: getRating(department),
       value: department.value,
-      region: department.region,
       type: department.type,
     })),
   };
