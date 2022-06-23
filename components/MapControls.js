@@ -19,6 +19,35 @@ const BoxWithoutPointerEvents = styled(Box)({
   },
 });
 
+const TabButton = styled(ButtonBase)(
+  {
+    paddingLeft: 8,
+    paddingRight: 8,
+    paddingTop: 4,
+    paddingBottom: 4,
+    borderRight: "1px solid rgba(0,0,0,.12)",
+    ":hover": {
+      opacity: 1,
+    },
+
+    ":first-child": {
+      borderTopLeftRadius: 8,
+      borderBottomLeftRadius: 8,
+    },
+
+    ":last-child": {
+      borderTopRightRadius: 8,
+      borderBottomRightRadius: 8,
+      borderRight: "none",
+    },
+  },
+  ({ theme, isactive }) => {
+    if (isactive)
+      return { color: "white", background: theme.palette.primary.main };
+    return { opacity: 0.7, background: "white" };
+  }
+);
+
 const VisualizationButton = styled(ButtonBase)(
   {
     padding: 12,
@@ -63,16 +92,43 @@ const MapControls = ({
   resetZoom,
 }) => (
   <>
-    <BoxWithoutPointerEvents position="absolute" left={0} right={0} bottom={0}>
+    <BoxWithoutPointerEvents
+      position="absolute"
+      left={0}
+      right={0}
+      bottom={0}
+      top={0}
+      display="flex"
+      flexDirection="column"
+    >
       <Box
         display="flex"
-        flexGrow={1}
-        alignItems="flex-end"
+        alignItems="flex-start"
         justifyContent="space-between"
       >
         <Box
           marginLeft={2}
-          marginBottom={1}
+          marginTop={2}
+          boxShadow={3}
+          display="flex"
+          borderRadius={2}
+        >
+          <Link href="/null" passHref>
+            <TabButton>Regional</TabButton>
+          </Link>
+          <Link
+            href="https://deploy-preview-5--benin-subnational-data-viz.netlify.app/map/dimensions/LNOB1"
+            passHref
+          >
+            <TabButton isactive>Subnational</TabButton>
+          </Link>
+        </Box>
+      </Box>
+      <Box flexGrow={1} />
+      <Box display="flex" alignItems="flex-end" justifyContent="space-between">
+        <Box
+          marginLeft={2}
+          marginBottom={2}
           boxShadow={3}
           display="flex"
           borderRadius={2}
