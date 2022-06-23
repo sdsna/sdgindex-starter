@@ -1,15 +1,19 @@
-import { getGoals, getIndicators, loadData } from "@sdgindex/data";
+import {
+  getGoals as getDimensions,
+  getIndicators,
+  loadData,
+} from "@sdgindex/data";
 
 beforeAll(async () => {
   await loadData();
 });
 
 it("contains 4 dimensions", () => {
-  expect(getGoals()).toHaveLength(4);
+  expect(getDimensions()).toHaveLength(4);
 });
 
 it("has label for each goal", () => {
-  getGoals().map((goal) => {
+  getDimensions().map((goal) => {
     expect(goal).toMatchObject({
       description: expect.any(String),
       label: expect.any(String),

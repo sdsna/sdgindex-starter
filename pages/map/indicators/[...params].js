@@ -26,7 +26,7 @@ const layoutProps = ({ assessment, departments, dimensions }) => ({
     );
   },
   getTooltipText: (department) => formatNumberAsText(department.value),
-  Drawer: <MapDrawer assessment={assessment} dimension={null} />,
+  Drawer: <MapDrawer assessment={assessment} />,
 });
 
 const IndicatorMap = ({ zoomIn, zoomOut, resetZoom }) => (
@@ -42,7 +42,7 @@ import {
   findIndicatorBySlug,
   getRegionsWithAssessment,
   loadData,
-  getGoals,
+  getGoals as getDimensions,
 } from "@sdgindex/data";
 import { getValue } from "@sdgindex/data/observations";
 
@@ -53,7 +53,7 @@ IndicatorMap.getInitialProps = async ({ query }) => {
   const [assessmentSlug] = params;
 
   const assessment = findIndicatorBySlug(assessmentSlug.toLowerCase());
-  const dimensions = getGoals();
+  const dimensions = getDimensions();
 
   const assessmentProps = {
     id: assessment.id,

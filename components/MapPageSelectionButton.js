@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import PageSelectionButton from "components/PageSelectionButton";
 import { isGoal, isIndicator } from "@sdgindex/data/assessments";
-import { getGoals, useDataStore } from "@sdgindex/data";
+import { getGoals as getDimensions, useDataStore } from "@sdgindex/data";
 import { mapAssessmentUrl } from "helpers/routing";
 import { getIndicatorsByDimension } from "helpers/getIndicatorsByDimension";
 
@@ -23,7 +23,7 @@ const MapPageSelectionButton = ({ children }) => {
   const options = [];
 
   if (isLoaded) {
-    getGoals().map((dimension) =>
+    getDimensions().map((dimension) =>
       options.push(dimension, ...getIndicatorsByDimension(dimension))
     );
   }
