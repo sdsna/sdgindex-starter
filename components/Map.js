@@ -23,7 +23,7 @@ const SvgMap = styled(SvgLoader)({
   },
   '[clickable="clickable"]:hover': {
     stroke: "yellow",
-    strokeWidth: 2,
+    strokeWidth: 10,
   },
   '[clickable="clickable"]': {
     cursor: "pointer",
