@@ -91,7 +91,7 @@ describe("Map", () => {
     });
 
     context("when changing page via page selection button", () => {
-      it("changes page to dimension 2", () => {
+      it("changes page to lnb4_gini", () => {
         cy.contains(
           ".MuiDrawer-docked div",
           "Indice de parité homme/ femme: Couverture du test VIH"
@@ -99,14 +99,11 @@ describe("Map", () => {
         cy.contains("div", "Search")
           .parent()
           .within(() => {
-            cy.get("input").type("extreme pauvrete");
+            cy.get("input").type("gini");
             cy.get("input").type("{enter}");
           });
-        cy.url().should("contain", "/map/dimensions/LNOB2");
-        cy.get(".MuiDrawer-docked").should(
-          "contain",
-          "Extrême pauvreté et privation matérielle"
-        );
+        cy.url().should("contain", "/map/indicators/coefficient-de-gini");
+        cy.get(".MuiDrawer-docked").should("contain", "Coefficient de Gini");
       });
     });
   });
