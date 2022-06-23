@@ -31,7 +31,7 @@ const StyledToolbar = (props) => (
       minHeight: { xs: 64, sm: 88 },
       maxHeight: { xs: 64, sm: 88 },
       ["&, & img"]: {
-        height: { xs: 64, sm: 88 },
+        height: { xs: 50, sm: 80 },
       },
     }}
     {...props}
@@ -80,7 +80,7 @@ const NavBar = ({ fluid }) => {
                 sx={{ flexGrow: { xs: 1, md: 0 } }}
                 aria-label="Go to home page"
               >
-                <Logo alt="Logo" src="/static/favicon.ico" />
+                <Logo alt="Logo" src="/static/logo.svg" />
               </Button>
             </Link>
             <Hidden implementation="css" mdUp>
