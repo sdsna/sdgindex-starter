@@ -20,7 +20,7 @@ const Button = styled(ButtonBase)({
 });
 Button.defaultProps = { focusRipple: true };
 
-const GoalIndicator = forwardRef(
+const DimensionIndicator = forwardRef(
   (
     {
       Component,
@@ -66,6 +66,6 @@ const GoalIndicator = forwardRef(
     );
   }
 );
-GoalIndicator.displayName = "GoalIndicator";
+DimensionIndicator.displayName = "DimensionIndicator";
 
-export default GoalIndicator;
+export default DimensionIndicator;

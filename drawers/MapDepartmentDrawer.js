@@ -6,7 +6,7 @@ import DrawerHeadingWithCaption from "components/DrawerHeadingWithCaption";
 import DrawerLoadingIndicator from "components/DrawerLoadingIndicator";
 import IndicatorMetadata from "components/IndicatorMetadata";
 import IndicatorPerformance from "components/IndicatorPerformance";
-import GoalIndicator from "components/GoalIndicator";
+import DimensionIndicator from "components/DimensionIndicator";
 import DrawerRegionSection from "components/DrawerRegionSection";
 import { useUiStore } from "stores/uiStore";
 import {
@@ -84,14 +84,14 @@ const IndicatorSection = ({ department, indicator }) => (
   </>
 );
 
-const GoalSection = ({ department, goal, indicators }) => (
+const DimensionSection = ({ department, dimension, indicators }) => (
   <>
     <DrawerRegionSection region={department} clearTarget />
     <Divider />
     <DrawerSection>
       <Row>
         <ValueIcon />
-        <IconLabel>{goal.score}</IconLabel>
+        <IconLabel>{dimension.score}</IconLabel>
       </Row>
     </DrawerSection>
     <Divider />
@@ -105,12 +105,11 @@ const GoalSection = ({ department, goal, indicators }) => (
           href={mapAssessmentUrl({ assessment: indicator })}
           passHref
         >
-          <GoalIndicator
+          <DimensionIndicator
             onClick={null}
             buttonProps={{ component: "a" }}
             indicator={indicator}
             value={getValueAsText(indicator)}
-            //rating={getRating(indicator)}
             light={false}
             disabled={indicator.hideMap}
           />
@@ -130,7 +129,7 @@ const MapDepartmentDrawer = observer(({ assessment: { id: assessmentId } }) => {
   const assessment = findAssessmentForRegionById(department, assessmentId);
 
   if (isGoal(assessment)) {
-    const indicatorsForGoal = getIndicatorsForDepartmentByDimension(
+    const indicatorsForDimension = getIndicatorsForDepartmentByDimension(
       department,
       assessment
     ).filter((indicator) =>
@@ -138,10 +137,10 @@ const MapDepartmentDrawer = observer(({ assessment: { id: assessmentId } }) => {
     );
 
     return (
-      <GoalSection
+      <DimensionSection
         department={department}
-        goal={assessment}
-        indicators={indicatorsForGoal}
+        dimension={assessment}
+        indicators={indicatorsForDimension}
       />
     );
   }
