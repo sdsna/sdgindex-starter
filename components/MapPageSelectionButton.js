@@ -24,12 +24,7 @@ const MapPageSelectionButton = ({ children }) => {
 
   if (isLoaded) {
     getGoals().map((dimension) =>
-      options.push(
-        dimension,
-        ...getIndicatorsByDimension(dimension).filter(
-          (indicator) => !indicator.hideMap
-        )
-      )
+      options.push(dimension, ...getIndicatorsByDimension(dimension))
     );
   }
 
