@@ -3,6 +3,7 @@ import { Box, IconButton, Typography } from "@mui/material";
 import { Close } from "mdi-material-ui";
 import { useUiStore } from "stores/uiStore";
 import DrawerSection from "components/DrawerSection";
+import RegionAvatar from "components/RegionAvatar";
 
 const DrawerRegionSection = observer(({ region, clearTarget, closeDrawer }) => {
   const uiStore = useUiStore();
@@ -10,6 +11,7 @@ const DrawerRegionSection = observer(({ region, clearTarget, closeDrawer }) => {
   return (
     <DrawerSection gray>
       <Box display="flex" alignItems="center">
+        <RegionAvatar region={region} size={24} />
         <Box flexGrow={1} marginLeft={1}>
           <Typography variant="body1">
             <Box component="span" fontWeight={500}>
