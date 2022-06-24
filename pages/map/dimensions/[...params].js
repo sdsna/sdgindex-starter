@@ -16,6 +16,7 @@ const Map = ({ zoomIn, zoomOut, resetZoom }) => (
 Map.Layout = MapLayout;
 Map.layoutProps = ({ dimension, departments }) => ({
   assessment: dimension,
+  dimensions: dimension.dimensions,
   departments: departments.map((department) => ({
     fill: getDepartmentFill(department),
     ...department,
@@ -29,6 +30,7 @@ Map.layoutProps = ({ dimension, departments }) => ({
 import {
   loadData,
   findAssessmentById,
+  getGoals as getDimensions,
   getRegionsWithAssessment,
 } from "@sdgindex/data";
 import { getScore, getScoreAsText } from "@sdgindex/data/observations";
@@ -42,6 +44,7 @@ Map.getInitialProps = async ({ query }) => {
 
   // Get data
   const dimension = findAssessmentById(assessmentId.toUpperCase());
+  const dimensions = getDimensions();
   const departments = getRegionsWithAssessment(dimension);
 
   return {
@@ -51,6 +54,10 @@ Map.getInitialProps = async ({ query }) => {
       type: dimension.type,
       description: dimension.description,
       category: dimension.category,
+      dimensions: dimensions.map((dimension) => ({
+        id: dimension.id,
+        number: dimension.number,
+      })),
       indicators: getIndicatorsByDimension(dimension).map((indicator) => ({
         id: indicator.id,
         slug: indicator.slug,

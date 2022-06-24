@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import { Box } from "@mui/material";
 import FullScreenAppLayout from "layouts/FullScreenAppLayout";
+import DimensionNavigation from "components/DimensionNavigation";
 import DrawerLoadingIndicator from "components/DrawerLoadingIndicator";
 const Map = dynamic(() => import("components/Map"), {
   ssr: false,
@@ -14,6 +15,7 @@ const MapLayout = ({
   children,
   assessment,
   Drawer,
+  dimensions,
   departments,
   getDepartmentFill,
   getTooltipText,
@@ -43,6 +45,7 @@ const MapLayout = ({
             <MapTooltip />
           </Box>
         </MapStoreProvider>
+        <DimensionNavigation dimensions={dimensions} />
       </Box>
     </FullScreenAppLayout>
   </UiStoreProvider>
