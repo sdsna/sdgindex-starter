@@ -1,28 +1,28 @@
 export const LEGEND = [
   {
     color: "#36869a",
-    threshold: 80,
-    label: "> 80",
+    threshold: 60,
+    label: "> 60",
   },
   {
     color: "#4facc5",
-    threshold: 70,
-    label: "70 - 80",
-  },
-  {
-    color: "#94cddb",
-    threshold: 60,
-    label: "60 - 70",
-  },
-  {
-    color: "#b7dde7",
     threshold: 50,
     label: "50 - 60",
   },
   {
+    color: "#94cddb",
+    threshold: 40,
+    label: "40 - 50",
+  },
+  {
+    color: "#b7dde7",
+    threshold: 30,
+    label: "30 - 40",
+  },
+  {
     color: "#dbeef6",
     threshold: 0,
-    label: "< 50",
+    label: "< 30",
   },
   {
     color: "#d8d8d8",
