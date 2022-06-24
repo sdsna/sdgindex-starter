@@ -1,5 +1,6 @@
 import { forwardRef } from "react";
 import { ButtonBase, Typography } from "@mui/material";
+import RatingIndicator from "components/RatingIndicator";
 import { styled } from "@mui/material/styles";
 import { useUiStore } from "stores/uiStore";
 
@@ -26,7 +27,7 @@ const DimensionIndicator = forwardRef(
       label,
       buttonProps,
       indicator,
-      value,
+      rating,
       light,
       onClick,
       disabled,
@@ -46,16 +47,17 @@ const DimensionIndicator = forwardRef(
       <Component
         ref={ref}
         onClick={onClick}
+        data-rating={rating}
         disabled={disabled}
         {...buttonProps}
         {...otherProps}
       >
+        <RatingIndicator fontSize="small" rating={rating} />
         <Text
           styled={{ light }}
           color={disabled ? "textSecondary" : "textPrimary"}
           variant="body2"
         >
-          <strong>{value} </strong>
           {label}
         </Text>
       </Component>

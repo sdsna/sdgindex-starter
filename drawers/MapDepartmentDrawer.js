@@ -7,6 +7,7 @@ import DrawerLoadingIndicator from "components/DrawerLoadingIndicator";
 import IndicatorMetadata from "components/IndicatorMetadata";
 import IndicatorPerformance from "components/IndicatorPerformance";
 import DimensionIndicator from "components/DimensionIndicator";
+import { getRating } from "@sdgindex/data/observations";
 import DrawerRegionSection from "components/DrawerRegionSection";
 import { useUiStore } from "stores/uiStore";
 import {
@@ -17,7 +18,6 @@ import {
 import { isGoal, isIndicator } from "@sdgindex/data/assessments";
 import { mapAssessmentUrl } from "helpers/routing";
 import { getIndicatorsForDepartmentByDimension } from "helpers/getIndicatorsForDepartmentByDimension";
-import { getValueAsText } from "@sdgindex/data/cjs/observations/getValueAsText";
 import ValueIcon from "components/ValueIcon";
 
 const IconLabel = (props) => (
@@ -79,7 +79,7 @@ const DimensionSection = ({ department, dimension, indicators }) => (
             onClick={null}
             buttonProps={{ component: "a" }}
             indicator={indicator}
-            value={getValueAsText(indicator)}
+            rating={getRating(indicator)}
             light={false}
             disabled={indicator.hideMap}
           />
