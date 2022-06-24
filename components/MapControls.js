@@ -79,7 +79,6 @@ const MapControls = ({ zoomIn, zoomOut, resetZoom }) => (
       </Box>
       <Box flexGrow={1} />
       <Box display="flex" alignItems="flex-end" justifyContent="space-between">
-        <Box></Box>
         <Box
           marginRight={2}
           marginBottom={1}
@@ -88,6 +87,8 @@ const MapControls = ({ zoomIn, zoomOut, resetZoom }) => (
           flexDirection="column"
           bgcolor="white"
           borderRadius={2}
+          position="fixed"
+          right="0"
         >
           <ButtonBase
             variant="outlined"
