@@ -54,6 +54,7 @@ Map.getInitialProps = async () => {
       dimensions: dimensions.map((dimension) => ({
         id: dimension.id,
         number: dimension.number,
+        type: dimension.type,
       })),
       indicators: getIndicatorsByDimension(dimension).map((indicator) => ({
         id: indicator.id,
