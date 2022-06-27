@@ -3,6 +3,7 @@ import { Plus, ArrowExpandAll, Minus } from "mdi-material-ui";
 import Link from "next/link";
 import { styled } from "@mui/material/styles";
 import MapFooter from "components/MapFooter";
+import DimensionNavigation from "components/DimensionNavigation";
 
 const BoxWithoutPointerEvents = styled(Box)({
   pointerEvents: "none",
@@ -40,7 +41,7 @@ const TabButton = styled(ButtonBase)(
   }
 );
 
-const MapControls = ({ zoomIn, zoomOut, resetZoom }) => (
+const MapControls = ({ zoomIn, zoomOut, resetZoom, dimensions }) => (
   <>
     <BoxWithoutPointerEvents
       position="absolute"
@@ -78,6 +79,9 @@ const MapControls = ({ zoomIn, zoomOut, resetZoom }) => (
         </Box>
       </Box>
       <Box flexGrow={1} />
+      <Box marginLeft={2} marginTop={2} display="flex">
+        <DimensionNavigation dimensions={dimensions} />
+      </Box>
       <Box display="flex" alignItems="flex-end" justifyContent="space-between">
         <Box
           marginRight={2}

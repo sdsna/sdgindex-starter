@@ -1,16 +1,9 @@
 import Link from "next/link";
 import { observer } from "mobx-react-lite";
-import {
-  Box,
-  ButtonBase,
-  Divider,
-  Paper,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, ButtonBase, Divider, Paper, Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import DrawerHeading from "components/DrawerHeading";
-// import GoalIcon from "components/GoalIcon";
+import DimensionIcon from "components/DimensionIcon";
 import { mapAssessmentUrl } from "helpers/routing";
 
 const Button = styled(ButtonBase)({
@@ -47,26 +40,27 @@ const DimensionNavigation = observer(({ dimensions }) => {
       <DrawerHeading>
         Select one of the dimensions to see it on the map
       </DrawerHeading>
-      <Stack direction="row" spacing={1}>
-        {dimensions.map((dimension) => (
-          <Link
-            key={dimension.id}
-            href={mapAssessmentUrl({ assessment: dimension })}
-            passHref
-          >
-            <Button
-              sx={{
-                background: "transparent",
-                maxWidth: 60,
-                maxHeight: 60,
-              }}
+      <Grid container spacing={1} columns={4}>
+        <Grid item xs={2}>
+          {dimensions.map((dimension) => (
+            <Link
+              key={dimension.id}
+              href={mapAssessmentUrl({ assessment: dimension })}
+              passHref
             >
-              {/* <GoalIcon identifier={goal.id} flavor="white" /> */}
-              <Typography>{dimension.id}</Typography>
-            </Button>
-          </Link>
-        ))}
-      </Stack>
+              <Button
+                sx={{
+                  background: "transparent",
+                  maxWidth: 60,
+                  maxHeight: 60,
+                }}
+              >
+                <DimensionIcon identifier={dimension.id} />
+              </Button>
+            </Link>
+          ))}
+        </Grid>
+      </Grid>
     </Layout>
   );
 });

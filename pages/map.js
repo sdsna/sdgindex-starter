@@ -4,12 +4,13 @@ import MapControls from "components/MapControls";
 import { getDepartmentFill, LEGEND } from "helpers/legendForScore";
 import { getTooltipTextForScore } from "helpers/getTooltipTextForScore";
 
-const Map = ({ zoomIn, zoomOut, resetZoom }) => (
+const Map = ({ zoomIn, zoomOut, resetZoom, dimensions }) => (
   <MapControls
     links={{}}
     zoomIn={zoomIn}
     zoomOut={zoomOut}
     resetZoom={resetZoom}
+    dimensions={dimensions}
   />
 );
 
@@ -51,11 +52,6 @@ Map.getInitialProps = async () => {
       type: dimension.type,
       description: dimension.description,
       category: dimension.category,
-      dimensions: dimensions.map((dimension) => ({
-        id: dimension.id,
-        number: dimension.number,
-        type: dimension.type,
-      })),
       indicators: getIndicatorsByDimension(dimension).map((indicator) => ({
         id: indicator.id,
         slug: indicator.slug,
@@ -63,6 +59,11 @@ Map.getInitialProps = async () => {
         type: indicator.type,
       })),
     },
+    dimensions: dimensions.map((dimension) => ({
+      id: dimension.id,
+      number: dimension.number,
+      type: dimension.type,
+    })),
     departments: departments.map((department) => ({
       id: department.id,
       name: department.name,
