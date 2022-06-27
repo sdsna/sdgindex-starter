@@ -130,7 +130,7 @@ const MapControls = ({ zoomIn, zoomOut, resetZoom, dimensions }) => (
           </ButtonBase>
         </Box>
       </Box>
-      <Box display={{ xs: "none", md: "flex" }} justifyContent="center">
+      <Box display={{ xs: "none", md: "flex" }} justifyContent="right">
         <MapFooter />
       </Box>
     </BoxWithoutPointerEvents>
