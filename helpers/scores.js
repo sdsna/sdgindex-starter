@@ -1,5 +1,5 @@
 import { scaleSequential } from "d3-scale";
-import { interpolateYlGnBu } from "d3-scale-chromatic";
+import { interpolateBuPu } from "d3-scale-chromatic";
 import { grey as gray } from "@mui/material/colors";
 
 const DOMAIN = {
@@ -9,8 +9,8 @@ const DOMAIN = {
 
 // Implementation of d3-scale
 const color = scaleSequential()
-  .domain([DOMAIN.minRange, DOMAIN.maxRange])
-  .interpolator(interpolateYlGnBu)
+  .domain([DOMAIN.maxRange, DOMAIN.minRange])
+  .interpolator(interpolateBuPu)
   .clamp(true);
 
 // Return the color for the value converted into an RGB string (e.g. "rgb(255,255,255))
