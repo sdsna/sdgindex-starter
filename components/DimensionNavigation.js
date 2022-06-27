@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { observer } from "mobx-react-lite";
-import { Box, ButtonBase, Divider, Paper, Grid } from "@mui/material";
+import {
+  Box,
+  ButtonBase,
+  Divider,
+  Paper,
+  Grid,
+  Typography,
+} from "@mui/material";
 import { styled } from "@mui/material/styles";
 import DrawerHeading from "components/DrawerHeading";
 import DimensionIcon from "components/DimensionIcon";
@@ -9,7 +16,7 @@ import { mapAssessmentUrl } from "helpers/routing";
 const Button = styled(ButtonBase)({
   transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
   ":hover": {
-    transform: "scale(1.2)",
+    transform: "scale(1.1)",
   },
 });
 
@@ -34,35 +41,37 @@ const Layout = (props) => (
   </>
 );
 
-const DimensionNavigation = observer(({ dimensions }) => {
-  return (
-    <Layout>
-      <DrawerHeading>
-        Select one of the dimensions to see it on the map
-      </DrawerHeading>
-      <Grid container spacing={1} columns={4}>
-        <Grid item xs={2}>
-          {dimensions.map((dimension) => (
-            <Link
-              key={dimension.id}
-              href={mapAssessmentUrl({ assessment: dimension })}
-              passHref
-            >
+const DimensionNavigation = observer(({ dimensions }) => (
+  <Layout>
+    <DrawerHeading>
+      Select one of the dimensions to see it on the map
+    </DrawerHeading>
+    <Grid container style={{ margin: 10, width: "auto" }}>
+      {dimensions.map((dimension) => (
+        <Grid item key={dimension.id} style={{ marginLeft: 4, marginRight: 4 }}>
+          <Box display="flex" flexDirection="column" alignItems="center">
+            <Typography variant="body1" gutterBottom>
+              {dimension.category.replace(
+                dimension.category[0],
+                dimension.category[0].toUpperCase()
+              )}
+            </Typography>
+            <Link href={mapAssessmentUrl({ assessment: dimension })} passHref>
               <Button
                 sx={{
                   background: "transparent",
-                  maxWidth: 60,
-                  maxHeight: 60,
+                  maxWidth: 120,
+                  maxHeight: 120,
                 }}
               >
                 <DimensionIcon identifier={dimension.id} />
               </Button>
             </Link>
-          ))}
+          </Box>
         </Grid>
-      </Grid>
-    </Layout>
-  );
-});
+      ))}
+    </Grid>
+  </Layout>
+));
 
 export default DimensionNavigation;
