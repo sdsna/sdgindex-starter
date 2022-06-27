@@ -15,7 +15,7 @@ const DimensionIcon = ({ identifier, ...otherProps }) => (
       e.preventDefault();
     }}
     draggable="false"
-    src={`/static/dimensions/icons/${identifier.toLowerCase()}.webp`}
+    src={`/static/dimensions/icons/${identifier.toLowerCase()}.png`}
     {...otherProps}
   />
 );
