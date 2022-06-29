@@ -10,7 +10,7 @@ const RegionAvatar = ({ size, width, height }) => {
     <Avatar
       imgProps={{ loading: "lazy" }}
       variant="square"
-      src={"/static/BEN.svg"}
+      src={"/static/profiles/flags/BEN.svg"}
       sx={{
         width,
         height,
