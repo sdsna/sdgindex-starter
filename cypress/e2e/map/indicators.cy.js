@@ -11,17 +11,17 @@ describe("Map", () => {
       cy.get(`path[name="Atacora"]`).should(
         "have.attr",
         "fill",
-        "rgb(93, 192, 192)"
+        "rgb(140, 131, 189)"
       );
       cy.get(`path[name="Alibori"]`).should(
         "have.attr",
         "fill",
-        "rgb(255, 255, 217)"
+        "rgb(77, 0, 75)"
       );
       cy.get(`path[name="Borgou"]`).should(
         "have.attr",
         "fill",
-        "rgb(8, 29, 88)"
+        "rgb(247, 252, 253)"
       );
     });
 
@@ -122,7 +122,7 @@ describe("Map", () => {
       cy.get(`path[name="Donga"]`).should(
         "have.attr",
         "fill",
-        "rgb(8, 29, 88)"
+        "rgb(247, 252, 253)"
       );
     });
   });
