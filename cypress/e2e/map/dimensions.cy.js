@@ -34,8 +34,8 @@ describe("Map", () => {
 
   it("displays legend in drawer", () => {
     cy.get(".MuiDrawer-docked").should("contain", "Legend");
-    cy.get(".MuiDrawer-docked").should("contain", "> 60");
-    cy.get(".MuiDrawer-docked").should("contain", "50 - 60");
+    cy.get(".MuiDrawer-docked").should("contain", "> 65");
+    cy.get(".MuiDrawer-docked").should("contain", "50 - 65");
     cy.get(".MuiDrawer-docked").should("contain", "Information unavailable");
   });
 
@@ -123,13 +123,10 @@ describe("Map", () => {
       cy.get(`path[name="Atlantique"]`).should(
         "have.attr",
         "fill",
-        LEGEND[0].color
-      );
-      cy.get(`path[name="Alibori"]`).should(
-        "have.attr",
-        "fill",
         LEGEND[1].color
       );
+      cy.get(`path[name="Donga"]`).should("have.attr", "fill", LEGEND[2].color);
+      cy.get(`path[name="Zou"]`).should("have.attr", "fill", LEGEND[3].color);
       cy.get(`path[name="Atacora"]`).should(
         "have.attr",
         "fill",
