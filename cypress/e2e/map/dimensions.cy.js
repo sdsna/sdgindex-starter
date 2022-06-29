@@ -103,6 +103,16 @@ describe("Map", () => {
         .should("contain", "Nombre de personnel de santé  par habitant");
     });
 
+    it("lists indicators ratings", () => {
+      cy.get(".MuiDrawer-docked")
+        .contains("div", "Indicators")
+        .within(() => {
+          cy.get("a").should("have.length", 15);
+          cy.get("a").eq(9).should("contain", "Taux de succès au BAC");
+          cy.get("a").eq(9).should("have.attr", "data-rating", "red");
+        });
+    });
+
     it("can navigate to indicator visualization", () => {
       cy.contains("Nombre de personnel de santé par habitant").click();
       cy.url().should(
@@ -162,6 +172,21 @@ describe("Map", () => {
               "contain",
               "Proportion de personnes vivant avec un revenu de plus de 50 % inférieur au revenu moyen"
             );
+        });
+    });
+
+    it("displays department name", () => {
+      cy.get(`[name="Atacora"]`).click();
+      cy.get(".MuiDrawer-docked").contains("Atacora");
+    });
+
+    it("lists indicators ratings", () => {
+      cy.get(".MuiDrawer-docked")
+        .contains("div", "Indicators")
+        .within(() => {
+          cy.get("a").should("have.length", 3);
+          cy.get("a").eq(0).should("contain", "Coefficient de Gini");
+          cy.get("a").eq(0).should("have.attr", "data-rating", "green");
         });
     });
   });
