@@ -2,7 +2,7 @@ import { LEGEND } from "helpers/legendForScore";
 
 describe("Map", () => {
   it("renders", () => {
-    cy.visit("/map/dimensions/lnob1");
+    cy.visit("/map/dimensions/LNOB1");
     cy.get("svg").should("exist");
   });
 
@@ -46,6 +46,68 @@ describe("Map", () => {
     );
   });
 
+  it("displays dimensions in drawer", () => {
+    cy.get(".MuiDrawer-docked")
+      .contains("div", "Performance by Dimension")
+      .within(() => {
+        cy.get("a").should("have.length", 4);
+        cy.get("a").eq(0).should("have.attr", "href", "/map/dimensions/LNOB1");
+        cy.get("a").eq(3).should("have.attr", "href", "/map/dimensions/LNOB4");
+      });
+  });
+
+  it("does not display dimensions in the banner", () => {
+    cy.contains(
+      "#content div",
+      "Select one of the dimensions to see it on the map"
+    ).should("not.be.visible");
+  });
+
+  it("can navigate to goal map", () => {
+    cy.get(".MuiDrawer-docked")
+      .contains("div", "Performance by Dimension")
+      .within(() => {
+        cy.get("a").eq(2).click();
+      });
+    cy.url().should("include", "/map/dimensions/LNOB3");
+    cy.go("back");
+  });
+
+  context("when the screen size is desktop", () => {
+    beforeEach(() => {
+      cy.viewport(1280, 800);
+    });
+
+    it("does not display dimensions in drawer", () => {
+      cy.contains(".MuiDrawer-docked div", "Performance by Dimension").should(
+        "not.exist"
+      );
+    });
+
+    it("displays dimensions in the banner", () => {
+      cy.contains(
+        "#content",
+        "Select one of the dimensions to see it on the map"
+      );
+      cy.contains("#content div", "Select one of the dimensions").within(() => {
+        cy.get("a").should("have.length", 4);
+        cy.get("a").eq(0).should("have.attr", "href", "/map/dimensions/LNOB1");
+        cy.get("a").eq(3).should("have.attr", "href", "/map/dimensions/LNOB4");
+      });
+    });
+
+    it("can navigate to dimension map", () => {
+      cy.contains(
+        "div",
+        "Select one of the dimensions to see it on the map"
+      ).within(() => {
+        cy.get("a").eq(1).click();
+      });
+      cy.url({ timeout: 10000 }).should("include", "/map/dimensions/LNOB2");
+      cy.go("back");
+    });
+  });
+
   it("displays indicators in drawer", () => {
     cy.get(".MuiDrawer-docked")
       .contains("div", "Indicators")
@@ -74,7 +136,7 @@ describe("Map", () => {
 
   context("when clicking on a department", () => {
     it("displays department name", () => {
-      cy.visit("/map/dimensions/lnob1");
+      cy.visit("/map/dimensions/LNOB1");
       cy.get(`[name="Atlantique"]`).click();
       cy.get(".MuiDrawer-docked").contains("Atlantique");
     });
