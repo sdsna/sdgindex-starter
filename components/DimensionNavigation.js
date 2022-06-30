@@ -18,9 +18,10 @@ Button.defaultProps = {
 };
 
 const Layout = (props) => (
-  <Paper elevation={5} square>
+  <Paper elevation={5} sx={{ borderRadius: 5 }}>
     <Box
       display={{ xs: "none", lg: "flex" }}
+      borderRadius={5}
       flexDirection="column"
       alignItems="center"
       bgcolor="whitesmoke"
