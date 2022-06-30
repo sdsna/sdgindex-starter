@@ -1,7 +1,7 @@
 describe("Index", () => {
   it("renders the page!", () => {
     cy.visit("/");
-    cy.contains("Benin Sustainable Development Report");
+    cy.contains("Rapport sur le développement durable pour le Bénin 2022");
   });
   // TODO
   // it("all links are defined", () => {
