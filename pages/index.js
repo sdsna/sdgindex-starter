@@ -68,15 +68,6 @@ const Title = (props) => (
     {...props}
   />
 );
-const Subtitle = (props) => (
-  <Typography
-    color="#28547d"
-    fontWeight={500}
-    lineHeight={1.2}
-    variant="h2"
-    {...props}
-  />
-);
 
 const Index = () => (
   <AppLayout>
@@ -126,7 +117,6 @@ const Index = () => (
                     Rapport sur le développement durable pour{" "}
                     <Highlight>le Bénin 2022</Highlight>
                   </Title>
-                  <Subtitle>Version Infranationale</Subtitle>
                 </Box>
                 <Box
                   marginTop={3}
@@ -210,9 +200,30 @@ const Index = () => (
         <Box marginY={8}>
           <Fade right>
             <FeatureBanner
+              title="Analyser les profiles du Bénin et de la CEDEAO"
+              image="/static/icons/indicator.svg"
+              imagePosition="right"
+              links={[
+                {
+                  label: "Analyser les profiles",
+                  href: "https://national-comparison-benin-sdg-index.netlify.app/profiles",
+                },
+              ]}
+            >
+              Notre rapport comporte une page de profil dédiée au Bénin et à la
+              CEDEAO, montrant les performances et les tendances par ODD et par
+              indicateur. En cliquant sur un objectif ou un indicateur, vous
+              pouvez consulter les métadonnées détaillées de l&apos;indicateur
+              dans le panneau latéral.
+            </FeatureBanner>
+          </Fade>
+        </Box>
+        <Box marginY={8}>
+          <Fade right>
+            <FeatureBanner
               title="Télécharger le rapport et documents"
               image="/static/icons/download.svg"
-              imagePosition="right"
+              imagePosition="left"
               links={[
                 {
                   label: "Télécharger le rapport (PDF)",
