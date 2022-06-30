@@ -10,14 +10,14 @@ describe("Map", () => {
     cy.get(`path[name="Atlantique"]`).should(
       "have.attr",
       "fill",
-      LEGEND[2].color
+      LEGEND[3].color
     );
     cy.get(`path[name="Littoral"]`).should(
       "have.attr",
       "fill",
-      LEGEND[0].color
+      LEGEND[1].color
     );
-    cy.get(`path[name="Ouémé"]`).should("have.attr", "fill", LEGEND[1].color);
+    cy.get(`path[name="Ouémé"]`).should("have.attr", "fill", LEGEND[2].color);
   });
 
   it("displays dimension info in drawer", () => {
@@ -34,8 +34,8 @@ describe("Map", () => {
 
   it("displays legend in drawer", () => {
     cy.get(".MuiDrawer-docked").should("contain", "Legend");
-    cy.get(".MuiDrawer-docked").should("contain", "> 65");
-    cy.get(".MuiDrawer-docked").should("contain", "50 - 65");
+    cy.get(".MuiDrawer-docked").should("contain", "> 70");
+    cy.get(".MuiDrawer-docked").should("contain", "50 - 60");
     cy.get(".MuiDrawer-docked").should("contain", "Information unavailable");
   });
 
@@ -135,12 +135,12 @@ describe("Map", () => {
         "fill",
         LEGEND[1].color
       );
-      cy.get(`path[name="Donga"]`).should("have.attr", "fill", LEGEND[2].color);
-      cy.get(`path[name="Zou"]`).should("have.attr", "fill", LEGEND[3].color);
+      cy.get(`path[name="Donga"]`).should("have.attr", "fill", LEGEND[3].color);
+      cy.get(`path[name="Zou"]`).should("have.attr", "fill", LEGEND[4].color);
       cy.get(`path[name="Atacora"]`).should(
         "have.attr",
         "fill",
-        LEGEND[4].color
+        LEGEND[5].color
       );
     });
 
