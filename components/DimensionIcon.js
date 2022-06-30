@@ -15,7 +15,7 @@ const DimensionIcon = ({ identifier, ...otherProps }) => (
       e.preventDefault();
     }}
     draggable="false"
-    src={`/static/dimensions/icons/${identifier.toLowerCase()}.png`}
+    src={`/static/dimensions/icons/${identifier.toLowerCase()}.svg`}
     {...otherProps}
   />
 );

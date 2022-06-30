@@ -50,8 +50,8 @@ const DimensionNavigation = observer(({ dimensions }) => (
               <Button
                 sx={{
                   background: "transparent",
-                  maxWidth: 80,
-                  maxHeight: 80,
+                  maxWidth: 70,
+                  maxHeight: 70,
                 }}
               >
                 <DimensionIcon identifier={dimension.id} />
