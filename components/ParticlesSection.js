@@ -29,38 +29,61 @@ const ParticlesSection = () => {
     <StyledParticles
       init={particlesInit}
       options={{
-        fullScreen: false,
         background: {
+          color: "#fff",
           position: "50% 50%",
           repeat: "no-repeat",
           size: "cover",
         },
         particles: {
           number: {
-            value: 100,
+            value: 1,
+          },
+          density: { enable: false },
+          color: {
+            value: [
+              "#3998D0",
+              "#2EB6AF",
+              "#A9BD33",
+              "#FEC73B",
+              "#F89930",
+              "#F45623",
+              "#D62E32",
+              "#EB586E",
+              "#9952CF",
+            ],
+          },
+          shape: {
+            type: "circle",
+          },
+          opacity: {
+            value: 0.5,
           },
           size: {
-            value: 3,
-          },
-          color: {
-            value: theme.palette.primary.main,
-          },
-          links: {
-            enable: true,
-            distance: 200,
-            color: {
-              value: theme.palette.primary.main,
-            },
-            opacity: 1,
+            value: { min: 200, max: 400 },
           },
           move: {
             enable: !isMobile,
-            speed: 1,
-          },
-          opacity: {
-            animation: {
-              enable: false,
+            angle: {
+              value: 1,
+              offset: 0,
             },
+            speed: 1,
+            direction: "top",
+          },
+        },
+        emitters: {
+          position: {
+            x: 50,
+            y: 150,
+          },
+          rate: {
+            delay: 8,
+            quantity: 1,
+          },
+          size: {
+            width: 100,
+            height: 50,
           },
         },
       }}
