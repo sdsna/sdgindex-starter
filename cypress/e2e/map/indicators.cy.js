@@ -32,7 +32,7 @@ describe("Map", () => {
       );
       cy.get(".MuiDrawer-docked").should(
         "contain",
-        "Dimension genre · Indicator"
+        "Dimension genre · Indicateur"
       );
       cy.get(".MuiDrawer-docked").should(
         "contain",
@@ -41,21 +41,21 @@ describe("Map", () => {
     });
 
     it("displays legend in drawer", () => {
-      cy.get(".MuiDrawer-docked").should("contain", "Legend");
-      cy.get(".MuiDrawer-docked").should("contain", "long-term objective");
-      cy.get(".MuiDrawer-docked").should("contain", "lower bound");
+      cy.get(".MuiDrawer-docked").should("contain", "Légende");
+      cy.get(".MuiDrawer-docked").should("contain", "Objectif à long terme");
+      cy.get(".MuiDrawer-docked").should("contain", "limite inférieure");
     });
 
     it("displays indicator metadata in drawer", () => {
-      cy.get(".MuiDrawer-docked div:contains(Long-Term Objective)")
+      cy.get(".MuiDrawer-docked div:contains(Objectif à long terme)")
         .last()
         .within(() => {
           cy.contains("Leave no one behind");
           cy.contains(
-            "The long-term objective for this indicator is a value of 1."
+            "L'objectif à long terme pour cet indicateur est une valeur de 1."
           );
         });
-      cy.get(".MuiDrawer-docked div:contains(Reference)")
+      cy.get(".MuiDrawer-docked div:contains(Référence)")
         .last()
         .within(() => {
           cy.contains("EDSB5 (2017/2018)");
@@ -74,15 +74,15 @@ describe("Map", () => {
       });
 
       it("displays indicator metadata in drawer", () => {
-        cy.get(".MuiDrawer-docked div:contains(Long-Term Objective)")
+        cy.get(".MuiDrawer-docked div:contains(Objectif à long terme)")
           .last()
           .within(() => {
             cy.contains("Leave no one behind");
             cy.contains(
-              "The long-term objective for this indicator is a value of 1."
+              "L'objectif à long terme pour cet indicateur est une valeur de 1."
             );
           });
-        cy.get(".MuiDrawer-docked div:contains(Reference)")
+        cy.get(".MuiDrawer-docked div:contains(Référence)")
           .last()
           .within(() => {
             cy.contains("EDSB5 (2017/2018)");
