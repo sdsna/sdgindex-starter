@@ -60,7 +60,7 @@ const ParticlesSection = () => {
             value: 0.5,
           },
           size: {
-            value: { min: 200, max: 400 },
+            value: { min: 200, max: 300 },
           },
           move: {
             enable: !isMobile,
@@ -68,7 +68,7 @@ const ParticlesSection = () => {
               value: 1,
               offset: 0,
             },
-            speed: 1,
+            speed: 2,
             direction: "top",
           },
         },
@@ -78,7 +78,7 @@ const ParticlesSection = () => {
             y: 150,
           },
           rate: {
-            delay: 8,
+            delay: 15,
             quantity: 1,
           },
           size: {
