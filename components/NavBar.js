@@ -49,6 +49,10 @@ const pages = [
     href: "/map/dimensions/lnob1",
   },
   {
+    label: "Profiles",
+    href: "https://national-comparison-benin-sdg-index.netlify.app/profiles",
+  },
+  {
     label: "Téléchargements et documents",
     href: "/TODO",
   },
