@@ -71,12 +71,15 @@ const Map = observer(({ children, departments, getDepartmentFill, stroke }) => {
     const disposeReaction = reaction(
       () => mapStore.tooltip?.department?.id,
       (departmentId) => {
-        if (!departmentId) return;
-
-        // Move node to the end of the list of children, so that it is drawn
-        // last and on top of all other elements
-        const node = document.querySelector(`svg [name="${departmentId}"]`);
-        if (node) node.parentElement.appendChild(node);
+        if (!departmentId) {
+          const node = document.querySelector(`path#path1420`);
+          if (node) node.parentElement.appendChild(node);
+        } else {
+          // Move node to the end of the list of children, so that it is drawn
+          // last and on top of all other elements
+          const node = document.querySelector(`svg [name="${departmentId}"]`);
+          if (node) node.parentElement.appendChild(node);
+        }
       }
     );
     return disposeReaction;
