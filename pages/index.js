@@ -123,9 +123,10 @@ const Index = () => (
               >
                 <Box>
                   <Title>
-                    <Highlight>Benin</Highlight> Sustainable Development Report
+                    Rapport sur le développement durable pour{" "}
+                    <Highlight>le Bénin 2022</Highlight>
                   </Title>
-                  <Subtitle>/TODO</Subtitle>
+                  <Subtitle>Version Infranationale</Subtitle>
                 </Box>
                 <Box
                   marginTop={3}
@@ -135,7 +136,7 @@ const Index = () => (
                   <Box marginY={1} marginRight={2}>
                     <Link href="/TODO" passHref>
                       <Button size="large" variant="contained">
-                        Read Report
+                        Lire le rapport
                       </Button>
                     </Link>
                   </Box>
@@ -146,7 +147,7 @@ const Index = () => (
                         variant="outlined"
                         style={{ color: "#0073b0ff", borderColor: "#0073b0ff" }}
                       >
-                        Explore Data
+                        Explorer les données
                       </Button>
                     </Link>
                   </Box>
@@ -158,7 +159,7 @@ const Index = () => (
         <Box marginY={8}>
           <Fade left>
             <FeatureBanner
-              title="Benin Sustainable Development Report"
+              title="Rapport sur le développement durable pour le Bénin 2022"
               image="/static/report-cover.webp"
               imagePosition="right"
               imageOrientation="vertical"
@@ -174,89 +175,64 @@ const Index = () => (
                 },
               ]}
             >
-              /TODO
-            </FeatureBanner>
-          </Fade>
-        </Box>
-        <Box marginY={8}>
-          <Fade right>
-            {/* FeatureBanner icons from:  */}
-            {/* https://drawkit.com/free-icons */}
-            <FeatureBanner
-              title="View Rankings & Scores"
-              image="/static/icons/trophy.svg"
-              imagePosition="left"
-              links={[
-                {
-                  label: "View Rankings",
-                  href: "/TODO",
-                },
-              ]}
-            >
-              /TODO
+              Le Rapport de développement durable du Bénin 2022 marque la
+              première édition de l&apos;évaluation des progrès du Bénin vers
+              les Objectifs de développement durable. Le rapport de cette année
+              analyse les progrès du Bénin sur les dimensions &quot;Ne laisser
+              personne de côté&quot;.
             </FeatureBanner>
           </Fade>
         </Box>
         <Box marginY={8}>
           <Fade left>
+            {/* FeatureBanner icons from:  */}
+            {/* https://drawkit.com/free-icons */}
             <FeatureBanner
-              title="Explore Interactive Maps"
+              title="Explorer les cartes interactives"
               image="/static/icons/map.svg"
+              imagePosition="left"
+              links={[
+                {
+                  label: "Explorer les cartes",
+                  href: "/map/dimensions/lnob1",
+                },
+              ]}
+            >
+              Nos cartes interactives présentent les performances des
+              départements du Bénin sur chacune des 4 dimensions du programme
+              &quot;Leave No One Behind&quot;. Visualisez la performance
+              actuelle des départements pour voir quels départements sont sur la
+              bonne voie. Creusez dans chacun des 91 indicateurs couverts par le
+              Rapport sur le développement durable du Bénin 2022.
+            </FeatureBanner>
+          </Fade>
+        </Box>
+        <Box marginY={8}>
+          <Fade right>
+            <FeatureBanner
+              title="Télécharger le rapport et documents"
+              image="/static/icons/download.svg"
               imagePosition="right"
               links={[
                 {
-                  label: "Explore Maps",
-                  href: "/TODO",
-                },
-              ]}
-            >
-              /TODO
-            </FeatureBanner>
-          </Fade>
-        </Box>
-        <Box marginY={8}>
-          <Fade right>
-            <FeatureBanner
-              title="Analyze State Profiles"
-              image="/static/icons/indicator.svg"
-              imagePosition="left"
-              links={[
-                {
-                  label: "Analyze Profiles",
-                  href: "/TODO",
-                },
-              ]}
-            >
-              /TODO
-            </FeatureBanner>
-          </Fade>
-        </Box>
-
-        <Box marginY={8}>
-          <Fade right>
-            <FeatureBanner
-              title="Download Report & Materials"
-              image="/static/icons/download.svg"
-              imagePosition="left"
-              links={[
-                {
-                  label: "Download Report (PDF)",
+                  label: "Télécharger le rapport (PDF)",
                   href: REPORT_DOWNLOAD_URL,
                   target: "_blank",
                   onClick: () => trackDownload(REPORT_DOWNLOAD_URL),
                 },
                 {
-                  label: "Go to Downloads",
+                  label: "Aller à la page des téléchargements",
                   href: "/TODO",
                   variant: "outlined",
                 },
               ]}
             >
-              The entire report, datasets, and any additional materials are
-              available free of charge and can be downloaded from our website.
-              This includes our full report in PDF format, our Excel database
-              with scores, ratings, trends, and raw values, our codebook, our
-              methodology, and much more.
+              L&apos;ensemble du rapport, les ensembles de données et tout autre
+              matériel supplémentaire sont disponibles gratuitement et peuvent
+              être téléchargés sur notre site Web. Cela comprend notre rapport
+              complet au format PDF, notre base de données Excel avec les
+              scores, les évaluations, les tendances et les valeurs brutes,
+              notre livre de codes, notre méthodologie, et bien plus encore.
             </FeatureBanner>
           </Fade>
         </Box>
