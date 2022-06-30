@@ -1,13 +1,6 @@
 import Link from "next/link";
 import { observer } from "mobx-react-lite";
-import {
-  Box,
-  ButtonBase,
-  Divider,
-  Paper,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Box, ButtonBase, Paper, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import DrawerHeading from "components/DrawerHeading";
 import DimensionIcon from "components/DimensionIcon";
@@ -25,20 +18,17 @@ Button.defaultProps = {
 };
 
 const Layout = (props) => (
-  <>
-    <Divider />
-    <Paper elevation={5} square>
-      <Box
-        display={{ xs: "none", lg: "flex" }}
-        flexDirection="column"
-        alignItems="center"
-        bgcolor="whitesmoke"
-        paddingY={1}
-        paddingX={1}
-        {...props}
-      />
-    </Paper>
-  </>
+  <Paper elevation={5} square>
+    <Box
+      display={{ xs: "none", lg: "flex" }}
+      flexDirection="column"
+      alignItems="center"
+      bgcolor="whitesmoke"
+      paddingY={1}
+      paddingX={1}
+      {...props}
+    />
+  </Paper>
 );
 
 const DimensionNavigation = observer(({ dimensions }) => (
