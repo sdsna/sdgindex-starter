@@ -15,7 +15,7 @@ const Map = ({ zoomIn, zoomOut, resetZoom, dimensions }) => (
 );
 
 Map.Layout = MapLayout;
-Map.layoutProps = ({ dimension, departments }) => ({
+Map.layoutProps = ({ dimension, dimensions, departments }) => ({
   assessment: dimension,
   dimensions: dimension.dimensions,
   departments: departments.map((department) => ({
@@ -24,7 +24,12 @@ Map.layoutProps = ({ dimension, departments }) => ({
   })),
   getTooltipText: getTooltipTextForScore,
   Drawer: (
-    <MapDrawer assessment={dimension} dimension="score" legend={LEGEND} />
+    <MapDrawer
+      assessment={dimension}
+      dimensions={dimensions}
+      dimension="score"
+      legend={LEGEND}
+    />
   ),
 });
 
