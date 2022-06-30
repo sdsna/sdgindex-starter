@@ -46,7 +46,7 @@ const pages = [
   },
   {
     label: "Interactive Map",
-    href: "/map",
+    href: "/map/dimensions/lnob1",
   },
   {
     label: "Downloads & Materials",

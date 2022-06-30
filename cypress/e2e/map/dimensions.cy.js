@@ -2,7 +2,7 @@ import { LEGEND } from "helpers/legendForScore";
 
 describe("Map", () => {
   it("renders", () => {
-    cy.visit("/map");
+    cy.visit("/map/dimensions/lnob1");
     cy.get("svg").should("exist");
   });
 
@@ -74,7 +74,7 @@ describe("Map", () => {
 
   context("when clicking on a department", () => {
     it("displays department name", () => {
-      cy.visit("/map");
+      cy.visit("/map/dimensions/lnob1");
       cy.get(`[name="Atlantique"]`).click();
       cy.get(".MuiDrawer-docked").contains("Atlantique");
     });
