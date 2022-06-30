@@ -3,27 +3,27 @@ import { green, orange, red, grey as gray } from "@mui/material/colors";
 const RATINGS = [
   {
     name: "green",
-    label: "SDG achieved",
+    label: "ODD atteint",
     main: green[600],
   },
   {
     name: "yellow",
-    label: "Challenges remain",
+    label: "Des défis à relever",
     main: "#fcc30b",
   },
   {
     name: "orange",
-    label: "Significant challenges remain",
+    label: "Des défis importants restent à relever",
     main: orange[700],
   },
   {
     name: "red",
-    label: "Major challenges remain",
+    label: "Des défis majeurs subsistent",
     main: red[700],
   },
   {
     name: "gray",
-    label: "Information unavailable",
+    label: "Information indisponible",
     main: gray[400],
   },
 ];

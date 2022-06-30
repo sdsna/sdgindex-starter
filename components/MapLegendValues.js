@@ -13,7 +13,7 @@ const MapLegendValues = ({ longTermObjective, lowerBound }) => (
           <>
             {longTermObjective.toFixed(2)}{" "}
             <Box component="span" color="text.secondary" fontSize=".8em">
-              (long-term objective)
+              (Objectif à long terme)
             </Box>
           </>
         }
@@ -31,7 +31,7 @@ const MapLegendValues = ({ longTermObjective, lowerBound }) => (
           <>
             {lowerBound.toFixed(2)}{" "}
             <Box component="span" color="text.secondary" fontSize=".8em">
-              (lower bound)
+              (limite inférieure)
             </Box>
           </>
         }
@@ -39,7 +39,7 @@ const MapLegendValues = ({ longTermObjective, lowerBound }) => (
       <MapLegendItem
         key="Information unavailable"
         color={gray[400]}
-        label="Information unavailable"
+        label="Information indisponible"
       />
     </Box>
   </MapLegend>

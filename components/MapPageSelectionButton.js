@@ -34,8 +34,8 @@ const MapPageSelectionButton = ({ children }) => {
       options={options}
       getOptionLabel={getOptionLabel}
       getOptionGroup={getOptionGroup}
-      modalTitle="Select a dimension or indicator"
-      modalDescription="Select the dimension or indicator to display on the map."
+      modalTitle="Sélectionner une dimension ou un indicateur"
+      modalDescription="Sélectionnez la dimension ou l'indicateur à afficher sur la carte."
       onSelect={(assessment) => {
         router.push(mapAssessmentUrl({ assessment }));
       }}

@@ -32,7 +32,7 @@ export const LEGEND = [
   {
     color: "#d8d8d8",
     fallback: true,
-    label: "Information unavailable",
+    label: "Information indisponible",
   },
 ];
 
