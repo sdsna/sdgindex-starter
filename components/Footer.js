@@ -33,7 +33,7 @@ const BoxWithShadow = styled(Box)({
 });
 
 const Footer = () => (
-  <BoxWithShadow paddingY={4} position="relative" bgcolor="#0073b0ff">
+  <BoxWithShadow paddingY={4} position="relative" bgcolor="#28547d">
     <Container maxWidth="lg">
       <Grid container>
         <ResponsiveGridItem styled={{ width: 1 / 3 }}>
@@ -43,7 +43,7 @@ const Footer = () => (
             style={{ height: 80, marginBottom: 10 }}
           />
           <Typography variant="h6" color="white" gutterBottom>
-            Check us out on social media!
+            Suivez-nous sur les réseaux sociaux!
           </Typography>
           <Link href="https://www.linkedin.com/company/unsdsn/" target="_blank">
             <Linkedin style={{ fontSize: "30px", color: "white" }} />
@@ -63,27 +63,26 @@ const Footer = () => (
         </ResponsiveGridItem>
         <ResponsiveGridItem styled={{ width: 2 / 3 }}>
           <FooterTypography gutterBottom>
-            The Sustainable Development Report (formerly the SDG Index &
-            Dashboards) is a global assessment of countries&apos; progress
-            towards achieving the Sustainable Development Goals. It is a
-            complement to the official SDG indicators and the voluntary national
-            reviews.
+            Le Rapport sur le développement durable (anciennement l&apos;index
+            et les tableaux de bord des ODD) est une évaluation globale des
+            progrès des pays vers la réalisation des objectifs de développement
+            durable. Il complète les indicateurs officiels des ODD et les
+            examens nationaux volontaires.
           </FooterTypography>
           <FooterTypography gutterBottom>
-            All data presented on this website are based on the publication{" "}
+            Toutes les données présentées sur ce site Internet sont basées sur
+            la publication{" "}
             <Link
               color="inherit"
               href={REPORT_DOWNLOAD_URL}
               target="_blank"
               onClick={() => trackDownload(REPORT_DOWNLOAD_URL)}
             >
-              Sachs et al. (2022): From Crisis to Sustainable Development: the
-              SDGs as Roadmap to 2030 and Beyond. Sustainable Development Report
-              2022. Cambridge: Cambridge University Press.
+              Rapport sur le développement durable pour le Bénin 2022.
             </Link>
           </FooterTypography>
           <FooterTypography gutterBottom>
-            Feedback? Questions? Contact us at{" "}
+            Commentaires ? Vous avez des questions ? Contactez nous à{" "}
             <Link
               color="inherit"
               href="mailto:info@sdgindex.org"
