@@ -106,7 +106,7 @@ const Index = () => (
                   onClick={() => trackDownload(REPORT_DOWNLOAD_URL)}
                 >
                   <img
-                    src="/static/report-cover.webp"
+                    src="/static/report-cover.png"
                     alt="Cover of the Benin Sustainable Development Report"
                   />
                 </ReportButton>
