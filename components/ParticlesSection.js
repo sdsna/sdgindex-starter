@@ -30,7 +30,7 @@ const ParticlesSection = () => {
       init={particlesInit}
       options={{
         background: {
-          color: "#fff",
+          color: "#F9F6EE",
           position: "50% 50%",
           repeat: "no-repeat",
           size: "cover",
