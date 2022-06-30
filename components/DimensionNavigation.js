@@ -37,9 +37,9 @@ const DimensionNavigation = observer(({ dimensions }) => (
     <DrawerHeading>
       Select one of the dimensions to see it on the map
     </DrawerHeading>
-    <Grid container style={{ margin: 10, width: "auto" }}>
+    <Grid container style={{ margin: -2, width: "auto" }}>
       {dimensions.map((dimension) => (
-        <Grid item key={dimension.id} style={{ marginLeft: 4, marginRight: 4 }}>
+        <Grid item key={dimension.id} style={{ marginLeft: 5, marginRight: 5 }}>
           <Box display="flex" flexDirection="column" alignItems="center">
             <Typography variant="body1" gutterBottom>
               {dimension.category.replace(
@@ -51,8 +51,8 @@ const DimensionNavigation = observer(({ dimensions }) => (
               <Button
                 sx={{
                   background: "transparent",
-                  maxWidth: 70,
-                  maxHeight: 70,
+                  maxWidth: 60,
+                  maxHeight: 60,
                 }}
               >
                 <DimensionIcon identifier={dimension.id} />
