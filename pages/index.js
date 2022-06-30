@@ -155,11 +155,11 @@ const Index = () => (
               imageOrientation="vertical"
               links={[
                 {
-                  label: "Executive Summary",
+                  label: "Résumé Exécutif",
                   href: "/TODO",
                 },
                 {
-                  label: "All Chapters",
+                  label: "Tous les chapitres",
                   href: "/TODO",
                   variant: "outlined",
                 },
