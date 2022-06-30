@@ -19,7 +19,7 @@ const transition = "250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms";
 
 const Background = (props) => <Box bgcolor="#eee" {...props} />;
 const Highlight = (props) => (
-  <Box component="span" color="#66badeff" {...props} />
+  <Box component="span" color="#61b3e3" {...props} />
 );
 const Hero = (props) => <Box paddingY={{ xs: 4, md: 0 }} {...props} />;
 
@@ -60,7 +60,7 @@ const ReportButton = (props) => (
 
 const Title = (props) => (
   <Typography
-    color="#0073b0ff"
+    color="#28547d"
     fontWeight={700}
     lineHeight={1.1}
     variant="h1"
@@ -70,7 +70,7 @@ const Title = (props) => (
 );
 const Subtitle = (props) => (
   <Typography
-    color="#0073b0ff"
+    color="#28547d"
     fontWeight={500}
     lineHeight={1.2}
     variant="h2"
