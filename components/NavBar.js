@@ -58,7 +58,7 @@ const pages = [
   },
   {
     label: "Passer au rapport régional",
-    href: "https://deploy-preview-2--national-comparison-benin-sdg-index.netlify.app/map",
+    href: "https://national-comparison-benin-sdg-index.netlify.app/map",
     external: true,
   },
 ];
