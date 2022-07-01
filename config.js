@@ -12,7 +12,7 @@ export const MAX_RANK = null;
 // The URL of the full report (PDF)
 // The report should be hosted on AWS. Directly downloading it from Netlify will
 // consume too much bandwidth.
-export const REPORT_DOWNLOAD_URL = null;
+export const REPORT_DOWNLOAD_URL = "/TODO";
 
 // The URL of the database (Excel)
 // Example: /static/downloads/files/SDR2021-database.xlsx

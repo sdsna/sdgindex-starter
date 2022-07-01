@@ -41,19 +41,23 @@ const StyledToolbar = (props) => (
 
 const pages = [
   {
-    label: "Chapters",
-    href: "/chapters",
+    label: "Chapitres",
+    href: "/TODO",
   },
   {
-    label: "Interactive Map",
+    label: "Carte interactive",
     href: "/map/dimensions/lnob1",
   },
   {
-    label: "Downloads & Materials",
-    href: "/downlaods",
+    label: "Profiles",
+    href: "https://national-comparison-benin-sdg-index.netlify.app/profiles",
   },
   {
-    label: "Switch to regional report",
+    label: "Téléchargements et documents",
+    href: "/TODO",
+  },
+  {
+    label: "Passer au rapport régional",
     href: "https://deploy-preview-2--national-comparison-benin-sdg-index.netlify.app/map",
     external: true,
   },
