@@ -96,7 +96,7 @@ describe("Map", () => {
           ".MuiDrawer-docked div",
           "Indice de parité homme/ femme: Couverture du test VIH"
         ).click();
-        cy.contains("div", "Search")
+        cy.contains("div", "Rechercher")
           .parent()
           .within(() => {
             cy.get("input").type("gini");

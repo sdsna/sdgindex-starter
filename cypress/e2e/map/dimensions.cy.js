@@ -262,7 +262,7 @@ describe("Map", () => {
   context("when changing page via page selection button", () => {
     it("changes page to dimension 2", () => {
       cy.contains(".MuiDrawer-docked div", "Inégalité des revenus").click();
-      cy.contains("div", "Search")
+      cy.contains("div", "Rechercher")
         .parent()
         .within(() => {
           cy.get("input").type("Extreme pauvrete");
