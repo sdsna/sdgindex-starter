@@ -65,16 +65,13 @@ const MapControls = ({ zoomIn, zoomOut, resetZoom, dimensions }) => (
           borderRadius={2}
         >
           <Link
-            href="https://deploy-preview-2--national-comparison-benin-sdg-index.netlify.app/map"
+            href="https://national-comparison-benin-sdg-index.netlify.app/map"
             passHref
           >
-            <TabButton>Regional</TabButton>
+            <TabButton>Régionale</TabButton>
           </Link>
-          <Link
-            href="https://deploy-preview-5--benin-subnational-data-viz.netlify.app/map/dimensions/LNOB1"
-            passHref
-          >
-            <TabButton isactive>Subnational</TabButton>
+          <Link href="/map/dimensions/LNOB1" passHref>
+            <TabButton isactive>Infranationale</TabButton>
           </Link>
         </Box>
       </Box>

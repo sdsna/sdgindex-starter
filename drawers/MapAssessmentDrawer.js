@@ -55,7 +55,7 @@ const DimensionInfo = ({ dimension, dimensions, indicators }) => (
       <DrawerText>{dimension.description}</DrawerText>
     </DrawerSection>
     <DrawerSection>
-      <DrawerHeading>Indicators</DrawerHeading>
+      <DrawerHeading>Indicateurs</DrawerHeading>
       <Box marginX={-0.5}>
         {indicators.map((indicator) => (
           <Link

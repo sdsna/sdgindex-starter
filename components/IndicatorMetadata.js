@@ -13,10 +13,10 @@ const IndicatorMetadata = ({ indicator, drawerSectionProps = false }) => (
     </DrawerSection>
     <DrawerSection {...drawerSectionProps}>
       <DrawerHeadingWithCaption caption={indicator.longTermObjectiveReason}>
-        Long-Term Objective
+        {"Objectif à long terme"}
       </DrawerHeadingWithCaption>
       <DrawerText>
-        The long-term objective for this indicator is a value of{" "}
+        {"L'objectif à long terme pour cet indicateur est une valeur de "}
         {indicator.longTermObjective}.
       </DrawerText>
     </DrawerSection>
@@ -28,7 +28,7 @@ const IndicatorMetadata = ({ indicator, drawerSectionProps = false }) => (
       )}
     >
       <DrawerSection {...drawerSectionProps}>
-        <DrawerHeading>Reference</DrawerHeading>
+        <DrawerHeading>{"Référence"}</DrawerHeading>
         <DrawerText>{indicator.reference}</DrawerText>
       </DrawerSection>
     </Linkify>

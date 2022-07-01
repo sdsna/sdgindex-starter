@@ -66,8 +66,8 @@ const DimensionSection = ({ department, dimension, indicators }) => (
     </DrawerSection>
     <Divider />
     <DrawerSection gray>
-      <DrawerHeadingWithCaption caption="Click on an indicator to visualize it on the map.">
-        Indicators
+      <DrawerHeadingWithCaption caption="Cliquez sur un indicateur pour le visualiser sur la carte.">
+        Indicateurs
       </DrawerHeadingWithCaption>
       {indicators.map((indicator) => (
         <Link

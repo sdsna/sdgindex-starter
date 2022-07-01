@@ -77,7 +77,7 @@ const PageSelectionButton = ({
               PopperComponent={StyledDiv}
               PaperComponent="div"
               renderInput={(params) => (
-                <TextField {...params} label="Search" size="small" />
+                <TextField {...params} label="Rechercher" size="small" />
               )}
             />
           )}

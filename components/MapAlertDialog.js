@@ -17,16 +17,15 @@ const MapAlertDialog = () => {
         onClick={() => setOpen(true)}
         sx={{ cursor: "pointer" }}
       >
-        Note on department boundaries
+        Note sur les frontières des départements
       </Link>
       <Dialog open={open} onClose={() => setOpen(false)}>
-        <DialogTitle>Note on department boundaries</DialogTitle>
+        <DialogTitle>{"Note sur les frontières des départements"}</DialogTitle>
         <DialogContent dividers>
           <DialogContentText>
-            The boundaries, colors, denominations, and other information shown
-            on this map do not imply any judgment on the part of SDSN concerning
-            the legal status of any territory or the endorsement or acceptance
-            of such boundaries.
+            {
+              "Les frontières, couleurs, dénominations et autres informations figurant sur cette carte n'impliquent aucun jugement de la part de SDSN concernant le statut juridique d'un territoire ou l'approbation ou l'acceptation de ces frontières."
+            }
           </DialogContentText>
         </DialogContent>
       </Dialog>

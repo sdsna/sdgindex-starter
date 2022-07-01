@@ -35,7 +35,7 @@ const Layout = (props) => (
 const DimensionNavigation = observer(({ dimensions }) => (
   <Layout>
     <DrawerHeading>
-      Select one of the dimensions to see it on the map
+      {"Sélectionnez l'une des dimensions pour la voir sur la carte."}
     </DrawerHeading>
     <Grid container style={{ margin: -2, width: "auto" }}>
       {dimensions.map((dimension) => (

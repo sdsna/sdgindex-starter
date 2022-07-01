@@ -33,10 +33,10 @@ describe("Map", () => {
   });
 
   it("displays legend in drawer", () => {
-    cy.get(".MuiDrawer-docked").should("contain", "Legend");
+    cy.get(".MuiDrawer-docked").should("contain", "Légende");
     cy.get(".MuiDrawer-docked").should("contain", "> 70");
     cy.get(".MuiDrawer-docked").should("contain", "50 - 60");
-    cy.get(".MuiDrawer-docked").should("contain", "Information unavailable");
+    cy.get(".MuiDrawer-docked").should("contain", "Information indisponible");
   });
 
   it("displays description", () => {
@@ -59,7 +59,7 @@ describe("Map", () => {
   it("does not display dimensions in the banner", () => {
     cy.contains(
       "#content div",
-      "Select one of the dimensions to see it on the map"
+      "Sélectionnez l'une des dimensions pour la voir sur la carte."
     ).should("not.be.visible");
   });
 
@@ -87,19 +87,25 @@ describe("Map", () => {
     it("displays dimensions in the banner", () => {
       cy.contains(
         "#content",
-        "Select one of the dimensions to see it on the map"
+        "Sélectionnez l'une des dimensions pour la voir sur la carte"
       );
-      cy.contains("#content div", "Select one of the dimensions").within(() => {
-        cy.get("a").should("have.length", 4);
-        cy.get("a").eq(0).should("have.attr", "href", "/map/dimensions/LNOB1");
-        cy.get("a").eq(3).should("have.attr", "href", "/map/dimensions/LNOB4");
-      });
+      cy.contains("#content div", "Sélectionnez l'une des dimensions").within(
+        () => {
+          cy.get("a").should("have.length", 4);
+          cy.get("a")
+            .eq(0)
+            .should("have.attr", "href", "/map/dimensions/LNOB1");
+          cy.get("a")
+            .eq(3)
+            .should("have.attr", "href", "/map/dimensions/LNOB4");
+        }
+      );
     });
 
     it("can navigate to dimension map", () => {
       cy.contains(
         "div",
-        "Select one of the dimensions to see it on the map"
+        "Sélectionnez l'une des dimensions pour la voir sur la carte"
       ).within(() => {
         cy.get("a").eq(1).click();
       });
@@ -110,7 +116,7 @@ describe("Map", () => {
 
   it("displays indicators in drawer", () => {
     cy.get(".MuiDrawer-docked")
-      .contains("div", "Indicators")
+      .contains("div", "Indicateurs")
       .eq(0)
       .within(() => {
         cy.get("a").should("have.length", 15);
@@ -167,7 +173,7 @@ describe("Map", () => {
 
     it("lists indicators ratings", () => {
       cy.get(".MuiDrawer-docked")
-        .contains("div", "Indicators")
+        .contains("div", "Indicateurs")
         .within(() => {
           cy.get("a").should("have.length", 15);
           cy.get("a").eq(9).should("contain", "Taux de succès au BAC");
@@ -217,7 +223,7 @@ describe("Map", () => {
 
     it("displays indicators in drawer", () => {
       cy.get(".MuiDrawer-docked")
-        .contains("div", "Indicators")
+        .contains("div", "Indicateurs")
         .eq(0)
         .within(() => {
           cy.get("a").should("have.length", 3);
@@ -244,7 +250,7 @@ describe("Map", () => {
 
     it("lists indicators ratings", () => {
       cy.get(".MuiDrawer-docked")
-        .contains("div", "Indicators")
+        .contains("div", "Indicateurs")
         .within(() => {
           cy.get("a").should("have.length", 3);
           cy.get("a").eq(0).should("contain", "Coefficient de Gini");
@@ -256,7 +262,7 @@ describe("Map", () => {
   context("when changing page via page selection button", () => {
     it("changes page to dimension 2", () => {
       cy.contains(".MuiDrawer-docked div", "Inégalité des revenus").click();
-      cy.contains("div", "Search")
+      cy.contains("div", "Rechercher")
         .parent()
         .within(() => {
           cy.get("input").type("Extreme pauvrete");
