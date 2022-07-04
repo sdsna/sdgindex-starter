@@ -34,8 +34,8 @@ IndicatorButton.defaultProps = {
 const DimensionInfo = ({ dimension, dimensions, indicators }) => (
   <>
     <DrawerSection display={{ xs: "block", lg: "none" }}>
-      <DrawerHeadingWithCaption caption="Click on a dimension to visualize it on the map.">
-        Performance by Dimension
+      <DrawerHeadingWithCaption caption="Cliquez sur une dimension pour la visualiser sur la carte.">
+        Performance par dimension
       </DrawerHeadingWithCaption>
       <Grid container style={{ margin: -2, width: "auto" }}>
         {dimensions.map((dimension) => (
@@ -96,10 +96,12 @@ const Legend = ({ legend, assessment }) => {
   );
 };
 
-const MapAssessmentDrawer = ({ assessment, dimension, dimensions, legend }) => (
+const MapAssessmentDrawer = ({ assessment, dimensions, legend }) => (
   <>
-    <Legend dimension={dimension} legend={legend} assessment={assessment} />
-    <Divider />
+    <DrawerSection display={{ xs: "block", lg: "none" }}>
+      <Legend legend={legend} assessment={assessment} />
+      <Divider />
+    </DrawerSection>
     {isGoal(assessment) && (
       <DimensionInfo
         dimension={assessment}

@@ -1,9 +1,12 @@
-import { Box, ButtonBase, Divider } from "@mui/material";
+import { Box, ButtonBase, Divider, Paper } from "@mui/material";
 import { Plus, ArrowExpandAll, Minus } from "mdi-material-ui";
 import Link from "next/link";
 import { styled } from "@mui/material/styles";
 import MapFooter from "components/MapFooter";
 import DimensionNavigation from "components/DimensionNavigation";
+import MapLegendValues from "components/MapLegendValues";
+import MapLegend from "components/MapLegend";
+import MapLegendItem from "components/MapLegendItem";
 
 const BoxWithoutPointerEvents = styled(Box)({
   pointerEvents: "none",
@@ -41,7 +44,37 @@ const TabButton = styled(ButtonBase)(
   }
 );
 
-const MapControls = ({ zoomIn, zoomOut, resetZoom, dimensions }) => (
+const Legend = ({ legend, assessment }) => {
+  if (legend != null) {
+    return (
+      <MapLegend>
+        {legend.map((item) => (
+          <MapLegendItem
+            key={item.color}
+            color={item.color}
+            label={item.label}
+          />
+        ))}
+      </MapLegend>
+    );
+  }
+
+  return (
+    <MapLegendValues
+      longTermObjective={assessment.longTermObjective}
+      lowerBound={assessment.lowerBound}
+    />
+  );
+};
+
+const MapControls = ({
+  zoomIn,
+  zoomOut,
+  resetZoom,
+  assessment,
+  dimensions,
+  legend,
+}) => (
   <>
     <BoxWithoutPointerEvents
       position="absolute"
@@ -76,6 +109,21 @@ const MapControls = ({ zoomIn, zoomOut, resetZoom, dimensions }) => (
         </Box>
       </Box>
       <Box flexGrow={1} />
+      <Paper elevation={5} sx={{ borderRadius: 5 }}>
+        <Box
+          marginRight={2}
+          marginTop={14}
+          boxShadow={3}
+          borderRadius={5}
+          display={{ xs: "none", lg: "block" }}
+          bgcolor="whitesmoke"
+          position="fixed"
+          top="0"
+          right="0"
+        >
+          <Legend legend={legend} assessment={assessment} />
+        </Box>
+      </Paper>
       <Box marginLeft={2} marginTop={2} display="flex">
         <DimensionNavigation dimensions={dimensions} />
       </Box>
