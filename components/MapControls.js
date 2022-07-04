@@ -26,7 +26,7 @@ const TabButton = styled(ButtonBase)(
       opacity: 1,
     },
 
-    ":first-child": {
+    ":first-of-type": {
       borderTopLeftRadius: 8,
       borderBottomLeftRadius: 8,
     },

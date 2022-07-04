@@ -74,11 +74,22 @@ const Map = observer(({ children, departments, getDepartmentFill, stroke }) => {
         if (!departmentId) {
           const node = document.querySelector(`path#path1420`);
           if (node) node.parentElement.appendChild(node);
+          const lit = document.querySelector(`path#BENlit`);
+          if (lit) lit.parentElement.appendChild(lit);
         } else {
-          // Move node to the end of the list of children, so that it is drawn
-          // last and on top of all other elements
-          const node = document.querySelector(`svg [name="${departmentId}"]`);
-          if (node) node.parentElement.appendChild(node);
+          if (departmentId !== "Littoral") {
+            // Move node to the end of the list of children, so that it is drawn
+            // last and on top of all other elements
+            const node = document.querySelector(`svg [name="${departmentId}"]`);
+            if (node) node.parentElement.appendChild(node);
+          } else {
+            const nodes = document.querySelectorAll(
+              `svg [name="${departmentId}"]`
+            );
+            if (nodes.length) {
+              [...nodes].map((node) => node.parentElement.appendChild(node));
+            }
+          }
         }
       }
     );
