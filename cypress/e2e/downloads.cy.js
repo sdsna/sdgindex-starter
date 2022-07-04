@@ -1,17 +1,17 @@
 describe("Downloads", () => {
   it("renders the page", () => {
     cy.visit("/downloads");
-    cy.get("h1").should("contain", "Downloads");
+    cy.get("h1").should("contain", "Téléchargements");
   });
 
   it("lists four regional indices", () => {
-    cy.contains("div", "Regional SDG Indices").within(() => {
+    cy.contains("div", "Indices régionaux sur les ODD").within(() => {
       cy.get("a").should("have.length", 4);
     });
   });
 
   it("lists eight subnational indices", () => {
-    cy.contains("div", "Subnational SDG Indices").within(() => {
+    cy.contains("div", "Indices infranationaux sur les ODD").within(() => {
       cy.get("a").should("have.length", 10);
     });
   });
