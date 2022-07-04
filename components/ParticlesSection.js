@@ -29,62 +29,97 @@ const ParticlesSection = () => {
     <StyledParticles
       init={particlesInit}
       options={{
+        fullScreen: {
+          enable: true,
+          zIndex: 0,
+        },
+        particles: {
+          move: {
+            direction: "top",
+            enable: true,
+            speed: 2,
+          },
+          number: {
+            limit: 25,
+            value: 80,
+          },
+          opacity: {
+            animation: {
+              enable: true,
+              minimumValue: 0.2,
+              speed: 1,
+              sync: false,
+            },
+            random: true,
+            value: 1,
+          },
+          shape: {
+            image: [
+              {
+                src: `/static/particles/green_arrow.svg`,
+                height: 60,
+                width: 60,
+              },
+              {
+                src: `/static/particles/green_circle.svg`,
+                height: 45,
+                width: 45,
+              },
+              {
+                src: `/static/particles/red_arrow.svg`,
+                height: 45,
+                width: 45,
+              },
+              {
+                src: `/static/particles/red_circle.svg`,
+                height: 45,
+                width: 45,
+              },
+              {
+                src: `/static/particles/yellow_arrow.svg`,
+                height: 45,
+                width: 45,
+              },
+              {
+                src: `/static/particles/yellow_circle.svg`,
+                height: 45,
+                width: 45,
+              },
+              {
+                src: `/static/particles/orange_arrow.svg`,
+                height: 45,
+                width: 45,
+              },
+              {
+                src: `/static/particles/orange_circle.svg`,
+                height: 45,
+                width: 45,
+              },
+            ],
+            type: "image",
+          },
+          size: {
+            animation: {
+              enable: false,
+              minimumValue: 0.1,
+              speed: 40,
+              sync: false,
+            },
+            random: false,
+            value: 40,
+          },
+        },
+        polygon: {
+          move: {
+            radius: 10,
+            speed: isMobile ? 0 : 2,
+          },
+          scale: 1,
+        },
         background: {
-          color: "#F9F6EE",
           position: "50% 50%",
           repeat: "no-repeat",
           size: "cover",
-        },
-        particles: {
-          number: {
-            value: 1,
-          },
-          density: { enable: false },
-          color: {
-            value: [
-              "#3998D0",
-              "#2EB6AF",
-              "#A9BD33",
-              "#FEC73B",
-              "#F89930",
-              "#F45623",
-              "#D62E32",
-              "#EB586E",
-              "#9952CF",
-            ],
-          },
-          shape: {
-            type: "circle",
-          },
-          opacity: {
-            value: 0.5,
-          },
-          size: {
-            value: { min: 200, max: 300 },
-          },
-          move: {
-            enable: !isMobile,
-            angle: {
-              value: 1,
-              offset: 0,
-            },
-            speed: 2,
-            direction: "top",
-          },
-        },
-        emitters: {
-          position: {
-            x: 50,
-            y: 150,
-          },
-          rate: {
-            delay: 15,
-            quantity: 1,
-          },
-          size: {
-            width: 100,
-            height: 50,
-          },
         },
       }}
     />
