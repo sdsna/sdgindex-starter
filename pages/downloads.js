@@ -16,37 +16,37 @@ import { trackDownload } from "helpers/gtag";
 
 const downloads = [
   {
-    label: "Benin Sustainable Development Report",
+    label: "Rapport sur le développement durable pour le Bénin",
     type: "PDF",
     image: "full-report.webp",
     url: "/TODO",
   },
   {
-    label: "Database",
+    label: "Base de données",
     type: "Excel",
     image: "database.png",
     url: "/TODO",
   },
   {
-    label: "Supplementary Online Materials",
+    label: "Documents supplémentaires en ligne",
     type: "Excel",
     image: "supplementary-online-materials.png",
     url: "/TODO",
   },
   {
-    label: "Press Release",
-    type: "Website",
+    label: "Communiqué de presse",
+    type: "Site Web",
     image: "press-release.png",
     url: "https://www.sdgindex.org/news/press-release-sustainable-development-report-2022/",
   },
   {
-    label: "Methodology",
+    label: "Méthodologie",
     type: "PDF",
     image: "methodology-paper.png",
     url: "https://github.com/sdsna/2018GlobalIndex/raw/master/2018GlobalIndexMethodology.pdf",
   },
   {
-    label: "JRC Statistical Audit",
+    label: "Audit statistique du CCR",
     type: "PDF",
     image: "jrc-statistical-audit.png",
     url: "https://s3.amazonaws.com/sustainabledevelopment.report/2019/2019_JRC_Audit_SDG_Index.pdf",
@@ -56,7 +56,7 @@ const downloads = [
 const globalIndices = [
   {
     label: "Sustainable Development Report 2022",
-    type: "Report + Dashboard",
+    type: "Rapport + Tableau de bord",
     image: "sdr.webp",
     url: "https://sdgindex.org/reports/sustainable-development-report-2022/",
   },
@@ -65,25 +65,25 @@ const globalIndices = [
 const regionalIndices = [
   {
     label: "2022 Arab Region SDG Index and Dashboards Report",
-    type: "Report",
+    type: "Rapport",
     image: "arab-sdr.webp",
     url: "https://www.sdgindex.org/reports/arab-sdg-index-and-dashboard-report-2022/",
   },
   {
     label: "Europe Sustainable Development Report 2021",
-    type: "Report + Dashboard",
+    type: "Rapport + Tableau de bord",
     image: "europe-sdr.webp",
     url: "https://www.sdgindex.org/EU",
   },
   {
     label: "2020 Africa SDG Index and Dashboards Report",
-    type: "Report + Dashboard",
+    type: "Rapport + Tableau de bord",
     image: "africa-sdr.png",
     url: "https://sdgindex.org/reports/2020-africa-sdg-index-and-dashboards-report/",
   },
   {
     label: "SDG Index 2019 for Latin America and the Caribbean",
-    type: "Report (Spanish)",
+    type: "Rapport (Espagnol)",
     image: "lac-sdr.png",
     url: "https://sdgindex.org/reports/2019-sdg-index-for-latin-america-and-the-caribbean/",
   },
@@ -92,61 +92,61 @@ const regionalIndices = [
 const subnationalIndices = [
   {
     label: "United States Sustainable Development Report 2021",
-    type: "Report + Dashboard",
+    type: "Rapport + Tableau de bord",
     image: "us-states.webp",
     url: "https://www.sdgindex.org/reports/united-states-sustainable-development-report-2021/",
   },
   {
     label: "Paraguay Sustainable Development Report 2021",
-    type: "Report + Dashboard",
+    type: "Rapport + Tableau de bord",
     image: "paraguay-sdr-2021-cover.png",
     url: "https://www.sdgindex.org/reports/paraguay-sustainable-development-report-2021/",
   },
   {
     label: "Uruguay Sustainable Development Report 2021",
-    type: "Report",
+    type: "Rapport",
     image: "uruguay-sdr-2021-cover.png",
     url: "https://www.sdgindex.org/reports/uruguay-sustainable-development-report-2021/",
   },
   {
     label: "SDG Index on Racial Inequality in the US 2021",
-    type: "Report + Dashboard",
+    type: "Rapport + Tableau de bord",
     image: "us-states-lnob.png",
     url: "https://sdgindex.org/reports/in-the-red-the-us-failure-to-deliver-on-a-promise-of-racial-equality/",
   },
   {
     label: "Brazilian Cities SDG Index 2021",
-    type: "Dashboard",
+    type: "Tableau de bord",
     image: "brazilian-cities.png",
     url: "https://sdgindex.org/reports/indice-de-desenvolvimento-sustentavel-das-cidades-brasil/",
   },
   {
     label: "Spanish Cities SDG Index 2020",
-    type: "Report + Dashboard (Spanish)",
+    type: "Rapport + Tableau de bord (Espagnol)",
     image: "spanish-cities.png",
     url: "https://sdgindex.org/reports/informe-los-ods-en-100-ciudades-espanolas/",
   },
   {
     label: "Municipal Atlas of the SDGs in Bolivia 2020",
-    type: "Report + Dashboard",
+    type: "Rapport + Tableau de bord",
     image: "bolivian-cities.png",
     url: "https://sdgindex.org/reports/municipal-atlas-of-the-sdgs-in-bolivia-2020/",
   },
   {
     label: "Italian Cities SDG Index",
-    type: "Report (Italian)",
+    type: "Rapport (Italien)",
     image: "italian-cities.png",
     url: "https://www.feem.it/en/research/programs/firms-and-cities-towards-sustainability/ongoing-projects/the-italian-index-on-sdgs/",
   },
   {
     label: "2019 US Cities Sustainable Development Report",
-    type: "Report",
+    type: "Rapport",
     image: "us-cities.png",
     url: "https://sdgindex.org/reports/2019-us-cities-sustainable-development-report/",
   },
   {
     label: "SDG Index and Dashboards Report for European Cities",
-    type: "Report + Dashboard",
+    type: "Rapport + Tableau de bord",
     image: "eu-cities.png",
     url: "https://sdgindex.org/reports/sdg-index-and-dashboards-report-for-european-cities/",
   },
@@ -162,8 +162,8 @@ const GridClearer = styled("div")({
 
 const Downloads = () => (
   <HeaderLayout
-    title="Downloads"
-    subtitle="Download the Benin Sustainable Development Report and supplementary materials"
+    title="Téléchargements"
+    subtitle="Télécharger le rapport sur le développement durable du Bénin et ses documents complémentaires"
     fullWidth
   >
     <Box
@@ -195,25 +195,29 @@ const Downloads = () => (
           <CardContent>
             <Box>
               <Typography variant="h2" gutterBottom>
-                Our Work: Tracking Progress on the SDGs
+                Notre travail : Suivre les progrès réalisés en matière
+                d&apos;ODD
               </Typography>
               <Typography variant="body1">
-                Good data and clear metrics are critical for each country to
-                take stock of where it stands on the SDGs, devise pathways for
-                achieving the goals, and track progress. Since 2016, the SDSN
-                and Bertelsmann Stiftung have published the annual global SDG
-                Index and Dashboards. The methodology has been peer-reviewed
-                (Schmidt-Traub et al., 2017) and was audited in 2019 by the
-                European Commission Joint Research Centre (Papadimitriou, Neves,
-                and Becker, 2019). To provide a better analysis of country and
-                regional contexts, and to improve policy relevance, the SDSN in
-                collaboration with numerous partners has also developed regional
-                and sub-national SDG indices and dashboards.
+                De bonnes données et des paramètres clairs sont essentiels pour
+                que chaque pays puisse faire le point sur sa situation par
+                rapport aux ODD, concevoir des voies pour atteindre les
+                objectifs et suivre les progrès. Depuis 2016, le SDSN et
+                Bertelsmann Stiftung publient chaque année l&apos;indice et les
+                tableaux de bord mondiaux des ODD. La méthodologie a été
+                examinée par des pairs (Schmidt-Traub et al., 2017) et a été
+                auditée en 2019 par le Centre commun de recherche de la
+                Commission européenne (Papadimitriou, Neves et Becker, 2019).
+                Afin de fournir une meilleure analyse des contextes nationaux et
+                régionaux, et d&apos;améliorer la pertinence des politiques, le
+                SDSN, en collaboration avec de nombreux partenaires, a également
+                développé des indices et des tableaux de bord régionaux et
+                infranationaux sur les ODD.
               </Typography>
             </Box>
             <Box my={2}>
               <Typography variant="h3" gutterBottom>
-                Global SDG Index
+                Indice mondial des ODD
               </Typography>
               <Grid container spacing={1}>
                 {globalIndices.map(({ label, type, image, url }) => (
@@ -233,7 +237,7 @@ const Downloads = () => (
             </Box>
             <Box my={2}>
               <Typography variant="h3" gutterBottom>
-                Regional SDG Indices
+                Indices régionaux sur les ODD
               </Typography>
               <Grid container spacing={1}>
                 {regionalIndices.map(({ label, type, image, url }) => (
@@ -253,7 +257,7 @@ const Downloads = () => (
             </Box>
             <Box my={2}>
               <Typography variant="h3" gutterBottom>
-                Subnational SDG Indices
+                Indices infranationaux sur les ODD
               </Typography>
               <Grid container spacing={1}>
                 {subnationalIndices.map(({ label, type, image, url }) => (
