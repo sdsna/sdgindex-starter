@@ -37,27 +37,31 @@ const DimensionNavigation = observer(({ dimensions }) => (
     <DrawerHeading>{"Sélectionnez une dimension"}</DrawerHeading>
     <Stack direction="column" spacing={1}>
       {dimensions.map((dimension) => (
-        <Link
+        <Box
           key={dimension.id}
-          href={mapAssessmentUrl({ assessment: dimension })}
-          passHref
+          display="flex"
+          alignItems="center"
+          justifyContent="flex-end"
         >
-          <Button
-            sx={{
-              background: "transparent",
-              maxWidth: 60,
-              maxHeight: 60,
-            }}
-          >
-            <DimensionIcon identifier={dimension.id} />
-            <Typography variant="body1" gutterBottom>
-              {dimension.category.replace(
-                dimension.category[0],
-                dimension.category[0].toUpperCase()
-              )}
-            </Typography>
-          </Button>
-        </Link>
+          <Typography variant="body1" gutterBottom>
+            {dimension.category.replace(
+              dimension.category[0],
+              dimension.category[0].toUpperCase()
+            )}
+          </Typography>
+          <Link href={mapAssessmentUrl({ assessment: dimension })} passHref>
+            <Button
+              sx={{
+                background: "transparent",
+                maxWidth: 60,
+                maxHeight: 60,
+                marginLeft: 3,
+              }}
+            >
+              <DimensionIcon identifier={dimension.id} />
+            </Button>
+          </Link>
+        </Box>
       ))}
     </Stack>
   </Layout>
