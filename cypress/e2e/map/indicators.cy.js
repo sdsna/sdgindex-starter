@@ -2,7 +2,7 @@ describe("Map", () => {
   context("when visiting the map for lnb3_vihtestparit", () => {
     it("renders", () => {
       cy.visit(
-        "/map/indicators/indice-de-parite-homme-femme-couverture-du-test-vih"
+        "/carte/indicateurs/indice-de-parite-homme-femme-couverture-du-test-vih"
       );
       cy.get("svg").should("exist");
     });
@@ -118,7 +118,7 @@ describe("Map", () => {
             cy.get("input").type("gini");
             cy.get("input").type("{enter}");
           });
-        cy.url().should("contain", "/map/indicators/coefficient-de-gini");
+        cy.url().should("contain", "/carte/indicateurs/coefficient-de-gini");
         cy.get(".MuiDrawer-docked").should("contain", "Coefficient de Gini");
       });
     });
@@ -127,7 +127,7 @@ describe("Map", () => {
   context("when visiting the map for lnb3_scolamparit", () => {
     it("renders", () => {
       cy.visit(
-        "/map/indicators/indice-de-parite-fille-garcon-nombre-median-d-annees-de-scolarite"
+        "/carte/indicateurs/indice-de-parite-fille-garcon-nombre-median-d-annees-de-scolarite"
       );
     });
 
