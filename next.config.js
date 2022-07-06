@@ -19,8 +19,8 @@ module.exports = {
     getIndicators()
       .filter((indicator) => !indicator.hidemap)
       .forEach(({ slug }) => {
-        paths[`/carte/indicateurs${slug}`] = {
-          page: "/carte/indicateurs[...params]",
+        paths[`/carte/indicateurs/${slug}`] = {
+          page: "/carte/indicateurs/[...params]",
         };
       });
 
