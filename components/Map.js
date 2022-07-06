@@ -74,8 +74,9 @@ const Map = observer(({ children, departments, getDepartmentFill, stroke }) => {
         if (!departmentId) {
           const node = document.querySelector(`path#path1420`);
           if (node) node.parentElement.appendChild(node);
-          const lit = document.querySelector(`path#BENlit`);
-          if (lit) lit.parentElement.appendChild(lit);
+          const littoralNode = document.querySelector(`path#BENlit`);
+          if (littoralNode)
+            littoralNode.parentElement.appendChild(littoralNode);
         } else {
           if (departmentId !== "Littoral") {
             // Move node to the end of the list of children, so that it is drawn
@@ -95,6 +96,11 @@ const Map = observer(({ children, departments, getDepartmentFill, stroke }) => {
     );
     return disposeReaction;
   }, []);
+
+  setTimeout(() => {
+    const littoralNode = document.querySelector(`path#BENlit`);
+    if (littoralNode) littoralNode.parentElement.appendChild(littoralNode);
+  }, 500);
 
   return (
     <>
