@@ -18,7 +18,7 @@ import {
 import { isGoal, isIndicator } from "@sdgindex/data/assessments";
 import { mapAssessmentUrl } from "helpers/routing";
 import { getIndicatorsForDepartmentByDimension } from "helpers/getIndicatorsForDepartmentByDimension";
-import ValueIcon from "components/ValueIcon";
+import ScoreIcon from "components/ScoreIcon";
 
 const IconLabel = (props) => (
   <Typography marginLeft={1} variant="body2" {...props} />
@@ -60,7 +60,7 @@ const DimensionSection = ({ department, dimension, indicators }) => (
     <Divider />
     <DrawerSection>
       <Row>
-        <ValueIcon />
+        <ScoreIcon />
         <IconLabel>{dimension.score}</IconLabel>
       </Row>
     </DrawerSection>
