@@ -34,7 +34,7 @@ const Layout = (props) => (
 
 const DimensionNavigation = observer(({ dimensions }) => (
   <Layout>
-    <DrawerHeading>{"Sélectionnez une dimension"}</DrawerHeading>
+    <DrawerHeading>Sélectionnez une dimension</DrawerHeading>
     <Stack direction="column" spacing={1}>
       {dimensions.map((dimension) => (
         <Box

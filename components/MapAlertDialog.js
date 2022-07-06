@@ -20,12 +20,13 @@ const MapAlertDialog = () => {
         Note sur les frontières des départements
       </Link>
       <Dialog open={open} onClose={() => setOpen(false)}>
-        <DialogTitle>{"Note sur les frontières des départements"}</DialogTitle>
+        <DialogTitle>Note sur les frontières des départements</DialogTitle>
         <DialogContent dividers>
           <DialogContentText>
-            {
-              "Les frontières, couleurs, dénominations et autres informations figurant sur cette carte n'impliquent aucun jugement de la part de SDSN concernant le statut juridique d'un territoire ou l'approbation ou l'acceptation de ces frontières."
-            }
+            Les frontières, couleurs, dénominations et autres informations
+            figurant sur cette carte n&apos;impliquent aucun jugement de la part
+            de SDSN concernant le statut juridique d&apos;un territoire ou
+            l&apos;approbation ou l&apos;acceptation de ces frontières
           </DialogContentText>
         </DialogContent>
       </Dialog>
