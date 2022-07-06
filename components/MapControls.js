@@ -103,7 +103,7 @@ const MapControls = ({
           >
             <TabButton>Régionale</TabButton>
           </Link>
-          <Link href="/map/dimensions/LNOB1" passHref>
+          <Link href="/carte/dimensions/LNOB1" passHref>
             <TabButton isactive>Infranationale</TabButton>
           </Link>
         </Box>

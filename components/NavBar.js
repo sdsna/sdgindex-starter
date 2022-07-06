@@ -46,7 +46,7 @@ const pages = [
   },
   {
     label: "Carte interactive",
-    href: "/map/dimensions/lnob1",
+    href: "/carte/dimensions/lnob1",
   },
   {
     label: "Profiles",
