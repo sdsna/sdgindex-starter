@@ -54,7 +54,7 @@ const pages = [
   },
   {
     label: "Téléchargements et documents",
-    href: "/TODO",
+    href: "/downloads",
   },
   {
     label: "Passer au rapport régional",
