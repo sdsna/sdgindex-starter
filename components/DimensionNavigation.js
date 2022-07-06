@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { observer } from "mobx-react-lite";
-import { Box, ButtonBase, Paper, Grid, Typography } from "@mui/material";
+import { Box, ButtonBase, Paper, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import DrawerHeading from "components/DrawerHeading";
 import DimensionIcon from "components/DimensionIcon";
@@ -34,34 +34,36 @@ const Layout = (props) => (
 
 const DimensionNavigation = observer(({ dimensions }) => (
   <Layout>
-    <DrawerHeading>
-      {"Sélectionnez l'une des dimensions pour la voir sur la carte."}
-    </DrawerHeading>
-    <Grid container style={{ margin: -2, width: "auto" }}>
+    <DrawerHeading>{"Sélectionnez une dimension"}</DrawerHeading>
+    <Stack direction="column" spacing={1}>
       {dimensions.map((dimension) => (
-        <Grid item key={dimension.id} style={{ marginLeft: 5, marginRight: 5 }}>
-          <Box display="flex" flexDirection="column" alignItems="center">
-            <Typography variant="body1" gutterBottom>
-              {dimension.category.replace(
-                dimension.category[0],
-                dimension.category[0].toUpperCase()
-              )}
-            </Typography>
-            <Link href={mapAssessmentUrl({ assessment: dimension })} passHref>
-              <Button
-                sx={{
-                  background: "transparent",
-                  maxWidth: 60,
-                  maxHeight: 60,
-                }}
-              >
-                <DimensionIcon identifier={dimension.id} />
-              </Button>
-            </Link>
-          </Box>
-        </Grid>
+        <Box
+          key={dimension.id}
+          display="flex"
+          alignItems="center"
+          justifyContent="flex-end"
+        >
+          <Typography variant="body1" gutterBottom>
+            {dimension.category.replace(
+              dimension.category[0],
+              dimension.category[0].toUpperCase()
+            )}
+          </Typography>
+          <Link href={mapAssessmentUrl({ assessment: dimension })} passHref>
+            <Button
+              sx={{
+                background: "transparent",
+                maxWidth: 60,
+                maxHeight: 60,
+                marginLeft: 3,
+              }}
+            >
+              <DimensionIcon identifier={dimension.id} />
+            </Button>
+          </Link>
+        </Box>
       ))}
-    </Grid>
+    </Stack>
   </Layout>
 ));
 

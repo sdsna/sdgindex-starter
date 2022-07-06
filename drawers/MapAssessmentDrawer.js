@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { Box, ButtonBase, Divider, Grid } from "@mui/material";
+import {
+  Table,
+  TableBody,
+  TableRow,
+  ButtonBase,
+  Divider,
+  Grid,
+} from "@mui/material";
 import { styled } from "@mui/material/styles";
 import DimensionIcon from "components/DimensionIcon";
 import DrawerSection from "components/DrawerSection";
@@ -12,6 +19,17 @@ import MapLegendItem from "components/MapLegendItem";
 import { mapAssessmentUrl } from "helpers/routing";
 import { isGoal, isIndicator } from "@sdgindex/data/assessments";
 import IndicatorMetadata from "components/IndicatorMetadata";
+
+const TableBodyWithAlternatingRows = styled(TableBody)`
+  td {
+    background: #fff;
+  }
+
+  & > tr:nth-of-type(odd) {
+      background: #e9faff;
+    }
+  }
+  `;
 
 const IndicatorButton = styled(ButtonBase)(
   {
@@ -34,8 +52,8 @@ IndicatorButton.defaultProps = {
 const DimensionInfo = ({ dimension, dimensions, indicators }) => (
   <>
     <DrawerSection display={{ xs: "block", lg: "none" }}>
-      <DrawerHeadingWithCaption caption="Click on a dimension to visualize it on the map.">
-        Performance by Dimension
+      <DrawerHeadingWithCaption caption="Cliquez sur une dimension pour la visualiser sur la carte.">
+        Performance par dimension
       </DrawerHeadingWithCaption>
       <Grid container style={{ margin: -2, width: "auto" }}>
         {dimensions.map((dimension) => (
@@ -55,20 +73,20 @@ const DimensionInfo = ({ dimension, dimensions, indicators }) => (
       <DrawerText>{dimension.description}</DrawerText>
     </DrawerSection>
     <DrawerSection>
-      <DrawerHeading>Indicateurs</DrawerHeading>
-      <Box marginX={-0.5}>
-        {indicators.map((indicator) => (
-          <Link
-            key={indicator.id}
-            href={mapAssessmentUrl({ assessment: indicator })}
-            passHref
-          >
-            <IndicatorButton disabled={indicator.hideMap}>
-              <DrawerText>{indicator.label}</DrawerText>
-            </IndicatorButton>
-          </Link>
-        ))}
-      </Box>
+      <Table>
+        <DrawerHeading>Indicateurs</DrawerHeading>
+        <TableBodyWithAlternatingRows>
+          {indicators.map((indicator) => (
+            <TableRow key={indicator.id}>
+              <Link href={mapAssessmentUrl({ assessment: indicator })} passHref>
+                <IndicatorButton disabled={indicator.hideMap}>
+                  <DrawerText>{indicator.label}</DrawerText>
+                </IndicatorButton>
+              </Link>
+            </TableRow>
+          ))}
+        </TableBodyWithAlternatingRows>
+      </Table>
     </DrawerSection>
   </>
 );
@@ -96,10 +114,12 @@ const Legend = ({ legend, assessment }) => {
   );
 };
 
-const MapAssessmentDrawer = ({ assessment, dimension, dimensions, legend }) => (
+const MapAssessmentDrawer = ({ assessment, dimensions, legend }) => (
   <>
-    <Legend dimension={dimension} legend={legend} assessment={assessment} />
-    <Divider />
+    <DrawerSection display={{ xs: "block", lg: "none" }}>
+      <Legend legend={legend} assessment={assessment} />
+      <Divider />
+    </DrawerSection>
     {isGoal(assessment) && (
       <DimensionInfo
         dimension={assessment}

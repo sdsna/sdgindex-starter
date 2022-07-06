@@ -68,7 +68,7 @@ const AppDrawer = observer(({ children, permanent = false }) => {
           anchor="left"
           sx={{
             display: { xs: "none", sm: "block" },
-            width: showDrawer ? 300 : 0,
+            width: showDrawer ? 410 : 0,
             transition: "width 225ms cubic-bezier(0, 0, 0.2, 1) 0ms",
             ["&, & > div"]: {
               top: 88,
@@ -82,7 +82,7 @@ const AppDrawer = observer(({ children, permanent = false }) => {
           }}
           PaperProps={{
             elevation: 2,
-            sx: { width: 300 },
+            sx: { width: 410 },
           }}
         >
           <Box

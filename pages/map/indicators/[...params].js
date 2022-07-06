@@ -29,13 +29,20 @@ const layoutProps = ({ assessment, departments, dimensions }) => ({
   Drawer: <MapDrawer assessment={assessment} />,
 });
 
-const IndicatorMap = ({ zoomIn, zoomOut, resetZoom, dimensions }) => (
+const IndicatorMap = ({
+  zoomIn,
+  zoomOut,
+  resetZoom,
+  dimensions,
+  assessment,
+}) => (
   <MapControls
     links={{}}
     zoomIn={zoomIn}
     zoomOut={zoomOut}
     resetZoom={resetZoom}
     dimensions={dimensions}
+    assessment={assessment}
   />
 );
 

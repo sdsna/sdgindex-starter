@@ -46,6 +46,22 @@ describe("Map", () => {
       cy.get(".MuiDrawer-docked").should("contain", "limite inférieure");
     });
 
+    it("does not display legend in the map control", () => {
+      cy.contains("#content div", "Légende").should("not.be.visible");
+    });
+
+    context("when the screen size is desktop", () => {
+      beforeEach(() => {
+        cy.viewport(1280, 800);
+      });
+
+      it("displays legend in map controls", () => {
+        cy.get("#content").should("contain", "Légende");
+        cy.get("#content").should("contain", "Objectif à long terme");
+        cy.get("#content").should("contain", "limite inférieure");
+      });
+    });
+
     it("displays indicator metadata in drawer", () => {
       cy.get(".MuiDrawer-docked div:contains(Objectif à long terme)")
         .last()

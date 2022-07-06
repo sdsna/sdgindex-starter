@@ -39,16 +39,21 @@ describe("Map", () => {
     cy.get(".MuiDrawer-docked").should("contain", "Information indisponible");
   });
 
+  it("does not display legend in the map control", () => {
+    cy.contains("#content div", "Légende").should("not.be.visible");
+  });
+
   it("displays description", () => {
     cy.get(".MuiDrawer-docked").contains("div", "Description");
     cy.contains(
       `Les ODD sont guidés par le principe de "ne laisser personne de côté" (LNOB).`
     );
   });
+  0;
 
   it("displays dimensions in drawer", () => {
     cy.get(".MuiDrawer-docked")
-      .contains("div", "Performance by Dimension")
+      .contains("div", "Performance par dimension")
       .within(() => {
         cy.get("a").should("have.length", 4);
         cy.get("a").eq(0).should("have.attr", "href", "/map/dimensions/LNOB1");
@@ -56,16 +61,15 @@ describe("Map", () => {
       });
   });
 
-  it("does not display dimensions in the banner", () => {
-    cy.contains(
-      "#content div",
-      "Sélectionnez l'une des dimensions pour la voir sur la carte."
-    ).should("not.be.visible");
+  it("does not display dimensions in the map control", () => {
+    cy.contains("#content div", "Sélectionnez une dimension").should(
+      "not.be.visible"
+    );
   });
 
   it("can navigate to goal map", () => {
     cy.get(".MuiDrawer-docked")
-      .contains("div", "Performance by Dimension")
+      .contains("div", "Performance par dimension")
       .within(() => {
         cy.get("a").eq(2).click();
       });
@@ -76,37 +80,33 @@ describe("Map", () => {
   context("when the screen size is desktop", () => {
     beforeEach(() => {
       cy.viewport(1280, 800);
+      cy.visit("/map/dimensions/LNOB1");
+    });
+
+    it("displays legend in map controls", () => {
+      cy.get("#content").should("contain", "Légende");
+      cy.get("#content").should("contain", "> 70");
+      cy.get("#content").should("contain", "50 - 60");
+      cy.get("#content").should("contain", "Information indisponible");
     });
 
     it("does not display dimensions in drawer", () => {
-      cy.contains(".MuiDrawer-docked div", "Performance by Dimension").should(
-        "not.exist"
+      cy.contains(".MuiDrawer-docked div", "Performance par dimension").should(
+        "not.be.visible"
       );
     });
 
-    it("displays dimensions in the banner", () => {
-      cy.contains(
-        "#content",
-        "Sélectionnez l'une des dimensions pour la voir sur la carte"
-      );
-      cy.contains("#content div", "Sélectionnez l'une des dimensions").within(
-        () => {
-          cy.get("a").should("have.length", 4);
-          cy.get("a")
-            .eq(0)
-            .should("have.attr", "href", "/map/dimensions/LNOB1");
-          cy.get("a")
-            .eq(3)
-            .should("have.attr", "href", "/map/dimensions/LNOB4");
-        }
-      );
+    it("displays dimensions in the map controls", () => {
+      cy.contains("#content", "Sélectionnez une dimension");
+      cy.contains("#content div", "Sélectionnez une dimension").within(() => {
+        cy.get("a").should("have.length", 4);
+        cy.get("a").eq(0).should("have.attr", "href", "/map/dimensions/LNOB1");
+        cy.get("a").eq(3).should("have.attr", "href", "/map/dimensions/LNOB4");
+      });
     });
 
     it("can navigate to dimension map", () => {
-      cy.contains(
-        "div",
-        "Sélectionnez l'une des dimensions pour la voir sur la carte"
-      ).within(() => {
+      cy.contains("div", "Sélectionnez une dimension").within(() => {
         cy.get("a").eq(1).click();
       });
       cy.url({ timeout: 10000 }).should("include", "/map/dimensions/LNOB2");
