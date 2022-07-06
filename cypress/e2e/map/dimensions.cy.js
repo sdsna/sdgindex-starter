@@ -39,8 +39,8 @@ describe("Map", () => {
     cy.get(".MuiDrawer-docked").should("contain", "Information indisponible");
   });
 
-  it("does not display legend in the banner", () => {
-    cy.contains("#content div", "Légend").should("not.be.visible");
+  it("does not display legend in the map control", () => {
+    cy.contains("#content div", "Légende").should("not.be.visible");
   });
 
   it("displays description", () => {
@@ -61,7 +61,7 @@ describe("Map", () => {
       });
   });
 
-  it("does not display dimensions in the banner", () => {
+  it("does not display dimensions in the map control", () => {
     cy.contains("#content div", "Sélectionnez une dimension").should(
       "not.be.visible"
     );
@@ -80,15 +80,23 @@ describe("Map", () => {
   context("when the screen size is desktop", () => {
     beforeEach(() => {
       cy.viewport(1280, 800);
+      cy.visit("/map/dimensions/LNOB1");
+    });
+
+    it("displays legend in map controls", () => {
+      cy.get("#content").should("contain", "Légende");
+      cy.get("#content").should("contain", "> 70");
+      cy.get("#content").should("contain", "50 - 60");
+      cy.get("#content").should("contain", "Information indisponible");
     });
 
     it("does not display dimensions in drawer", () => {
-      cy.contains(".MuiDrawer-docked div", "Performance by Dimension").should(
-        "not.exist"
+      cy.contains(".MuiDrawer-docked div", "Performance par dimension").should(
+        "not.be.visible"
       );
     });
 
-    it("displays dimensions in the banner", () => {
+    it("displays dimensions in the map controls", () => {
       cy.contains("#content", "Sélectionnez une dimension");
       cy.contains("#content div", "Sélectionnez une dimension").within(() => {
         cy.get("a").should("have.length", 4);
