@@ -84,7 +84,7 @@ describe("Map", () => {
   context("when the screen size is desktop", () => {
     beforeEach(() => {
       cy.viewport(1280, 800);
-      cy.visit("/map/dimensions/LNOB1");
+      cy.visit("/carte/dimensions/LNOB1");
     });
 
     it("displays legend in map controls", () => {
