@@ -66,7 +66,7 @@ describe("Map", () => {
       cy.get(".MuiDrawer-docked div:contains(Objectif à long terme)")
         .last()
         .within(() => {
-          cy.contains("Leave no one behind");
+          cy.contains("Ne laisser personne de côté");
           cy.contains(
             "L'objectif à long terme pour cet indicateur est une valeur de 1."
           );
@@ -74,7 +74,7 @@ describe("Map", () => {
       cy.get(".MuiDrawer-docked div:contains(Référence)")
         .last()
         .within(() => {
-          cy.contains("EDSB5 (2017/2018)");
+          cy.contains("EDSB-5 (2017/2018)");
         });
     });
 
@@ -93,7 +93,7 @@ describe("Map", () => {
         cy.get(".MuiDrawer-docked div:contains(Objectif à long terme)")
           .last()
           .within(() => {
-            cy.contains("Leave no one behind");
+            cy.contains("Ne laisser personne de côté");
             cy.contains(
               "L'objectif à long terme pour cet indicateur est une valeur de 1."
             );
@@ -101,7 +101,7 @@ describe("Map", () => {
         cy.get(".MuiDrawer-docked div:contains(Référence)")
           .last()
           .within(() => {
-            cy.contains("EDSB5 (2017/2018)");
+            cy.contains("EDSB-5 (2017/2018)");
           });
       });
     });
