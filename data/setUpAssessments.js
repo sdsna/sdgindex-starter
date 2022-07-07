@@ -39,7 +39,8 @@ const setUpAssessments = () => {
       lowerBound: roundNumber(row["Limite inferieure"], 2),
       lowerBoundReason: row["worstjust"].trim(),
       year: row["Reference_Year"],
-      reference: row.Source.trim(),
+      source: row.Source.trim(),
+      reference: row["Reference"],
     });
   });
 };

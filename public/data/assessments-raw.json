@@ -53,7 +53,8 @@
       "lowerBound": 61,
       "lowerBoundReason": "Worst value",
       "year": 2018,
-      "reference": "EDSB-5 (2017/2018)",
+      "source": "EDSB-5 (2017/2018)",
+      "reference": "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF.",
       "type": "indicator"
     },
     {
@@ -69,7 +70,8 @@
       "lowerBound": 5769,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "Annuaire des Statistiques Sanitaires",
+      "source": "Annuaire des Statistiques Sanitaires",
+      "reference": "Ministère de la Santé. (2020). Annuaire des statistiques sanitaires, 2019. Cotonou, Bénin.",
       "type": "indicator"
     },
     {
@@ -85,7 +87,8 @@
       "lowerBound": 6264,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "Annuaire des Statistiques Sanitaires",
+      "source": "Annuaire des Statistiques Sanitaires",
+      "reference": "Ministère de la Santé. (2020). Annuaire des statistiques sanitaires, 2019. Cotonou, Bénin.",
       "type": "indicator"
     },
     {
@@ -101,7 +104,8 @@
       "lowerBound": 117,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -117,7 +121,8 @@
       "lowerBound": 40.98,
       "lowerBoundReason": "Worst value",
       "year": 2018,
-      "reference": "EDSB-5 (2017/2018)",
+      "source": "EDSB-5 (2017/2018)",
+      "reference": "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF.",
       "type": "indicator"
     },
     {
@@ -133,7 +138,8 @@
       "lowerBound": 41.2,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -149,7 +155,8 @@
       "lowerBound": 0,
       "lowerBoundReason": "Worst value",
       "year": 2018,
-      "reference": "EDSB-5 (2017/2018)",
+      "source": "EDSB-5 (2017/2018)",
+      "reference": "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF.",
       "type": "indicator"
     },
     {
@@ -165,7 +172,8 @@
       "lowerBound": 45.9,
       "lowerBoundReason": "Worst value",
       "year": 2020,
-      "reference": "Annuaire Statistique",
+      "source": "Annuaire Statistique",
+      "reference": "Ministère des Enseignements Maternel et Primaire. (2021). Annuaire Statistique, 2020. Cotonou, Bénin: MEMP",
       "type": "indicator"
     },
     {
@@ -181,7 +189,8 @@
       "lowerBound": 13.4,
       "lowerBoundReason": "Worst value",
       "year": 2021,
-      "reference": "Ministère de l'Enseignement Secondaire",
+      "source": "Ministère de l'Enseignement Secondaire",
+      "reference": "Ministère des Enseignements Secondaires Technique et de la Formation Professionnelle. (2022). Annuaire Statistique, 2021. Cotonou, Bénin: MESTFP",
       "type": "indicator"
     },
     {
@@ -197,7 +206,8 @@
       "lowerBound": 35.2,
       "lowerBoundReason": "Worst value",
       "year": 2021,
-      "reference": "Annuaire Statistique",
+      "source": "Annuaire Statistique",
+      "reference": "Ministère des Enseignements Secondaires Technique et de la Formation Professionnelle. (2020). Annuaire Statistique, 2019. Cotonou, Bénin: MESTFP",
       "type": "indicator"
     },
     {
@@ -213,7 +223,8 @@
       "lowerBound": 36.8,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -229,7 +240,8 @@
       "lowerBound": 28.3,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -245,7 +257,8 @@
       "lowerBound": 3.51,
       "lowerBoundReason": "Worst value",
       "year": 2018,
-      "reference": "EDSB-5 (2017/2018)",
+      "source": "EDSB-5 (2017/2018)",
+      "reference": "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF.",
       "type": "indicator"
     },
     {
@@ -261,7 +274,8 @@
       "lowerBound": 65.3,
       "lowerBoundReason": "Worst value",
       "year": 2018,
-      "reference": "EDSB-5 (2017/2018)",
+      "source": "EDSB-5 (2017/2018)",
+      "reference": "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF.",
       "type": "indicator"
     },
     {
@@ -277,7 +291,8 @@
       "lowerBound": 34.64,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -293,7 +308,8 @@
       "lowerBound": 39.34,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -309,7 +325,8 @@
       "lowerBound": 60.5,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -325,7 +342,8 @@
       "lowerBound": 7.6,
       "lowerBoundReason": "Worst value",
       "year": 2018,
-      "reference": "EDSB-5 (2017/2018)",
+      "source": "EDSB-5 (2017/2018)",
+      "reference": "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF.",
       "type": "indicator"
     },
     {
@@ -341,7 +359,8 @@
       "lowerBound": 38,
       "lowerBoundReason": "Worst value",
       "year": 2018,
-      "reference": "EDSB-5 (2017/2018)",
+      "source": "EDSB-5 (2017/2018)",
+      "reference": "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF.",
       "type": "indicator"
     },
     {
@@ -357,7 +376,8 @@
       "lowerBound": 3.6,
       "lowerBoundReason": "Worst value",
       "year": 2018,
-      "reference": "EDSB-5 (2017/2018)",
+      "source": "EDSB-5 (2017/2018)",
+      "reference": "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF.",
       "type": "indicator"
     },
     {
@@ -373,7 +393,8 @@
       "lowerBound": 8.4,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -389,7 +410,8 @@
       "lowerBound": 35.1,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -405,7 +427,8 @@
       "lowerBound": 0.75,
       "lowerBoundReason": "Expert Judgement",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -421,7 +444,8 @@
       "lowerBound": 0,
       "lowerBoundReason": "Worst value",
       "year": 2018,
-      "reference": "EDSB-5 (2017/2018)",
+      "source": "EDSB-5 (2017/2018)",
+      "reference": "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF.",
       "type": "indicator"
     },
     {
@@ -437,7 +461,8 @@
       "lowerBound": 0.74,
       "lowerBoundReason": "Worst value",
       "year": 2021,
-      "reference": "Ministère de l'Enseignement Secondaire",
+      "source": "Ministère de l'Enseignement Secondaire",
+      "reference": "Ministère des Enseignements Secondaires Technique et de la Formation Professionnelle. (2022). Annuaire Statistique, 2021. Cotonou, Bénin: MESTFP",
       "type": "indicator"
     },
     {
@@ -453,7 +478,8 @@
       "lowerBound": 0.75,
       "lowerBoundReason": "Expert Judgement",
       "year": 2020,
-      "reference": "Annuaire Statistique",
+      "source": "Annuaire Statistique",
+      "reference": "Ministère des Enseignements Secondaires Technique et de la Formation Professionnelle. (2021). Annuaire Statistique, 2020. Cotonou, Bénin: MESTFP",
       "type": "indicator"
     },
     {
@@ -469,7 +495,8 @@
       "lowerBound": 0.55,
       "lowerBoundReason": "Worst value",
       "year": 2018,
-      "reference": "ERI-ESI",
+      "source": "ERI-ESI",
+      "reference": "Institut National de la Statistique et de l’Analyse Economique & AFRISTAT. (2019). Enquête Régionale Intégrée sur l’Emploi et le Secteur Informel, 2018 : Rapport final. Cotonou, Bénin et Bamako, Mali : INSAE et AFRISTAT.",
       "type": "indicator"
     },
     {
@@ -485,7 +512,8 @@
       "lowerBound": 4.5,
       "lowerBoundReason": "Worst value",
       "year": 2018,
-      "reference": "EDSB-5 (2017/2018)",
+      "source": "EDSB-5 (2017/2018)",
+      "reference": "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF.",
       "type": "indicator"
     },
     {
@@ -501,7 +529,8 @@
       "lowerBound": 1.16,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -517,7 +546,8 @@
       "lowerBound": 1.1,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -533,7 +563,8 @@
       "lowerBound": 2.07,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -549,7 +580,8 @@
       "lowerBound": 0.11,
       "lowerBoundReason": "Worst value",
       "year": 2018,
-      "reference": "EDSB-5 (2017/2018)",
+      "source": "EDSB-5 (2017/2018)",
+      "reference": "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF.",
       "type": "indicator"
     },
     {
@@ -565,7 +597,8 @@
       "lowerBound": 0.73,
       "lowerBoundReason": "Worst value",
       "year": 2018,
-      "reference": "EDSB-5 (2017/2018)",
+      "source": "EDSB-5 (2017/2018)",
+      "reference": "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF.",
       "type": "indicator"
     },
     {
@@ -581,7 +614,8 @@
       "lowerBound": 0.38,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -597,7 +631,8 @@
       "lowerBound": 23.17,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     },
     {
@@ -613,7 +648,8 @@
       "lowerBound": 67.87,
       "lowerBoundReason": "Worst value",
       "year": 2019,
-      "reference": "EHCVM-1 (2018/2019)",
+      "source": "EHCVM-1 (2018/2019)",
+      "reference": "Institut National de la Statistique et de la Démographie (INStaD). (A venir). Enquête Harmonisée sur les Conditions de Vie des Ménages, 2018-2019. Cotonou, Bénin : INStaD",
       "type": "indicator"
     }
   ]
