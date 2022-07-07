@@ -127,7 +127,7 @@ describe("Map", () => {
       .contains("div", "Indicateurs")
       .eq(0)
       .within(() => {
-        cy.get("a").should("have.length", 15);
+        cy.get("a").should("have.length", 14);
         cy.get("a")
           .eq(0)
           .should(
@@ -164,7 +164,7 @@ describe("Map", () => {
 
     it("lists dimension 1 indicators", () => {
       cy.get(".MuiDrawer-docked a").as("indicators");
-      cy.get("@indicators").should("have.length", 15);
+      cy.get("@indicators").should("have.length", 14);
       cy.get("@indicators")
         .eq(0)
         .should(
@@ -183,7 +183,7 @@ describe("Map", () => {
       cy.get(".MuiDrawer-docked")
         .contains("div", "Indicateurs")
         .within(() => {
-          cy.get("a").should("have.length", 15);
+          cy.get("a").should("have.length", 14);
           cy.get("a").eq(9).should("contain", "Taux de succès au BAC");
           cy.get("a").eq(9).should("have.attr", "data-rating", "red");
         });

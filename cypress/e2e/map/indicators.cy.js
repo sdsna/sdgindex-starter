@@ -66,15 +66,22 @@ describe("Map", () => {
       cy.get(".MuiDrawer-docked div:contains(Objectif à long terme)")
         .last()
         .within(() => {
-          cy.contains("Leave no one behind");
+          cy.contains("Ne laisser personne de côté");
           cy.contains(
             "L'objectif à long terme pour cet indicateur est une valeur de 1."
           );
         });
+      cy.get(".MuiDrawer-docked div:contains(Source)")
+        .last()
+        .within(() => {
+          cy.contains("EDSB-5 (2017/2018)");
+        });
       cy.get(".MuiDrawer-docked div:contains(Référence)")
         .last()
         .within(() => {
-          cy.contains("EDSB5 (2017/2018)");
+          cy.contains(
+            "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF."
+          );
         });
     });
 
@@ -93,15 +100,22 @@ describe("Map", () => {
         cy.get(".MuiDrawer-docked div:contains(Objectif à long terme)")
           .last()
           .within(() => {
-            cy.contains("Leave no one behind");
+            cy.contains("Ne laisser personne de côté");
             cy.contains(
               "L'objectif à long terme pour cet indicateur est une valeur de 1."
             );
           });
+        cy.get(".MuiDrawer-docked div:contains(Source)")
+          .last()
+          .within(() => {
+            cy.contains("EDSB-5 (2017/2018)");
+          });
         cy.get(".MuiDrawer-docked div:contains(Référence)")
           .last()
           .within(() => {
-            cy.contains("EDSB5 (2017/2018)");
+            cy.contains(
+              "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF."
+            );
           });
       });
     });

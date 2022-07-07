@@ -35,11 +35,12 @@ const setUpAssessments = () => {
       description: row.Description,
       labelWithUnit: row["Indicateur"].trim(),
       longTermObjective: roundNumber(row["Valeur Cible"], 2),
-      longTermObjectiveReason: row["bestjust"].trim(),
+      longTermObjectiveReason: row["bestjust_FR"].trim(),
       lowerBound: roundNumber(row["Limite inferieure"], 2),
       lowerBoundReason: row["worstjust"].trim(),
       year: row["Reference_Year"],
-      reference: row.Source.trim(),
+      source: row.Source.trim(),
+      reference: row["Reference"],
     });
   });
 };
