@@ -74,6 +74,7 @@ IndicatorMap.getInitialProps = async ({ query }) => {
     longTermObjectiveReason: assessment.longTermObjectiveReason,
     lowerBound: assessment.lowerBound,
     link: assessment.link,
+    source: assessment.source,
     reference: assessment.reference,
     type: assessment.type,
   };

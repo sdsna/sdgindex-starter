@@ -28,6 +28,10 @@ const IndicatorMetadata = ({ indicator, drawerSectionProps = false }) => (
       )}
     >
       <DrawerSection {...drawerSectionProps}>
+        <DrawerHeading>Source</DrawerHeading>
+        <DrawerText>{indicator.source}</DrawerText>
+      </DrawerSection>
+      <DrawerSection {...drawerSectionProps}>
         <DrawerHeading>Référence</DrawerHeading>
         <DrawerText>{indicator.reference}</DrawerText>
       </DrawerSection>
