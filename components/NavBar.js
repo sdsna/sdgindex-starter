@@ -46,7 +46,7 @@ const pages = [
   },
   {
     label: "Carte interactive",
-    href: "/map/dimensions/lnob1",
+    href: "/carte/dimensions/lnob1",
   },
   {
     label: "Profiles",
@@ -54,12 +54,7 @@ const pages = [
   },
   {
     label: "Téléchargements et documents",
-    href: "/downloads",
-  },
-  {
-    label: "Passer au rapport régional",
-    href: "https://national-comparison-benin-sdg-index.netlify.app/map",
-    external: true,
+    href: "/telechargements",
   },
 ];
 
@@ -110,15 +105,10 @@ const NavBar = ({ fluid }) => {
               />
             </Hidden>
             <Box display={{ xs: "none", md: "flex" }} height={1}>
-              {pages.map(({ label, href, external }) => (
+              {pages.map(({ label, href }) => (
                 <Link key={href} href={href} passHref>
                   <Button>
-                    <Typography
-                      variant="body1"
-                      color={external ? "#FFD700" : null}
-                    >
-                      {label}
-                    </Typography>
+                    <Typography variant="body1">{label}</Typography>
                   </Button>
                 </Link>
               ))}

@@ -1,6 +1,6 @@
 describe("Downloads", () => {
   it("renders the page", () => {
-    cy.visit("/downloads");
+    cy.visit("/telechargements");
     cy.get("h1").should("contain", "Téléchargements");
   });
 

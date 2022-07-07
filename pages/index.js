@@ -184,7 +184,7 @@ const Index = () => (
               links={[
                 {
                   label: "Explorer les cartes",
-                  href: "/map/dimensions/lnob1",
+                  href: "/carte/dimensions/lnob1",
                 },
               ]}
             >
@@ -233,7 +233,7 @@ const Index = () => (
                 },
                 {
                   label: "Aller à la page des téléchargements",
-                  href: "/TODO",
+                  href: "/telechargements",
                   variant: "outlined",
                 },
               ]}

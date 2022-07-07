@@ -1,6 +1,5 @@
 import { Box, ButtonBase, Divider, Paper } from "@mui/material";
 import { Plus, ArrowExpandAll, Minus } from "mdi-material-ui";
-import Link from "next/link";
 import { styled } from "@mui/material/styles";
 import MapFooter from "components/MapFooter";
 import DimensionNavigation from "components/DimensionNavigation";
@@ -14,35 +13,6 @@ const BoxWithoutPointerEvents = styled(Box)({
     pointerEvents: "auto",
   },
 });
-
-const TabButton = styled(ButtonBase)(
-  {
-    paddingLeft: 8,
-    paddingRight: 8,
-    paddingTop: 4,
-    paddingBottom: 4,
-    borderRight: "1px solid rgba(0,0,0,.12)",
-    ":hover": {
-      opacity: 1,
-    },
-
-    ":first-of-type": {
-      borderTopLeftRadius: 8,
-      borderBottomLeftRadius: 8,
-    },
-
-    ":last-child": {
-      borderTopRightRadius: 8,
-      borderBottomRightRadius: 8,
-      borderRight: "none",
-    },
-  },
-  ({ theme, isactive }) => {
-    if (isactive)
-      return { color: "white", background: theme.palette.primary.main };
-    return { opacity: 0.7, background: "white" };
-  }
-);
 
 const Legend = ({ legend, assessment }) => {
   if (legend != null) {
@@ -85,29 +55,6 @@ const MapControls = ({
       display="flex"
       flexDirection="column"
     >
-      <Box
-        display="flex"
-        alignItems="flex-start"
-        justifyContent="space-between"
-      >
-        <Box
-          marginLeft={2}
-          marginTop={2}
-          boxShadow={3}
-          display="flex"
-          borderRadius={2}
-        >
-          <Link
-            href="https://national-comparison-benin-sdg-index.netlify.app/map"
-            passHref
-          >
-            <TabButton>Régionale</TabButton>
-          </Link>
-          <Link href="/map/dimensions/LNOB1" passHref>
-            <TabButton isactive>Infranationale</TabButton>
-          </Link>
-        </Box>
-      </Box>
       <Box flexGrow={1} />
       <Paper elevation={5} sx={{ borderRadius: 5 }}>
         <Box

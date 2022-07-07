@@ -2,7 +2,7 @@ import { LEGEND } from "helpers/legendForScore";
 
 describe("Map", () => {
   it("renders", () => {
-    cy.visit("/map/dimensions/LNOB1");
+    cy.visit("/carte/dimensions/LNOB1");
     cy.get("svg").should("exist");
   });
 
@@ -28,7 +28,7 @@ describe("Map", () => {
     cy.get(".MuiDrawer-docked").should("contain", "Dimension services");
     cy.get(".MuiDrawer-docked").should(
       "contain",
-      `Les ODD sont guidés par le principe de "ne laisser personne de côté" (LNOB). L'indice "Leave-No-One-Behind" suit les inégalités selon quatre dimensions : la pauvreté, les services, le sexe et le revenu. Un score plus élevé signifie que moins de groupes de population sont laissés pour compte.`
+      `Mesure l’accessibilité et la qualité des services de santé, d’éducation, d’eau, d’électricité et d’internet.`
     );
   });
 
@@ -46,7 +46,7 @@ describe("Map", () => {
   it("displays description", () => {
     cy.get(".MuiDrawer-docked").contains("div", "Description");
     cy.contains(
-      `Les ODD sont guidés par le principe de "ne laisser personne de côté" (LNOB).`
+      `Mesure l’accessibilité et la qualité des services de santé, d’éducation, d’eau, d’électricité et d’internet.`
     );
   });
   0;
@@ -56,8 +56,12 @@ describe("Map", () => {
       .contains("div", "Performance par dimension")
       .within(() => {
         cy.get("a").should("have.length", 4);
-        cy.get("a").eq(0).should("have.attr", "href", "/map/dimensions/LNOB1");
-        cy.get("a").eq(3).should("have.attr", "href", "/map/dimensions/LNOB4");
+        cy.get("a")
+          .eq(0)
+          .should("have.attr", "href", "/carte/dimensions/LNOB1");
+        cy.get("a")
+          .eq(3)
+          .should("have.attr", "href", "/carte/dimensions/LNOB4");
       });
   });
 
@@ -73,14 +77,14 @@ describe("Map", () => {
       .within(() => {
         cy.get("a").eq(2).click();
       });
-    cy.url().should("include", "/map/dimensions/LNOB3");
+    cy.url().should("include", "/carte/dimensions/LNOB3");
     cy.go("back");
   });
 
   context("when the screen size is desktop", () => {
     beforeEach(() => {
       cy.viewport(1280, 800);
-      cy.visit("/map/dimensions/LNOB1");
+      cy.visit("/carte/dimensions/LNOB1");
     });
 
     it("displays legend in map controls", () => {
@@ -100,8 +104,12 @@ describe("Map", () => {
       cy.contains("#content", "Sélectionnez une dimension");
       cy.contains("#content div", "Sélectionnez une dimension").within(() => {
         cy.get("a").should("have.length", 4);
-        cy.get("a").eq(0).should("have.attr", "href", "/map/dimensions/LNOB1");
-        cy.get("a").eq(3).should("have.attr", "href", "/map/dimensions/LNOB4");
+        cy.get("a")
+          .eq(0)
+          .should("have.attr", "href", "/carte/dimensions/LNOB1");
+        cy.get("a")
+          .eq(3)
+          .should("have.attr", "href", "/carte/dimensions/LNOB4");
       });
     });
 
@@ -109,7 +117,7 @@ describe("Map", () => {
       cy.contains("div", "Sélectionnez une dimension").within(() => {
         cy.get("a").eq(1).click();
       });
-      cy.url({ timeout: 10000 }).should("include", "/map/dimensions/LNOB2");
+      cy.url({ timeout: 10000 }).should("include", "/carte/dimensions/LNOB2");
       cy.go("back");
     });
   });
@@ -136,13 +144,13 @@ describe("Map", () => {
     cy.contains("Nombre de personnel de santé par habitant").click();
     cy.url().should(
       "include",
-      "/map/indicators/nombre-de-personnel-de-sante-par-habitant"
+      "/carte/indicateurs/nombre-de-personnel-de-sante-par-habitant"
     );
   });
 
   context("when clicking on a department", () => {
     it("displays department name", () => {
-      cy.visit("/map/dimensions/LNOB1");
+      cy.visit("/carte/dimensions/LNOB1");
       cy.get(`[name="Atlantique"]`).click();
       cy.get(".MuiDrawer-docked").contains("Atlantique");
     });
@@ -185,14 +193,14 @@ describe("Map", () => {
       cy.contains("Nombre de personnel de santé par habitant").click();
       cy.url().should(
         "include",
-        "/map/indicators/nombre-de-personnel-de-sante-par-habitant"
+        "/carte/indicateurs/nombre-de-personnel-de-sante-par-habitant"
       );
     });
   });
 
   context("when visiting the map for LNOB4", () => {
     it("renders", () => {
-      cy.visit("/map/dimensions/LNOB4");
+      cy.visit("/carte/dimensions/LNOB4");
       cy.get("svg").should("exist");
     });
 
@@ -217,7 +225,7 @@ describe("Map", () => {
       cy.get(".MuiDrawer-docked").should("contain", "Dimension revenu");
       cy.get(".MuiDrawer-docked").should(
         "contain",
-        `Les ODD sont guidés par le principe de "ne laisser personne de côté" (LNOB). L'indice "Leave-No-One-Behind" suit les inégalités selon quatre dimensions : la pauvreté, les services, le sexe et le revenu. Un score plus élevé signifie que moins de groupes de population sont laissés pour compte.`
+        `Mesure les inégalités à partir du coefficient de Gini, et deux indicateurs liés aux revenus médian et moyen.`
       );
     });
 
@@ -268,7 +276,7 @@ describe("Map", () => {
           cy.get("input").type("Extreme pauvrete");
           cy.get("input").type("{enter}");
         });
-      cy.url().should("contain", "/map");
+      cy.url().should("contain", "/carte");
       cy.get(".MuiDrawer-docked").should(
         "contain",
         "Extrême pauvreté et privation matérielle"
