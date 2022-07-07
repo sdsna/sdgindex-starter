@@ -1,15 +1,15 @@
 describe("Chapters", () => {
   it("renders the page", () => {
-    cy.visit("/chapters");
+    cy.visit("/chapitres");
     cy.get("h1").should("contain", "Read the Report");
   });
 
   it("contains all chapters", () => {
-    cy.get("a[href^='/chapters/']").should("have.length", 5);
+    cy.get("a[href^='/chapitres/']").should("have.length", 5);
   });
 
   it("can load all chapters", () => {
-    const selector = "a[href^='/chapters/']";
+    const selector = "a[href^='/chapitres/']";
 
     // For each chapter, test that the chapter page works
     cy.get(selector).then((links) => {
