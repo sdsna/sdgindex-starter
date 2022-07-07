@@ -1,6 +1,6 @@
 import { isGoal, isIndicator } from "@sdgindex/data/assessments";
 
-export const chapterUrl = ({ slug }) => `/chapters/${slug}`;
+export const chapterUrl = ({ slug }) => `/chapitres/${slug}`;
 
 export const mapUrl = () => "/carte";
 
