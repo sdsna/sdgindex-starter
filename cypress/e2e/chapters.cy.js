@@ -1,7 +1,7 @@
 describe("Chapters", () => {
   it("renders the page", () => {
     cy.visit("/chapitres");
-    cy.get("h1").should("contain", "Read the Report");
+    cy.get("h1").should("contain", "Lire le rapport");
   });
 
   it("contains all chapters", () => {
