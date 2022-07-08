@@ -200,13 +200,13 @@ const Index = () => (
         <Box marginY={8}>
           <Fade right>
             <FeatureBanner
-              title="Analyser les profiles du Bénin et de la CEDEAO"
+              title="Analyser les profils du Bénin et de la CEDEAO"
               image="/static/icons/indicator.svg"
               imagePosition="right"
               links={[
                 {
-                  label: "Analyser les profiles",
-                  href: "https://regional-benin.sdgindex.org/profiles",
+                  label: "Analyser les profils",
+                  href: "https://regional-benin.sdgindex.org/profils",
                 },
               ]}
             >
