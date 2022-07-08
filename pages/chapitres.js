@@ -40,8 +40,8 @@ const Chapter = ({ slug, title, image, children }) => (
 
 const Chapters = () => (
   <HeaderLayout
-    title="Read the Report"
-    subtitle="Chapters of the Sustainable Development Report 2022"
+    title="Lire le rapport"
+    subtitle="Chapitres du Rapport sur le développement durable pour le Bénin 2022"
   >
     <Box my={2} display="flex" flexDirection="row-reverse">
       <Button
@@ -51,7 +51,7 @@ const Chapters = () => (
         startIcon={<Download />}
         onClick={() => trackDownload(REPORT_DOWNLOAD_URL)}
       >
-        Download Report
+        Télécharger le rapport
       </Button>
     </Box>
     <Box marginTop={2} marginBottom={4}>
@@ -59,7 +59,7 @@ const Chapters = () => (
         <Chapter
           slug="executive-summary"
           image="/static/chapters/figure-E-1.svg"
-          title="Executive Summary"
+          title="Résumé exécutif"
         >
           In a context of multiple crises, the report analyzes and outlines how
           the SDGs can be used as a roadmap for more sustainable societies by
