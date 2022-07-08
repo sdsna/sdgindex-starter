@@ -50,7 +50,7 @@ const pages = [
   },
   {
     label: "Profiles",
-    href: "https://national-comparison-benin-sdg-index.netlify.app/profiles",
+    href: "https://regional-benin.sdgindex.org/profiles",
   },
   {
     label: "Téléchargements et documents",

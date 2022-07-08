@@ -206,7 +206,7 @@ const Index = () => (
               links={[
                 {
                   label: "Analyser les profiles",
-                  href: "https://national-comparison-benin-sdg-index.netlify.app/profiles",
+                  href: "https://regional-benin.sdgindex.org/profiles",
                 },
               ]}
             >
