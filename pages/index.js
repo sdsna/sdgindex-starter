@@ -137,7 +137,7 @@ const Index = () => (
                         variant="outlined"
                         style={{ color: "#0073b0ff", borderColor: "#0073b0ff" }}
                       >
-                        Explorer les données
+                        Executive Summary
                       </Button>
                     </Link>
                   </Box>
@@ -159,9 +159,13 @@ const Index = () => (
                   href: "/TODO",
                 },
                 {
-                  label: "Tous les chapitres",
+                  label: "Executive Summary (English)",
                   href: "/TODO",
                   variant: "outlined",
+                },
+                {
+                  label: "Tous les chapitres",
+                  href: "/TODO",
                 },
               ]}
             >
