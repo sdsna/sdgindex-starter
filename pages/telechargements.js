@@ -22,7 +22,13 @@ const downloads = [
     url: "/TODO",
   },
   {
-    label: "Base de données",
+    label: "Base de données (Infranationale)",
+    type: "Excel",
+    image: "database.png",
+    url: "/TODO",
+  },
+  {
+    label: "Base de données (Régionale)",
     type: "Excel",
     image: "database.png",
     url: "/TODO",
