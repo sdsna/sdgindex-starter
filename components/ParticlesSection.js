@@ -40,7 +40,7 @@ const ParticlesSection = () => {
             speed: 2,
           },
           number: {
-            limit: 25,
+            limit: 35,
             value: 80,
           },
           opacity: {
@@ -61,6 +61,26 @@ const ParticlesSection = () => {
                 width: 60,
               },
               {
+                src: `/static/particles/green_arrow.svg`,
+                height: 60,
+                width: 60,
+              },
+              {
+                src: `/static/particles/green_arrow.svg`,
+                height: 60,
+                width: 60,
+              },
+              {
+                src: `/static/particles/green_circle.svg`,
+                height: 45,
+                width: 45,
+              },
+              {
+                src: `/static/particles/green_circle.svg`,
+                height: 45,
+                width: 45,
+              },
+              {
                 src: `/static/particles/green_circle.svg`,
                 height: 45,
                 width: 45,
@@ -72,6 +92,11 @@ const ParticlesSection = () => {
               },
               {
                 src: `/static/particles/red_circle.svg`,
+                height: 45,
+                width: 45,
+              },
+              {
+                src: `/static/particles/yellow_arrow.svg`,
                 height: 45,
                 width: 45,
               },
