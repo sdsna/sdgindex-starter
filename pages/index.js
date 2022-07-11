@@ -194,7 +194,7 @@ const Index = () => (
             >
               Nos cartes interactives présentent les performances des
               départements du Bénin sur chacune des 4 dimensions du programme
-              &quot;Leave No One Behind&quot;. Visualisez la performance
+              &quot;Ne laisser personne de côté&quot;. Visualisez la performance
               actuelle des départements pour voir quels départements sont sur la
               bonne voie. Creusez dans chacun des 91 indicateurs couverts par le
               Rapport sur le développement durable du Bénin 2022.
