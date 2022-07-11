@@ -20,7 +20,7 @@ export const DATABASE_DOWNLOAD_URL = null;
 
 // The URL of the deployed page (used in meta tags for SMO)
 // Example: https://www.domain.com/
-export const URL = "https://benin-subnational-data-viz.netlify.app/";
+export const URL = "https://benin.sdgindex.org/";
 
 // The description shown in Google Search results and on social media networks
 // Should be max ~150 characters.
