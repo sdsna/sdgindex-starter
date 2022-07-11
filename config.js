@@ -20,17 +20,19 @@ export const DATABASE_DOWNLOAD_URL = null;
 
 // The URL of the deployed page (used in meta tags for SMO)
 // Example: https://www.domain.com/
-export const URL = null;
+export const URL = "https://benin.sdgindex.org/";
 
 // The description shown in Google Search results and on social media networks
 // Should be max ~150 characters.
-export const META_DESCRIPTION = null;
+export const META_DESCRIPTION =
+  "The Benin Sustainable Development Report tracks Benin’s progress on the 17 SDGs in light of the country’s first issue of the SDG Eurobond in July 2021";
 
 // The preview image shown in social networks and when sharing on messengers,
 // like WhatsApp and others
 // The URL should be absolute, e.g.: https//www.domain.com/static/preview.jpg
 // Recommended size: 1200 x 627
-export const META_IMAGE = null;
+export const META_IMAGE =
+  "https://benin-subnational-data-viz.netlify.app/static/meta-image.png";
 
 // The Google Analytics tracking ID
 export const GA_TRACKING_ID = null;
