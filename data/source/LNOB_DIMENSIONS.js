@@ -22,7 +22,7 @@ const LNOB_DIMENSIONS = [
   },
   {
     id: 4,
-    category: "revenu",
+    category: "revenus",
     label: "Inégalité des revenus",
     description:
       "Mesure les inégalités à partir du coefficient de Gini, et deux indicateurs liés aux revenus médian et moyen.",

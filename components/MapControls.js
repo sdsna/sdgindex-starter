@@ -71,7 +71,13 @@ const MapControls = ({
           <Legend legend={legend} assessment={assessment} />
         </Box>
       </Paper>
-      <Box marginLeft={2} marginTop={2} display="flex">
+      <Box
+        marginLeft={2}
+        marginTop={14}
+        display="flex"
+        position="fixed"
+        top="0"
+      >
         <DimensionNavigation dimensions={dimensions} />
       </Box>
       <Box display="flex" alignItems="flex-end" justifyContent="space-between">

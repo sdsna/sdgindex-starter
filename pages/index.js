@@ -137,7 +137,7 @@ const Index = () => (
                         variant="outlined"
                         style={{ color: "#0073b0ff", borderColor: "#0073b0ff" }}
                       >
-                        Explorer les données
+                        Executive Summary
                       </Button>
                     </Link>
                   </Box>
@@ -159,9 +159,13 @@ const Index = () => (
                   href: "/TODO",
                 },
                 {
-                  label: "Tous les chapitres",
+                  label: "Executive Summary (English)",
                   href: "/TODO",
                   variant: "outlined",
+                },
+                {
+                  label: "Tous les chapitres",
+                  href: "/TODO",
                 },
               ]}
             >
@@ -190,7 +194,7 @@ const Index = () => (
             >
               Nos cartes interactives présentent les performances des
               départements du Bénin sur chacune des 4 dimensions du programme
-              &quot;Leave No One Behind&quot;. Visualisez la performance
+              &quot;Ne laisser personne de côté&quot;. Visualisez la performance
               actuelle des départements pour voir quels départements sont sur la
               bonne voie. Creusez dans chacun des 91 indicateurs couverts par le
               Rapport sur le développement durable du Bénin 2022.
@@ -200,13 +204,13 @@ const Index = () => (
         <Box marginY={8}>
           <Fade right>
             <FeatureBanner
-              title="Analyser les profiles du Bénin et de la CEDEAO"
+              title="Analyser les profils du Bénin et de la CEDEAO"
               image="/static/icons/indicator.svg"
               imagePosition="right"
               links={[
                 {
-                  label: "Analyser les profiles",
-                  href: "https://regional-benin.sdgindex.org/profiles",
+                  label: "Analyser les profils",
+                  href: "https://regional-benin.sdgindex.org/profils",
                 },
               ]}
             >

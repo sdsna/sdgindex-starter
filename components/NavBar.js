@@ -49,8 +49,8 @@ const pages = [
     href: "/carte/dimensions/lnob1",
   },
   {
-    label: "Profiles",
-    href: "https://regional-benin.sdgindex.org/profiles",
+    label: "Profils",
+    href: "https://regional-benin.sdgindex.org/profils",
   },
   {
     label: "Téléchargements et documents",
