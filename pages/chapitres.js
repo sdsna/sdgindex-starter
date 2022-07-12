@@ -91,9 +91,9 @@ const Chapters = () => (
           and lowering geopolitical tensions, is having a plan to finance them.
         </Chapter>
         <Chapter
-          slug="part-2-the-sdg-index-and-dashboards"
+          slug="partie-2-six-transformations-pour-hierarchiser-les-interventions"
           image="/static/chapters/figure-2-8.webp"
-          title="Part 2: The SDG Index and Dashboards"
+          title="« Six Transformations » pour hiérarchiser les interventions"
         >
           In 2015, for the first time in history, all UN Member States agreed on
           a common set of goals for sustainable development. Multiple health and
