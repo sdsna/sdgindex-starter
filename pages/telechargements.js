@@ -41,7 +41,7 @@ const downloads = [
     label: "Executive Summary (English)",
     type: "PDF",
     image: "exec-sum.webp",
-    url: "https://s3.console.aws.amazon.com/s3/object/sustainabledevelopment.report?region=us-east-1&prefix=2022/executive-summary-benin-sdr.pdf",
+    url: "https://s3.amazonaws.com/sustainabledevelopment.report/2022/executive-summary-benin-sdr.pdf",
   },
   {
     label: "Communiqué de presse",
