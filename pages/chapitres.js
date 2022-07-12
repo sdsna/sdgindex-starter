@@ -80,9 +80,9 @@ const Chapters = () => (
           2030.
         </Chapter>
         <Chapter
-          slug="part-1-a-global-plan-to-finance-the-sdgs"
+          slug="partie-1-lindice-de-developpement-durable-pour-le-benin"
           image="/static/chapters/figure-1-1.svg"
-          title="Part 1: A Global Plan to Finance the Sustainable Development Goals"
+          title="Partie 1: L'indice de développement durable pour le Bénin"
         >
           The SDGs are not being achieved. Success is held back by severe
           financing constraints facing the developing countries: constraints

@@ -3,14 +3,17 @@ import { Breadcrumbs, Link } from "@mui/material";
 const ReportNavBar = () => (
   <Breadcrumbs separator="|">
     <Link underline="hover" color="inherit" href="/chapitres/executive-summary">
-      Executive Summary
+      Executive Summary (English)
+    </Link>
+    <Link underline="hover" color="inherit" href="/chapitres/executive-summary">
+      Résumé Exécutif (Français)
     </Link>
     <Link
       underline="hover"
       color="inherit"
-      href="/chapitres/part-1-a-global-plan-to-finance-the-sdgs"
+      href="/chapitres/partie-1-lindice-de-developpement-durable-pour-le-benin"
     >
-      Part 1
+      Partie 1
     </Link>
     <Link
       underline="hover"
@@ -22,16 +25,9 @@ const ReportNavBar = () => (
     <Link
       underline="hover"
       color="inherit"
-      href="/chapitres/part-3-policy-efforts-and-commitments-for-the-sdgs"
+      href="/chapitres/partie-3-atteindre-les-odd-au-benin-efforts-et-defis"
     >
       Part 3
-    </Link>
-    <Link
-      underline="hover"
-      color="inherit"
-      href="/chapitres/part-4-sdg-data-systems-and-statistics"
-    >
-      Part 4
     </Link>
   </Breadcrumbs>
 );

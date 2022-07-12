@@ -39,7 +39,7 @@ const ReportNavigation = observer(() => {
       {headings.length > 0 && (
         <>
           <Box paddingLeft="6px" marginTop={2} marginBottom={1}>
-            <Typography variant="body1">Table of Contents</Typography>
+            <Typography variant="body1">Sommaire</Typography>
           </Box>
           <Tabs
             orientation="vertical"
@@ -154,7 +154,7 @@ const ReportNavigation = observer(() => {
       {reportStore.boxes.length > 0 && (
         <>
           <Box paddingLeft="6px" marginTop={2} marginBottom={1}>
-            <Typography variant="body2">Boxes</Typography>
+            <Typography variant="body2">Encadré</Typography>
           </Box>
           <Tabs orientation="vertical" value={false} variant="scrollable">
             {reportStore.boxes.map((box, index) => (
