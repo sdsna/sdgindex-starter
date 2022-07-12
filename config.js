@@ -12,7 +12,8 @@ export const MAX_RANK = null;
 // The URL of the full report (PDF)
 // The report should be hosted on AWS. Directly downloading it from Netlify will
 // consume too much bandwidth.
-export const REPORT_DOWNLOAD_URL = "/TODO";
+export const REPORT_DOWNLOAD_URL =
+  "https://s3.amazonaws.com/sustainabledevelopment.report/2022/2022-benin-sustainable-development-report.pdf";
 
 // The URL of the database (Excel)
 // Example: /static/downloads/files/SDR2021-database.xlsx
