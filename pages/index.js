@@ -124,7 +124,7 @@ const Index = () => (
                   justifyContent={{ xs: "center", md: "flex-start" }}
                 >
                   <Box marginY={1} marginRight={2}>
-                    <Link href="/TODO" passHref>
+                    <Link href={REPORT_DOWNLOAD_URL} passHref>
                       <Button size="large" variant="contained">
                         Lire le rapport
                       </Button>
@@ -165,7 +165,7 @@ const Index = () => (
                 },
                 {
                   label: "Tous les chapitres",
-                  href: "/TODO",
+                  href: "/chapitres",
                 },
               ]}
             >
