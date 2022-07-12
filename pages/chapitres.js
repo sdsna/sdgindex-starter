@@ -57,16 +57,17 @@ const Chapters = () => (
     <Box marginTop={2} marginBottom={4}>
       <Grid container spacing={2}>
         <Chapter
-          slug="executive-summary"
-          image="/static/chapters/figure-E-1.svg"
-          title="Résumé exécutif"
+          slug="resume-executif"
+          image="/static/chapters/ODD.webp"
+          title="Résumé exécutif (Français)"
         >
-          In a context of multiple crises, the report analyzes and outlines how
-          the SDGs can be used as a roadmap for more sustainable societies by
-          2030 and beyond. In particular, this year&apos;s edition underlines
-          the importance of international financing mechanisms for addressing
-          lack of fiscal space in poorer countries and promoting sustainable
-          investments into physical and human infrastructure.
+          A mi-chemin et conscient des d&eacute;fis &agrave; relever pour la
+          r&eacute;alisation des Objectifs de D&eacute;veloppement durable
+          (ODD), le Gouvernement du B&eacute;nin a sollicit&eacute; le
+          R&eacute;seau de solutions pour le d&eacute;veloppement durable des
+          Nations Unies (SDSN) afin de l&rsquo;accompagner dans le suivi et
+          l&rsquo;&eacute;valuation pour la mise en œuvre de l&rsquo;Agenda
+          2030.
         </Chapter>
         <Chapter
           slug="part-1-a-global-plan-to-finance-the-sdgs"

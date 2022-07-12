@@ -4,8 +4,7 @@ import ReportParagraph from "components/ReportParagraph";
 const ReportPart = () => (
   <ReportLayout
     color="#005a86"
-    subtitle="Summary of key findings and 
-    recommendations"
+    subtitle="Résumé des principales conclusions et recommandations"
     title="Résumé Exécutif"
   >
     <ReportParagraph>
@@ -116,7 +115,7 @@ const ReportPart = () => (
       l&rsquo;engagement et les moyens mobilis&eacute;s pour la mise en œuvre de
       l&rsquo;Agenda 2030.
     </ReportParagraph>
-    <img src="/static/chapters/ODD.svg" />
+    <img src="/static/chapters/ODD.webp" />
   </ReportLayout>
 );
 
