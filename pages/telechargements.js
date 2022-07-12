@@ -7,7 +7,10 @@ import {
   Typography,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
-// import { DATABASE_DOWNLOAD_URL } from "root/config";
+import {
+  DATABASE_SUBNATIONAL_DOWNLOAD_URL,
+  DATABASE_REGIONAL_DOWNLOAD_URL,
+} from "root/config";
 import HeaderLayout from "layouts/HeaderLayout";
 import ResponsiveGridItem from "components/ResponsiveGridItem";
 import DownloadResourceButton from "components/DownloadResourceButton";
@@ -25,19 +28,13 @@ const downloads = [
     label: "Base de données (Infranationale)",
     type: "Excel",
     image: "database.png",
-    url: "/TODO",
+    url: DATABASE_SUBNATIONAL_DOWNLOAD_URL,
   },
   {
     label: "Base de données (Régionale)",
     type: "Excel",
     image: "database.png",
-    url: "/TODO",
-  },
-  {
-    label: "Documents supplémentaires en ligne",
-    type: "Excel",
-    image: "supplementary-online-materials.png",
-    url: "/TODO",
+    url: DATABASE_REGIONAL_DOWNLOAD_URL,
   },
   {
     label: "Communiqué de presse",
@@ -155,6 +152,12 @@ const subnationalIndices = [
     type: "Rapport + Tableau de bord",
     image: "eu-cities.png",
     url: "https://sdgindex.org/reports/sdg-index-and-dashboards-report-for-european-cities/",
+  },
+  {
+    label: "Rapport sur le développement durable pour le Bénin",
+    type: "Rapport + Tableau de bord",
+    image: "full-report.webp",
+    url: "/TODO",
   },
 ];
 

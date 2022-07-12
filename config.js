@@ -17,7 +17,10 @@ export const REPORT_DOWNLOAD_URL =
 
 // The URL of the database (Excel)
 // Example: /static/downloads/files/SDR2021-database.xlsx
-export const DATABASE_DOWNLOAD_URL = null;
+export const DATABASE_SUBNATIONAL_DOWNLOAD_URL =
+  "/static/downloads/files/Database-Benin-Infranationale-2022.xlsx";
+export const DATABASE_REGIONAL_DOWNLOAD_URL =
+  "/static/downloads/files/Database-Benin-Regional-2022.xlsx";
 
 // The URL of the deployed page (used in meta tags for SMO)
 // Example: https://www.domain.com/
