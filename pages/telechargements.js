@@ -47,7 +47,7 @@ const downloads = [
     label: "Communiqué de presse",
     type: "Site Web",
     image: "press-release.png",
-    url: "https://www.sdgindex.org/news/press-release-sustainable-development-report-2022/",
+    url: "https://www.sdgindex.org/news/2022-07-13-press-release-benin-sustainable-development-report-2022",
   },
   {
     label: "Méthodologie",
