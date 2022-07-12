@@ -13,6 +13,7 @@ import { REPORT_DOWNLOAD_URL } from "root/config";
 import AppLayout from "layouts/AppLayout";
 import FeatureBanner from "components/FeatureBanner";
 import ParticlesSection from "components/ParticlesSection";
+import Italics from "components/Italics";
 import { trackDownload } from "helpers/gtag";
 
 const transition = "250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms";
@@ -169,11 +170,12 @@ const Index = () => (
                 },
               ]}
             >
-              Le Rapport de développement durable du Bénin 2022 marque la
-              première édition de l&apos;évaluation des progrès du Bénin vers
-              les Objectifs de développement durable. Le rapport de cette année
-              analyse les progrès du Bénin sur les dimensions &quot;Ne laisser
-              personne de côté&quot;.
+              Le Rapport sur le développement durable pour le Bénin 2022 (
+              <Italics>rapport pilote de référence</Italics>) marque la première
+              édition de l&apos;évaluation des progrès, performances et
+              tendances du Bénin dans l’atteinte des Objectifs de Développement
+              Durable. Le rapport analyse aussi les performances du Bénin dans
+              la réalisation du principe de « ne laisser personne de côté ».
             </FeatureBanner>
           </Fade>
         </Box>
@@ -193,11 +195,13 @@ const Index = () => (
               ]}
             >
               Nos cartes interactives présentent les performances des
-              départements du Bénin sur chacune des 4 dimensions du programme
-              &quot;Ne laisser personne de côté&quot;. Visualisez la performance
-              actuelle des départements pour voir quels départements sont sur la
-              bonne voie. Creusez dans chacun des 91 indicateurs couverts par le
-              Rapport sur le développement durable du Bénin 2022.
+              départements du Bénin dans la réalisation du principe fondamental
+              de l’Agenda 2030 de « ne laisser personne de côté ». Quatre
+              dimensions mesurant les disparités sont considérées : les
+              inégalités d’accès aux services publics, l’extrême pauvreté et la
+              privation matérielle, les inégalités entre les sexes et les
+              inégalités de revenu et de richesse. Visualisez la performance
+              actuelle des départements sur ces dimensions.
             </FeatureBanner>
           </Fade>
         </Box>
