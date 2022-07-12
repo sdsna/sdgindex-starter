@@ -59,6 +59,7 @@ const PartThree = () => (
     </ReportParagraph>
     <ReportFigure
       number="32"
+      format="webp"
       title="Score de l’engagement et efforts des gouvernements en faveur des ODD, par rapport au score de l’indice ODD – Analyse pilote"
       source="Sustainable Development Report, 2022. Analyse des auteurs. Les détails sur la méthodologie et les indicateurs utilisés sont disponibles sur le site suivant : www.sdgindex.org."
       note="Le score de l’Ukraine reflète la situation en janvier 2022."
@@ -255,6 +256,7 @@ const PartThree = () => (
     </ReportParagraph>
     <ReportFigure
       number="33"
+      format="webp"
       title="Organigramme de présentation du mécanisme institutionnel"
       source="Auteurs et DGCS-ODD."
       note="Le cadre de concertation du secteur privé et de l’Assemblée nationale n’ont pas encore été formellement mis en place. 

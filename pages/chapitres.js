@@ -106,7 +106,7 @@ const Chapters = () => (
         </Chapter>
         <Chapter
           slug="partie-3-atteindre-les-odd-au-benin-efforts-et-defis"
-          image="/static/chapters/figure-3-4.webp"
+          image="/static/chapters/figure-33.webp"
           title="Partie 3: Atteindre les ODD au Bénin : efforts et défis"
         >
           Des objectifs, strat&eacute;gies et plans nationaux ambitieux et
