@@ -105,16 +105,15 @@ const Chapters = () => (
           op&eacute;rationnelle pour les ODD au B&eacute;nin.
         </Chapter>
         <Chapter
-          slug="part-3-policy-efforts-and-commitments-for-the-sdgs"
+          slug="partie-3-atteindre-les-odd-au-benin-efforts-et-defis"
           image="/static/chapters/figure-3-4.webp"
-          title="Part 3: Policy Efforts and Commitments for the SDGs"
+          title="Partie 3: Atteindre les ODD au Bénin : efforts et défis"
         >
-          Ambitious and sound national targets, strategies, and plans are
-          crucial to turning the SDGs into an action agenda. At mid-point on the
-          way to 2030, policy efforts and commitments supporting the SDGs vary
-          significantly across countries, including among G20 countries. This
-          year&apos;s edition presents pilot scores of Governments&apos;
-          Commitment and Efforts for the SDGs for more than 60 countries.
+          Des objectifs, strat&eacute;gies et plans nationaux ambitieux et
+          solides sont essentiels pour transformer les ODD en un programme
+          d&rsquo;action. Chaque ann&eacute;e depuis 2018, SDSN mobilise son
+          r&eacute;seau mondial d&rsquo;experts pour analyser les efforts des
+          gouvernements pour atteindre les ODD.
         </Chapter>
       </Grid>
     </Box>
