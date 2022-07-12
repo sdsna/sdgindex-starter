@@ -114,18 +114,6 @@ const Chapters = () => (
           year&apos;s edition presents pilot scores of Governments&apos;
           Commitment and Efforts for the SDGs for more than 60 countries.
         </Chapter>
-        <Chapter
-          slug="part-4-sdg-data-systems-and-statistics"
-          image="/static/chapters/figure-4-1.svg"
-          title="Part 4: SDG Data Systems and Statistics"
-        >
-          The COVID-19 pandemic has prompted a massive shift in the demand for
-          data, especially for timelier and higher-quality data. Governments
-          have needed more rapid, geolocated, and granular data and have had to
-          find new ways to satisfy user demands with reduced budgets and staff
-          resources, while also balancing data timeliness, precision, and
-          quality needs.
-        </Chapter>
       </Grid>
     </Box>
   </HeaderLayout>
