@@ -392,7 +392,7 @@ const PartOne = () => (
       les seuls d&eacute;partements dont les performances permettront
       d&rsquo;atteindre la cible 10.22.
       <ReportFootnote
-        number="1"
+        number="2"
         content="Cible 10.2 des ODD : D'ici à 2030, autonomiser toutes les personnes et favoriser leur intégration sociale, économique et politique, indépendamment de leur âge, de leur sexe, de leur handicap, de leur race, de leur appartenance ethnique, de leurs origines, de leur religion ou de leur statut économique ou autre."
       />{" "}
     </ReportParagraph>
