@@ -13,7 +13,7 @@ const OUTPUT_FOLDER = path.join(
   "static",
   "chapters"
 );
-const MANUAL_EXPORT = ["ODD.svg", "SDG.svg"];
+const MANUAL_EXPORT = ["figure-32.svg", "figure-33.svg"];
 
 // Get the size of a string in kilobytes
 const sizeInKb = (string) => {
