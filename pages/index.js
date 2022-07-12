@@ -131,7 +131,7 @@ const Index = () => (
                     </Link>
                   </Box>
                   <Box marginY={1}>
-                    <Link href="/TODO" passHref>
+                    <Link href="/chapitres/executive-summary" passHref>
                       <Button
                         size="large"
                         variant="outlined"
@@ -160,7 +160,7 @@ const Index = () => (
                 },
                 {
                   label: "Executive Summary (English)",
-                  href: "/TODO",
+                  href: "/chapitres/executive-summary",
                   variant: "outlined",
                 },
                 {

@@ -57,6 +57,16 @@ const Chapters = () => (
     <Box marginTop={2} marginBottom={4}>
       <Grid container spacing={2}>
         <Chapter
+          slug="executive-summary"
+          image="/static/chapters/SDG.webp"
+          title="Executive Summary (English)"
+        >
+          At the halfway point, and aware of the remaining challenges to achieve
+          the Sustainable Development Goals (SDGs), the Government of Benin
+          asked the UN Sustainable Development Solutions Network (SDSN) to
+          support it in the monitoring and evaluation of the 2030 Agenda.
+        </Chapter>
+        <Chapter
           slug="resume-executif"
           image="/static/chapters/ODD.webp"
           title="Résumé exécutif (Français)"
@@ -103,18 +113,6 @@ const Chapters = () => (
           significantly across countries, including among G20 countries. This
           year&apos;s edition presents pilot scores of Governments&apos;
           Commitment and Efforts for the SDGs for more than 60 countries.
-        </Chapter>
-        <Chapter
-          slug="part-4-sdg-data-systems-and-statistics"
-          image="/static/chapters/figure-4-1.svg"
-          title="Part 4: SDG Data Systems and Statistics"
-        >
-          The COVID-19 pandemic has prompted a massive shift in the demand for
-          data, especially for timelier and higher-quality data. Governments
-          have needed more rapid, geolocated, and granular data and have had to
-          find new ways to satisfy user demands with reduced budgets and staff
-          resources, while also balancing data timeliness, precision, and
-          quality needs.
         </Chapter>
       </Grid>
     </Box>
