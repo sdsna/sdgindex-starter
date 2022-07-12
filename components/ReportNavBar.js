@@ -11,9 +11,9 @@ const ReportNavBar = () => (
     <Link
       underline="hover"
       color="inherit"
-      href="/chapitres/part-1-a-global-plan-to-finance-the-sdgs"
+      href="/chapitres/partie-1-lindice-de-developpement-durable-pour-le-benin"
     >
-      Part 1
+      Partie 1
     </Link>
     <Link
       underline="hover"
