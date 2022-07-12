@@ -156,7 +156,7 @@ const Index = () => (
               links={[
                 {
                   label: "Résumé Exécutif",
-                  href: "/TODO",
+                  href: "/chapitres/resume-executif",
                 },
                 {
                   label: "Executive Summary (English)",
