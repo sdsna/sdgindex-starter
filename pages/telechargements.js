@@ -10,6 +10,7 @@ import { styled } from "@mui/material/styles";
 import {
   DATABASE_SUBNATIONAL_DOWNLOAD_URL,
   DATABASE_REGIONAL_DOWNLOAD_URL,
+  REPORT_DOWNLOAD_URL,
 } from "root/config";
 import HeaderLayout from "layouts/HeaderLayout";
 import ResponsiveGridItem from "components/ResponsiveGridItem";
@@ -22,7 +23,7 @@ const downloads = [
     label: "Rapport sur le développement durable pour le Bénin",
     type: "PDF",
     image: "full-report.webp",
-    url: "/TODO",
+    url: REPORT_DOWNLOAD_URL,
   },
   {
     label: "Base de données (Infranationale)",
@@ -35,6 +36,12 @@ const downloads = [
     type: "Excel",
     image: "database.png",
     url: DATABASE_REGIONAL_DOWNLOAD_URL,
+  },
+  {
+    label: "Executive Summary (English)",
+    type: "PDF",
+    image: "exec-sum.webp",
+    url: "https://s3.console.aws.amazon.com/s3/object/sustainabledevelopment.report?region=us-east-1&prefix=2022/executive-summary-benin-sdr.pdf",
   },
   {
     label: "Communiqué de presse",
@@ -94,6 +101,12 @@ const regionalIndices = [
 
 const subnationalIndices = [
   {
+    label: "Rapport sur le développement durable pour le Bénin",
+    type: "Rapport + Tableau de bord",
+    image: "full-report.webp",
+    url: "/TODO",
+  },
+  {
     label: "United States Sustainable Development Report 2021",
     type: "Rapport + Tableau de bord",
     image: "us-states.webp",
@@ -152,12 +165,6 @@ const subnationalIndices = [
     type: "Rapport + Tableau de bord",
     image: "eu-cities.png",
     url: "https://sdgindex.org/reports/sdg-index-and-dashboards-report-for-european-cities/",
-  },
-  {
-    label: "Rapport sur le développement durable pour le Bénin",
-    type: "Rapport + Tableau de bord",
-    image: "full-report.webp",
-    url: "/TODO",
   },
 ];
 
