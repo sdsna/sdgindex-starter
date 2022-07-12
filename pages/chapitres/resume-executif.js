@@ -60,10 +60,7 @@ const ReportPart = () => (
       pauvret&eacute; et la privation mat&eacute;rielle, les
       in&eacute;galit&eacute;s entre les sexes, et les in&eacute;galit&eacute;s
       de revenu et de richesse. On constate des disparit&eacute;s entre les
-      r&eacute;gions du B&eacute;nin, les d&eacute;partements du sud proches de
-      la capitale &eacute;conomique (Cotonou) &eacute;tant plus favoris&eacute;s
-      et les d&eacute;fis li&eacute;s aux ODD &eacute;tant importants dans le
-      Nord.
+      r&eacute;gions du B&eacute;nin.
     </ReportParagraph>
     <ReportParagraph>
       Les donn&eacute;es utilis&eacute;es proviennent de sources internationales
