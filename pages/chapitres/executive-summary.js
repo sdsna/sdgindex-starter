@@ -95,7 +95,7 @@ const ReportPart = () => (
       the commitment and means mobilized for the implementation of the 2030
       Agenda.
     </ReportParagraph>
-    <img src="/static/chapters/SDG.svg" />
+    <img src="/static/chapters/SDG.webp" />
   </ReportLayout>
 );
 

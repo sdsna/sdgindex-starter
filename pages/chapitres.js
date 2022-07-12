@@ -57,6 +57,16 @@ const Chapters = () => (
     <Box marginTop={2} marginBottom={4}>
       <Grid container spacing={2}>
         <Chapter
+          slug="executive-summary"
+          image="/static/chapters/SDG.webp"
+          title="Executive Summary (English)"
+        >
+          At the halfway point, and aware of the remaining challenges to achieve
+          the Sustainable Development Goals (SDGs), the Government of Benin
+          asked the UN Sustainable Development Solutions Network (SDSN) to
+          support it in the monitoring and evaluation of the 2030 Agenda.
+        </Chapter>
+        <Chapter
           slug="resume-executif"
           image="/static/chapters/ODD.webp"
           title="Résumé exécutif (Français)"
