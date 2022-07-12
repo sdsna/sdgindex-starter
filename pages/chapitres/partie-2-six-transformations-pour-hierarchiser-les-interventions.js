@@ -4,6 +4,7 @@ import ReportParagraph from "components/ReportParagraph";
 import ReportHeading from "components/ReportHeading";
 import ReportSubheading from "components/ReportSubheading";
 import ReportFootnote from "components/ReportFootnote";
+import ReportFigure from "components/ReportFigure";
 
 const PartTwo = () => (
   <ReportLayout
@@ -54,6 +55,100 @@ const PartTwo = () => (
       sant&eacute; et l&rsquo;&eacute;ducation, les services
       d&rsquo;infrastructure (transport, eau, assainissement, &eacute;nergie),
       et l&rsquo;utilisation des ressources environnementales.
+    </ReportParagraph>
+    <ReportFigure
+      number="7"
+      title="« Six Transformations » pour les ODD"
+      format="webp"
+      source="Sachs et al., 2019"
+    />
+    <ReportSubheading>
+      {" "}
+      1. &Eacute;ducation, Genre et In&eacute;galit&eacute;
+    </ReportSubheading>
+    <ReportParagraph>
+      La premi&egrave;re transformation couvre les investissements dans
+      l&rsquo;&eacute;ducation (d&eacute;veloppement de la petite enfance,
+      enseignement primaire et secondaire, formation professionnelle et
+      enseignement sup&eacute;rieur), les syst&egrave;mes de protection sociale
+      et les normes du travail, ainsi que la Recherche et D&eacute;veloppement
+      (R&amp;D).
+    </ReportParagraph>
+    <ReportParagraph>
+      Elle vise directement les ODD 1, 2, 4, 5, 8, 9 et 10, et renforce
+      d&rsquo;autres r&eacute;sultats des ODD.
+    </ReportParagraph>
+    <ReportSubheading>
+      {" "}
+      2. Sant&eacute;, Bien-&ecirc;tre et D&eacute;mographie
+    </ReportSubheading>
+    <ReportParagraph>
+      Cette transformation regroupe les interventions visant &agrave; assurer la
+      couverture sanitaire universelle (CSU), &agrave; promouvoir des
+      comportements sains et &agrave; agir sur les d&eacute;terminants sociaux
+      de la sant&eacute; et du bien-&ecirc;tre.
+    </ReportParagraph>
+    <ReportParagraph>
+      Elle cible directement les ODD 2, 3 et 5, qui ont de fortes synergies avec
+      de nombreux autres objectifs.
+    </ReportParagraph>
+    <ReportSubheading>
+      {" "}
+      3. D&eacute;carbonisation de l&rsquo;&eacute;nergie et Industrie durable
+    </ReportSubheading>
+    <ReportParagraph>
+      Cette transformation regroupe les investissements dans
+      l&rsquo;acc&egrave;s &agrave; l&rsquo;&eacute;nergie, la
+      d&eacute;carbonisation de l&rsquo;&eacute;lectricit&eacute;, des
+      transports, des b&acirc;timents et de l&rsquo;industrie ; et la
+      r&eacute;duction de la pollution industrielle.
+    </ReportParagraph>
+    <ReportParagraph>
+      Elle vise directement les ODD 3, 6, 7, 9, 11 &agrave; 15, et en renforce
+      plusieurs autres ODD.
+    </ReportParagraph>
+    <ReportSubheading>
+      {" "}
+      4. Alimentation durable, Terres, Eaux et Oc&eacute;ans
+    </ReportSubheading>
+    <ReportParagraph>
+      Les interventions visant &agrave; rendre les syst&egrave;mes de production
+      alimentaire, agricole ou foresti&egrave;re plus productifs et plus
+      r&eacute;sistants au changement climatique&nbsp;; doivent &ecirc;tre
+      coordonn&eacute;es avec les efforts visant &agrave; conserver et &agrave;
+      restaurer la biodiversit&eacute; et &agrave; promouvoir des r&eacute;gimes
+      alimentaires sains, tout en r&eacute;duisant consid&eacute;rablement les
+      pertes et gaspillages alimentaires. D&rsquo;importants compromis existent
+      entre ces interventions.
+    </ReportParagraph>
+    <ReportParagraph>
+      Cette vaste transformation favorise directement les ODD 2, 3, 6, et 12
+      &agrave; 15 et renforce de nombreux autres ODD.
+    </ReportParagraph>
+    <ReportSubheading>
+      {" "}
+      5. Villes et Communaut&eacute;s durables
+    </ReportSubheading>
+    <ReportParagraph>
+      Les villes et autres communaut&eacute;s ont besoin d&rsquo;investissements
+      int&eacute;gr&eacute;s dans les infrastructures, les services urbains,
+      ainsi que dans la r&eacute;silience au changement climatique.
+    </ReportParagraph>
+    <ReportParagraph>
+      Ces interventions visent bien s&ucirc;r l&rsquo;ODD 11 et contribuent
+      aussi directement aux objectifs 6 et 9. Pratiquement tous les ODD sont
+      indirectement soutenus par cette transformation.
+    </ReportParagraph>
+    <ReportSubheading>
+      {" "}
+      6. R&eacute;volution num&eacute;rique au service du D&eacute;veloppement
+      Durable
+    </ReportSubheading>
+    <ReportParagraph>
+      Si elles sont bien g&eacute;r&eacute;es, les technologies
+      num&eacute;riques, telles que l&rsquo;intelligence artificielle et les
+      technologies de communication modernes, peuvent apporter des contributions
+      majeures &agrave; la r&eacute;alisation de pratiquement tous les ODD.
     </ReportParagraph>
     <ReportParagraph>
       Le deuxi&egrave;me principe consiste &agrave; assurer &laquo;&nbsp;la
@@ -154,6 +249,19 @@ const PartTwo = () => (
       en dessous de la moyenne de la CEDEAO, avec un &eacute;cart plus important
       que pour les autres transformations.
     </ReportParagraph>
+    <ReportFigure
+      number="8"
+      title="« Six Transformations » pour les ODD et le Programme d’Action du Gouvernement du Bénin"
+      format="webp"
+      source="Analyse des auteurs"
+    />
+    <ReportFigure
+      number="9"
+      title="Progrès sur les « Six Transformations », score de 0 (pire) à 100 (meilleur)"
+      format="webp"
+      source="Calculs des auteurs"
+      note="voir le tableau A.1 en annexe pour le détail des indicateurs utilisés"
+    />
     <ReportSubheading>
       Transformation 1. &Eacute;ducation, Genre et In&eacute;galit&eacute;
     </ReportSubheading>
@@ -228,6 +336,12 @@ const PartTwo = () => (
       des services de sant&eacute; reproductive, infantile et maternelle de
       qualit&eacute;.
     </ReportParagraph>
+    <ReportFigure
+      number="10"
+      title="Nombre moyen d’années de scolarité"
+      format="webp"
+      source="Calcul des auteurs à partir des données de l’UNESCO (2020)."
+    />
     <ReportParagraph>
       Enfin, l&rsquo;action du Gouvernement visant &agrave;
       g&eacute;n&eacute;raliser le &laquo;&nbsp;programme d&rsquo;assurance pour
@@ -256,6 +370,18 @@ const PartTwo = () => (
       travail permettrait au pays de conforter ses performances dans la
       transformation du capital humain.
     </ReportParagraph>
+    <ReportFigure
+      number="11"
+      title="Travail des enfants (% de la population âgée de 5 à 14 ans), en 2019"
+      format="webp"
+      source="Calcul des auteurs à partir des données de l’UNICEF (2022)."
+    />
+    <ReportFigure
+      number="12"
+      title="Garantie des droits fondamentaux du travail (2020)"
+      format="webp"
+      source="Calcul des auteurs à partir des données du World Justice Project (2020)."
+    />
     <ReportBox
       number="1"
       title="Programme d'assurance pour le renforcement du capital humain (ARCH)"
@@ -363,6 +489,19 @@ const PartTwo = () => (
       modernes, au B&eacute;nin&nbsp;; comparativement &agrave; 46% des femmes
       en moyenne, au sein de la CEDEAO (UNDESA, 2022).
     </ReportParagraph>
+    <ReportFigure
+      number="13"
+      title="Couverture sanitaire universelle (CSU), indice de la
+      couverture des services"
+      format="webp"
+      source="Calcul des auteurs à partir des données de l’OMS (2021)."
+    />
+    <ReportFigure
+      number="14"
+      title="Taux de mortalité, moins de 5 ans pour 1 000 naissances vivantes"
+      format="webp"
+      source="Calcul des auteurs à partir des données de l’UNICEF (2021)."
+    />
     <ReportParagraph>
       Le&nbsp;B&eacute;nin priorise le secteur de la sant&eacute; et tient
       compte du besoin d&rsquo;acc&egrave;s &agrave; des services de
@@ -404,6 +543,13 @@ const PartTwo = () => (
       &ecirc;tre consacr&eacute;es, notamment pour la sensibilisation du public
       et des activit&eacute;s de pr&eacute;vention.
     </ReportParagraph>
+    <ReportFigure
+      number="15"
+      title="Taux de mortalité maternelle pour 100 000 naissances vivantes (2017)"
+      format="webp"
+      source="Calcul des auteurs à partir des données de l’OMS (2019)."
+      note="Le «seuil de performance cible» représente le seuil optimal (borne de performance supérieure) défini pour l’indice et les tableaux de bord"
+    />
     <ReportSubheading>
       Transformation 3. D&eacute;carbonisation de l&rsquo;&eacute;nergie et
       Industrie durable
@@ -458,6 +604,18 @@ const PartTwo = () => (
       pourrait &ecirc;tre diversifi&eacute; en faveur des &eacute;nergies
       solaires, &eacute;oliennes et hydrauliques (PONADER, 2020).
     </ReportParagraph>
+    <ReportFigure
+      number="16"
+      title="Population ayant accès à l’électricité (%)"
+      format="webp"
+      source="Calcul des auteurs à partir des données de SE4All (2021)"
+    />
+    <ReportFigure
+      number="17"
+      title="Accessibilité des prix de l’électricité pour les consommateurs"
+      format="webp"
+      source="Calcul des auteurs à partir des données du RISE report (2019)."
+    />
     <ReportParagraph>
       La production d&rsquo;&eacute;lectricit&eacute; provient presque
       totalement d&rsquo;&eacute;nergies fossiles (Figure&nbsp;20), et doit
@@ -483,6 +641,24 @@ const PartTwo = () => (
       directement le d&eacute;veloppement de transports
       &laquo;&nbsp;z&eacute;ro-&eacute;missions&nbsp;&raquo;.
     </ReportParagraph>
+    <ReportFigure
+      number="18"
+      title="Part des énergies renouvelables dans l’approvisionnement total en énergie primaire au Bénin (%)"
+      format="webp"
+      source="Calcul des auteurs à partir des données de l’OCDE (2022)."
+    />
+    <ReportFigure
+      number="19"
+      title="Mix énergétique du Bénin (2019)"
+      format="webp"
+      source="Calcul des auteurs à partir des données de l'IEA (2021b)."
+    />
+    <ReportFigure
+      number="20"
+      title="Production d’électricité par source d’énergie au Bénin (2020)"
+      format="webp"
+      source="Calcul des auteurs à partir des données de l'IEA (2021a)."
+    />
     <ReportSubheading>
       Transformation 4. Alimentation durable, Terres, Eaux et Oc&eacute;ans
     </ReportSubheading>
@@ -504,6 +680,18 @@ const PartTwo = () => (
       &agrave; la moyenne de la CEDEAO entre 2010 et 2018, date des
       derni&egrave;res donn&eacute;es internationales disponibles (Figure 21).
     </ReportParagraph>
+    <ReportFigure
+      number="21"
+      title="Rendement céréalier au Bénin (tonnes par hectare de terre récoltée)"
+      format="webp"
+      source="Calcul des auteurs à partir des données de la FAO (2021)."
+    />
+    <ReportFigure
+      number="22"
+      title="Déforestation permanente (% de la surface forestière, moyenne sur 3 ans)"
+      format="webp"
+      source="Calcul des auteurs à partir des données de Curtis et al. (2018)."
+    />
     <ReportParagraph>
       Le PAG 2021-2026 pr&eacute;voit de consolider les performances du secteur
       agricole. Les r&eacute;formes et projets pr&eacute;vus par le Gouvernement
@@ -565,6 +753,17 @@ const PartTwo = () => (
       b&eacute;n&eacute;ficient pas encore d&rsquo;une protection effective
       (BirdLife International, 2022).
     </ReportParagraph>
+    <ReportFigure
+      number="23"
+      title="Cartes de zones protégées et non protégées au Bénin (2022)"
+      format="webp"
+      source="BirdLife International (2022). World Database of Key Biodiversity Areas"
+      note="Le site du Lac Nokoué considéré par KBA prend en compte la zone plus étendue &quot;Basse Vallée de l’Ouémé,
+      Lagune de Porto-Novo, Lac Nokoué&quot; classée site Ramsar. Il en est de même pour les sites du Lac Ahémé et du
+      chenal Aho, également classés sites Ramsar, et qui font partie de la même zone clé pour la biodiversité.
+      Le site du Bassin de l'Ouémé comprend trois réserves forestières contiguës que sont les Forêts Classées: de
+      l'Ouémé Supérieur, de Ouari-Maro et des Monts Kouffé."
+    />
     <ReportSubheading>
       Transformation 5. Villes et Communaut&eacute;s durables
     </ReportSubheading>
@@ -618,6 +817,13 @@ const PartTwo = () => (
       vidange et des eaux us&eacute;es&nbsp;; ainsi que l&rsquo;assainissement
       pluvial de Cotonou et quelques autres villes.
     </ReportParagraph>
+    <ReportFigure
+      number="24"
+      title="Population utilisant au moins les services de base d’eau potable (%), à l’échelle nationale"
+      format="webp"
+      source="Calcul des auteurs à partir des données du Joint Monitoring Programme (JMP). OMS et
+      UNICEF (2021)."
+    />
     <ReportParagraph>
       La cinqui&egrave;me transformation couvre &eacute;galement les
       interventions visant &agrave; promouvoir un am&eacute;nagement du
@@ -728,6 +934,30 @@ const PartTwo = () => (
       d&rsquo;encourager la mobilit&eacute; douce et am&eacute;liorer le cadre
       de vie des habitants.
     </ReportParagraph>
+    <ReportFigure
+      number="25"
+      title="Population utilisant au moins les services d’assainissement de base (%)"
+      format="webp"
+      source="Calcul des auteurs à partir des données du Joint Monitoring Programme (JMP). OMS et UNICEF (2021)."
+    />
+    <ReportFigure
+      number="26"
+      title="Proportion de la population urbaine vivant dans des bidonvilles (%)"
+      format="webp"
+      source="Calcul des auteurs à partir des données de ONU Habitat (2021)"
+    />
+    <ReportFigure
+      number="27"
+      title="Indice de performance logistique : Qualité des infrastructures liées au commerce et au transport"
+      format="webp"
+      source="Calcul des auteurs à partir des données du Logistics Performance Index (LPI). Banque Mondiale (2018)."
+    />
+    <ReportFigure
+      number="28"
+      title="Concentration annuelle moyenne de particules d'un diamètre inférieur à 2,5 microns (PM2,5) (μg/m^3)"
+      format="webp"
+      source="Calcul des auteurs à partir des données de l’IHME (2020)."
+    />
     <ReportSubheading>
       Transformation 6. R&eacute;volution num&eacute;rique au service du
       D&eacute;veloppement Durable
@@ -816,6 +1046,25 @@ const PartTwo = () => (
       Nationale de S&eacute;curit&eacute; des Syst&egrave;mes
       d&rsquo;Information (ANSSI).
     </ReportParagraph>
+    <ReportFigure
+      number="29"
+      title="Population utilisant l’internet (%)"
+      format="webp"
+      source="Calcul des auteurs à partir des données du World Telecommunication/ICT Indicators
+      database. ITU (2022)."
+    />
+    <ReportFigure
+      number="30"
+      title="Abonnements au haut débit mobile pour 100 habitants (2019)"
+      format="webp"
+      source="Calcul des auteurs à partir des données du World Telecommunication/ICT Indicators database. ITU (2022)."
+    />
+    <ReportFigure
+      number="31"
+      title="Indice de performance statistique"
+      format="webp"
+      source="Calcul des auteurs à partir des données du Statistical Performance Indicators. Banque Mondiale (2022)"
+    />
   </ReportLayout>
 );
 
