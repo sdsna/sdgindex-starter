@@ -438,10 +438,6 @@ const PartOne = () => (
       Gouvernement sont d&eacute;taill&eacute;s dans la partie suivante du
       rapport.
     </ReportParagraph>
-    <ReportParagraph></ReportParagraph>
-    <ReportParagraph></ReportParagraph>
-    <ReportParagraph></ReportParagraph>
-    <ReportParagraph></ReportParagraph>
   </ReportLayout>
 );
 
