@@ -92,15 +92,16 @@ const Chapters = () => (
         </Chapter>
         <Chapter
           slug="partie-2-six-transformations-pour-hierarchiser-les-interventions"
-          image="/static/chapters/figure-2-8.webp"
+          image="/static/chapters/figure-7.webp"
           title="Partie 2: « Six Transformations » pour hiérarchiser les interventions"
         >
-          In 2015, for the first time in history, all UN Member States agreed on
-          a common set of goals for sustainable development. Multiple health and
-          security crises, amplified by the climate and biodiversity crises, are
-          now, however, putting the sustainable development agenda at risk. As
-          the SDG Index highlights, since 2019 these crises have halted progress
-          on sustainable development worldwide.
+          Les 17 ODD et leurs 169 cibles d&eacute;crivent les objectifs &agrave;
+          atteindre en 2030. En revanche, ils ne pr&eacute;cisent pas comment
+          les Gouvernements pourraient s&rsquo;organiser pour les atteindre.
+          S&rsquo;inspirant des travaux de Sachs et al. (2019), ce rapport
+          propose &laquo;&nbsp;Six Transformations&nbsp;&raquo;, afin
+          d&rsquo;aider &agrave; d&eacute;finir une strat&eacute;gie
+          op&eacute;rationnelle pour les ODD au B&eacute;nin.
         </Chapter>
         <Chapter
           slug="part-3-policy-efforts-and-commitments-for-the-sdgs"
