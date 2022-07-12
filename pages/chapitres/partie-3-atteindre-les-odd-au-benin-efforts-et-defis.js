@@ -659,10 +659,14 @@ const PartThree = () => (
       estimait que le besoin de financement des pays en d&eacute;veloppement
       &agrave; faibles revenus et &agrave; revenus interm&eacute;diaires de la
       tranche inf&eacute;rieure &eacute;tait d&rsquo;environ 300 &agrave; 500
-      milliards USD par an (Gaspar et&nbsp;al., 2019)22. A pr&eacute;sent, les
-      revers &eacute;conomiques et sociaux caus&eacute;s par la COVID-19
-      aggravent le d&eacute;ficit de financement des ODD. Le FMI estime que les
-      besoins de d&eacute;penses suppl&eacute;mentaires
+      milliards USD par an (Gaspar et&nbsp;al., 2019)
+      <ReportFootnote
+        number="22"
+        content="L’estimation de Gaspar et al., (2019) ne prend en compte que les secteurs de la santé, l’éducation, les routes, l’eau et l’assainissement, et l’électrification pour 49 pays. En comptabilisant les autres secteurs, le déficit de financement estimé serait plus grand."
+      />
+      . A pr&eacute;sent, les revers &eacute;conomiques et sociaux caus&eacute;s
+      par la COVID-19 aggravent le d&eacute;ficit de financement des ODD. Le FMI
+      estime que les besoins de d&eacute;penses suppl&eacute;mentaires
       s&rsquo;&eacute;l&egrave;vent d&eacute;sormais &agrave; environ 21 % de
       plus que ce qui &eacute;tait estim&eacute; en 2019 (Benedek et al., 2021).
     </ReportParagraph>
@@ -795,22 +799,24 @@ const PartThree = () => (
       au cœur des priorit&eacute;s pour la r&eacute;alisation de l&rsquo;Agenda
       2030. L&rsquo;&eacute;valuation des co&ucirc;ts
       (&laquo;&nbsp;costing&nbsp;&raquo;) pour les ODD au B&eacute;nin,
-      r&eacute;alis&eacute;e avec le FMI23 en 2018, estime les d&eacute;penses
-      suppl&eacute;mentaires &agrave; environ 21% du PIB en 2030 pour les
-      secteurs de la sant&eacute;, l&rsquo;&eacute;ducation, les routes,
-      l&rsquo;eau et l&rsquo;assainissement, et l&rsquo;&eacute;lectrification.
-      Selon l&rsquo;estimation r&eacute;alis&eacute;e en 2018 par le
-      B&eacute;nin en partenariat avec le PNUD, pour les cinq secteurs pris en
-      compte par le FMI, le montant serait plut&ocirc;t 19% du PIB. A
-      l&rsquo;&eacute;chelle des 49 cibles ODD prioris&eacute;es par le
-      B&eacute;nin, les co&ucirc;ts pour la r&eacute;alisation des ODD
-      s&rsquo;&eacute;l&egrave;ve &agrave; plus de 74,5 milliards USD
-      (R&eacute;publique du B&eacute;nin et PNUD, 2018). Le pays doit donc
-      mobiliser l&rsquo;&eacute;quivalant de 5,7 milliards USD en moyenne par
-      an, soit 60,8% de son PIB en 2017. Avec des ressources fiscales
-      domestiques d&rsquo;environ 1,66 milliards USD par an, soit 18% de PIB en
-      2017, le B&eacute;nin doit compter sur des sources de financements
-      suppl&eacute;mentaires (R&eacute;publique du B&eacute;nin et PNUD, 2018).
+      r&eacute;alis&eacute;e avec le FMI
+      <ReportFootnote number="23" content="FMI, 2018 ; Prady et Sy, 2019" /> en
+      2018, estime les d&eacute;penses suppl&eacute;mentaires &agrave; environ
+      21% du PIB en 2030 pour les secteurs de la sant&eacute;,
+      l&rsquo;&eacute;ducation, les routes, l&rsquo;eau et
+      l&rsquo;assainissement, et l&rsquo;&eacute;lectrification. Selon
+      l&rsquo;estimation r&eacute;alis&eacute;e en 2018 par le B&eacute;nin en
+      partenariat avec le PNUD, pour les cinq secteurs pris en compte par le
+      FMI, le montant serait plut&ocirc;t 19% du PIB. A l&rsquo;&eacute;chelle
+      des 49 cibles ODD prioris&eacute;es par le B&eacute;nin, les co&ucirc;ts
+      pour la r&eacute;alisation des ODD s&rsquo;&eacute;l&egrave;ve &agrave;
+      plus de 74,5 milliards USD (R&eacute;publique du B&eacute;nin et PNUD,
+      2018). Le pays doit donc mobiliser l&rsquo;&eacute;quivalant de 5,7
+      milliards USD en moyenne par an, soit 60,8% de son PIB en 2017. Avec des
+      ressources fiscales domestiques d&rsquo;environ 1,66 milliards USD par an,
+      soit 18% de PIB en 2017, le B&eacute;nin doit compter sur des sources de
+      financements suppl&eacute;mentaires (R&eacute;publique du B&eacute;nin et
+      PNUD, 2018).
     </ReportParagraph>
     <ReportSubheading>
       Des mesures permettant de relever les d&eacute;fis de financements
