@@ -1,5 +1,6 @@
 import ReportLayout from "layouts/ReportLayout";
 import ReportParagraph from "components/ReportParagraph";
+import ReportFigure from "components/ReportFigure";
 import ReportHeading from "components/ReportHeading";
 import ReportSubheading from "components/ReportSubheading";
 import ReportFootnote from "components/ReportFootnote";
@@ -37,6 +38,11 @@ const PartOne = () => (
       d&eacute;tails des performances par objectif et par indicateur sont
       disponibles dans les profils d&eacute;taill&eacute;s en annexe.
     </ReportParagraph>
+    <ReportFigure
+      number="1"
+      title="Indice ODD du Bénin et des Etats membres de la CEDEAO"
+      format="webp"
+    />
     <ReportHeading>
       1.2. Tableau de bord des ODD : r&eacute;alisations, principaux
       d&eacute;fis et priorit&eacute;s
@@ -65,6 +71,12 @@ const PartOne = () => (
       d&eacute;fis subsistent pour la r&eacute;alisation de l&rsquo;ODD&nbsp;13
       relatif &agrave; la lutte contre les changements climatiques.
     </ReportParagraph>
+    <ReportFigure
+      number="2"
+      title="Tableau de bord des ODD de la Communauté Economique des Etats de l’Afrique de l’Ouest (CEDEAO)"
+      format="webp"
+      source="Auteurs"
+    />
     <ReportParagraph>
       L&rsquo;analyse des tendances permet de mieux appr&eacute;cier les efforts
       r&eacute;alis&eacute;s par le B&eacute;nin depuis l&rsquo;adoption de
@@ -169,6 +181,12 @@ const PartOne = () => (
       &agrave; l&rsquo;eau potable, &agrave; l&rsquo;&eacute;lectricit&eacute;,
       &agrave; internet, et l&rsquo;&eacute;tat civil.
     </ReportParagraph>
+    <ReportFigure
+      number="3"
+      title="Indice d’accessibilité et de qualité des services"
+      format="webp"
+      source="Calculs des auteurs à partir des données fournies par l’INStaD"
+    />
     <ReportParagraph>
       Des disparit&eacute;s importantes subsistent entre les douze
       d&eacute;partements du B&eacute;nin en termes d&rsquo;accessibilit&eacute;
@@ -273,6 +291,12 @@ const PartOne = () => (
       comparativement &agrave; 38% dans le Couffo, en derni&egrave;re position
       parmi les d&eacute;partements.
     </ReportParagraph>
+    <ReportFigure
+      number="4"
+      title="Indice d’extrême pauvreté et de privation matérielle"
+      format="webp"
+      source="Calculs des auteurs à partir des données fournies par l’INStaD"
+    />
     <ReportParagraph>
       Enfin, le taux d&rsquo;utilisation des services bancaires est peu
       &eacute;lev&eacute; au B&eacute;nin, seulement 29,6% de la population de
@@ -320,6 +344,12 @@ const PartOne = () => (
       le d&eacute;partement le plus en retard sur cet indicateur avec seulement
       4,5% d&rsquo;utilisation.
     </ReportParagraph>
+    <ReportFigure
+      number="5"
+      title="Indice d’inégalité des sexes"
+      format="webp"
+      source="Calculs des auteurs à partir des données fournies par l’INStaD"
+    />
     <ReportParagraph>
       Les in&eacute;galit&eacute;s des sexes sont beaucoup moins
       prononc&eacute;es sur le plan scolaire. Les filles ont un taux net de
@@ -372,6 +402,12 @@ const PartOne = () => (
       proportion de personnes vivant avec un revenu de plus de 50%
       inf&eacute;rieur au revenu moyen.
     </ReportParagraph>
+    <ReportFigure
+      number="6"
+      title="Indice d’inégalité de revenus et de richesse"
+      format="webp"
+      source="Calculs des auteurs à partir des données fournies par l’INStaD"
+    />
     <ReportParagraph>
       L&rsquo;in&eacute;galit&eacute; des revenus est la dimension de
       l&rsquo;indice &laquo;&nbsp;ne laisser personne de
