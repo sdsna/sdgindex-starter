@@ -8,7 +8,7 @@ import ReportAnchor from "components/ReportAnchor";
 const ReportBox = observer(({ title, number, source, children }) => {
   const reportStore = useReportStore();
 
-  const label = `Box ${number}. ${title}`;
+  const label = `Encadré ${number}. ${title}`;
   const anchor = urlSlug(label);
 
   useEffect(() => {
