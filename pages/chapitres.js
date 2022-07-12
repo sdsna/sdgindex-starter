@@ -81,14 +81,15 @@ const Chapters = () => (
         </Chapter>
         <Chapter
           slug="partie-1-lindice-de-developpement-durable-pour-le-benin"
-          image="/static/chapters/figure-1-1.svg"
+          image="/static/chapters/figure-1.webp"
           title="Partie 1: L'indice de développement durable pour le Bénin"
         >
-          The SDGs are not being achieved. Success is held back by severe
-          financing constraints facing the developing countries: constraints
-          that have been gravely aggravated by the COVID-19 pandemic and the war
-          in Ukraine. The key to achieving the SDGs, besides preserving peace
-          and lowering geopolitical tensions, is having a plan to finance them.
+          L&rsquo;indice et les tableaux de bord s&rsquo;appuient sur un
+          ensemble d&rsquo;indicateurs internationaux pour lesquels des
+          donn&eacute;es sont disponibles pour le B&eacute;nin, et les autres
+          pays de la CEDEAO. Le B&eacute;nin est compar&eacute; &agrave; ses
+          voisins afin de contextualiser ses performances et tendances pour la
+          r&eacute;alisation des ODD.
         </Chapter>
         <Chapter
           slug="partie-2-six-transformations-pour-hierarchiser-les-interventions"
