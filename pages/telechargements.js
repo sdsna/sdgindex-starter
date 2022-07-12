@@ -104,7 +104,7 @@ const subnationalIndices = [
     label: "Rapport sur le développement durable pour le Bénin",
     type: "Rapport + Tableau de bord",
     image: "full-report.webp",
-    url: "/TODO",
+    url: "https://sdgindex.org/reports/2022-07-13-benin-sustainable-development-report-2022",
   },
   {
     label: "United States Sustainable Development Report 2021",

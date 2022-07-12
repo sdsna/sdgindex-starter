@@ -3,11 +3,11 @@ describe("Index", () => {
     cy.visit("/");
     cy.contains("Rapport sur le développement durable pour le Bénin 2022");
   });
-  // TODO
-  // it("all links are defined", () => {
-  //     cy.get("#content a").each(($el) => {
-  //       cy.wrap($el).should("have.attr", "href");
-  //       cy.wrap($el).should("not.have.attr", "href", "/TODO");
-  //     });
-  //   });
+
+  it("all links are defined", () => {
+    cy.get("#content a").each(($el) => {
+      cy.wrap($el).should("have.attr", "href");
+      cy.wrap($el).should("not.have.attr", "href", "/TODO");
+    });
+  });
 });
