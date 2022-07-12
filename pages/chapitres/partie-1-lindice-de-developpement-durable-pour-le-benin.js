@@ -1,6 +1,7 @@
 import ReportLayout from "layouts/ReportLayout";
 import ReportParagraph from "components/ReportParagraph";
 import ReportHeading from "components/ReportHeading";
+import ReportSubheading from "components/ReportSubheading";
 import ReportFootnote from "components/ReportFootnote";
 
 const PartOne = () => (
@@ -157,9 +158,9 @@ const PartOne = () => (
       m&eacute;thodologie, les indicateurs et les sources de donn&eacute;es
       utilis&eacute;s sont d&eacute;taill&eacute;s en annexe A.3 du rapport.
     </ReportParagraph>
-    <ReportHeading>
+    <ReportSubheading>
       Accessibilit&eacute; et qualit&eacute; des services
-    </ReportHeading>
+    </ReportSubheading>
     <ReportParagraph>
       La dimension d&rsquo;in&eacute;galit&eacute; d&rsquo;acc&egrave;s aux
       services publics prend en compte les questions
@@ -219,9 +220,9 @@ const PartOne = () => (
       autres d&eacute;partements du B&eacute;nin, les chiffres varient de 81%
       dans l&apos;Atacora &agrave; 96% dans le Zou.
     </ReportParagraph>
-    <ReportHeading>
+    <ReportSubheading>
       Extr&ecirc;me pauvret&eacute; et privation mat&eacute;rielle
-    </ReportHeading>
+    </ReportSubheading>
     <ReportParagraph>
       L&rsquo;indice d&rsquo;extr&ecirc;me pauvret&eacute; et de privation
       mat&eacute;rielle couvre les questions de pauvret&eacute; extr&ecirc;me et
@@ -281,7 +282,7 @@ const PartOne = () => (
       disposait d&rsquo;un compte bancaire dans le Littoral, et seulement 8,4%
       dans l&rsquo;Atacora, qui a le taux le moins &eacute;lev&eacute; en 2019.
     </ReportParagraph>
-    <ReportHeading>In&eacute;galit&eacute; des sexes</ReportHeading>
+    <ReportSubheading>In&eacute;galit&eacute; des sexes</ReportSubheading>
     <ReportParagraph>
       La dimension de disparit&eacute;s entre les sexes prend en compte les
       aspects d&rsquo;acc&egrave;s &agrave; la sant&eacute; sexuelle et
@@ -358,9 +359,9 @@ const PartOne = () => (
       l&rsquo;utilisation d&rsquo;internet par les femmes repr&eacute;sente
       seulement 10,7% de celle des hommes.
     </ReportParagraph>
-    <ReportHeading>
+    <ReportSubheading>
       In&eacute;galit&eacute; de revenus et de richesse
-    </ReportHeading>
+    </ReportSubheading>
     <ReportParagraph>
       Les in&eacute;galit&eacute;s de revenus et de richesse &agrave;
       l&rsquo;&eacute;chelle infranationale sont mesur&eacute;es gr&acirc;ce au
