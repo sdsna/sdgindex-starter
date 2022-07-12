@@ -20,7 +20,7 @@ const ReportNavBar = () => (
       color="inherit"
       href="/chapitres/partie-2-six-transformations-pour-hierarchiser-les-interventions"
     >
-      Part 2
+      Partie 2
     </Link>
     <Link
       underline="hover"
