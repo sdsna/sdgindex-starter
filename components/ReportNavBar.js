@@ -29,6 +29,9 @@ const ReportNavBar = () => (
     >
       Partie 3
     </Link>
+    <Link underline="hover" color="inherit" href="/chapitres/annexe">
+      Annexe
+    </Link>
   </Breadcrumbs>
 );
 
