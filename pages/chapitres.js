@@ -115,6 +115,16 @@ const Chapters = () => (
           r&eacute;seau mondial d&rsquo;experts pour analyser les efforts des
           gouvernements pour atteindre les ODD.
         </Chapter>
+        <Chapter
+          slug="annexe"
+          image="/static/chapters/figure-A-2.webp"
+          title="Annexe: Méthodologies et tables des indicateurs"
+        >
+          Ce Rapport sur le développement durable est un rapport pilote de
+          référence qui décrit les progrès accomplis par le Bénin dans la
+          réalisation des ODD et indique les domaines nécessitant des progrès
+          plus rapides.
+        </Chapter>
       </Grid>
     </Box>
   </HeaderLayout>
