@@ -88,10 +88,7 @@ const ReportFigure = observer(
             >
               <img
                 loading="lazy"
-                src={`/static/chapters/${type}-${number.replace(
-                  ".",
-                  "-"
-                )}.${format}`}
+                src={`/static/chapters/${type}-${number}.${format}`}
                 alt={`${toTitleCase(type)} ${number} | ${title}`}
                 style={{ cursor: "pointer", maxWidth: "100%" }}
               />
