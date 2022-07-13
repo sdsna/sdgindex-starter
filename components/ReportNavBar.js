@@ -5,7 +5,7 @@ const ReportNavBar = () => (
     <Link underline="hover" color="inherit" href="/chapitres/executive-summary">
       Executive Summary (English)
     </Link>
-    <Link underline="hover" color="inherit" href="/chapitres/executive-summary">
+    <Link underline="hover" color="inherit" href="/chapitres/resume-executif">
       Résumé Exécutif (Français)
     </Link>
     <Link
@@ -27,7 +27,7 @@ const ReportNavBar = () => (
       color="inherit"
       href="/chapitres/partie-3-atteindre-les-odd-au-benin-efforts-et-defis"
     >
-      Part 3
+      Partie 3
     </Link>
   </Breadcrumbs>
 );
