@@ -30,9 +30,10 @@
     "mdi-material-ui": "^7.5.0",
     "mobx": "^6.6.2",
     "mobx-react-lite": "^3.4.0",
-    "next": "12.1.5",
+    "next": "^12.3.1",
     "next-seo": "^5.1.0",
     "nextjs-progressbar": "^0.0.14",
+    "patch-package": "^6.4.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-resize-observer": "^1.1.1"
