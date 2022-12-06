@@ -57,8 +57,8 @@ import { getValue } from "@sdgindex/data/observations";
 IndicatorMap.getInitialProps = async ({ query }) => {
   await loadData();
 
-  const { params } = query;
-  const [assessmentSlug] = params;
+  const { slug } = query;
+  const assessmentSlug = slug;
 
   const assessment = findIndicatorBySlug(assessmentSlug.toLowerCase());
   const dimensions = getDimensions();
