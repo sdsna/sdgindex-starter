@@ -7,20 +7,20 @@ module.exports = {
     await loadData();
 
     // Dimensions maps
-    delete paths["/carte/dimensions/[...params]"];
+    delete paths["/carte/dimensions/[slug]"];
     getGoals().forEach(({ id }) => {
       paths[`/carte/dimensions/${id}`] = {
-        page: "/carte/dimensions/[...params]",
+        page: "/carte/dimensions/[slug]",
       };
     });
 
     // Indicator maps
-    delete paths["/carte/indicateurs/[...params]"];
+    delete paths["/carte/indicateurs/[slug]"];
     getIndicators()
       .filter((indicator) => !indicator.hidemap)
       .forEach(({ slug }) => {
         paths[`/carte/indicateurs/${slug}`] = {
-          page: "/carte/indicateurs/[...params]",
+          page: "/carte/indicateurs/[slug]",
         };
       });
 
