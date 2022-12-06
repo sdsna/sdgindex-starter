@@ -47,8 +47,8 @@ import { getIndicatorsByDimension } from "helpers/getIndicatorsByDimension";
 Map.getInitialProps = async ({ query }) => {
   await loadData();
 
-  const { params } = query;
-  const [assessmentId] = params;
+  const { slug } = query;
+  const assessmentId = slug;
 
   // Get data
   const dimension = findAssessmentById(assessmentId.toUpperCase());
