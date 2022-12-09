@@ -49,7 +49,11 @@ const DimensionNavigation = observer(({ dimensions }) => (
               dimension.category[0].toUpperCase()
             )}
           </Typography>
-          <Link href={mapAssessmentUrl({ assessment: dimension })} passHref>
+          <Link
+            href={mapAssessmentUrl({ assessment: dimension })}
+            legacyBehavior
+            passHref
+          >
             <Button
               sx={{
                 background: "transparent",

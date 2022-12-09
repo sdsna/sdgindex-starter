@@ -58,7 +58,11 @@ const DimensionInfo = ({ dimension, dimensions, indicators }) => (
       <Grid container style={{ margin: -2, width: "auto" }}>
         {dimensions.map((dimension) => (
           <Grid item key={dimension.id} style={{ maxWidth: "25%", padding: 2 }}>
-            <Link href={mapAssessmentUrl({ assessment: dimension })} passHref>
+            <Link
+              href={mapAssessmentUrl({ assessment: dimension })}
+              legacyBehavior
+              passHref
+            >
               <ButtonBase>
                 <DimensionIcon identifier={dimension.id} />
               </ButtonBase>
@@ -78,7 +82,11 @@ const DimensionInfo = ({ dimension, dimensions, indicators }) => (
         <TableBodyWithAlternatingRows>
           {indicators.map((indicator) => (
             <TableRow key={indicator.id}>
-              <Link href={mapAssessmentUrl({ assessment: indicator })} passHref>
+              <Link
+                href={mapAssessmentUrl({ assessment: indicator })}
+                legacyBehavior
+                passHref
+              >
                 <IndicatorButton disabled={indicator.hideMap}>
                   <DrawerText>{indicator.label}</DrawerText>
                 </IndicatorButton>
