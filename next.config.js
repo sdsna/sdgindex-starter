@@ -1,18 +1,10 @@
-const { getIndicators, loadData, getGoals } = require("@sdgindex/data");
+const { getIndicators, loadData } = require("@sdgindex/data");
 
 module.exports = {
   exportPathMap: async (defaultPathMap) => {
     const paths = defaultPathMap;
 
     await loadData();
-
-    // Dimensions maps
-    delete paths["/carte/dimensions/[slug]"];
-    getGoals().forEach(({ id }) => {
-      paths[`/carte/dimensions/${id}`] = {
-        page: "/carte/dimensions/[slug]",
-      };
-    });
 
     // Indicator maps
     delete paths["/carte/indicateurs/[slug]"];
