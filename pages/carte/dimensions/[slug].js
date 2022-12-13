@@ -59,7 +59,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  console.log(params);
   const { slug } = params;
   await loadData();
 
