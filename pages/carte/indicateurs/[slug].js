@@ -50,14 +50,30 @@ import {
   findIndicatorBySlug,
   getRegionsWithAssessment,
   loadData,
+  getIndicators,
   getGoals as getDimensions,
 } from "@sdgindex/data";
 import { getValue } from "@sdgindex/data/observations";
 
-IndicatorMap.getInitialProps = async ({ query }) => {
+// This function gets called at build time
+export async function getStaticPaths() {
   await loadData();
 
-  const { slug } = query;
+  // Get the paths we want to pre-render based on regions
+  const indicators = getIndicators();
+  const paths = indicators.map(({ slug }) => ({
+    params: { slug },
+  }));
+
+  // We'll pre-render only these paths at build time.
+  // { fallback: false } means other routes should 404.
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params }) {
+  const { slug } = params;
+  await loadData();
+
   const assessmentSlug = slug;
 
   const assessment = findIndicatorBySlug(assessmentSlug.toLowerCase());
@@ -73,7 +89,6 @@ IndicatorMap.getInitialProps = async ({ query }) => {
     longTermObjective: assessment.longTermObjective,
     longTermObjectiveReason: assessment.longTermObjectiveReason,
     lowerBound: assessment.lowerBound,
-    link: assessment.link,
     source: assessment.source,
     reference: assessment.reference,
     type: assessment.type,
@@ -86,21 +101,23 @@ IndicatorMap.getInitialProps = async ({ query }) => {
   });
 
   return {
-    dimensions: dimensions.map((dimension) => ({
-      id: dimension.id,
-      number: dimension.number,
-      category: dimension.category,
-      type: dimension.type,
-    })),
-    assessment: assessmentProps,
-    departments: departments.map((department) => ({
-      id: department.id,
-      name: department.name,
-      value: department.value,
-      type: department.type,
-    })),
+    props: {
+      dimensions: dimensions.map((dimension) => ({
+        id: dimension.id,
+        number: dimension.number,
+        category: dimension.category,
+        type: dimension.type,
+      })),
+      assessment: assessmentProps,
+      departments: departments.map((department) => ({
+        id: department.id,
+        name: department.name,
+        value: department.value,
+        type: department.type,
+      })),
+    },
   };
-};
+}
 
 IndicatorMap.Layout = Layout;
 IndicatorMap.layoutProps = layoutProps;
