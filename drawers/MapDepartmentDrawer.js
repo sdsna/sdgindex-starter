@@ -73,11 +73,11 @@ const DimensionSection = ({ department, dimension, indicators }) => (
         <Link
           key={indicator.id}
           href={mapAssessmentUrl({ assessment: indicator })}
+          legacyBehavior
           passHref
         >
           <DimensionIndicator
             onClick={null}
-            buttonProps={{ component: "a" }}
             indicator={indicator}
             rating={getRating(indicator)}
             light={false}

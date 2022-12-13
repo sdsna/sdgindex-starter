@@ -4,7 +4,7 @@ import { Box, Drawer, List, ListItem, ListItemText } from "@mui/material";
 const NavBarDrawer = ({ pages, ...otherProps }) => (
   <Drawer {...otherProps}>
     <List disablePadding>
-      <Link href="/" passHref>
+      <Link href="/" legacyBehavior passHref>
         <Box paddingY={2} clone>
           <ListItem
             button
@@ -23,7 +23,7 @@ const NavBarDrawer = ({ pages, ...otherProps }) => (
         </Box>
       </Link>
       {pages.map(({ href, label }) => (
-        <Link key={href} href={href} passHref>
+        <Link key={href} href={href} legacyBehavior passHref>
           <ListItem button component="a" divider>
             <ListItemText primary={label} />
           </ListItem>

@@ -89,7 +89,7 @@ const FeatureBanner = ({
 }) => (
   <Card>
     <Grid container spacing={0}>
-      <Link href={links[0].href} passHref>
+      <Link href={links[0].href} legacyBehavior passHref>
         <GridButton
           item
           lg={3}
@@ -117,7 +117,7 @@ const FeatureBanner = ({
             {links.map(
               ({ label, href, variant, target = null, onClick = null }) => (
                 <Box key={href} marginY={1} marginRight={2}>
-                  <Link href={href} passHref>
+                  <Link href={href} legacyBehavior passHref>
                     <Button
                       target={target}
                       variant={variant || "contained"}

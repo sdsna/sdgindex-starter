@@ -21,7 +21,7 @@ import { trackDownload } from "helpers/gtag";
 const Chapter = ({ slug, title, image, children }) => (
   <ResponsiveGridItem small={1} medium={2} large={2}>
     <Card style={{ height: "100%" }}>
-      <Link href={chapterUrl({ slug })} passHref>
+      <Link href={chapterUrl({ slug })} legacyBehavior passHref>
         <CardActionArea style={{ height: "100%" }}>
           <CardMedia image={image} style={{ height: 240 }} />
           <CardContent>
