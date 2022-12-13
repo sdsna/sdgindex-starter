@@ -13,10 +13,6 @@ const Button = styled(ButtonBase)({
   },
 });
 
-Button.defaultProps = {
-  component: "a",
-};
-
 const Layout = (props) => (
   <Paper elevation={5} sx={{ borderRadius: 5 }}>
     <Box
