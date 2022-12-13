@@ -50,7 +50,7 @@ export async function getStaticPaths() {
   // Get the paths we want to pre-render based on regions
   const dimensions = getDimensions();
   const paths = dimensions.map(({ id }) => ({
-    params: { slug: id },
+    params: { slug: id.toLowerCase() },
   }));
 
   // We'll pre-render only these paths at build time.
