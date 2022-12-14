@@ -13,10 +13,6 @@ const Button = styled(ButtonBase)({
   },
 });
 
-Button.defaultProps = {
-  component: "a",
-};
-
 const Layout = (props) => (
   <Paper elevation={5} sx={{ borderRadius: 5 }}>
     <Box
@@ -49,7 +45,11 @@ const DimensionNavigation = observer(({ dimensions }) => (
               dimension.category[0].toUpperCase()
             )}
           </Typography>
-          <Link href={mapAssessmentUrl({ assessment: dimension })} passHref>
+          <Link
+            href={mapAssessmentUrl({ assessment: dimension })}
+            legacyBehavior
+            passHref
+          >
             <Button
               sx={{
                 background: "transparent",

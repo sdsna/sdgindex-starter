@@ -44,10 +44,24 @@ import {
 import { getScore, getScoreAsText } from "@sdgindex/data/observations";
 import { getIndicatorsByDimension } from "helpers/getIndicatorsByDimension";
 
-Map.getInitialProps = async ({ query }) => {
+export async function getStaticPaths() {
   await loadData();
 
-  const { slug } = query;
+  // Get the paths we want to pre-render based on regions
+  const dimensions = getDimensions();
+  const paths = dimensions.map(({ id }) => ({
+    params: { slug: id.toLowerCase() },
+  }));
+
+  // We'll pre-render only these paths at build time.
+  // { fallback: false } means other routes should 404.
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params }) {
+  const { slug } = params;
+  await loadData();
+
   const assessmentId = slug;
 
   // Get data
@@ -56,34 +70,36 @@ Map.getInitialProps = async ({ query }) => {
   const departments = getRegionsWithAssessment(dimension);
 
   return {
-    dimension: {
-      id: dimension.id,
-      label: dimension.label,
-      type: dimension.type,
-      description: dimension.description,
-      category: dimension.category,
-      longTermObjective: dimension.longTermObjective,
-      indicators: getIndicatorsByDimension(dimension).map((indicator) => ({
-        id: indicator.id,
-        slug: indicator.slug,
-        label: indicator.label,
-        type: indicator.type,
+    props: {
+      dimension: {
+        id: dimension.id,
+        label: dimension.label,
+        type: dimension.type,
+        description: dimension.description,
+        category: dimension.category,
+        longTermObjective: dimension.longTermObjective || null,
+        indicators: getIndicatorsByDimension(dimension).map((indicator) => ({
+          id: indicator.id,
+          slug: indicator.slug,
+          label: indicator.label,
+          type: indicator.type,
+        })),
+      },
+      dimensions: dimensions.map((dimension) => ({
+        id: dimension.id,
+        number: dimension.number,
+        category: dimension.category,
+        type: dimension.type,
+      })),
+      departments: departments.map((department) => ({
+        id: department.id,
+        name: department.name,
+        score: getScore(department),
+        scoreAsText: getScoreAsText(department),
+        type: department.type,
       })),
     },
-    dimensions: dimensions.map((dimension) => ({
-      id: dimension.id,
-      number: dimension.number,
-      category: dimension.category,
-      type: dimension.type,
-    })),
-    departments: departments.map((department) => ({
-      id: department.id,
-      name: department.name,
-      score: getScore(department),
-      scoreAsText: getScoreAsText(department),
-      type: department.type,
-    })),
   };
-};
+}
 
 export default Map;

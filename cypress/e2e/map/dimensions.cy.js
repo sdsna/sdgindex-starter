@@ -2,7 +2,7 @@ import { LEGEND } from "helpers/legendForScore";
 
 describe("Map", () => {
   it("renders", () => {
-    cy.visit("/carte/dimensions/LNOB1");
+    cy.visit("/carte/dimensions/lnob1");
     cy.get("svg").should("exist");
   });
 
@@ -58,10 +58,10 @@ describe("Map", () => {
         cy.get("a").should("have.length", 4);
         cy.get("a")
           .eq(0)
-          .should("have.attr", "href", "/carte/dimensions/LNOB1");
+          .should("have.attr", "href", "/carte/dimensions/lnob1");
         cy.get("a")
           .eq(3)
-          .should("have.attr", "href", "/carte/dimensions/LNOB4");
+          .should("have.attr", "href", "/carte/dimensions/lnob4");
       });
   });
 
@@ -77,14 +77,14 @@ describe("Map", () => {
       .within(() => {
         cy.get("a").eq(2).click();
       });
-    cy.url().should("include", "/carte/dimensions/LNOB3");
+    cy.url().should("include", "/carte/dimensions/lnob3");
     cy.go("back");
   });
 
   context("when the screen size is desktop", () => {
     beforeEach(() => {
       cy.viewport(1280, 800);
-      cy.visit("/carte/dimensions/LNOB1");
+      cy.visit("/carte/dimensions/lnob1");
     });
 
     it("displays legend in map controls", () => {
@@ -106,10 +106,10 @@ describe("Map", () => {
         cy.get("a").should("have.length", 4);
         cy.get("a")
           .eq(0)
-          .should("have.attr", "href", "/carte/dimensions/LNOB1");
+          .should("have.attr", "href", "/carte/dimensions/lnob1");
         cy.get("a")
           .eq(3)
-          .should("have.attr", "href", "/carte/dimensions/LNOB4");
+          .should("have.attr", "href", "/carte/dimensions/lnob4");
       });
     });
 
@@ -117,7 +117,7 @@ describe("Map", () => {
       cy.contains("div", "Sélectionnez une dimension").within(() => {
         cy.get("a").eq(1).click();
       });
-      cy.url({ timeout: 10000 }).should("include", "/carte/dimensions/LNOB2");
+      cy.url({ timeout: 10000 }).should("include", "/carte/dimensions/lnob2");
       cy.go("back");
     });
   });
@@ -150,7 +150,7 @@ describe("Map", () => {
 
   context("when clicking on a department", () => {
     it("displays department name", () => {
-      cy.visit("/carte/dimensions/LNOB1");
+      cy.visit("/carte/dimensions/lnob1");
       cy.get(`[name="Atlantique"]`).click();
       cy.get(".MuiDrawer-docked").contains("Atlantique");
     });
@@ -198,9 +198,9 @@ describe("Map", () => {
     });
   });
 
-  context("when visiting the map for LNOB4", () => {
+  context("when visiting the map for lnob4", () => {
     it("renders", () => {
-      cy.visit("/carte/dimensions/LNOB4");
+      cy.visit("/carte/dimensions/lnob4");
       cy.get("svg").should("exist");
     });
 

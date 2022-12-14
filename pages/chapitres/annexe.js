@@ -435,15 +435,12 @@ const Annexe = () => (
       note={
         <>
           <strong>Légende à noter </strong>
-          <p>
-            [a] Indicateur non issu du Rapport sur le développement durable ;
-            ajouté pour leur pertinence dans le contexte du Bénin et de la
-            CEDEAO.
-          </p>
-          <p>
-            [b] Indicateur utilisé pour les graphiques de l&apos;analyse des «
-            Six Transformations » (Partie 2.2).
-          </p>
+          <br />
+          [a] Indicateur non issu du Rapport sur le développement durable ;
+          ajouté pour leur pertinence dans le contexte du Bénin et de la CEDEAO.
+          <br />
+          [b] Indicateur utilisé pour les graphiques de l&apos;analyse des « Six
+          Transformations » (Partie 2.2).
         </>
       }
     />

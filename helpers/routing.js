@@ -7,7 +7,7 @@ export const mapUrl = () => "/carte";
 export const mapAssessmentUrl = ({ assessment }) => {
   let url = mapUrl();
 
-  if (isGoal(assessment)) url += `/dimensions/${assessment.id}`;
+  if (isGoal(assessment)) url += `/dimensions/${assessment.id.toLowerCase()}`;
   else if (isIndicator(assessment)) url += `/indicateurs/${assessment.slug}`;
   else throw "mapAssessmentUrl(): Assessment type not recognized";
 

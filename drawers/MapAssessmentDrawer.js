@@ -4,6 +4,7 @@ import {
   TableBody,
   TableRow,
   ButtonBase,
+  TableCell,
   Divider,
   Grid,
 } from "@mui/material";
@@ -21,10 +22,6 @@ import { isGoal, isIndicator } from "@sdgindex/data/assessments";
 import IndicatorMetadata from "components/IndicatorMetadata";
 
 const TableBodyWithAlternatingRows = styled(TableBody)`
-  td {
-    background: #fff;
-  }
-
   & > tr:nth-of-type(odd) {
       background: #e9faff;
     }
@@ -39,9 +36,6 @@ const IndicatorButton = styled(ButtonBase)(
     alignItems: "flex-start",
     width: "100%",
     justifyContent: "flex-start",
-    ":hover": {
-      backgroundColor: "rgba(0, 0, 0, 0.08)",
-    },
   },
   ({ disabled }) => disabled && { color: "rgba(0, 0, 0, 0.54)" }
 );
@@ -58,7 +52,11 @@ const DimensionInfo = ({ dimension, dimensions, indicators }) => (
       <Grid container style={{ margin: -2, width: "auto" }}>
         {dimensions.map((dimension) => (
           <Grid item key={dimension.id} style={{ maxWidth: "25%", padding: 2 }}>
-            <Link href={mapAssessmentUrl({ assessment: dimension })} passHref>
+            <Link
+              href={mapAssessmentUrl({ assessment: dimension })}
+              legacyBehavior
+              passHref
+            >
               <ButtonBase>
                 <DimensionIcon identifier={dimension.id} />
               </ButtonBase>
@@ -73,16 +71,22 @@ const DimensionInfo = ({ dimension, dimensions, indicators }) => (
       <DrawerText>{dimension.description}</DrawerText>
     </DrawerSection>
     <DrawerSection>
-      <Table>
-        <DrawerHeading>Indicateurs</DrawerHeading>
+      <DrawerHeading>Indicateurs</DrawerHeading>
+      <Table size="small">
         <TableBodyWithAlternatingRows>
           {indicators.map((indicator) => (
-            <TableRow key={indicator.id}>
-              <Link href={mapAssessmentUrl({ assessment: indicator })} passHref>
-                <IndicatorButton disabled={indicator.hideMap}>
-                  <DrawerText>{indicator.label}</DrawerText>
-                </IndicatorButton>
-              </Link>
+            <TableRow hover key={indicator.id}>
+              <TableCell style={{ borderBottom: "none" }}>
+                <Link
+                  href={mapAssessmentUrl({ assessment: indicator })}
+                  legacyBehavior
+                  passHref
+                >
+                  <IndicatorButton disabled={indicator.hideMap}>
+                    <DrawerText>{indicator.label}</DrawerText>
+                  </IndicatorButton>
+                </Link>
+              </TableCell>
             </TableRow>
           ))}
         </TableBodyWithAlternatingRows>

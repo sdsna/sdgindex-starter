@@ -125,14 +125,18 @@ const Index = () => (
                   justifyContent={{ xs: "center", md: "flex-start" }}
                 >
                   <Box marginY={1} marginRight={2}>
-                    <Link href={REPORT_DOWNLOAD_URL} passHref>
+                    <Link href={REPORT_DOWNLOAD_URL} legacyBehavior passHref>
                       <Button size="large" variant="contained">
                         Lire le rapport
                       </Button>
                     </Link>
                   </Box>
                   <Box marginY={1}>
-                    <Link href="/chapitres/executive-summary" passHref>
+                    <Link
+                      href="/chapitres/executive-summary"
+                      legacyBehavior
+                      passHref
+                    >
                       <Button
                         size="large"
                         variant="outlined"
