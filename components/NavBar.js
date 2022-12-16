@@ -75,7 +75,7 @@ const NavBar = ({ fluid }) => {
                 <Menu />
               </IconButton>
             </Hidden>
-            <Link href="/" passHref>
+            <Link legacyBehavior href="/" passHref>
               <Button
                 sx={{ flexGrow: { xs: 1, md: 0 } }}
                 aria-label="Go to home page"
@@ -101,7 +101,7 @@ const NavBar = ({ fluid }) => {
             </Hidden>
             <Box display={{ xs: "none", md: "flex" }} height={1}>
               {pages.map(({ label, href }) => (
-                <Link key={href} href={href} passHref>
+                <Link legacyBehavior key={href} href={href} passHref>
                   <Button>
                     <Typography variant="body1">{label}</Typography>
                   </Button>
