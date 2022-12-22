@@ -40,7 +40,7 @@
     "@emotion/babel-plugin": "^11.7.2",
     "babel-loader": "^8.2.3",
     "babel-plugin-module-resolver": "^4.1.0",
-    "cypress": "^9.5.3",
+    "cypress": "^10.9.0",
     "eslint": "^8.11.0",
     "eslint-config-next": "^13.0.7",
     "eslint-config-prettier": "^8.5.0",
