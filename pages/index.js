@@ -153,6 +153,7 @@ const Index = () => (
                   <Box marginY={1} marginRight={2}>
                     <Link
                       href={FRENCH_REPORT_DOWNLOAD_URL}
+                      target="_blank"
                       legacyBehavior
                       passHref
                     >
@@ -170,6 +171,7 @@ const Index = () => (
                   <Box marginY={1}>
                     <Link
                       href={ENGLISH_REPORT_DOWNLOAD_URL}
+                      target="_blank"
                       legacyBehavior
                       passHref
                     >
