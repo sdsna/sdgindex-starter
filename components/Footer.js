@@ -1,7 +1,7 @@
 import { Box, Container, Grid, Link, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Linkedin, Facebook, Twitter, EmailNewsletter } from "mdi-material-ui";
-import { REPORT_DOWNLOAD_URL } from "root/config";
+import { FRENCH_REPORT_DOWNLOAD_URL } from "root/config";
 import contentSizeQuery from "helpers/contentSizeQuery";
 import { trackDownload } from "helpers/gtag";
 
@@ -74,9 +74,9 @@ const Footer = () => (
             la publication{" "}
             <Link
               color="inherit"
-              href={REPORT_DOWNLOAD_URL}
+              href={FRENCH_REPORT_DOWNLOAD_URL}
               target="_blank"
-              onClick={() => trackDownload(REPORT_DOWNLOAD_URL)}
+              onClick={() => trackDownload(FRENCH_REPORT_DOWNLOAD_URL)}
             >
               Rapport sur le développement durable pour le Bénin 2022.
             </Link>

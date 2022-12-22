@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Download } from "mdi-material-ui";
-import { REPORT_DOWNLOAD_URL } from "root/config";
+import { FRENCH_REPORT_DOWNLOAD_URL } from "root/config";
 import HeaderLayout from "layouts/HeaderLayout";
 import ResponsiveGridItem from "components/ResponsiveGridItem";
 import Emphasis from "components/Emphasis";
@@ -45,11 +45,11 @@ const Chapters = () => (
   >
     <Box my={2} display="flex" flexDirection="row-reverse">
       <Button
-        href={REPORT_DOWNLOAD_URL}
+        href={FRENCH_REPORT_DOWNLOAD_URL}
         component={ExternalLink}
         variant="outlined"
         startIcon={<Download />}
-        onClick={() => trackDownload(REPORT_DOWNLOAD_URL)}
+        onClick={() => trackDownload(FRENCH_REPORT_DOWNLOAD_URL)}
       >
         Télécharger le rapport
       </Button>

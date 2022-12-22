@@ -10,7 +10,8 @@ import { styled } from "@mui/material/styles";
 import {
   DATABASE_SUBNATIONAL_DOWNLOAD_URL,
   DATABASE_REGIONAL_DOWNLOAD_URL,
-  REPORT_DOWNLOAD_URL,
+  FRENCH_REPORT_DOWNLOAD_URL,
+  ENGLISH_REPORT_DOWNLOAD_URL,
 } from "root/config";
 import HeaderLayout from "layouts/HeaderLayout";
 import ResponsiveGridItem from "components/ResponsiveGridItem";
@@ -23,7 +24,13 @@ const downloads = [
     label: "Rapport sur le développement durable pour le Bénin",
     type: "PDF",
     image: "full-report.webp",
-    url: REPORT_DOWNLOAD_URL,
+    url: FRENCH_REPORT_DOWNLOAD_URL,
+  },
+  {
+    label: "Benin Sustainable Development Report (ENG)",
+    type: "PDF",
+    image: "full-report.webp",
+    url: ENGLISH_REPORT_DOWNLOAD_URL,
   },
   {
     label: "Base de données (Infranationale)",
