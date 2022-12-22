@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
   Box,
   Button,
@@ -16,6 +15,7 @@ import {
 } from "root/config";
 import AppLayout from "layouts/AppLayout";
 import FeatureBanner from "components/FeatureBanner";
+import ExternalLink from "components/ExternalLink";
 import ParticlesSection from "components/ParticlesSection";
 import Italics from "components/Italics";
 import { trackDownload } from "helpers/gtag";
@@ -89,13 +89,13 @@ const Index = () => (
         <Box display="flex" justifyContent="center">
           <Typography variant="h4">
             The English version of the report is out now. You can find it{" "}
-            <Link
+            <ExternalLink
               href={ENGLISH_REPORT_DOWNLOAD_URL}
               onClick={() => trackDownload(ENGLISH_REPORT_DOWNLOAD_URL)}
               passHref
             >
               HERE
-            </Link>
+            </ExternalLink>
           </Typography>
         </Box>
       </Banner>
@@ -151,11 +151,9 @@ const Index = () => (
                   justifyContent={{ xs: "center", md: "flex-start" }}
                 >
                   <Box marginY={1} marginRight={2}>
-                    <Link
+                    <ExternalLink
                       href={FRENCH_REPORT_DOWNLOAD_URL}
-                      target="_blank"
-                      legacyBehavior
-                      passHref
+                      style={{ textDecoration: "none" }}
                     >
                       <Button
                         onClick={() =>
@@ -166,14 +164,12 @@ const Index = () => (
                       >
                         Lire le rapport (FR)
                       </Button>
-                    </Link>
+                    </ExternalLink>
                   </Box>
                   <Box marginY={1}>
-                    <Link
+                    <ExternalLink
                       href={ENGLISH_REPORT_DOWNLOAD_URL}
-                      target="_blank"
-                      legacyBehavior
-                      passHref
+                      style={{ textDecoration: "none" }}
                     >
                       <Button
                         onClick={() =>
@@ -185,7 +181,7 @@ const Index = () => (
                       >
                         Read the report (ENG)
                       </Button>
-                    </Link>
+                    </ExternalLink>
                   </Box>
                 </Box>
               </Box>
