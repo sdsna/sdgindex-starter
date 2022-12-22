@@ -153,17 +153,19 @@ const Index = () => (
                   <Box marginY={1} marginRight={2}>
                     <Link
                       href={FRENCH_REPORT_DOWNLOAD_URL}
+                      onClick={() => trackDownload(FRENCH_REPORT_DOWNLOAD_URL)}
                       legacyBehavior
                       passHref
                     >
                       <Button size="large" variant="contained">
-                        Lire le rapport
+                        Lire le rapport (FR)
                       </Button>
                     </Link>
                   </Box>
                   <Box marginY={1}>
                     <Link
-                      href="/chapitres/executive-summary"
+                      href={ENGLISH_REPORT_DOWNLOAD_URL}
+                      onClick={() => trackDownload(ENGLISH_REPORT_DOWNLOAD_URL)}
                       legacyBehavior
                       passHref
                     >
@@ -172,7 +174,7 @@ const Index = () => (
                         variant="outlined"
                         style={{ color: "#0073b0ff", borderColor: "#0073b0ff" }}
                       >
-                        Executive Summary
+                        Read the report (ENG)
                       </Button>
                     </Link>
                   </Box>
