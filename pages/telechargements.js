@@ -27,7 +27,7 @@ const downloads = [
     url: FRENCH_REPORT_DOWNLOAD_URL,
   },
   {
-    label: "Benin Sustainable Development Report",
+    label: "Benin Sustainable Development Report (ENG)",
     type: "PDF",
     image: "full-report.webp",
     url: ENGLISH_REPORT_DOWNLOAD_URL,
