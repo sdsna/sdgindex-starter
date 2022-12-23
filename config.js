@@ -40,4 +40,4 @@ export const META_DESCRIPTION =
 export const META_IMAGE = "https://benin.sdgindex.org/static/meta-image.png";
 
 // The Google Analytics tracking ID
-export const GA_TRACKING_ID = "UA-152859841-3";
+export const GA_TRACKING_ID = "G-44G67KHYPJ";
