@@ -62,7 +62,7 @@
     "babel-loader": "^8.2.5",
     "babel-plugin-inline-react-svg": "^2.0.1",
     "babel-plugin-module-resolver": "^4.1.0",
-    "cypress": "^10.0.3",
+    "cypress": "^12.3.0",
     "eslint": "^8.11.0",
     "eslint-config-next": "^13.0.6",
     "eslint-config-prettier": "^8.5.0",
