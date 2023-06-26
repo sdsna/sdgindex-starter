@@ -93,16 +93,16 @@ const regionalIndices = [
     url: "https://www.sdgindex.org/reports/arab-sdg-index-and-dashboard-report-2022/",
   },
   {
+    label: "SDG Index 2021 for Latin America and the Caribbean",
+    type: "Rapport (Espagnol)",
+    image: "lac-sdr.png",
+    url: "https://cods.uniandes.edu.co/wp-content/uploads/2022/08/I%CC%81ndice-ODS-2021-para-Ame%CC%81rica-Latina-y-el-Caribe.pdf",
+  },
+  {
     label: "2020 Africa SDG Index and Dashboards Report",
     type: "Rapport + Tableau de bord",
     image: "africa-sdr.png",
     url: "https://sdgindex.org/reports/2020-africa-sdg-index-and-dashboards-report/",
-  },
-  {
-    label: "SDG Index 2019 for Latin America and the Caribbean",
-    type: "Rapport (Espagnol)",
-    image: "lac-sdr.png",
-    url: "https://sdgindex.org/reports/2019-sdg-index-for-latin-america-and-the-caribbean/",
   },
 ];
 
