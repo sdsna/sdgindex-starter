@@ -72,25 +72,25 @@ const downloads = [
 
 const globalIndices = [
   {
-    label: "Sustainable Development Report 2022",
+    label: "Sustainable Development Report 2023",
     type: "Rapport + Tableau de bord",
     image: "sdr.webp",
-    url: "https://sdgindex.org/reports/sustainable-development-report-2022/",
+    url: "https://sdgindex.org/reports/sustainable-development-report-2023/",
   },
 ];
 
 const regionalIndices = [
   {
+    label: "Europe Sustainable Development Report 2022",
+    type: "Rapport + Tableau de bord",
+    image: "europe-sdr.png",
+    url: "https://www.sdgindex.org/EU",
+  },
+  {
     label: "2022 Arab Region SDG Index and Dashboards Report",
     type: "Rapport",
     image: "arab-sdr.webp",
     url: "https://www.sdgindex.org/reports/arab-sdg-index-and-dashboard-report-2022/",
-  },
-  {
-    label: "Europe Sustainable Development Report 2021",
-    type: "Rapport + Tableau de bord",
-    image: "europe-sdr.webp",
-    url: "https://www.sdgindex.org/EU",
   },
   {
     label: "2020 Africa SDG Index and Dashboards Report",
