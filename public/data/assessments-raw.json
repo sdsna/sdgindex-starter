@@ -673,7 +673,7 @@
     {
       "id": "lnb4_gini",
       "dataId": 43,
-      "goalNumber": "revenu",
+      "goalNumber": "revenus",
       "slug": "coefficient-de-gini",
       "label": "Coefficient de Gini",
       "unit": null,
@@ -688,7 +688,7 @@
     {
       "id": "lnb4_revmed",
       "dataId": 44,
-      "goalNumber": "revenu",
+      "goalNumber": "revenus",
       "slug": "personnes-vivant-avec-moins-de-la-moitie-du-revenu-median",
       "label": "Personnes vivant avec moins de la moitié du revenu médian",
       "unit": "%",
@@ -703,7 +703,7 @@
     {
       "id": "lnb4_revmoy",
       "dataId": 45,
-      "goalNumber": "revenu",
+      "goalNumber": "revenus",
       "slug": "personnes-vivant-avec-un-revenu-plus-de-50-inferieur-au-revenu-moyen",
       "label": "Personnes vivant avec un revenu plus de 50 % inférieur au revenu moyen",
       "unit": "%",
