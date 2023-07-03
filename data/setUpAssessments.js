@@ -32,6 +32,7 @@ const setUpAssessments = () => {
     addIndicator({
       id: row.IndCode,
       goalNumber: row.cat_lnob,
+      // NOTE: description is missing in the excel file
       description: row.Description,
       labelWithUnit: row["Indicateur"].trim(),
       longTermObjective: roundNumber(row["Valeur Cible"], 2),
@@ -40,6 +41,7 @@ const setUpAssessments = () => {
       lowerBoundReason: row["worstjust"].trim(),
       year: row["Reference_Year"],
       source: row.Source.trim(),
+      // NOTE: we are missing reference in the excel file
       reference: row["Reference"],
     });
   });
