@@ -145,7 +145,7 @@ describe("Map", () => {
     cy.contains("Nombre d'habitants par personnel de santé").click();
     cy.url().should(
       "include",
-      "/carte/indicateurs/nombre-de-personnel-de-sante-par-habitant"
+      "/carte/indicateurs/nombre-d-habitants-par-personnel-de-sante"
     );
   });
 
@@ -194,10 +194,7 @@ describe("Map", () => {
 
     it("can navigate to indicator visualization", () => {
       cy.contains("Accessibilité et qualité des services").click();
-      cy.url().should(
-        "include",
-        "/carte/indicateurs/accessibilité-et-qualité-des-services"
-      );
+      cy.url().should("include", "/carte/dimensions/lnob1");
     });
   });
 
@@ -219,7 +216,7 @@ describe("Map", () => {
       cy.get(`path[name="Atacora"]`).should(
         "have.attr",
         "fill",
-        LEGEND[5].color
+        LEGEND[3].color
       );
     });
 
