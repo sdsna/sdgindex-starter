@@ -39,7 +39,7 @@ const Footer = () => (
         <ResponsiveGridItem styled={{ width: 1 / 3 }}>
           <Logo
             alt="Logo"
-            src="/static/logo.svg"
+            src="/static/logo.png"
             style={{ height: 80, marginBottom: 10 }}
           />
           <Typography variant="h6" color="white" gutterBottom>

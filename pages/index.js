@@ -192,7 +192,7 @@ const Index = () => (
           <Fade left>
             <FeatureBanner
               title="Rapport sur le développement durable pour le Bénin 2022"
-              image="/static/report-cover.webp"
+              image="/static/report-cover.png"
               imagePosition="right"
               imageOrientation="vertical"
               links={[

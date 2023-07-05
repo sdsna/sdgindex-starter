@@ -23,13 +23,13 @@ const downloads = [
   {
     label: "Rapport sur le développement durable pour le Bénin",
     type: "PDF",
-    image: "full-report.webp",
+    image: "report-cover.png",
     url: FRENCH_REPORT_DOWNLOAD_URL,
   },
   {
     label: "Benin Sustainable Development Report (ENG)",
     type: "PDF",
-    image: "full-report.webp",
+    image: "report-cover.png",
     url: ENGLISH_REPORT_DOWNLOAD_URL,
   },
   {
@@ -110,7 +110,7 @@ const subnationalIndices = [
   {
     label: "Rapport sur le développement durable pour le Bénin",
     type: "Rapport + Tableau de bord",
-    image: "full-report.webp",
+    image: "report-cover.png",
     url: "https://sdgindex.org/reports/2022-07-13-benin-sustainable-development-report-2022",
   },
   {
