@@ -48,13 +48,13 @@ const downloads = [
     label: "Executive Summary (English)",
     type: "PDF",
     image: "exec-sum.webp",
-    url: "https://s3.amazonaws.com/sustainabledevelopment.report/2022/executive-summary-benin-sdr.pdf",
+    url: "https://s3.amazonaws.com/sustainabledevelopment.report/2023/executive-summary-benin-sdr.pdf",
   },
   {
     label: "Communiqué de presse",
     type: "Site Web",
     image: "press-release.png",
-    url: "https://www.sdgindex.org/news/press-release-benin-sustainable-report-2022/",
+    url: "https://www.sdgindex.org/news/press-release-benin-sustainable-report-2023/",
   },
   {
     label: "Méthodologie",
@@ -81,7 +81,7 @@ const globalIndices = [
 
 const regionalIndices = [
   {
-    label: "Europe Sustainable Development Report 2022",
+    label: "Europe Sustainable Development Report 2023",
     type: "Rapport + Tableau de bord",
     image: "europe-sdr.png",
     url: "https://www.sdgindex.org/EU",
@@ -111,7 +111,7 @@ const subnationalIndices = [
     label: "Rapport sur le développement durable pour le Bénin",
     type: "Rapport + Tableau de bord",
     image: "report-cover.png",
-    url: "https://sdgindex.org/reports/2022-07-13-benin-sustainable-development-report-2022",
+    url: "https://sdgindex.org/reports/2023-07-13-benin-sustainable-development-report-2023",
   },
   {
     label: "United States Sustainable Development Report 2021",

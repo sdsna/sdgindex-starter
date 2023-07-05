@@ -41,7 +41,7 @@ const Chapter = ({ slug, title, image, children }) => (
 const Chapters = () => (
   <HeaderLayout
     title="Lire le rapport"
-    subtitle="Chapitres du Rapport sur le développement durable pour le Bénin 2022"
+    subtitle="Chapitres du Rapport sur le développement durable pour le Bénin 2023"
   >
     <Box my={2} display="flex" flexDirection="row-reverse">
       <Button

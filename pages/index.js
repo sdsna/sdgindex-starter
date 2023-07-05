@@ -142,7 +142,7 @@ const Index = () => (
                 <Box>
                   <Title>
                     Rapport sur le développement durable pour{" "}
-                    <Highlight>le Bénin 2022</Highlight>
+                    <Highlight>le Bénin 2023</Highlight>
                   </Title>
                 </Box>
                 <Box
@@ -191,7 +191,7 @@ const Index = () => (
         <Box marginY={8}>
           <Fade left>
             <FeatureBanner
-              title="Rapport sur le développement durable pour le Bénin 2022"
+              title="Rapport sur le développement durable pour le Bénin 2023"
               image="/static/report-cover.png"
               imagePosition="right"
               imageOrientation="vertical"
@@ -211,7 +211,7 @@ const Index = () => (
                 },
               ]}
             >
-              Le Rapport sur le développement durable pour le Bénin 2022 (
+              Le Rapport sur le développement durable pour le Bénin 2023 (
               <Italics>rapport pilote de référence</Italics>) marque la première
               édition de l&apos;évaluation des progrès, performances et
               tendances du Bénin dans l’atteinte des Objectifs de Développement

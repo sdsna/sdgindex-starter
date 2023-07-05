@@ -78,7 +78,7 @@ const Footer = () => (
               target="_blank"
               onClick={() => trackDownload(FRENCH_REPORT_DOWNLOAD_URL)}
             >
-              Rapport sur le développement durable pour le Bénin 2022.
+              Rapport sur le développement durable pour le Bénin 2023.
             </Link>
           </FooterTypography>
           <FooterTypography gutterBottom>

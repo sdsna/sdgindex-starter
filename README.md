@@ -1,6 +1,6 @@
 # Bénin data visualization
 
-Data visualization for the Benin Sustainable Development Report 2022
+Data visualization for the Benin Sustainable Development Report 2023
 
 ## Getting Started
 
