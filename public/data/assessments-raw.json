@@ -47,12 +47,14 @@
       "slug": "accouchements-assistes-par-du-personnel-de-sante-qualifie",
       "label": "Accouchements assistés par du personnel de santé qualifié",
       "unit": "%",
+      "description": null,
       "longTermObjective": 100,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 61,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -62,12 +64,14 @@
       "slug": "nombre-d-habitants-par-lits-d-hopitaux",
       "label": "Nombre d'habitants par lits d'hopitaux",
       "unit": null,
+      "description": null,
       "longTermObjective": 200,
       "longTermObjectiveReason": "Moyenne des pays à revenu élevé",
       "lowerBound": 5769,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "Annuaire des Statistiques Sanitaires",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -77,12 +81,14 @@
       "slug": "nombre-d-habitants-par-personnel-de-sante",
       "label": "Nombre d'habitants par personnel de santé",
       "unit": "médecins et infirmiers",
+      "description": null,
       "longTermObjective": 250,
       "longTermObjectiveReason": "Moyenne des pays à revenu élevé",
       "lowerBound": 6264,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "Annuaire des Statistiques Sanitaires",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -92,12 +98,14 @@
       "slug": "enfants-de-moins-de-5-ans-ayant-de-la-fievre-qui-sont-traites-avec-des-medicaments-antipaludiques-appropries",
       "label": "Enfants de moins de 5 ans ayant de la fièvre, qui sont traités avec des médicaments antipaludiques appropriés",
       "unit": "%",
+      "description": null,
       "longTermObjective": 100,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 0,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -107,12 +115,14 @@
       "slug": "enfants-de-12-23-mois-completement-vaccines",
       "label": "Enfants de 12-23 mois complètement vaccinés",
       "unit": "%",
+      "description": null,
       "longTermObjective": 100,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 26.3,
       "lowerBoundReason": "Worst value",
       "year": 2018,
       "source": "EDSB",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -122,12 +132,14 @@
       "slug": "couverture-du-test-vih",
       "label": "Couverture du test VIH",
       "unit": "% de la population de 15-49 ans sachant où faire un test",
+      "description": null,
       "longTermObjective": 100,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 41,
       "lowerBoundReason": "Worst value",
       "year": 2018,
       "source": "EDSB",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -137,12 +149,14 @@
       "slug": "duree-moyenne-du-trajet-au-centre-de-sante",
       "label": "Durée moyenne du trajet au centre de santé",
       "unit": "en minutes",
+      "description": null,
       "longTermObjective": 15,
       "longTermObjectiveReason": "Meilleure valeur",
       "lowerBound": 117,
       "lowerBoundReason": "Worst value",
       "year": 2019,
       "source": "EHCVM1 (2018/2019)",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -152,12 +166,14 @@
       "slug": "menages-utilisant-des-sources-ameliorees-d-eau-de-boisson",
       "label": "Ménages utilisant des sources améliorées d'eau de boisson",
       "unit": "%",
+      "description": null,
       "longTermObjective": 100,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 36.8,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -167,12 +183,14 @@
       "slug": "population-utilisant-des-services-d-assainissement-geres-en-toute-securite",
       "label": "Population utilisant des services d'assainissement gérés en toute sécurité",
       "unit": "%",
+      "description": null,
       "longTermObjective": 100,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 0.35,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -182,12 +200,14 @@
       "slug": "population-ayant-acces-a-l-electricite",
       "label": "Population ayant accès à l'électricité",
       "unit": "%",
+      "description": null,
       "longTermObjective": 100,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 28.3,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -197,12 +217,14 @@
       "slug": "taux-net-de-scolarisation-dans-le-primaire",
       "label": "Taux net de scolarisation dans le primaire",
       "unit": "%",
+      "description": null,
       "longTermObjective": 100,
       "longTermObjectiveReason": "Cible ODD",
       "lowerBound": 41.2,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -212,12 +234,14 @@
       "slug": "taux-net-de-scolarisation-dans-le-secondaire",
       "label": "Taux net de scolarisation dans le secondaire",
       "unit": "%",
+      "description": null,
       "longTermObjective": 100,
       "longTermObjectiveReason": "Cible ODD",
       "lowerBound": 13.4,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -227,12 +251,14 @@
       "slug": "nombre-median-d-annees-de-scolarite",
       "label": "Nombre médian d'années de scolarité",
       "unit": null,
+      "description": null,
       "longTermObjective": 13.2,
       "longTermObjectiveReason": "Cible ODD",
       "lowerBound": 0,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -242,12 +268,14 @@
       "slug": "nombre-d-eleves-par-maitre-du-primaire",
       "label": "Nombre d'élèves par maitre du primaire",
       "unit": null,
+      "description": null,
       "longTermObjective": 15,
       "longTermObjectiveReason": "Moyenne des pays à revenu élevé",
       "lowerBound": 45.9,
       "lowerBoundReason": "Worst value",
       "year": 2022,
       "source": "Annuaire statistique de l'enseignement primaire",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -257,12 +285,14 @@
       "slug": "taux-de-succes-au-bac",
       "label": "Taux de succès au BAC",
       "unit": "%",
+      "description": null,
       "longTermObjective": 100,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 35.2,
       "lowerBoundReason": "Worst value",
       "year": 2020,
       "source": "MESFTP",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -272,12 +302,14 @@
       "slug": "enfants-de-moins-de-5-ans-ayant-ete-enregistres-par-une-autorite-d-etat-civil",
       "label": "Enfants de moins de 5 ans ayant été enregistrés par une autorité d'état civil",
       "unit": "%",
+      "description": null,
       "longTermObjective": 100,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 65.3,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -287,12 +319,14 @@
       "slug": "personnes-de-15-49-ans-ayant-deja-utilise-internet",
       "label": "Personnes de 15-49 ans ayant déjà utilisé internet",
       "unit": "%",
+      "description": null,
       "longTermObjective": 100,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 3.5,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS 2021",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -302,12 +336,14 @@
       "slug": "population-disposant-de-moins-de-1-90-par-jour",
       "label": "Population disposant de moins de $1,90 par jour",
       "unit": "%",
+      "description": null,
       "longTermObjective": 0,
       "longTermObjectiveReason": "Cible ODD",
       "lowerBound": 34.6,
       "lowerBoundReason": "Worst value",
       "year": 2019,
       "source": "EHCVM1 (2018/2019)",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -317,12 +353,14 @@
       "slug": "personnes-de-tous-ages-vivant-dans-une-situation-de-pauvrete-sous-toutes-ses-formes",
       "label": "Personnes de tous âges vivant dans une situation de pauvreté sous toutes ses formes",
       "unit": "%",
+      "description": null,
       "longTermObjective": 7.65,
       "longTermObjectiveReason": "Cible ODD",
       "lowerBound": 39.3,
       "lowerBoundReason": "Worst value",
       "year": 2019,
       "source": "EHCVM1 (2018/2019)",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -332,12 +370,14 @@
       "slug": "population-vivant-au-dessous-du-seuil-national-de-pauvrete",
       "label": "Population vivant au-dessous du seuil national de pauvreté",
       "unit": "%",
+      "description": null,
       "longTermObjective": 10,
       "longTermObjectiveReason": "Cible ODD",
       "lowerBound": 60.5,
       "lowerBoundReason": "Worst value",
       "year": 2019,
       "source": "EHCVM1 (2018/2019)",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -347,12 +387,14 @@
       "slug": "prevalence-de-l-emaciation-chez-les-enfants-de-moins-de-5-ans",
       "label": "Prévalence de l'émaciation chez les enfants de moins de 5 ans",
       "unit": "%",
+      "description": null,
       "longTermObjective": 0,
       "longTermObjectiveReason": "Cible ODD",
       "lowerBound": 14.7,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -362,12 +404,14 @@
       "slug": "prevalence-du-retard-de-croissance-chez-les-enfants-de-moins-de-5-ans",
       "label": "Prévalence du retard de croissance chez les enfants de moins de 5 ans",
       "unit": "%",
+      "description": null,
       "longTermObjective": 0,
       "longTermObjectiveReason": "Cible ODD",
       "lowerBound": 38,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -377,12 +421,14 @@
       "slug": "prevalence-de-l-insecurite-alimentaire",
       "label": "Prévalence de l'insécurité alimentaire",
       "unit": "%",
+      "description": null,
       "longTermObjective": 0,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 29,
       "lowerBoundReason": "Worst value",
       "year": 2017,
       "source": "AGVSA",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -392,12 +438,14 @@
       "slug": "enfants-de-5-a-11-ans-impliques-dans-une-activite-economique-pendant-au-moins-une-heure",
       "label": "Enfants de 5 à 11 ans impliqués dans une activité économique pendant au moins une heure",
       "unit": null,
+      "description": null,
       "longTermObjective": 0,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 53.7,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -407,12 +455,14 @@
       "slug": "enfants-de-12-a-14-ans-impliques-dans-une-activite-economique-pendant-moins-de-14-heures",
       "label": "Enfants de 12 à 14 ans impliqués dans une activité économique pendant moins de 14 heures",
       "unit": null,
+      "description": null,
       "longTermObjective": 0,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 67,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -422,12 +472,14 @@
       "slug": "enfants-de-12-a-14-ans-impliques-dans-une-activite-economique-pendant-14-heures-ou-plus",
       "label": "Enfants de 12 à 14 ans impliqués dans une activité économique pendant 14 heures ou plus",
       "unit": null,
+      "description": null,
       "longTermObjective": 0,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 55.9,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -437,12 +489,14 @@
       "slug": "population-urbaine-vivant-dans-des-quartiers-de-taudis-des-implantations-sauvages-ou-des-logements-inadequats",
       "label": "Population urbaine vivant dans des quartiers de taudis, des implantations sauvages ou des logements inadéquats",
       "unit": "%",
+      "description": null,
       "longTermObjective": 0,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 90,
       "lowerBoundReason": "2.5th percentile (SDR)",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -452,12 +506,14 @@
       "slug": "population-de-15-49-ans-ayant-un-compte-en-banque",
       "label": "Population de 15-49 ans ayant un compte en banque",
       "unit": "%",
+      "description": null,
       "longTermObjective": 100,
       "longTermObjectiveReason": "Optimum technique",
       "lowerBound": 8.4,
       "lowerBoundReason": "Worst value",
       "year": 2019,
       "source": "EHCVM1 (2018/2019)",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -467,12 +523,14 @@
       "slug": "indice-de-parite-fille-garcon-taux-net-de-scolarisation-dans-le-primaire",
       "label": "Indice de parité fille/garçon: Taux net de scolarisation dans le primaire",
       "unit": null,
+      "description": null,
       "longTermObjective": 1,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 0.75,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -482,12 +540,14 @@
       "slug": "indice-de-parite-fille-garcon-taux-net-de-scolarisation-dans-le-secondaire",
       "label": "Indice de parité fille/garçon: Taux net de scolarisation dans le secondaire",
       "unit": null,
+      "description": null,
       "longTermObjective": 1,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 0.74,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -497,12 +557,14 @@
       "slug": "indice-de-parite-fille-garcon-nombre-median-d-annees-de-scolarite",
       "label": "Indice de parité fille/garçon: Nombre médian d'années de scolarité",
       "unit": null,
+      "description": null,
       "longTermObjective": 1,
       "longTermObjectiveReason": "Cible ODD",
       "lowerBound": 0,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -512,12 +574,14 @@
       "slug": "indice-de-parite-fille-garcon-taux-de-succes-au-bac",
       "label": "Indice de parité fille/garçon: Taux de succès au BAC",
       "unit": null,
+      "description": null,
       "longTermObjective": 1,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 0.75,
       "lowerBoundReason": "Worst value",
       "year": 2020,
       "source": "MESFTP",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -527,12 +591,14 @@
       "slug": "indice-de-parite-femme-homme-couverture-du-test-vih",
       "label": "Indice de parité femme/ homme: Couverture du test VIH",
       "unit": null,
+      "description": null,
       "longTermObjective": 1,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 0.73,
       "lowerBoundReason": "Worst value",
       "year": 2018,
       "source": "EDSB",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -542,12 +608,14 @@
       "slug": "femmes-de-15-49-ans-actuellement-en-union-ou-en-rupture-d-union-qui-ont-subi-des-violences-physiques",
       "label": "Femmes de 15-49 ans actuellement en union ou en rupture d’union qui ont subi des violences physiques",
       "unit": "%",
+      "description": null,
       "longTermObjective": 0,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 30.6,
       "lowerBoundReason": "Worst value",
       "year": 2018,
       "source": "EDSB-5 (2017/2018)",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -557,12 +625,14 @@
       "slug": "femmes-de-15-49-ans-actuellement-en-union-ou-en-rupture-d-union-qui-ont-subi-des-violences-sexuelles",
       "label": "Femmes de 15-49 ans actuellement en union ou en rupture d’union qui ont subi des violences sexuelles",
       "unit": "%",
+      "description": null,
       "longTermObjective": 0,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 12.4,
       "lowerBoundReason": "Worst value",
       "year": 2018,
       "source": "EDSB-5 (2017/2018)",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -572,12 +642,14 @@
       "slug": "femmes-de-20-a-24-ans-mariees-ou-en-union-avant-l-age-de-18-ans",
       "label": "Femmes de 20 à 24 ans mariées ou en union avant l'age de 18 ans",
       "unit": "%",
+      "description": null,
       "longTermObjective": 0,
       "longTermObjectiveReason": "Cible ODD",
       "lowerBound": 35.1,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -587,12 +659,14 @@
       "slug": "femmes-en-age-de-procreer-15-49-ans-qui-utilisent-des-methodes-modernes-de-planification-familiale",
       "label": "Femmes en âge de procréer (15-49 ans) qui utilisent des méthodes modernes de planification familiale",
       "unit": "%",
+      "description": null,
       "longTermObjective": 100,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 4.5,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -602,12 +676,14 @@
       "slug": "indice-de-parite-femme-homme-population-disposant-de-moins-de-1-90-par-jour",
       "label": "Indice de parité femme/ homme: population disposant de moins de $1,90 par jour",
       "unit": null,
+      "description": null,
       "longTermObjective": 1,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 1.2,
       "lowerBoundReason": "Worst value",
       "year": 2019,
       "source": "EHCVM1 (2018/2019)",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -617,12 +693,14 @@
       "slug": "indice-de-parite-femme-homme-population-dans-une-situation-de-pauvrete-sous-toutes-ses-formes",
       "label": "Indice de parité femme/ homme: population dans une situation de pauvreté sous toutes ses formes",
       "unit": null,
+      "description": null,
       "longTermObjective": 1,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 1.2,
       "lowerBoundReason": "Worst value",
       "year": 2019,
       "source": "EHCVM1 (2018/2019)",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -632,12 +710,14 @@
       "slug": "indice-de-parite-femme-homme-population-vivant-au-dessous-du-seuil-national-de-pauvrete",
       "label": "Indice de parité femme/ homme: population vivant au-dessous du seuil national de pauvreté",
       "unit": null,
+      "description": null,
       "longTermObjective": 1,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 1.1,
       "lowerBoundReason": "Worst value",
       "year": 2019,
       "source": "EHCVM1 (2018/2019)",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -647,12 +727,14 @@
       "slug": "ratio-du-taux-de-participation-des-femmes-et-des-hommes-a-la-population-active",
       "label": "Ratio du taux de participation des femmes et des hommes à la population active",
       "unit": null,
+      "description": null,
       "longTermObjective": 1,
       "longTermObjectiveReason": "Cible ODD",
       "lowerBound": 0.55,
       "lowerBoundReason": "Worst value",
       "year": 2018,
       "source": "ERI-ESI",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -662,12 +744,14 @@
       "slug": "indice-de-parite-femme-homme-personnes-de-15-49-ans-ayant-deja-utilise-internet",
       "label": "Indice de parité femme/ homme: personnes de 15-49 ans ayant déjà utilisé internet",
       "unit": null,
+      "description": null,
       "longTermObjective": 1,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 0.11,
       "lowerBoundReason": "Worst value",
       "year": 2021,
       "source": "MICS",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -677,12 +761,14 @@
       "slug": "coefficient-de-gini",
       "label": "Coefficient de Gini",
       "unit": null,
+      "description": null,
       "longTermObjective": 0.28,
       "longTermObjectiveReason": "Moyenne des meilleurs résultats (SDR)",
       "lowerBound": 0.63,
       "lowerBoundReason": "2.5th percentile (SDR)",
       "year": 2019,
       "source": "EHCVM1 (2018/2019)",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -692,12 +778,14 @@
       "slug": "personnes-vivant-avec-moins-de-la-moitie-du-revenu-median",
       "label": "Personnes vivant avec moins de la moitié du revenu médian",
       "unit": "%",
+      "description": null,
       "longTermObjective": 0,
       "longTermObjectiveReason": "Ne laisser personne de côté",
       "lowerBound": 23.2,
       "lowerBoundReason": "Worst value",
       "year": 2019,
       "source": "EHCVM1 (2018/2019)",
+      "reference": null,
       "type": "indicator"
     },
     {
@@ -707,12 +795,14 @@
       "slug": "personnes-vivant-avec-un-revenu-plus-de-50-inferieur-au-revenu-moyen",
       "label": "Personnes vivant avec un revenu plus de 50 % inférieur au revenu moyen",
       "unit": "%",
+      "description": null,
       "longTermObjective": 6,
       "longTermObjectiveReason": "Moyenne des meilleurs résultats (SDR)",
       "lowerBound": 67.9,
       "lowerBoundReason": "Worst value",
       "year": 2019,
       "source": "EHCVM1 (2018/2019)",
+      "reference": null,
       "type": "indicator"
     }
   ]
