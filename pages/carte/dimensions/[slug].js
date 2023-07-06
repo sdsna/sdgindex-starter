@@ -41,7 +41,12 @@ import {
   getGoals as getDimensions,
   getRegionsWithAssessment,
 } from "@sdgindex/data";
-import { getScore, getScoreAsText } from "@sdgindex/data/observations";
+import {
+  getScore,
+  getScoreAsText,
+  getRating,
+  getTrend,
+} from "@sdgindex/data/observations";
 import { getIndicatorsByDimension } from "helpers/getIndicatorsByDimension";
 
 export async function getStaticPaths() {
@@ -68,6 +73,8 @@ export async function getStaticProps({ params }) {
   const dimension = findAssessmentById(assessmentId.toUpperCase());
   const dimensions = getDimensions();
   const departments = getRegionsWithAssessment(dimension);
+
+  console.log(departments);
 
   return {
     props: {
@@ -96,6 +103,8 @@ export async function getStaticProps({ params }) {
         name: department.name,
         score: getScore(department),
         scoreAsText: getScoreAsText(department),
+        rating: getRating(department),
+        trend: getTrend(department),
         type: department.type,
       })),
     },
