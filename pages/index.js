@@ -73,7 +73,7 @@ const ReportButton = (props) => (
 
 const Title = (props) => (
   <Typography
-    color="#28547d"
+    color="#20658B"
     fontWeight={700}
     lineHeight={1.1}
     variant="h1"

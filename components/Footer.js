@@ -33,7 +33,7 @@ const BoxWithShadow = styled(Box)({
 });
 
 const Footer = () => (
-  <BoxWithShadow paddingY={4} position="relative" bgcolor="#28547d">
+  <BoxWithShadow paddingY={4} position="relative" bgcolor="#20658B">
     <Container maxWidth="lg">
       <Grid container>
         <ResponsiveGridItem styled={{ width: 1 / 3 }}>
