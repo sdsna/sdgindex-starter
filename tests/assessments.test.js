@@ -29,9 +29,8 @@ it("has a long term objective reason, description, ... for indicators", () => {
   getIndicators().map((indicator) => {
     expect(indicator).toMatchObject({
       longTermObjectiveReason: expect.any(String),
-      // NOTE: We are missing descriptions and references
-      // description: expect.any(String),
-      // reference: expect.any(String),
+      description: expect.any(String),
+      reference: expect.any(String),
       longTermObjective: expect.any(Number),
       lowerBound: expect.any(Number),
     });
