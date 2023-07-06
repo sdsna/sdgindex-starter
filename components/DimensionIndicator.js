@@ -50,6 +50,7 @@ const DimensionIndicator = forwardRef(
         ref={ref}
         onClick={onClick}
         data-rating={rating}
+        data-trend={trend}
         disabled={disabled}
         {...buttonProps}
         {...otherProps}
