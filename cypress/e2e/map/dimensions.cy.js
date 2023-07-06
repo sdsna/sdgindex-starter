@@ -127,7 +127,7 @@ describe("Map", () => {
       .contains("div", "Indicateurs")
       .eq(0)
       .within(() => {
-        cy.get("a").should("have.length", 14);
+        cy.get("a").should("have.length", 17);
         cy.get("a")
           .eq(0)
           .should(
@@ -267,8 +267,11 @@ describe("Map", () => {
     });
 
     it("displays department performance", () => {
-      cy.get(".MuiDrawer-docked").should("contain", 82.65);
-      cy.get(".MuiDrawer-docked").should("contain", "Des défis à relever");
+      cy.get(".MuiDrawer-docked").should("contain", 47.03);
+      cy.get(".MuiDrawer-docked").should(
+        "contain",
+        "Des défis majeurs subsistent"
+      );
       cy.get(".MuiDrawer-docked").should(
         "contain",
         "Information sur les tendances indisponible"
