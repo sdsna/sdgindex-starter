@@ -92,8 +92,13 @@ describe("Map", () => {
       });
 
       it("displays department performance", () => {
-        cy.contains("0.88");
-        cy.contains("2018");
+        cy.get(".MuiDrawer-docked").should(
+          "contain",
+          "Des défis importants restent à relever"
+        );
+        cy.get(".MuiDrawer-docked").should("contain", "Décroissant");
+        cy.get(".MuiDrawer-docked").should("contain", "0.88");
+        cy.get(".MuiDrawer-docked").should("contain", "2018");
       });
 
       it("displays indicator metadata in drawer", () => {

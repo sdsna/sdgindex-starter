@@ -156,6 +156,15 @@ describe("Map", () => {
       cy.get(".MuiDrawer-docked").contains("Atlantique");
     });
 
+    it("displays department performance", () => {
+      cy.get(".MuiDrawer-docked").should("contain", 49.98);
+      cy.get(".MuiDrawer-docked").should(
+        "contain",
+        "Des défis majeurs subsistent"
+      );
+      cy.get(".MuiDrawer-docked").should("contain", "En amélioration modérée");
+    });
+
     it("can close and reopen the drawer", () => {
       cy.get(".MuiDrawer-docked").should("contain", "Atlantique");
       cy.get(".MuiDrawer-docked").get('[aria-label="close side menu"]').click();
@@ -189,6 +198,7 @@ describe("Map", () => {
             .eq(9)
             .should("contain", "Population ayant accès à l'électricité");
           cy.get("a").eq(9).should("have.attr", "data-rating", "red");
+          cy.get("a").eq(9).should("have.attr", "data-trend", "➚");
         });
     });
 
@@ -256,6 +266,15 @@ describe("Map", () => {
       cy.get(".MuiDrawer-docked").contains("Atacora");
     });
 
+    it("displays department performance", () => {
+      cy.get(".MuiDrawer-docked").should("contain", 82.65);
+      cy.get(".MuiDrawer-docked").should("contain", "Des défis à relever");
+      cy.get(".MuiDrawer-docked").should(
+        "contain",
+        "Information sur les tendances indisponible"
+      );
+    });
+
     it("lists indicators ratings", () => {
       cy.get(".MuiDrawer-docked")
         .contains("div", "Indicateurs")
@@ -263,6 +282,7 @@ describe("Map", () => {
           cy.get("a").should("have.length", 3);
           cy.get("a").eq(0).should("contain", "Coefficient de Gini");
           cy.get("a").eq(0).should("have.attr", "data-rating", "green");
+          cy.get("a").eq(0).should("have.attr", "data-trend", "•");
         });
     });
   });
