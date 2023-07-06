@@ -74,8 +74,6 @@ export async function getStaticProps({ params }) {
   const dimensions = getDimensions();
   const departments = getRegionsWithAssessment(dimension);
 
-  console.log(departments);
-
   return {
     props: {
       dimension: {

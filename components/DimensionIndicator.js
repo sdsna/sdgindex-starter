@@ -1,6 +1,7 @@
 import { forwardRef } from "react";
 import { ButtonBase, Typography } from "@mui/material";
 import RatingIndicator from "components/RatingIndicator";
+import TrendIndicator from "components/TrendIndicator";
 import { styled } from "@mui/material/styles";
 import { useUiStore } from "stores/uiStore";
 
@@ -28,6 +29,7 @@ const DimensionIndicator = forwardRef(
       buttonProps,
       indicator,
       rating,
+      trend,
       light,
       onClick,
       disabled,
@@ -53,6 +55,7 @@ const DimensionIndicator = forwardRef(
         {...otherProps}
       >
         <RatingIndicator fontSize="small" rating={rating} />
+        <TrendIndicator fontSize="small" trend={trend} />
         <Text
           styled={{ light }}
           color={disabled ? "textSecondary" : "textPrimary"}

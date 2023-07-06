@@ -8,7 +8,7 @@ import IndicatorMetadata from "components/IndicatorMetadata";
 import DimensionPerformance from "components/DimensionPerformance";
 import IndicatorPerformance from "components/IndicatorPerformance";
 import DimensionIndicator from "components/DimensionIndicator";
-import { getRating } from "@sdgindex/data/observations";
+import { getRating, getTrend } from "@sdgindex/data/observations";
 import DrawerRegionSection from "components/DrawerRegionSection";
 import { useUiStore } from "stores/uiStore";
 import {
@@ -54,6 +54,7 @@ const DimensionSection = ({ department, dimension, indicators }) => (
             onClick={null}
             indicator={indicator}
             rating={getRating(indicator)}
+            trend={getTrend(indicator)}
             light={false}
             disabled={indicator.hideMap}
           />
