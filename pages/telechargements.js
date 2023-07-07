@@ -81,7 +81,7 @@ const globalIndices = [
 
 const regionalIndices = [
   {
-    label: "Europe Sustainable Development Report 2023",
+    label: "Europe Sustainable Development Report 2022",
     type: "Rapport + Tableau de bord",
     image: "europe-sdr.png",
     url: "https://www.sdgindex.org/EU",
