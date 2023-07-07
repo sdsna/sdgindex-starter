@@ -11,7 +11,7 @@ import {
   DATABASE_SUBNATIONAL_DOWNLOAD_URL,
   DATABASE_REGIONAL_DOWNLOAD_URL,
   FRENCH_REPORT_DOWNLOAD_URL,
-  ENGLISH_REPORT_DOWNLOAD_URL,
+  // ENGLISH_REPORT_DOWNLOAD_URL,
 } from "root/config";
 import HeaderLayout from "layouts/HeaderLayout";
 import ResponsiveGridItem from "components/ResponsiveGridItem";
@@ -26,12 +26,13 @@ const downloads = [
     image: "report-cover.png",
     url: FRENCH_REPORT_DOWNLOAD_URL,
   },
-  {
-    label: "Benin Sustainable Development Report (ENG)",
-    type: "PDF",
-    image: "report-cover.png",
-    url: ENGLISH_REPORT_DOWNLOAD_URL,
-  },
+  // TODO: When we get the international version, we'll add this back in
+  // {
+  //   label: "Benin Sustainable Development Report (ENG)",
+  //   type: "PDF",
+  //   image: "report-cover.png",
+  //   url: ENGLISH_REPORT_DOWNLOAD_URL,
+  // },
   {
     label: "Base de données (Infranationale)",
     type: "Excel",
