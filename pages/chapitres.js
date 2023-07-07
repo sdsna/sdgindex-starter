@@ -79,52 +79,6 @@ const Chapters = () => (
           l&rsquo;&eacute;valuation pour la mise en œuvre de l&rsquo;Agenda
           2030.
         </Chapter>
-        <Chapter
-          slug="partie-1-lindice-de-developpement-durable-pour-le-benin"
-          image="/static/chapters/figure-1.webp"
-          title="Partie 1: L'indice de développement durable pour le Bénin"
-        >
-          L&rsquo;indice et les tableaux de bord s&rsquo;appuient sur un
-          ensemble d&rsquo;indicateurs internationaux pour lesquels des
-          donn&eacute;es sont disponibles pour le B&eacute;nin, et les autres
-          pays de la CEDEAO. Le B&eacute;nin est compar&eacute; &agrave; ses
-          voisins afin de contextualiser ses performances et tendances pour la
-          r&eacute;alisation des ODD.
-        </Chapter>
-        <Chapter
-          slug="partie-2-six-transformations-pour-hierarchiser-les-interventions"
-          image="/static/chapters/figure-7.webp"
-          title="Partie 2: « Six Transformations » pour hiérarchiser les interventions"
-        >
-          Les 17 ODD et leurs 169 cibles d&eacute;crivent les objectifs &agrave;
-          atteindre en 2030. En revanche, ils ne pr&eacute;cisent pas comment
-          les Gouvernements pourraient s&rsquo;organiser pour les atteindre.
-          S&rsquo;inspirant des travaux de Sachs et al. (2019), ce rapport
-          propose &laquo;&nbsp;Six Transformations&nbsp;&raquo;, afin
-          d&rsquo;aider &agrave; d&eacute;finir une strat&eacute;gie
-          op&eacute;rationnelle pour les ODD au B&eacute;nin.
-        </Chapter>
-        <Chapter
-          slug="partie-3-atteindre-les-odd-au-benin-efforts-et-defis"
-          image="/static/chapters/figure-33.webp"
-          title="Partie 3: Atteindre les ODD au Bénin : efforts et défis"
-        >
-          Des objectifs, strat&eacute;gies et plans nationaux ambitieux et
-          solides sont essentiels pour transformer les ODD en un programme
-          d&rsquo;action. Chaque ann&eacute;e depuis 2018, SDSN mobilise son
-          r&eacute;seau mondial d&rsquo;experts pour analyser les efforts des
-          gouvernements pour atteindre les ODD.
-        </Chapter>
-        <Chapter
-          slug="annexe"
-          image="/static/chapters/figure-A-2.webp"
-          title="Annexe: Méthodologies et tables des indicateurs"
-        >
-          Ce Rapport sur le développement durable est un rapport pilote de
-          référence qui décrit les progrès accomplis par le Bénin dans la
-          réalisation des ODD et indique les domaines nécessitant des progrès
-          plus rapides.
-        </Chapter>
       </Grid>
     </Box>
   </HeaderLayout>
