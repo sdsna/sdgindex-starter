@@ -50,7 +50,9 @@ const pages = [
   },
   {
     label: "Profils",
-    href: "https://regional-benin.sdgindex.org/profils",
+    // TODO: Update link with production one
+    href: "https://regional-benin.sdgindex.org/profilshttps://deploy-preview-16--national-comparison-benin-sdg-index.netlify.app/profils",
+    // href: "https://regional-benin.sdgindex.org/profils",
   },
   {
     label: "Téléchargements et documents",

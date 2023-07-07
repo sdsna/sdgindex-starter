@@ -214,7 +214,9 @@ const Index = () => (
               links={[
                 {
                   label: "Analyser les profils",
-                  href: "https://regional-benin.sdgindex.org/profils",
+                  // TODO: To update link with production one
+                  // href: "https://regional-benin.sdgindex.org/profils",
+                  href: "https://deploy-preview-16--national-comparison-benin-sdg-index.netlify.app/profils",
                 },
               ]}
             >
