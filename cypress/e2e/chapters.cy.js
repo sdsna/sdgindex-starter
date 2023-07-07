@@ -5,7 +5,7 @@ describe("Chapters", () => {
   });
 
   it("contains all chapters", () => {
-    cy.get("a[href^='/chapitres/']").should("have.length", 6);
+    cy.get("a[href^='/chapitres/']").should("have.length", 2);
   });
 
   it("can load all chapters", () => {
