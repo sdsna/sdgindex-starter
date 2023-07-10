@@ -21,8 +21,8 @@ it("has label for each goal", () => {
   });
 });
 
-it("contains 36 indicators", () => {
-  expect(getIndicators()).toHaveLength(36);
+it("contains 45 indicators", () => {
+  expect(getIndicators()).toHaveLength(45);
 });
 
 it("has a long term objective reason, description, ... for indicators", () => {

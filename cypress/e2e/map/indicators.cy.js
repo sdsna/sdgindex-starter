@@ -2,7 +2,7 @@ describe("Map", () => {
   context("when visiting the map for lnb3_vihtestparit", () => {
     it("renders", () => {
       cy.visit(
-        "/carte/indicateurs/indice-de-parite-homme-femme-couverture-du-test-vih"
+        "/carte/indicateurs/indice-de-parite-femme-homme-couverture-du-test-vih"
       );
       cy.get("svg").should("exist");
     });
@@ -28,7 +28,7 @@ describe("Map", () => {
     it("displays indicator info in drawer", () => {
       cy.get(".MuiDrawer-docked").should(
         "contain",
-        "Indice de parité homme/ femme: Couverture du test VIH"
+        "Indice de parité femme/ homme: Couverture du test VIH"
       );
       cy.get(".MuiDrawer-docked").should(
         "contain",
@@ -36,7 +36,7 @@ describe("Map", () => {
       );
       cy.get(".MuiDrawer-docked").should(
         "contain",
-        "Cet indicateur exprime le rapport du pourcentage des hommes de 15-49 ans qui savent où on peut faire un test VIH et du pourcentage des femmes de 15-49 ans qui savent où on peut faire un test VIH"
+        "Rapport du pourcentage des hommes de 15-49 ans qui savent où on peut faire un test VIH et du pourcentage des femmes de 15-49 ans qui savent où on peut faire un test VIH"
       );
     });
 
@@ -74,13 +74,13 @@ describe("Map", () => {
       cy.get(".MuiDrawer-docked div:contains(Source)")
         .last()
         .within(() => {
-          cy.contains("EDSB-5 (2017/2018)");
+          cy.contains("EDSB");
         });
       cy.get(".MuiDrawer-docked div:contains(Référence)")
         .last()
         .within(() => {
           cy.contains(
-            "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF."
+            "Institut National de la Statistique et de l’Analyse Économique (INSAE) & ICF. (2013). "
           );
         });
     });
@@ -92,8 +92,13 @@ describe("Map", () => {
       });
 
       it("displays department performance", () => {
-        cy.contains("0.88");
-        cy.contains("2018");
+        cy.get(".MuiDrawer-docked").should(
+          "contain",
+          "Des défis importants restent à relever"
+        );
+        cy.get(".MuiDrawer-docked").should("contain", "Décroissant");
+        cy.get(".MuiDrawer-docked").should("contain", "0.88");
+        cy.get(".MuiDrawer-docked").should("contain", "2018");
       });
 
       it("displays indicator metadata in drawer", () => {
@@ -108,13 +113,13 @@ describe("Map", () => {
         cy.get(".MuiDrawer-docked div:contains(Source)")
           .last()
           .within(() => {
-            cy.contains("EDSB-5 (2017/2018)");
+            cy.contains("EDSB");
           });
         cy.get(".MuiDrawer-docked div:contains(Référence)")
           .last()
           .within(() => {
             cy.contains(
-              "Institut National de la Statistique et de l’Analyse Économique (INSAE) et ICF. (2019). Enquête Démographique et de Santé au Bénin, 2017-2018. Cotonou, Bénin et Rockville, Maryland, USA : INSAE et ICF."
+              "Institut National de la Statistique et de l’Analyse Économique (INSAE) & ICF. (2013). "
             );
           });
       });
@@ -124,7 +129,7 @@ describe("Map", () => {
       it("changes page to lnb4_gini", () => {
         cy.contains(
           ".MuiDrawer-docked div",
-          "Indice de parité homme/ femme: Couverture du test VIH"
+          "Indice de parité femme/ homme: Couverture du test VIH"
         ).click();
         cy.contains("div", "Rechercher")
           .parent()
@@ -146,9 +151,17 @@ describe("Map", () => {
     });
 
     it("colors departments with unavailable information correctly", () => {
-      cy.get(`path[name="Atacora"]`).should("have.attr", "fill", "#bdbdbd");
+      cy.get(`path[name="Atacora"]`).should(
+        "have.attr",
+        "fill",
+        "rgb(247, 252, 253)"
+      );
       cy.get(`path[name="Alibori"]`).should("have.attr", "fill", "#bdbdbd");
-      cy.get(`path[name="Borgou"]`).should("have.attr", "fill", "#bdbdbd");
+      cy.get(`path[name="Borgou"]`).should(
+        "have.attr",
+        "fill",
+        "rgb(247, 252, 253)"
+      );
       cy.get(`path[name="Donga"]`).should(
         "have.attr",
         "fill",

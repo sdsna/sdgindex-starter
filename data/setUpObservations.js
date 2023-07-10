@@ -23,6 +23,8 @@ const setUpObservations = () => {
         region,
         assessment: goal,
         score: roundNumber(dataForRegion[`${goal.category} Score`], 2),
+        rating: dataForRegion[`Dashboard: ${goal.category}`],
+        trend: dataForRegion[`arrow_${goal.category}`],
       })
     );
 
@@ -34,7 +36,8 @@ const setUpObservations = () => {
       const observation = {
         value: dataForRegion[key],
         rating: dataForRegion[`Couleur: ${indicator.id} `],
-        year: indicator.year,
+        trend: dataForRegion[`arrow_n_${indicator.id}`],
+        year: dataForRegion[`year_${indicator.id}`],
       };
 
       addObservation({

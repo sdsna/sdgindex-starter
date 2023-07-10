@@ -17,7 +17,7 @@ describe("Map", () => {
       "fill",
       LEGEND[1].color
     );
-    cy.get(`path[name="Ouémé"]`).should("have.attr", "fill", LEGEND[2].color);
+    cy.get(`path[name="Ouémé"]`).should("have.attr", "fill", LEGEND[3].color);
   });
 
   it("displays dimension info in drawer", () => {
@@ -127,12 +127,12 @@ describe("Map", () => {
       .contains("div", "Indicateurs")
       .eq(0)
       .within(() => {
-        cy.get("a").should("have.length", 14);
+        cy.get("a").should("have.length", 17);
         cy.get("a")
           .eq(0)
           .should(
             "contain",
-            "Proportion d'accouchements assistés par du personnel de santé qualifié"
+            "Accouchements assistés par du personnel de santé qualifié"
           );
         cy.get("a")
           .eq(1)
@@ -140,11 +140,12 @@ describe("Map", () => {
       });
   });
 
+  // NOTE: To review this in detail once all data is available
   it("can navigate to indicator visualization", () => {
-    cy.contains("Nombre de personnel de santé par habitant").click();
+    cy.contains("Nombre d'habitants par personnel de santé").click();
     cy.url().should(
       "include",
-      "/carte/indicateurs/nombre-de-personnel-de-sante-par-habitant"
+      "/carte/indicateurs/nombre-d-habitants-par-personnel-de-sante"
     );
   });
 
@@ -153,6 +154,15 @@ describe("Map", () => {
       cy.visit("/carte/dimensions/lnob1");
       cy.get(`[name="Atlantique"]`).click();
       cy.get(".MuiDrawer-docked").contains("Atlantique");
+    });
+
+    it("displays department performance", () => {
+      cy.get(".MuiDrawer-docked").should("contain", 49.98);
+      cy.get(".MuiDrawer-docked").should(
+        "contain",
+        "Des défis majeurs subsistent"
+      );
+      cy.get(".MuiDrawer-docked").should("contain", "En amélioration modérée");
     });
 
     it("can close and reopen the drawer", () => {
@@ -164,37 +174,37 @@ describe("Map", () => {
 
     it("lists dimension 1 indicators", () => {
       cy.get(".MuiDrawer-docked a").as("indicators");
-      cy.get("@indicators").should("have.length", 14);
+      cy.get("@indicators").should("have.length", 17);
       cy.get("@indicators")
         .eq(0)
         .should(
           "contain",
-          "Proportion d'accouchements assistés par du personnel de santé qualifié"
+          "Accouchements assistés par du personnel de santé qualifié"
         );
       cy.get("@indicators")
         .eq(1)
         .should("contain", "Nombre d'habitants par lits d'hopitaux");
       cy.get("@indicators")
         .eq(2)
-        .should("contain", "Nombre de personnel de santé  par habitant");
+        .should("contain", "Nombre d'habitants par personnel de santé");
     });
 
     it("lists indicators ratings", () => {
       cy.get(".MuiDrawer-docked")
         .contains("div", "Indicateurs")
         .within(() => {
-          cy.get("a").should("have.length", 14);
-          cy.get("a").eq(9).should("contain", "Taux de succès au BAC");
+          cy.get("a").should("have.length", 17);
+          cy.get("a")
+            .eq(9)
+            .should("contain", "Population ayant accès à l'électricité");
           cy.get("a").eq(9).should("have.attr", "data-rating", "red");
+          cy.get("a").eq(9).should("have.attr", "data-trend", "➚");
         });
     });
 
     it("can navigate to indicator visualization", () => {
-      cy.contains("Nombre de personnel de santé par habitant").click();
-      cy.url().should(
-        "include",
-        "/carte/indicateurs/nombre-de-personnel-de-sante-par-habitant"
-      );
+      cy.contains("Accessibilité et qualité des services").click();
+      cy.url().should("include", "/carte/dimensions/lnob1");
     });
   });
 
@@ -209,14 +219,14 @@ describe("Map", () => {
       cy.get(`path[name="Atlantique"]`).should(
         "have.attr",
         "fill",
-        LEGEND[1].color
+        LEGEND[0].color
       );
-      cy.get(`path[name="Donga"]`).should("have.attr", "fill", LEGEND[3].color);
-      cy.get(`path[name="Zou"]`).should("have.attr", "fill", LEGEND[4].color);
+      cy.get(`path[name="Donga"]`).should("have.attr", "fill", LEGEND[1].color);
+      cy.get(`path[name="Zou"]`).should("have.attr", "fill", LEGEND[1].color);
       cy.get(`path[name="Atacora"]`).should(
         "have.attr",
         "fill",
-        LEGEND[5].color
+        LEGEND[3].color
       );
     });
 
@@ -240,13 +250,13 @@ describe("Map", () => {
             .eq(1)
             .should(
               "contain",
-              "Proportion de personnes vivant avec moins de la moitié du revenu médian"
+              "Personnes vivant avec moins de la moitié du revenu médian"
             );
           cy.get("a")
             .eq(2)
             .should(
               "contain",
-              "Proportion de personnes vivant avec un revenu de plus de 50 % inférieur au revenu moyen"
+              "Personnes vivant avec un revenu plus de 50 % inférieur au revenu moyen"
             );
         });
     });
@@ -256,6 +266,18 @@ describe("Map", () => {
       cy.get(".MuiDrawer-docked").contains("Atacora");
     });
 
+    it("displays department performance", () => {
+      cy.get(".MuiDrawer-docked").should("contain", 47.03);
+      cy.get(".MuiDrawer-docked").should(
+        "contain",
+        "Des défis majeurs subsistent"
+      );
+      cy.get(".MuiDrawer-docked").should(
+        "contain",
+        "Information sur les tendances indisponible"
+      );
+    });
+
     it("lists indicators ratings", () => {
       cy.get(".MuiDrawer-docked")
         .contains("div", "Indicateurs")
@@ -263,6 +285,7 @@ describe("Map", () => {
           cy.get("a").should("have.length", 3);
           cy.get("a").eq(0).should("contain", "Coefficient de Gini");
           cy.get("a").eq(0).should("have.attr", "data-rating", "green");
+          cy.get("a").eq(0).should("have.attr", "data-trend", "•");
         });
     });
   });
