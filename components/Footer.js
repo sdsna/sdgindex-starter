@@ -33,13 +33,13 @@ const BoxWithShadow = styled(Box)({
 });
 
 const Footer = () => (
-  <BoxWithShadow paddingY={4} position="relative" bgcolor="#28547d">
+  <BoxWithShadow paddingY={4} position="relative" bgcolor="#20658B">
     <Container maxWidth="lg">
       <Grid container>
         <ResponsiveGridItem styled={{ width: 1 / 3 }}>
           <Logo
             alt="Logo"
-            src="/static/logo.svg"
+            src="/static/logo.png"
             style={{ height: 80, marginBottom: 10 }}
           />
           <Typography variant="h6" color="white" gutterBottom>
@@ -78,7 +78,7 @@ const Footer = () => (
               target="_blank"
               onClick={() => trackDownload(FRENCH_REPORT_DOWNLOAD_URL)}
             >
-              Rapport sur le développement durable pour le Bénin 2022.
+              Rapport sur le développement durable pour le Bénin 2023.
             </Link>
           </FooterTypography>
           <FooterTypography gutterBottom>

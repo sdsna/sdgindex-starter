@@ -11,7 +11,7 @@ import {
   DATABASE_SUBNATIONAL_DOWNLOAD_URL,
   DATABASE_REGIONAL_DOWNLOAD_URL,
   FRENCH_REPORT_DOWNLOAD_URL,
-  ENGLISH_REPORT_DOWNLOAD_URL,
+  // ENGLISH_REPORT_DOWNLOAD_URL,
 } from "root/config";
 import HeaderLayout from "layouts/HeaderLayout";
 import ResponsiveGridItem from "components/ResponsiveGridItem";
@@ -23,15 +23,16 @@ const downloads = [
   {
     label: "Rapport sur le développement durable pour le Bénin",
     type: "PDF",
-    image: "full-report.webp",
+    image: "report-cover.png",
     url: FRENCH_REPORT_DOWNLOAD_URL,
   },
-  {
-    label: "Benin Sustainable Development Report (ENG)",
-    type: "PDF",
-    image: "full-report.webp",
-    url: ENGLISH_REPORT_DOWNLOAD_URL,
-  },
+  // TODO: When we get the international version, we'll add this back in
+  // {
+  //   label: "Benin Sustainable Development Report (ENG)",
+  //   type: "PDF",
+  //   image: "report-cover.png",
+  //   url: ENGLISH_REPORT_DOWNLOAD_URL,
+  // },
   {
     label: "Base de données (Infranationale)",
     type: "Excel",
@@ -48,13 +49,13 @@ const downloads = [
     label: "Executive Summary (English)",
     type: "PDF",
     image: "exec-sum.webp",
-    url: "https://s3.amazonaws.com/sustainabledevelopment.report/2022/executive-summary-benin-sdr.pdf",
+    url: "https://s3.amazonaws.com/sustainabledevelopment.report/2023/executive-summary-benin-sdr.pdf",
   },
   {
     label: "Communiqué de presse",
     type: "Site Web",
     image: "press-release.png",
-    url: "https://www.sdgindex.org/news/press-release-benin-sustainable-report-2022/",
+    url: "https://www.sdgindex.org/news/press-release-benin-sustainable-report-2023/",
   },
   {
     label: "Méthodologie",
@@ -110,8 +111,8 @@ const subnationalIndices = [
   {
     label: "Rapport sur le développement durable pour le Bénin",
     type: "Rapport + Tableau de bord",
-    image: "full-report.webp",
-    url: "https://sdgindex.org/reports/2022-07-13-benin-sustainable-development-report-2022",
+    image: "report-cover.png",
+    url: "https://sdgindex.org/reports/2023-07-13-benin-sustainable-development-report-2023",
   },
   {
     label: "United States Sustainable Development Report 2021",

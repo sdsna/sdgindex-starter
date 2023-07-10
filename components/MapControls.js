@@ -56,12 +56,12 @@ const MapControls = ({
       flexDirection="column"
     >
       <Box flexGrow={1} />
-      <Paper elevation={5} sx={{ borderRadius: 5 }}>
+      <Paper elevation={5} sx={{ borderRadius: 1 }}>
         <Box
           marginRight={2}
           marginTop={14}
           boxShadow={3}
-          borderRadius={5}
+          borderRadius={1}
           display={{ xs: "none", lg: "block" }}
           bgcolor="whitesmoke"
           position="fixed"
@@ -73,10 +73,10 @@ const MapControls = ({
       </Paper>
       <Box
         marginLeft={2}
-        marginTop={14}
+        marginBottom={2}
         display="flex"
         position="fixed"
-        top="0"
+        bottom="0"
       >
         <DimensionNavigation dimensions={dimensions} />
       </Box>

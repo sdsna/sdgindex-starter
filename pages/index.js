@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   Box,
   Button,
@@ -6,29 +7,16 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import { styled } from "@mui/material/styles";
 import Fade from "react-reveal/Fade";
 import { keyframes } from "@emotion/react";
-import {
-  FRENCH_REPORT_DOWNLOAD_URL,
-  ENGLISH_REPORT_DOWNLOAD_URL,
-} from "root/config";
+import { FRENCH_REPORT_DOWNLOAD_URL } from "root/config";
 import AppLayout from "layouts/AppLayout";
 import FeatureBanner from "components/FeatureBanner";
 import ExternalLink from "components/ExternalLink";
 import ParticlesSection from "components/ParticlesSection";
-import Italics from "components/Italics";
 import { trackDownload } from "helpers/gtag";
 
 const transition = "250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms";
-
-const Banner = styled(Box)`
-  background: #ffd700;
-  position: relative;
-  && {
-    z-index: 1;
-  }
-`;
 
 const Background = (props) => <Box bgcolor="#eee" {...props} />;
 const Highlight = (props) => (
@@ -73,7 +61,7 @@ const ReportButton = (props) => (
 
 const Title = (props) => (
   <Typography
-    color="#28547d"
+    color="#20658B"
     fontWeight={700}
     lineHeight={1.1}
     variant="h1"
@@ -85,20 +73,6 @@ const Title = (props) => (
 const Index = () => (
   <AppLayout>
     <Background>
-      <Banner paddingY={0.5}>
-        <Box display="flex" justifyContent="center">
-          <Typography variant="h4">
-            The English version of the report is out now. You can find it{" "}
-            <ExternalLink
-              href={ENGLISH_REPORT_DOWNLOAD_URL}
-              onClick={() => trackDownload(ENGLISH_REPORT_DOWNLOAD_URL)}
-              passHref
-            >
-              HERE
-            </ExternalLink>
-          </Typography>
-        </Box>
-      </Banner>
       <ParticlesSection />
       <Container style={{ position: "relative" }}>
         <Hero
@@ -111,13 +85,7 @@ const Index = () => (
         >
           <Grid container spacing={4}>
             <Grid item lg={5} md={4} xs={12}>
-              <Box
-                display="flex"
-                justifyContent={{
-                  xs: "center",
-                  md: "flex-start",
-                }}
-              >
+              <Box display="flex" justifyContent="center">
                 <ReportButton
                   href={FRENCH_REPORT_DOWNLOAD_URL}
                   target="_blank"
@@ -142,7 +110,7 @@ const Index = () => (
                 <Box>
                   <Title>
                     Rapport sur le développement durable pour{" "}
-                    <Highlight>le Bénin 2022</Highlight>
+                    <Highlight>le Bénin 2023</Highlight>
                   </Title>
                 </Box>
                 <Box
@@ -167,21 +135,15 @@ const Index = () => (
                     </ExternalLink>
                   </Box>
                   <Box marginY={1}>
-                    <ExternalLink
-                      href={ENGLISH_REPORT_DOWNLOAD_URL}
-                      style={{ textDecoration: "none" }}
+                    <Button
+                      component={Link}
+                      href="/carte/dimensions/lnob1"
+                      size="large"
+                      variant="outlined"
+                      style={{ color: "#0073b0ff", borderColor: "#0073b0ff" }}
                     >
-                      <Button
-                        onClick={() =>
-                          trackDownload(ENGLISH_REPORT_DOWNLOAD_URL)
-                        }
-                        size="large"
-                        variant="outlined"
-                        style={{ color: "#0073b0ff", borderColor: "#0073b0ff" }}
-                      >
-                        Read the report (ENG)
-                      </Button>
-                    </ExternalLink>
+                      Explorer les données
+                    </Button>
                   </Box>
                 </Box>
               </Box>
@@ -191,8 +153,8 @@ const Index = () => (
         <Box marginY={8}>
           <Fade left>
             <FeatureBanner
-              title="Rapport sur le développement durable pour le Bénin 2022"
-              image="/static/report-cover.webp"
+              title="Rapport sur le développement durable pour le Bénin 2023"
+              image="/static/report-cover.png"
               imagePosition="right"
               imageOrientation="vertical"
               links={[
@@ -205,18 +167,15 @@ const Index = () => (
                   href: "/chapitres/executive-summary",
                   variant: "outlined",
                 },
-                {
-                  label: "Tous les chapitres",
-                  href: "/chapitres",
-                },
               ]}
             >
-              Le Rapport sur le développement durable pour le Bénin 2022 (
-              <Italics>rapport pilote de référence</Italics>) marque la première
-              édition de l&apos;évaluation des progrès, performances et
-              tendances du Bénin dans l’atteinte des Objectifs de Développement
-              Durable. Le rapport analyse aussi les performances du Bénin dans
-              la réalisation du principe de « ne laisser personne de côté ».
+              Le Rapport sur le développement durable pour le Bénin 2023 marque
+              la deuxième édition de l&apos;évaluation des progrès, performances
+              et tendances du Bénin dans l’atteinte des Objectifs de
+              Développement Durable et du principe de « ne laisser personne de
+              côté ». Le rapport analyse également les progrès et politiques du
+              Bénin pour l’amélioration du capital humain et la réduction des
+              inégalités.
             </FeatureBanner>
           </Fade>
         </Box>
@@ -235,14 +194,15 @@ const Index = () => (
                 },
               ]}
             >
-              Nos cartes interactives présentent les performances des
-              départements du Bénin dans la réalisation du principe fondamental
-              de l’Agenda 2030 de « ne laisser personne de côté ». Quatre
-              dimensions mesurant les disparités sont considérées : les
-              inégalités d’accès aux services publics, l’extrême pauvreté et la
-              privation matérielle, les inégalités entre les sexes et les
-              inégalités de revenu et de richesse. Visualisez la performance
-              actuelle des départements sur ces dimensions.
+              Nos cartes interactives présentent les performances et tendances
+              des départements du Bénin dans la réalisation du principe
+              fondamental de l’Agenda 2030 de « ne laisser personne de côté ».
+              Quatre dimensions mesurant les disparités sont considérées :
+              l&apos;accès à des services publics de qualité, la pauvreté et la
+              privation matérielle, l’égalité des sexes et la condition des
+              femmes dans la société, et les inégalités de revenu et de
+              richesse. Visualisez la performance actuelle des départements sur
+              ces dimensions.
             </FeatureBanner>
           </Fade>
         </Box>

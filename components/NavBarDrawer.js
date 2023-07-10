@@ -18,7 +18,7 @@ const NavBarDrawer = ({ pages, ...otherProps }) => (
             }}
           >
             {/* eslint-disable-next-line */}
-            <img src="/static/logo.svg" alt="Logo" style={{ height: 80 }} />
+            <img src="/static/logo.png" alt="Logo" style={{ height: 80 }} />
           </ListItem>
         </Box>
       </Link>

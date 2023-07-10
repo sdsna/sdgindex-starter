@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { observer } from "mobx-react-lite";
-import { Box, ButtonBase, Paper, Stack, Typography } from "@mui/material";
+import { Box, ButtonBase, Paper, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import DrawerHeading from "components/DrawerHeading";
 import DimensionIcon from "components/DimensionIcon";
@@ -14,10 +14,10 @@ const Button = styled(ButtonBase)({
 });
 
 const Layout = (props) => (
-  <Paper elevation={5} sx={{ borderRadius: 5 }}>
+  <Paper elevation={5} sx={{ borderRadius: 1 }}>
     <Box
       display={{ xs: "none", lg: "flex" }}
-      borderRadius={5}
+      borderRadius={1}
       flexDirection="column"
       alignItems="center"
       bgcolor="whitesmoke"
@@ -31,7 +31,7 @@ const Layout = (props) => (
 const DimensionNavigation = observer(({ dimensions }) => (
   <Layout>
     <DrawerHeading>Sélectionnez une dimension</DrawerHeading>
-    <Stack direction="column" spacing={1}>
+    <Stack direction="row" spacing={1}>
       {dimensions.map((dimension) => (
         <Box
           key={dimension.id}
@@ -39,12 +39,6 @@ const DimensionNavigation = observer(({ dimensions }) => (
           alignItems="center"
           justifyContent="flex-end"
         >
-          <Typography variant="body1" gutterBottom>
-            {dimension.category.replace(
-              dimension.category[0],
-              dimension.category[0].toUpperCase()
-            )}
-          </Typography>
           <Link
             href={mapAssessmentUrl({ assessment: dimension })}
             legacyBehavior
@@ -55,7 +49,6 @@ const DimensionNavigation = observer(({ dimensions }) => (
                 background: "transparent",
                 maxWidth: 60,
                 maxHeight: 60,
-                marginLeft: 3,
               }}
             >
               <DimensionIcon identifier={dimension.id} />
