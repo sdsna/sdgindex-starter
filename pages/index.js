@@ -14,7 +14,6 @@ import AppLayout from "layouts/AppLayout";
 import FeatureBanner from "components/FeatureBanner";
 import ExternalLink from "components/ExternalLink";
 import ParticlesSection from "components/ParticlesSection";
-import Italics from "components/Italics";
 import { trackDownload } from "helpers/gtag";
 
 const transition = "250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms";
@@ -170,12 +169,13 @@ const Index = () => (
                 },
               ]}
             >
-              Le Rapport sur le développement durable pour le Bénin 2023 (
-              <Italics>rapport pilote de référence</Italics>) marque la première
-              édition de l&apos;évaluation des progrès, performances et
-              tendances du Bénin dans l’atteinte des Objectifs de Développement
-              Durable. Le rapport analyse aussi les performances du Bénin dans
-              la réalisation du principe de « ne laisser personne de côté ».
+              Le Rapport sur le développement durable pour le Bénin 2023 marque
+              la deuxième édition de l&apos;évaluation des progrès, performances
+              et tendances du Bénin dans l’atteinte des Objectifs de
+              Développement Durable et du principe de « ne laisser personne de
+              côté ». Le rapport analyse également les progrès et politiques du
+              Bénin pour l’amélioration du capital humain et la réduction des
+              inégalités.
             </FeatureBanner>
           </Fade>
         </Box>
@@ -194,14 +194,15 @@ const Index = () => (
                 },
               ]}
             >
-              Nos cartes interactives présentent les performances des
-              départements du Bénin dans la réalisation du principe fondamental
-              de l’Agenda 2030 de « ne laisser personne de côté ». Quatre
-              dimensions mesurant les disparités sont considérées : les
-              inégalités d’accès aux services publics, l’extrême pauvreté et la
-              privation matérielle, les inégalités entre les sexes et les
-              inégalités de revenu et de richesse. Visualisez la performance
-              actuelle des départements sur ces dimensions.
+              Nos cartes interactives présentent les performances et tendances
+              des départements du Bénin dans la réalisation du principe
+              fondamental de l’Agenda 2030 de « ne laisser personne de côté ».
+              Quatre dimensions mesurant les disparités sont considérées :
+              l&apos;accès à des services publics de qualité, la pauvreté et la
+              privation matérielle, l’égalité des sexes et la condition des
+              femmes dans la société, et les inégalités de revenu et de
+              richesse. Visualisez la performance actuelle des départements sur
+              ces dimensions.
             </FeatureBanner>
           </Fade>
         </Box>
@@ -214,9 +215,7 @@ const Index = () => (
               links={[
                 {
                   label: "Analyser les profils",
-                  // TODO: To update link with production one
-                  // href: "https://regional-benin.sdgindex.org/profils",
-                  href: "https://deploy-preview-16--national-comparison-benin-sdg-index.netlify.app/profils",
+                  href: "https://regional-benin.sdgindex.org/profils",
                 },
               ]}
             >
