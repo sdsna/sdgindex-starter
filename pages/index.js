@@ -162,11 +162,11 @@ const Index = () => (
                   label: "Résumé Exécutif",
                   href: "/chapitres/resume-executif",
                 },
-                {
-                  label: "Executive Summary (English)",
-                  href: "/chapitres/executive-summary",
-                  variant: "outlined",
-                },
+                // {
+                //   label: "Executive Summary (English)",
+                //   href: "/chapitres/executive-summary",
+                //   variant: "outlined",
+                // },
               ]}
             >
               Le Rapport sur le développement durable pour le Bénin 2023 marque
