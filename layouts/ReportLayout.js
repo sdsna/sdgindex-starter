@@ -4,7 +4,6 @@ import AppLayout from "layouts/AppLayout";
 import { ReportStoreProvider } from "stores/reportStore";
 import ReportNavigation from "components/ReportNavigation";
 import ReportThemeProvider from "components/ReportThemeProvider";
-import ReportNavBar from "components/ReportNavBar";
 
 const ReportLayout = ({ title, subtitle, color, children }) => (
   <ReportStoreProvider>
@@ -44,9 +43,6 @@ const ReportLayout = ({ title, subtitle, color, children }) => (
                 {children}
               </Box>
               <ReportNavigation />
-            </Box>
-            <Box marginY={6} display="flex" justifyContent="center">
-              <ReportNavBar />
             </Box>
           </Container>
         </Box>

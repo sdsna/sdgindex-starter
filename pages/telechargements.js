@@ -46,18 +46,6 @@ const downloads = [
     url: DATABASE_REGIONAL_DOWNLOAD_URL,
   },
   {
-    label: "Executive Summary (English)",
-    type: "PDF",
-    image: "exec-sum.webp",
-    url: "https://s3.amazonaws.com/sustainabledevelopment.report/2023/executive-summary-benin-sdr.pdf",
-  },
-  {
-    label: "Communiqué de presse",
-    type: "Site Web",
-    image: "press-release.png",
-    url: "https://www.sdgindex.org/news/press-release-benin-sustainable-report-2023/",
-  },
-  {
     label: "Méthodologie",
     type: "PDF",
     image: "methodology-paper.png",

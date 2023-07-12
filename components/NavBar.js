@@ -41,8 +41,8 @@ const StyledToolbar = (props) => (
 
 const pages = [
   {
-    label: "Chapitres",
-    href: "/chapitres",
+    label: "Résumé exécutif",
+    href: "/chapitres/resume-executif",
   },
   {
     label: "Carte interactive",
