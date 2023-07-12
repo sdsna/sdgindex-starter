@@ -5,17 +5,12 @@ export const TITLE = "Benin Sustainable Development Report";
 // For example: SDR 2021, ESDR 2020, ...
 export const SHORT_TITLE = "Benin 2023";
 
-// The maximum rank on the SDG Index, spillover index, etc...
-// Example: 50, 165, ...
-export const MAX_RANK = null;
-
 // The URL of the full report (PDF)
 // The report should be hosted on AWS. Directly downloading it from Netlify will
 // consume too much bandwidth.
 export const FRENCH_REPORT_DOWNLOAD_URL =
   "https://s3.amazonaws.com/sustainabledevelopment.report/2023/2023-benin-sustainable-development-report.pdf";
-export const ENGLISH_REPORT_DOWNLOAD_URL =
-  "https://s3.amazonaws.com/sustainabledevelopment.report/2023/2023-benin-sustainable-development-report-english.pdf";
+export const ENGLISH_REPORT_DOWNLOAD_URL = "TODO";
 
 // The URL of the database (Excel)
 // Example: /static/downloads/files/SDR2021-database.xlsx
