@@ -46,12 +46,6 @@ const downloads = [
     url: DATABASE_REGIONAL_DOWNLOAD_URL,
   },
   {
-    label: "Communiqué de presse",
-    type: "Site Web",
-    image: "press-release.png",
-    url: "https://www.sdgindex.org/news/press-release-benin-sustainable-report-2023/",
-  },
-  {
     label: "Méthodologie",
     type: "PDF",
     image: "methodology-paper.png",
