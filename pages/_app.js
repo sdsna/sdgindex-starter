@@ -20,6 +20,8 @@ function MyApp({ Component: NextPage, pageProps }) {
     loadData({ timeseries: true });
   }, []);
 
+  //
+
   // Track pages
   useEffect(() => {
     const handleRouteChange = (url) => {
