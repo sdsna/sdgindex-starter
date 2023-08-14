@@ -15,10 +15,10 @@ import {
   findRegionById,
   findAssessmentForRegionById,
   useDataStore,
+  getIndicatorsForRegionByLnobDimension,
 } from "@sdgindex/data";
-import { isGoal, isIndicator } from "@sdgindex/data/assessments";
+import { isLnobDimension, isIndicator } from "@sdgindex/data/assessments";
 import { mapAssessmentUrl } from "helpers/routing";
-import { getIndicatorsForDepartmentByDimension } from "helpers/getIndicatorsForDepartmentByDimension";
 
 const IndicatorSection = ({ department, indicator }) => (
   <>
@@ -73,8 +73,8 @@ const MapDepartmentDrawer = observer(({ assessment: { id: assessmentId } }) => {
   const department = findRegionById(uiStore.target.id);
   const assessment = findAssessmentForRegionById(department, assessmentId);
 
-  if (isGoal(assessment)) {
-    const indicatorsForDimension = getIndicatorsForDepartmentByDimension(
+  if (isLnobDimension(assessment)) {
+    const indicatorsForDimension = getIndicatorsForRegionByLnobDimension(
       department,
       assessment
     );

@@ -51,7 +51,7 @@ import {
   getRegionsWithAssessment,
   loadData,
   getIndicators,
-  getGoals as getDimensions,
+  getLnobDimensions,
 } from "@sdgindex/data";
 import { getValue } from "@sdgindex/data/observations";
 
@@ -77,7 +77,7 @@ export async function getStaticProps({ params }) {
   const assessmentSlug = slug;
 
   const assessment = findIndicatorBySlug(assessmentSlug.toLowerCase());
-  const dimensions = getDimensions();
+  const dimensions = getLnobDimensions();
 
   const assessmentProps = {
     id: assessment.id,

@@ -18,7 +18,7 @@ import MapLegendValues from "components/MapLegendValues";
 import MapLegend from "components/MapLegend";
 import MapLegendItem from "components/MapLegendItem";
 import { mapAssessmentUrl } from "helpers/routing";
-import { isGoal, isIndicator } from "@sdgindex/data/assessments";
+import { isLnobDimension, isIndicator } from "@sdgindex/data/assessments";
 import IndicatorMetadata from "components/IndicatorMetadata";
 
 const TableBodyWithAlternatingRows = styled(TableBody)`
@@ -124,7 +124,7 @@ const MapAssessmentDrawer = ({ assessment, dimensions, legend }) => (
       <Legend legend={legend} assessment={assessment} />
       <Divider />
     </DrawerSection>
-    {isGoal(assessment) && (
+    {isLnobDimension(assessment) && (
       <DimensionInfo
         dimension={assessment}
         dimensions={dimensions}

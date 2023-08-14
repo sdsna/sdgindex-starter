@@ -7,7 +7,7 @@ import IndicatorHeading from "components/IndicatorHeading";
 import MapPageSelectionButton from "components/MapPageSelectionButton";
 import { useUiStore } from "stores/uiStore";
 import {
-  isGoal,
+  isLnobDimension,
   isIndicator,
   isRelevantIndicatorForRegion,
 } from "@sdgindex/data/assessments";
@@ -29,7 +29,9 @@ const MapDrawer = observer((props) => {
   return (
     <>
       <MapPageSelectionButton>
-        {isGoal(assessment) && <DimensionHeading dimension={assessment} />}
+        {isLnobDimension(assessment) && (
+          <DimensionHeading dimension={assessment} />
+        )}
         {isIndicator(assessment) && <IndicatorHeading indicator={assessment} />}
       </MapPageSelectionButton>
       <Divider />

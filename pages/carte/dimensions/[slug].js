@@ -38,8 +38,9 @@ Map.layoutProps = ({ dimension, dimensions, departments }) => ({
 import {
   loadData,
   findAssessmentById,
-  getGoals as getDimensions,
+  getLnobDimensions,
   getRegionsWithAssessment,
+  getIndicatorsByLnobDimension,
 } from "@sdgindex/data";
 import {
   getScore,
@@ -47,13 +48,12 @@ import {
   getRating,
   getTrend,
 } from "@sdgindex/data/observations";
-import { getIndicatorsByDimension } from "helpers/getIndicatorsByDimension";
 
 export async function getStaticPaths() {
   await loadData();
 
   // Get the paths we want to pre-render based on regions
-  const dimensions = getDimensions();
+  const dimensions = getLnobDimensions();
   const paths = dimensions.map(({ id }) => ({
     params: { slug: id.toLowerCase() },
   }));
@@ -71,7 +71,7 @@ export async function getStaticProps({ params }) {
 
   // Get data
   const dimension = findAssessmentById(assessmentId.toUpperCase());
-  const dimensions = getDimensions();
+  const dimensions = getLnobDimensions();
   const departments = getRegionsWithAssessment(dimension);
 
   return {
@@ -83,12 +83,14 @@ export async function getStaticProps({ params }) {
         description: dimension.description,
         category: dimension.category,
         longTermObjective: dimension.longTermObjective || null,
-        indicators: getIndicatorsByDimension(dimension).map((indicator) => ({
-          id: indicator.id,
-          slug: indicator.slug,
-          label: indicator.label,
-          type: indicator.type,
-        })),
+        indicators: getIndicatorsByLnobDimension(dimension).map(
+          (indicator) => ({
+            id: indicator.id,
+            slug: indicator.slug,
+            label: indicator.label,
+            type: indicator.type,
+          })
+        ),
       },
       dimensions: dimensions.map((dimension) => ({
         id: dimension.id,
