@@ -4,7 +4,11 @@ const {
   addObservation,
   roundNumber,
 } = require("@sdgindex/data/parse");
-const { getRegions, getGoals, getIndicators } = require("@sdgindex/data");
+const {
+  getRegions,
+  getLnobDimensions,
+  getIndicators,
+} = require("@sdgindex/data");
 
 const setUpObservations = () => {
   /* Data conversion (XLSX -> JSON) */
@@ -18,13 +22,13 @@ const setUpObservations = () => {
     const dataForRegion = dataRows.find((row) => row.id === region.id);
 
     // Dimensions
-    getGoals().forEach((goal) =>
+    getLnobDimensions().forEach((lnob) =>
       addObservation({
         region,
-        assessment: goal,
-        score: roundNumber(dataForRegion[`${goal.category} Score`], 2),
-        rating: dataForRegion[`Dashboard: ${goal.category}`],
-        trend: dataForRegion[`arrow_${goal.category}`],
+        assessment: lnob,
+        score: roundNumber(dataForRegion[`${lnob.category} Score`], 2),
+        rating: dataForRegion[`Dashboard: ${lnob.category}`],
+        trend: dataForRegion[`arrow_${lnob.category}`],
       })
     );
 

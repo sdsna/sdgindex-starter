@@ -4,46 +4,42 @@
       "id": "LNOB1",
       "dataId": "LNOB1",
       "number": 1,
+      "category": "services",
       "label": "Accessibilité et qualité des services",
       "description": "Mesure l’accessibilité et la qualité des services de santé, d’éducation, d’eau, d’électricité et d’internet.",
-      "type": "goal",
-      "category": "services",
-      "slug": "category-services"
+      "type": "lnob"
     },
     {
       "id": "LNOB2",
       "dataId": "LNOB2",
       "number": 2,
+      "category": "pauvreté",
       "label": "Extrême pauvreté et privation matérielle",
       "description": "Prend en compte la pauvreté extrême et non-extrême, l’insécurité alimentaire et la malnutrition, ainsi que l’accès aux services financiers.",
-      "type": "goal",
-      "category": "pauvreté",
-      "slug": "category-pauvreté"
+      "type": "lnob"
     },
     {
       "id": "LNOB3",
       "dataId": "LNOB3",
       "number": 3,
+      "category": "genre",
       "label": "Inégalité des sexes",
       "description": "Niveau relatif des femmes par rapport aux hommes pour l’accès à et la qualité de l’éducation, la participation à la population active, la santé reproductive et sexuelle, la pauvreté, et l’accès à internet.",
-      "type": "goal",
-      "category": "genre",
-      "slug": "category-genre"
+      "type": "lnob"
     },
     {
       "id": "LNOB4",
       "dataId": "LNOB4",
       "number": 4,
+      "category": "revenus",
       "label": "Inégalité des revenus",
       "description": "Mesure les inégalités à partir du coefficient de Gini, et deux indicateurs liés aux revenus médian et moyen.",
-      "type": "goal",
-      "category": "revenus",
-      "slug": "category-revenus"
+      "type": "lnob"
     },
     {
       "id": "lnb1_accouch",
       "dataId": 1,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "accouchements-assistes-par-du-personnel-de-sante-qualifie",
       "label": "Accouchements assistés par du personnel de santé qualifié",
       "unit": "%",
@@ -60,7 +56,7 @@
     {
       "id": "lnb1_lits",
       "dataId": 2,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "nombre-d-habitants-par-lits-d-hopitaux",
       "label": "Nombre d'habitants par lits d'hopitaux",
       "unit": null,
@@ -77,7 +73,7 @@
     {
       "id": "lnb1_med",
       "dataId": 3,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "nombre-d-habitants-par-personnel-de-sante",
       "label": "Nombre d'habitants par personnel de santé",
       "unit": "médecins et infirmiers",
@@ -94,7 +90,7 @@
     {
       "id": "lnb1_palutr",
       "dataId": 4,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "enfants-de-moins-de-5-ans-ayant-de-la-fievre-qui-sont-traites-avec-des-medicaments-antipaludiques-appropries",
       "label": "Enfants de moins de 5 ans ayant de la fièvre, qui sont traités avec des médicaments antipaludiques appropriés",
       "unit": "%",
@@ -111,7 +107,7 @@
     {
       "id": "lnb1_vac",
       "dataId": 5,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "enfants-de-12-23-mois-completement-vaccines",
       "label": "Enfants de 12-23 mois complètement vaccinés",
       "unit": "%",
@@ -128,7 +124,7 @@
     {
       "id": "lnb1_vihtest",
       "dataId": 6,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "couverture-du-test-vih",
       "label": "Couverture du test VIH",
       "unit": "% de la population de 15-49 ans sachant où faire un test",
@@ -145,7 +141,7 @@
     {
       "id": "lnb1_trajethop",
       "dataId": 7,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "duree-moyenne-du-trajet-au-centre-de-sante",
       "label": "Durée moyenne du trajet au centre de santé",
       "unit": "en minutes",
@@ -162,7 +158,7 @@
     {
       "id": "lnb1_eau",
       "dataId": 8,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "menages-utilisant-des-sources-ameliorees-d-eau-de-boisson",
       "label": "Ménages utilisant des sources améliorées d'eau de boisson",
       "unit": "%",
@@ -179,7 +175,7 @@
     {
       "id": "lnb1_assaini",
       "dataId": 9,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "population-utilisant-des-services-d-assainissement-geres-en-toute-securite",
       "label": "Population utilisant des services d'assainissement gérés en toute sécurité",
       "unit": "%",
@@ -196,7 +192,7 @@
     {
       "id": "lnb1_elecac",
       "dataId": 10,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "population-ayant-acces-a-l-electricite",
       "label": "Population ayant accès à l'électricité",
       "unit": "%",
@@ -213,7 +209,7 @@
     {
       "id": "lnb1_prim",
       "dataId": 11,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "taux-net-de-scolarisation-dans-le-primaire",
       "label": "Taux net de scolarisation dans le primaire",
       "unit": "%",
@@ -230,7 +226,7 @@
     {
       "id": "lnb1_second",
       "dataId": 12,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "taux-net-de-scolarisation-dans-le-secondaire",
       "label": "Taux net de scolarisation dans le secondaire",
       "unit": "%",
@@ -247,7 +243,7 @@
     {
       "id": "lnb1_scolam",
       "dataId": 13,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "nombre-median-d-annees-de-scolarite",
       "label": "Nombre médian d'années de scolarité",
       "unit": null,
@@ -264,7 +260,7 @@
     {
       "id": "lnb1_prof",
       "dataId": 14,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "nombre-d-eleves-par-maitre-du-primaire",
       "label": "Nombre d'élèves par maitre du primaire",
       "unit": null,
@@ -281,7 +277,7 @@
     {
       "id": "lnb1_bac",
       "dataId": 15,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "taux-de-succes-au-bac",
       "label": "Taux de succès au BAC",
       "unit": "%",
@@ -298,7 +294,7 @@
     {
       "id": "lnb1_m5civil",
       "dataId": 16,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "enfants-de-moins-de-5-ans-ayant-ete-enregistres-par-une-autorite-d-etat-civil",
       "label": "Enfants de moins de 5 ans ayant été enregistrés par une autorité d'état civil",
       "unit": "%",
@@ -315,7 +311,7 @@
     {
       "id": "lnb1_int",
       "dataId": 17,
-      "goalNumber": "services",
+      "goalNumber": "LNOB1",
       "slug": "personnes-de-15-49-ans-ayant-deja-utilise-internet",
       "label": "Personnes de 15-49 ans ayant déjà utilisé internet",
       "unit": "%",
@@ -332,7 +328,7 @@
     {
       "id": "lnb2_190pov",
       "dataId": 18,
-      "goalNumber": "pauvreté",
+      "goalNumber": "LNOB2",
       "slug": "population-disposant-de-moins-de-1-90-par-jour",
       "label": "Population disposant de moins de $1,90 par jour",
       "unit": "%",
@@ -349,7 +345,7 @@
     {
       "id": "lnb2_pov",
       "dataId": 19,
-      "goalNumber": "pauvreté",
+      "goalNumber": "LNOB2",
       "slug": "personnes-de-tous-ages-vivant-dans-une-situation-de-pauvrete-sous-toutes-ses-formes",
       "label": "Personnes de tous âges vivant dans une situation de pauvreté sous toutes ses formes",
       "unit": "%",
@@ -366,7 +362,7 @@
     {
       "id": "lnb2_povnat",
       "dataId": 20,
-      "goalNumber": "pauvreté",
+      "goalNumber": "LNOB2",
       "slug": "population-vivant-au-dessous-du-seuil-national-de-pauvrete",
       "label": "Population vivant au-dessous du seuil national de pauvreté",
       "unit": "%",
@@ -383,7 +379,7 @@
     {
       "id": "lnb2_malnutri",
       "dataId": 21,
-      "goalNumber": "pauvreté",
+      "goalNumber": "LNOB2",
       "slug": "prevalence-de-l-emaciation-chez-les-enfants-de-moins-de-5-ans",
       "label": "Prévalence de l'émaciation chez les enfants de moins de 5 ans",
       "unit": "%",
@@ -400,7 +396,7 @@
     {
       "id": "lnb2_retcroiss",
       "dataId": 22,
-      "goalNumber": "pauvreté",
+      "goalNumber": "LNOB2",
       "slug": "prevalence-du-retard-de-croissance-chez-les-enfants-de-moins-de-5-ans",
       "label": "Prévalence du retard de croissance chez les enfants de moins de 5 ans",
       "unit": "%",
@@ -417,7 +413,7 @@
     {
       "id": "lnb2_insalim",
       "dataId": 23,
-      "goalNumber": "pauvreté",
+      "goalNumber": "LNOB2",
       "slug": "prevalence-de-l-insecurite-alimentaire",
       "label": "Prévalence de l'insécurité alimentaire",
       "unit": "%",
@@ -434,7 +430,7 @@
     {
       "id": "lnb2_11clabor",
       "dataId": 24,
-      "goalNumber": "pauvreté",
+      "goalNumber": "LNOB2",
       "slug": "enfants-de-5-a-11-ans-impliques-dans-une-activite-economique-pendant-au-moins-une-heure",
       "label": "Enfants de 5 à 11 ans impliqués dans une activité économique pendant au moins une heure",
       "unit": null,
@@ -451,7 +447,7 @@
     {
       "id": "lnb2_14clabor",
       "dataId": 25,
-      "goalNumber": "pauvreté",
+      "goalNumber": "LNOB2",
       "slug": "enfants-de-12-a-14-ans-impliques-dans-une-activite-economique-pendant-moins-de-14-heures",
       "label": "Enfants de 12 à 14 ans impliqués dans une activité économique pendant moins de 14 heures",
       "unit": null,
@@ -468,7 +464,7 @@
     {
       "id": "lnb2_14pclabor",
       "dataId": 26,
-      "goalNumber": "pauvreté",
+      "goalNumber": "LNOB2",
       "slug": "enfants-de-12-a-14-ans-impliques-dans-une-activite-economique-pendant-14-heures-ou-plus",
       "label": "Enfants de 12 à 14 ans impliqués dans une activité économique pendant 14 heures ou plus",
       "unit": null,
@@ -485,7 +481,7 @@
     {
       "id": "lnb2_taudis",
       "dataId": 27,
-      "goalNumber": "pauvreté",
+      "goalNumber": "LNOB2",
       "slug": "population-urbaine-vivant-dans-des-quartiers-de-taudis-des-implantations-sauvages-ou-des-logements-inadequats",
       "label": "Population urbaine vivant dans des quartiers de taudis, des implantations sauvages ou des logements inadéquats",
       "unit": "%",
@@ -502,7 +498,7 @@
     {
       "id": "lnb2_banque",
       "dataId": 28,
-      "goalNumber": "pauvreté",
+      "goalNumber": "LNOB2",
       "slug": "population-de-15-49-ans-ayant-un-compte-en-banque",
       "label": "Population de 15-49 ans ayant un compte en banque",
       "unit": "%",
@@ -519,7 +515,7 @@
     {
       "id": "lnb3_primparit",
       "dataId": 29,
-      "goalNumber": "genre",
+      "goalNumber": "LNOB3",
       "slug": "indice-de-parite-fille-garcon-taux-net-de-scolarisation-dans-le-primaire",
       "label": "Indice de parité fille/garçon: Taux net de scolarisation dans le primaire",
       "unit": null,
@@ -536,7 +532,7 @@
     {
       "id": "lnb3_secondparit",
       "dataId": 30,
-      "goalNumber": "genre",
+      "goalNumber": "LNOB3",
       "slug": "indice-de-parite-fille-garcon-taux-net-de-scolarisation-dans-le-secondaire",
       "label": "Indice de parité fille/garçon: Taux net de scolarisation dans le secondaire",
       "unit": null,
@@ -553,7 +549,7 @@
     {
       "id": "lnb3_scolamparit",
       "dataId": 31,
-      "goalNumber": "genre",
+      "goalNumber": "LNOB3",
       "slug": "indice-de-parite-fille-garcon-nombre-median-d-annees-de-scolarite",
       "label": "Indice de parité fille/garçon: Nombre médian d'années de scolarité",
       "unit": null,
@@ -570,7 +566,7 @@
     {
       "id": "lnb3_bacparit",
       "dataId": 32,
-      "goalNumber": "genre",
+      "goalNumber": "LNOB3",
       "slug": "indice-de-parite-fille-garcon-taux-de-succes-au-bac",
       "label": "Indice de parité fille/garçon: Taux de succès au BAC",
       "unit": null,
@@ -587,7 +583,7 @@
     {
       "id": "lnb3_vihtestpari",
       "dataId": 33,
-      "goalNumber": "genre",
+      "goalNumber": "LNOB3",
       "slug": "indice-de-parite-femme-homme-couverture-du-test-vih",
       "label": "Indice de parité femme/ homme: Couverture du test VIH",
       "unit": null,
@@ -604,7 +600,7 @@
     {
       "id": "lnb3_conjphy",
       "dataId": 34,
-      "goalNumber": "genre",
+      "goalNumber": "LNOB3",
       "slug": "femmes-de-15-49-ans-actuellement-en-union-ou-en-rupture-d-union-qui-ont-subi-des-violences-physiques",
       "label": "Femmes de 15-49 ans actuellement en union ou en rupture d’union qui ont subi des violences physiques",
       "unit": "%",
@@ -621,7 +617,7 @@
     {
       "id": "lnb3_conjsex",
       "dataId": 35,
-      "goalNumber": "genre",
+      "goalNumber": "LNOB3",
       "slug": "femmes-de-15-49-ans-actuellement-en-union-ou-en-rupture-d-union-qui-ont-subi-des-violences-sexuelles",
       "label": "Femmes de 15-49 ans actuellement en union ou en rupture d’union qui ont subi des violences sexuelles",
       "unit": "%",
@@ -638,7 +634,7 @@
     {
       "id": "lnb3_mariage",
       "dataId": 36,
-      "goalNumber": "genre",
+      "goalNumber": "LNOB3",
       "slug": "femmes-de-20-a-24-ans-mariees-ou-en-union-avant-l-age-de-18-ans",
       "label": "Femmes de 20 à 24 ans mariées ou en union avant l'age de 18 ans",
       "unit": "%",
@@ -655,7 +651,7 @@
     {
       "id": "lnb3_planfam",
       "dataId": 37,
-      "goalNumber": "genre",
+      "goalNumber": "LNOB3",
       "slug": "femmes-en-age-de-procreer-15-49-ans-qui-utilisent-des-methodes-modernes-de-planification-familiale",
       "label": "Femmes en âge de procréer (15-49 ans) qui utilisent des méthodes modernes de planification familiale",
       "unit": "%",
@@ -672,7 +668,7 @@
     {
       "id": "lnb3_190povparit",
       "dataId": 38,
-      "goalNumber": "genre",
+      "goalNumber": "LNOB3",
       "slug": "indice-de-parite-femme-homme-population-disposant-de-moins-de-1-90-par-jour",
       "label": "Indice de parité femme/ homme: population disposant de moins de $1,90 par jour",
       "unit": null,
@@ -689,7 +685,7 @@
     {
       "id": "lnb3_povparit",
       "dataId": 39,
-      "goalNumber": "genre",
+      "goalNumber": "LNOB3",
       "slug": "indice-de-parite-femme-homme-population-dans-une-situation-de-pauvrete-sous-toutes-ses-formes",
       "label": "Indice de parité femme/ homme: population dans une situation de pauvreté sous toutes ses formes",
       "unit": null,
@@ -706,7 +702,7 @@
     {
       "id": "lnb3_povnatparit",
       "dataId": 40,
-      "goalNumber": "genre",
+      "goalNumber": "LNOB3",
       "slug": "indice-de-parite-femme-homme-population-vivant-au-dessous-du-seuil-national-de-pauvrete",
       "label": "Indice de parité femme/ homme: population vivant au-dessous du seuil national de pauvreté",
       "unit": null,
@@ -723,7 +719,7 @@
     {
       "id": "lnb3_activparit",
       "dataId": 41,
-      "goalNumber": "genre",
+      "goalNumber": "LNOB3",
       "slug": "ratio-du-taux-de-participation-des-femmes-et-des-hommes-a-la-population-active",
       "label": "Ratio du taux de participation des femmes et des hommes à la population active",
       "unit": null,
@@ -740,7 +736,7 @@
     {
       "id": "lnb3_intparit",
       "dataId": 42,
-      "goalNumber": "genre",
+      "goalNumber": "LNOB3",
       "slug": "indice-de-parite-femme-homme-personnes-de-15-49-ans-ayant-deja-utilise-internet",
       "label": "Indice de parité femme/ homme: personnes de 15-49 ans ayant déjà utilisé internet",
       "unit": null,
@@ -757,7 +753,7 @@
     {
       "id": "lnb4_gini",
       "dataId": 43,
-      "goalNumber": "revenus",
+      "goalNumber": "LNOB4",
       "slug": "coefficient-de-gini",
       "label": "Coefficient de Gini",
       "unit": null,
@@ -774,7 +770,7 @@
     {
       "id": "lnb4_revmed",
       "dataId": 44,
-      "goalNumber": "revenus",
+      "goalNumber": "LNOB4",
       "slug": "personnes-vivant-avec-moins-de-la-moitie-du-revenu-median",
       "label": "Personnes vivant avec moins de la moitié du revenu médian",
       "unit": "%",
@@ -791,7 +787,7 @@
     {
       "id": "lnb4_revmoy",
       "dataId": 45,
-      "goalNumber": "revenus",
+      "goalNumber": "LNOB4",
       "slug": "personnes-vivant-avec-un-revenu-plus-de-50-inferieur-au-revenu-moyen",
       "label": "Personnes vivant avec un revenu plus de 50 % inférieur au revenu moyen",
       "unit": "%",

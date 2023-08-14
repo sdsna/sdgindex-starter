@@ -1,25 +1,21 @@
 const { SOURCE_FILE_PATH, CODEBOOK_SHEET } = require("./config");
-const { LNOB_DIMENSIONS } = require("./source/LNOB_DIMENSIONS");
 const {
-  addGoals,
+  addLnobDimensions,
   addIndicator,
   excelToJson,
   roundNumber,
 } = require("@sdgindex/data/parse");
-const { getGoals } = require("@sdgindex/data");
 
 const setUpAssessments = () => {
-  addGoals({ except: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17] });
-  getGoals().forEach((goal) => {
-    const dimension = LNOB_DIMENSIONS.find((lnob) => lnob.id === goal.number);
+  addLnobDimensions();
 
-    goal.id = `LNOB${goal.number}`;
-    goal.category = dimension.category;
-    goal.dataId = `LNOB${goal.number}`;
-    goal.slug = `category-${dimension.category}`;
-    goal.label = dimension.label;
-    goal.description = dimension.description;
-  });
+  // Format category name
+  const LNOBS = {
+    services: "LNOB1",
+    pauvreté: "LNOB2",
+    genre: "LNOB3",
+    revenus: "LNOB4",
+  };
 
   /* Data conversion (XLSX -> JSON) */
   const codebook = excelToJson({
@@ -31,7 +27,7 @@ const setUpAssessments = () => {
   codebook.forEach((row) => {
     addIndicator({
       id: row.IndCode,
-      goalNumber: row.cat_lnob,
+      goalNumber: LNOBS[row.cat_lnob],
       // NOTE: description is missing in the excel file
       description: row.Description,
       labelWithUnit: row["Indicateur"].trim(),
