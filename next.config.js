@@ -1,17 +1,25 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+  reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
   exportPathMap: async (defaultPathMap) => {
     const paths = defaultPathMap;
 
     // Make sure that static paths have been set for all dynamic pages
     // All dynamic pages MUST be removed, e.g., delete paths["/[slug].js"]
     const dynamicPage = Object.keys(paths).find((path) =>
-      path.match(/\[(.+)\]/)
+      path.match(/\[(.+)\]/),
     );
     if (dynamicPage)
       throw new Error(
-        `Dynamic page in exportPathMap in next.config.js detected:  ${dynamicPage}`
+        `Dynamic page in exportPathMap in next.config.js detected:  ${dynamicPage}`,
       );
 
     return paths;
   },
 };
+
+module.exports = nextConfig;

@@ -28,10 +28,10 @@ jobs:
           git config --global url."https://github.com/".insteadOf
           ssh://git@github.com/
 
-      - name: Setup Node v18
+      - name: Setup Node v20
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: "20"
 
       - name: Install dependencies
         uses: cypress-io/github-action@v5
@@ -40,7 +40,7 @@ jobs:
           runTests: false
 
       - name: Build app
-        run: npm run build && npm run export
+        run: npm run build
 
       - name: Install serve
         run: npm install -g serve
